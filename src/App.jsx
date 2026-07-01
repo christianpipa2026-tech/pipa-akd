@@ -1404,9 +1404,9 @@ REGLAS ABSOLUTAS:
             let bg="var(--color-background-secondary)", border="1.5px solid transparent", color="var(--color-text-primary)";
             if (evalAnswered) {
               if (i===q.answer) { bg="var(--bg-success)"; border="1.5px solid var(--text-success)"; color="var(--text-success)"; }
-              else if (parseInt(evalUserAnswer)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
-            } else if (parseInt(evalUserAnswer)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
-            return <button key={i} onClick={() => !evalAnswered && setEvalUserAnswer(String(i))}
+              else if (parseInt(evalSelected)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
+            } else if (parseInt(evalSelected)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
+            return <button key={i} onClick={() => !evalAnswered && setEvalSelected(String(i))}
               style={{display:"block", width:"100%", textAlign:"left", cursor:evalAnswered?"default":"pointer", border, borderRadius:12, padding:"12px 16px", fontSize:14, fontWeight:500, background:bg, color, marginBottom:8, fontFamily:"var(--font-sans)", transition:"all 0.15s"}}>{opt}</button>;
           })}
         </div>
