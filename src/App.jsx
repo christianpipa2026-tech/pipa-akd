@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { CURRICULUM, REFERENCE } from "./curriculum.js";
-import { CURRICULUM_A1 } from "./curriculum_A1.js";
+import { CURRICULUM_ES_A1 as CURRICULUM_A1 } from "./curriculum_A1.js";
 import { CURRICULUM_A2 } from "./curriculum_A2.js";
 import { CURRICULUM_B1 } from "./curriculum_B1.js";
 import { CURRICULUM_B2 } from "./curriculum_B2.js";
