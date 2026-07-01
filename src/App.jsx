@@ -1409,20 +1409,20 @@ REGLAS ABSOLUTAS:
             let bg="var(--color-background-secondary)", border="1.5px solid transparent", color="var(--color-text-primary)";
             if (evalAnswered) {
               if (i===q.answer) { bg="var(--bg-success)"; border="1.5px solid var(--text-success)"; color="var(--text-success)"; }
-              else if (parseInt(evalSelected)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
-            } else if (parseInt(evalSelected)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
-            return <button key={i} onClick={() => !evalAnswered && setEvalSelected(String(i))}
+              else if (parseInt(evalUserAnswer)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
+            } else if (parseInt(evalUserAnswer)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
+            return <button key={i} onClick={() => !evalAnswered && setEvalUserAnswer(String(i))}
               style={{display:"block", width:"100%", textAlign:"left", cursor:evalAnswered?"default":"pointer", border, borderRadius:12, padding:"12px 16px", fontSize:14, fontWeight:500, background:bg, color, marginBottom:8, fontFamily:"var(--font-sans)", transition:"all 0.15s"}}>{opt}</button>;
           })}
         </div>
 
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:8}}>
           {!evalAnswered ? (
-            <button onClick={checkEvalQ} disabled={evalSelected===null} style={{cursor:evalSelected===null?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalSelected===null?0.4:1}}>
+            <button onClick={checkEvalAnswer} disabled={evalUserAnswer===""} style={{cursor:evalUserAnswer===""?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalUserAnswer===""?0.4:1}}>
               ✓ Confirmar
             </button>
           ) : (
-            <button onClick={nextEvalQ} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
+            <button onClick={nextEvalQuestion} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
               {evalIdx+1 < evalQs.length ? "Próxima →" : "Ver resultado →"}
             </button>
           )}
@@ -1498,7 +1498,7 @@ REGLAS ABSOLUTAS:
         <div style={{background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", borderRadius:20, padding:"18px 20px 22px", marginBottom:16}}>
           <div style={{display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:14, flexWrap:"wrap", gap:10}}>
             <div>
-              <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", letterSpacing:"0.08em", textTransform:"uppercase", margin:"0 0 4px"}}>Espanhol</p>
+              <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", letterSpacing:"0.08em", textTransform:"uppercase", margin:"0 0 4px"}}>Português do Brasil</p>
               <p style={{fontSize:19, fontWeight:700, color:"#fff", margin:0, letterSpacing:"-0.02em"}}>Nível {assignedLevel}</p>
             </div>
             <div style={{display:"flex", alignItems:"center", gap:8, flexWrap:"wrap"}}>
@@ -1623,13 +1623,13 @@ REGLAS ABSOLUTAS:
                   <div key={unit.id} style={{marginBottom:"1.25rem"}}>
                     <div style={{display:"flex", justifyContent:"space-between", marginBottom:6}}>
                       <p style={{fontSize:13, fontWeight:500, color:"var(--color-text-primary)", margin:0}}>Unidad {ui+1}: {unit.title}</p>
-                      <span style={{fontSize:12, color:"#0369A1"}}>{unitPct}%</span>
+                      <span style={{fontSize:12, color:"#085041"}}>{unitPct}%</span>
                     </div>
                     <div style={{background:"var(--color-background-secondary)", borderRadius:99, height:8, marginBottom:8}}>
-                      <div style={{background:"#0EA5E9", height:8, borderRadius:99, width:`${unitPct}%`, transition:"width 0.4s"}} />
+                      <div style={{background:"#1D9E75", height:8, borderRadius:99, width:`${unitPct}%`, transition:"width 0.4s"}} />
                     </div>
                     <div style={{display:"flex", gap:12, fontSize:12}}>
-                      <span style={{color:"#0369A1"}}>✅ {correct} correctos</span>
+                      <span style={{color:"#085041"}}>✅ {correct} correctos</span>
                       <span style={{color:"#A32D2D"}}>❌ {wrong} errores</span>
                       <span style={{color:"var(--color-text-tertiary)"}}>⏳ {pending} pendientes</span>
                     </div>
@@ -1739,8 +1739,8 @@ REGLAS ABSOLUTAS:
           )}
           {chatMessages.map((msg, i) => (
             <div key={i} style={{display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start"}}>
-              <div style={{maxWidth:"85%", padding:"10px 14px", borderRadius:"var(--border-radius-lg)", background:msg.role==="user"?"#0EA5E9":"var(--color-background-secondary)", color:msg.role==="user"?"#fff":"var(--color-text-primary)", fontSize:13, lineHeight:1.65}}>
-                {msg.role==="assistant" && <span style={{fontSize:11, fontWeight:600, color:"#0369A1", display:"block", marginBottom:4}}>🤖 Prof. Brasil</span>}
+              <div style={{maxWidth:"85%", padding:"10px 14px", borderRadius:"var(--border-radius-lg)", background:msg.role==="user"?"#1D9E75":"var(--color-background-secondary)", color:msg.role==="user"?"#fff":"var(--color-text-primary)", fontSize:13, lineHeight:1.65}}>
+                {msg.role==="assistant" && <span style={{fontSize:11, fontWeight:600, color:"#085041", display:"block", marginBottom:4}}>🤖 Prof. Brasil</span>}
                 {msg.content}
               </div>
             </div>
@@ -1759,10 +1759,10 @@ REGLAS ABSOLUTAS:
             value={chatInput}
             onChange={e => setChatInput(e.target.value)}
             onKeyDown={e => e.key==="Enter" && !e.shiftKey && !chatLoading && sendChat()}
-            placeholder="Escribe en espanhol..."
+            placeholder="Escribe en português..."
             style={{flex:1, padding:"10px 14px", border:"0.5px solid var(--color-border-secondary)", borderRadius:"var(--border-radius-md)", fontSize:14, background:"var(--color-background-primary)", color:"var(--color-text-primary)", fontFamily:"var(--font-sans)", outline:"none"}}
           />
-          <button onClick={sendChat} disabled={chatLoading || !chatInput.trim()} style={{padding:"10px 18px", background:chatLoading||!chatInput.trim()?"var(--color-background-secondary)":"#0EA5E9", color:chatLoading||!chatInput.trim()?"var(--color-text-tertiary)":"#fff", border:"none", borderRadius:"var(--border-radius-md)", fontSize:14, fontWeight:600, cursor:chatLoading||!chatInput.trim()?"default":"pointer", fontFamily:"var(--font-sans)"}}>
+          <button onClick={sendChat} disabled={chatLoading || !chatInput.trim()} style={{padding:"10px 18px", background:chatLoading||!chatInput.trim()?"var(--color-background-secondary)":"#1D9E75", color:chatLoading||!chatInput.trim()?"var(--color-text-tertiary)":"#fff", border:"none", borderRadius:"var(--border-radius-md)", fontSize:14, fontWeight:600, cursor:chatLoading||!chatInput.trim()?"default":"pointer", fontFamily:"var(--font-sans)"}}>
             {chatLoading ? "..." : "→"}
           </button>
         </div>
@@ -2012,7 +2012,7 @@ REGLAS ABSOLUTAS:
             style={{width:"100%", border:"1.5px solid var(--color-border-secondary)", borderRadius:12, padding:"12px 16px", fontSize:14, color:"var(--color-text-primary)", background:"var(--color-background-primary)", fontFamily:"var(--font-sans)"}} />}
 
           {(ex.type==="translation"||ex.type==="free_writing") && <textarea value={userAnswer} onChange={e => setUserAnswer(e.target.value)}
-            disabled={exerciseAnswered} placeholder={ex.hint||"Escreva em espanhol..."}
+            disabled={exerciseAnswered} placeholder={ex.hint||"Escreva em português..."}
             style={{width:"100%", minHeight:ex.type==="free_writing"?150:80, border:"1.5px solid var(--color-border-secondary)", borderRadius:12, padding:"12px 16px", fontSize:14, color:"var(--color-text-primary)", background:"var(--color-background-primary)", fontFamily:"var(--font-sans)", resize:"vertical"}} />}
         </div>
 
