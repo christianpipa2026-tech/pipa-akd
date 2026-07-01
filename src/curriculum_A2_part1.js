@@ -1,227 +1,228 @@
-// A2 — Unidades 1 y 2
-export const A2_U1_U2 = [
-  {
-    id: "A2-U1",
-    title: "Verbos no presente — aprofundamento",
-    description: "Verbos reflexivos, irregulares avançados e o condicional",
-    lessons: [
-      {
-        id: "A2-U1-L1",
-        title: "Verbos reflexivos e pronominais",
-        shadowing: "Lê 3 vezes em voz alta, imitando o ritmo brasileiro:\n\n— Você se levanta cedo todo dia?\n— Me levanto às seis. Primeiro me lavo, depois me visto e tomo café.\n— E seus filhos? Eles se arrumam sozinhos?\n— O mais velho se vira bem. A pequena ainda precisa de ajuda.\n— Vocês se dão bem, a família toda?\n— Nos damos muito bem! Nos reunimos todo domingo para o almoço.\n— Que família unida! Vocês se conhecem faz quanto tempo?\n— Nos casamos há quinze anos. Nos conhecemos na faculdade.",
-        memoryPhrases: [
-          "Me levanto às seis.",
-          "Ela se arruma rápido.",
-          "Nos damos muito bem.",
-          "Quando você se formou?",
-          "A gente se conheceu em..."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Descreva sua rotina matinal completa usando verbos reflexivos. Depois fale sobre como você se relaciona com sua família ou amigos próximos. Mínimo 6 frases com verbos reflexivos.",
-        content: "# Verbos Reflexivos e Pronominais\n\n## O que são verbos reflexivos\nVerbo reflexivo = ação que o sujeito faz a si mesmo.\nEu me lavo. = Yo me lavo (a mí mismo).\n\n## Os pronomes reflexivos\neu → me · você/a gente/ele/ela → se\nnós → nos · vocês/eles/elas → se\n\n## Posição do pronome\nEm frases afirmativas: antes do verbo\nEu ME levanto cedo. / Ela SE penteia.\nCom infinitivo: Preciso me levantar.\n\n## Verbos reflexivos essenciais\nse levantar = levantarse · se lavar = lavarse\nse vestir = vestirse · se arrumar = arreglarse\nse pentear = peinarse · se maquiar = maquillarse\nse chamar = llamarse · se casar = casarse\nse conhecer = conocerse · se encontrar = encontrarse\nse dar bem = llevarse bien · se sentir = sentirse\nse preocupar = preocuparse · se lembrar = recordarse\nse esquecer (de) = olvidarse (de)\n\n## Verbos recíprocos (ação mútua)\nNós NOS amamos. = Nos amamos (mutuamente).\nEles SE abraçaram. = Se abrazaron.\nVocês SE conhecem? = ¿Se conocen?\n\n## Expressões importantes\nSe virar = arreglárselas, manejarse\nSe dar mal = llevarse mal / salir mal\nSe dar bem = llevarse bien / salir bien\nSe formar = graduarse · Se aposentar = jubilarse",
-        exercises: [
-          {id:"A2-U1-L1-E1",type:"multiple_choice",skill:"grammar",question:"'Ela ___ muito cedo todo dia.' (levantarse)",options:["levanta","se levanta","me levanta","nos levanta"],answer:1,explanation:"Verbo reflexivo: ELA SE levanta. El pronome reflexivo SE para ela/você/a gente.",hint:"Pronome reflexivo para ela → SE"},
-          {id:"A2-U1-L1-E2",type:"fill_blank",skill:"grammar",question:"'Nós ___ muito bem. Somos grandes amigos.' (llevarse bien)",answer:["nos damos"],hint:"Verbo DAR-SE BEM · nos = pronome reflexivo para nós",explanation:"Nos damos bem = nos llevamos bien. DAR-SE BEM é a expressão correta."},
-          {id:"A2-U1-L1-E3",type:"multiple_choice",skill:"grammar",question:"¿Cuál es correcta para 'me olvidé de tu nombre'?",options:["Me esqueci do seu nome.","Eu esqueci seu nome a mim.","Se esquecei do nome.","Eu me lembrei do nome."],answer:0,explanation:"ESQUECER-SE DE = olvidarse de. Eu me esqueci do seu nome.",hint:"ESQUECER-SE DE + cosa olvidada"},
-          {id:"A2-U1-L1-E4",type:"translation",skill:"writing",question:"Traduce: 'Mis padres se conocieron en la universidad y se casaron hace 30 años. Se llevan muy bien.'",answer:["meus pais se conheceram na universidade","se casaram há trinta anos","se dão muito bem"],hint:"se conheceram · se casaram há · se dão muito bem",explanation:"Meus pais se conheceram na universidade e se casaram há trinta anos. Se dão muito bem."},
-          {id:"A2-U1-L1-E5",type:"free_writing",skill:"writing",question:"Describí tu rutina matinal completa con verbos reflexivos. Después contá como te conociste con tu melhor amigo/a. Mínimo 7 oraciones.",prompt:"De manhã, eu me... / Depois me... / Conheci meu/minha melhor amigo/a quando... / A gente se...",hint:"me levanto · me lavo · me visto · me arrumo · nos conhecemos · nos damos bem"}
-        ]
-      },
-      {
-        id: "A2-U1-L2",
-        title: "Verbos irregulares avançados no presente",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você sabe cozinhar comida brasileira?\n— Sei sim! Faço uma feijoada incrível.\n— Que bom! E você traz ingredientes especiais?\n— Trago o feijão preto de um mercado especializado.\n— Seus filhos também cozinham?\n— Meu filho mais velho sabe fazer arroz e macarrão. A mais nova não sabe nada ainda.\n— Você os ensina?\n— Toda semana! Eles vêm pra cozinha comigo aos sábados.",
-        memoryPhrases: [
-          "Sei fazer isso!",
-          "Trago tudo que precisa.",
-          "Eles vêm comigo.",
-          "Eu ponho na mesa.",
-          "Consegue fazer isso?"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre 5 coisas que você sabe fazer muito bem e 3 que não consegue fazer. Use verbos irregulares. Mínimo 8 frases.",
-        content: "# Verbos Irregulares Avançados no Presente\n\n## SABER (saber/conocer habilidad)\neu sei · você/ele/ela sabe · nós sabemos · vocês/eles sabem\nSei falar inglês. / Ela sabe cozinhar muito bem.\n\n## TRAZER (traer)\neu trago · você/ele/ela traz · nós trazemos · vocês/eles trazem\nTrago o vinho. / O que você traz para a festa?\n\n## PÔR (poner)\neu ponho · você/ele/ela põe · nós pomos · vocês/eles põem\nPonho a mesa. / Ela põe o bebê para dormir.\n\n## MEDIR / PEDIR / VESTIR (grupo -ir com mudança)\nPEDIR: peço · pede · pedimos · pedem\nMEDIR: meço · mede · medimos · medem\nVESTIR: visto · veste · vestimos · vestem\n\n## PERDER / QUERER\nPERDER: perco · perde · perdemos · perdem\nQUERER: quero · quer · queremos · querem\n\n## CONSEGUIR / SEGUIR (grupo -guir)\nCONSEGUIR: consigo · consegue · conseguimos · conseguem\nSEGUIR: sigo · segue · seguimos · seguem\n\n## CABER / CAIR\nCABER: caibo · cabe · cabemos · cabem\nCAIR: caio · cai · caímos · caem\n\n## Dica\nGrupo -ço: FAZER→faço, TRAZER→trago, PÔR→ponho, SABER→sei\nGrupo -sco: CONHECER→conheço, APARECER→apareço",
-        exercises: [
-          {id:"A2-U1-L2-E1",type:"multiple_choice",skill:"grammar",question:"'Eu não ___ falar sem ler o texto.' (conseguir)",options:["consegue","consigo","conseguem","conseguimos"],answer:1,explanation:"CONSEGUIR para EU: CONSIGO. Grupo irregular -seguir.",hint:"CONSEGUIR para EU → CONSIGO"},
-          {id:"A2-U1-L2-E2",type:"fill_blank",skill:"grammar",question:"'Ela ___ a mesa todo dia antes do jantar.' (poner — PÔR)",answer:["põe"],hint:"PÔR para ela/você → PÕE",explanation:"PÔR: eu ponho · ela/você PÕE · nós pomos · eles põem."},
-          {id:"A2-U1-L2-E3",type:"multiple_choice",skill:"grammar",question:"'Eles sempre ___ algo diferente para a reunião.' (trazer)",options:["trazem","traz","trago","trazemos"],answer:0,explanation:"TRAZER para eles/vocês: TRAZEM.",hint:"TRAZER para eles → TRAZEM"},
-          {id:"A2-U1-L2-E4",type:"translation",skill:"writing",question:"Traduce: 'Yo sé hablar tres idiomas pero no consigo escribir bien en ninguno. Mi hermana sabe de todo.'",answer:["eu sei falar três idiomas","mas não consigo escrever bem em nenhum","minha irmã sabe de tudo"],hint:"sei falar · não consigo escrever · em nenhum=en ninguno · sabe de tudo",explanation:"Eu sei falar três idiomas mas não consigo escrever bem em nenhum. Minha irmã sabe de tudo."},
-          {id:"A2-U1-L2-E5",type:"free_writing",skill:"writing",question:"Describí tus habilidades usando SABER y CONSEGUIR. ¿Qué sabés hacer? ¿Qué no conseguís? Mínimo 6 oraciones.",prompt:"Sei... muito bem. / Também sei... / Não consigo... / Minha família sabe... / No trabalho eu trago...",hint:"sei · consigo · trago · ponho · peço"}
-        ]
-      },
-      {
-        id: "A2-U1-L3",
-        title: "O futuro com IR e o futuro simples",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— O que você vai fazer nas próximas férias?\n— Vou viajar para o Nordeste! Vou conhecer Fortaleza e Jericoacoara.\n— Que incrível! Você vai de avião?\n— Vou sim. Já comprei as passagens.\n— E quanto tempo você vai ficar?\n— Vou ficar dez dias. Vou me hospedar numa pousada na beira da praia.\n— Que inveja! Eu também viajarei algum dia.\n— Vai! O Brasil é lindo demais para não explorar.",
-        memoryPhrases: [
-          "Vou viajar nas férias.",
-          "Já comprei as passagens.",
-          "Vou ficar dez dias.",
-          "Viajarei algum dia.",
-          "Com certeza vai valer a pena!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre seus planos para as próximas férias ou para o próximo mês. Use IR + infinitivo (futuro oral) e o futuro simples (-rei) pelo menos 2 vezes. Mínimo 6 frases.",
-        content: "# O Futuro em Português\n\n## Futuro com IR + infinitivo (oral, muito comum)\nVou fazer. / Vai chover. / A gente vai viajar.\neu vou + inf · você/ele/ela/a gente vai + inf\nnós vamos + inf · vocês/eles/elas vão + inf\n\nMarcadores: amanhã · na semana que vem · nas próximas férias\nem breve · logo · daqui a pouco · no ano que vem\n\n## Futuro simples (escrito, mais formal)\nModelo: FALAR → falarei · falará · falaremos · falarão\nModelo: COMER → comerei · comerá · comeremos · comerão\n\nIrregulares do futuro simples:\nFAZER → farei · fará · faremos · farão\nTRAZER → trarei · trará · traremos · trarão\nDIZER → direi · dirá · diremos · dirão\nTER → terei · terá · teremos · terão\nVIR → virei · virá · viremos · virão\nPÔR → porei · porá · poremos · porão\n\n## Comparação de uso\nOR + inf (oral e coloquial): Vou falar com ela amanhã.\nFuturo simples (escrito/formal): Falarei com ela amanhã.\n\nAmbos são corretos. En Brasil el futuro con IR é dominante na fala.\n\n## Expressões de futuro\nEspero que... = Espero que...\nTomara que... = Ojalá...\nQuem sabe... = Quizás...\nCom certeza... = Con seguridad...",
-        exercises: [
-          {id:"A2-U1-L3-E1",type:"multiple_choice",skill:"grammar",question:"'A gente ___ ao restaurante amanhã.' (ir + inf — futuro oral)",options:["vai ir","vão ir","vou ir","vamos ir"],answer:0,explanation:"A gente = 3ª persona singular → VAI + infinitivo. A gente vai ir.",hint:"A gente → VAI + infinitivo"},
-          {id:"A2-U1-L3-E2",type:"fill_blank",skill:"grammar",question:"'Eu ___ um email para você amanhã.' (enviar — futuro simples formal)",answer:["enviarei"],hint:"Futuro simples: infinitivo + -ei para eu",explanation:"Enviar → enviarei (futuro simples). Infinitivo + -ei/-á/-emos/-ão."},
-          {id:"A2-U1-L3-E3",type:"multiple_choice",skill:"grammar",question:"¿Cuál es el futuro irregular de FAZER?",options:["fazerai","farei","fazerei","farão (solo plural)"],answer:1,explanation:"FAZER irregular: eu FAREI · você fará · nós faremos · eles farão.",hint:"FAZER pierde la raíz y solo conserva FA-"},
-          {id:"A2-U1-L3-E4",type:"translation",skill:"writing",question:"Traduce: 'El año que viene voy a vivir en Brasil. Voy a aprender portugués perfectamente y voy a hacer muchos amigos.'",answer:["no ano que vem vou morar no brasil","vou aprender português perfeitamente","vou fazer muitos amigos"],hint:"no ano que vem · vou morar · vou aprender · vou fazer",explanation:"No ano que vem vou morar no Brasil. Vou aprender português perfeitamente e vou fazer muitos amigos."},
-          {id:"A2-U1-L3-E5",type:"free_writing",skill:"writing",question:"Describí seus planos para os próximos 6 meses. Use IR + infinitivo para os planos concretos e o futuro simples para as expectativas. Mínimo 7 oraciones.",prompt:"Nos próximos meses vou... / Também vou... / Espero que... / Com certeza irei... / Tomara que...",hint:"vou + inf para planos concretos · futuro simples (-rei) para expectativas"}
-        ]
-      },
-      {
-        id: "A2-U1-L4",
-        title: "O condicional — gostaria, poderia, seria",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você gostaria de trabalhar no exterior?\n— Gostaria sim! Adoraria morar em Portugal ou no Canadá.\n— E sua família? Iria junto?\n— Minha esposa iria com certeza. As crianças poderiam estudar em escola internacional.\n— Seria difícil se adaptar?\n— Seria um desafio, mas valeria a pena. Você faria isso?\n— Faria sem pensar! Só precisaria de uma boa oferta de emprego.\n— Pois é. A gente sempre sonha, né?",
-        memoryPhrases: [
-          "Gostaria de...",
-          "Adoraria fazer isso!",
-          "Seria incrível.",
-          "Poderia ser melhor.",
-          "Valeria a pena!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre seu país ideal para morar, trabalhar e viver. Use o condicional: gostaria, moraria, trabalharia, seria, poderia. Mínimo 6 frases.",
-        content: "# O Condicional (Futuro do Pretérito)\n\n## Formação\nInfinitivo + terminações: -ia · -ia · -íamos · -iam\n\nFALAR: falaria · falaria · falaríamos · falariam\nCOMER: comeria · comeria · comeríamos · comeriam\nPARTIR: partiria · partiria · partiríamos · partiriam\n\n## Irregulares (mesmos do futuro simples)\nFAZER → faria · faria · faríamos · fariam\nTRAZER → traria\nDIZER → diria\nTER → teria\nVIR → viria\nPÔR → poria\n\n## Usos do condicional\n1. Desejo educado: Gostaria de um café, por favor.\n2. Sugestão: Você deveria descansar mais.\n3. Hipótese: Se tivesse dinheiro, viajaria o mundo.\n4. Sonho/possibilidade: Eu viveria no Brasil se pudesse.\n5. Pedido formal: Poderia me ajudar?\n\n## Expressões condicionais\nGostaria de... = Quisiera / Me gustaría\nAdoraria... = Adoraría\nSeria ótimo/incrível/maravilhoso se...\nValeria a pena = Valdría la pena\nSe eu pudesse... = Si yo pudiera...\nSe eu fosse você... = Si yo fuera vos...",
-        exercises: [
-          {id:"A2-U1-L4-E1",type:"multiple_choice",skill:"grammar",question:"'___ de falar com o gerente, por favor.' (condicional de GOSTAR — pedido educado)",options:["Gosto","Gostei","Gostaria","Gostava"],answer:2,explanation:"GOSTARIA = condicional de GOSTAR. Pedido educado y formal.",hint:"Condicional de GOSTAR para pedido educado"},
-          {id:"A2-U1-L4-E2",type:"fill_blank",skill:"grammar",question:"'Se eu ___ dinheiro, viajaria o mundo.' (tener — condicional hipotético)",answer:["tivesse"],hint:"Hipótese com SE + Imperfeito do Subjuntivo",explanation:"SE + TIVESSE = hipótesis. Tivesse = imperfeito do subjuntivo de TER."},
-          {id:"A2-U1-L4-E3",type:"multiple_choice",skill:"grammar",question:"¿Cuál es el condicional de FAZER para ela?",options:["fazia","fará","faria","faz"],answer:2,explanation:"FAZER condicional irregular: ela FARIA.",hint:"FAZER condicional → FA- + -ria"},
-          {id:"A2-U1-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'Me gustaría trabajar en Brasil. Sería una experiencia increíble. ¿Podrías recomendarme alguna empresa?'",answer:["gostaria de trabalhar no brasil","seria uma experiência incrível","você poderia me recomendar alguma empresa"],hint:"gostaria de · seria · você poderia me recomendar",explanation:"Gostaria de trabalhar no Brasil. Seria uma experiência incrível. Você poderia me recomendar alguma empresa?"},
-          {id:"A2-U1-L4-E5",type:"free_writing",skill:"writing",question:"Describí tu vida ideal usando o condicional. Onde você moraria, o que faria, com quem estaria, etc. Mínimo 7 oraciones.",prompt:"Na minha vida ideal, eu moraria em... / Trabalharia como... / Teria... / Gostaria de... / Seria...",hint:"moraria · trabalharia · teria · viveria · comeria · viajaria · seria · poderia"}
-        ]
-      },
-      {
-        id: "A2-U1-L5",
-        title: "Pronomes oblíquos — me, te, o, a, lhe, nos",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você me ligou ontem?\n— Liguei sim! Mas você não me atendeu.\n— Desculpa. Estava em reunião. O que você queria me dizer?\n— Queria te convidar para o aniversário da Ana.\n— Que legal! Você já a avisou?\n— A avisei sim. Ela me pediu para te ligar.\n— Entendi! Pode me mandar o endereço por WhatsApp?\n— Te mando agora.",
-        memoryPhrases: [
-          "Você me ligou?",
-          "Quero te convidar.",
-          "Pode me ajudar?",
-          "Te mando agora.",
-          "Ela nos viu ontem."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre as interações do seu dia: quem te ligou, quem você chamou, o que alguém te pediu, o que você ofereceu a alguém. Use pronomes oblíquos. Mínimo 6 frases.",
-        content: "# Pronomes Oblíquos\n\n## Os pronomes\nme = me (1ª sing) · te = te (2ª sing informal)\no/a = lo/la (3ª sing masc/fem)\nlhe = le (3ª sing — complemento indirecto)\nnos = nos (1ª plural)\nvos = os (2ª plural — raro en PB)\nos/as = los/las (3ª plural)\n\n## Na fala brasileira\nEn Brasil coloquial se usa ME, TE, NOS con naturalidad:\nVocê ME ajuda? / Te ligo depois. / Nos vemos amanhã.\n\nPara OBJ DIRETO 3ª persona, en oral se omite o usa pronome pessoal:\nVi a Maria. (no: Vi-a.) — mais natural en PB oral\nLiguei para ele. (no: Lhei ligado.)\n\n## Posição do pronome\nAnte el verbo (PB oral preferido):\nEu TE ligo amanhã. / Ela ME chamou.\n\nPós el verbo (escrito/formal):\nLigo-te amanhã. / Chamou-me.\n\n## Contracciones comunes\nme + o = mo: Você me dá o livro? Me dá o livro!\nte + o = to: Te dou o livro amanhã.\n\n## Expressões com pronomes\nMe diga! = ¡Dígame! (atención al teléfono)\nMe faz um favor? = ¿Me hacés un favor?\nTe ligo! = ¡Te llamo!\nNos vemos! = ¡Nos vemos!",
-        exercises: [
-          {id:"A2-U1-L5-E1",type:"multiple_choice",skill:"grammar",question:"'Ela ___ chamou para a festa.' (me — pronome objeto direto 1ª pessoa)",options:["lhe chamou","nos chamou","me chamou","te chamou"],answer:2,explanation:"ME = pronome objeto 1ª persona singular. Ela ME chamou = ella me llamó.",hint:"ME para 1ª persona singular"},
-          {id:"A2-U1-L5-E2",type:"fill_blank",skill:"grammar",question:"'Posso ___ fazer uma pergunta?' (te — objeto indirecto 2ª persona informal)",answer:["te"],hint:"TE para 2ª persona informal",explanation:"Posso TE fazer uma pergunta? = ¿Puedo hacerte una pregunta?"},
-          {id:"A2-U1-L5-E3",type:"multiple_choice",skill:"grammar",question:"¿Cuál es más natural en PB oral para 'La vi ayer'?",options:["Vi-a ontem.","Eu a vi ontem.","Vi ela ontem.","Lhe vi ontem."],answer:2,explanation:"En PB oral se prefiere VI ELA ONTEM. El pronome pessoal reemplaza al oblicuo en la fala.",hint:"En PB oral se prefiere el pronome pessoal"},
-          {id:"A2-U1-L5-E4",type:"translation",skill:"writing",question:"Traduce: 'Ella me mandó un mensaje. Te lo reenvío ahora. ¿Nos encontramos mañana para hablar?'",answer:["ela me mandou uma mensagem","te encaminho agora","nos encontramos amanhã para conversar"],hint:"me mandou · te encaminho=te reenvío · nos encontramos",explanation:"Ela me mandou uma mensagem. Te encaminho agora. Nos encontramos amanhã para conversar?"},
-          {id:"A2-U1-L5-E5",type:"free_writing",skill:"writing",question:"Escribe sobre as interações de ontem: quem te falou, o que você disse a alguém, quem você encontrou. Use pronomes oblíquos. Mínimo 7 oraciones.",prompt:"Ontem... me ligou. / Eu te/lhe disse que... / Ela me pediu... / Nos encontramos... / Me mandou...",hint:"me · te · nos · lhe — posição ANTES do verbo em PB oral"}
-        ]
-      }
-    ]
-  },
-  {
-    id: "A2-U2",
-    title: "O passado — história e memórias",
-    description: "Pretérito Perfeito Composto, Mais-que-perfeito, conectivos e duração",
-    lessons: [
-      {
-        id: "A2-U2-L1",
-        title: "Pretérito Perfeito Composto — tenho feito",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você tem estudado muito?\n— Tenho! Tenho estudado português todo dia.\n— E tem melhorado?\n— Tenho melhorado bastante. Tenho assistido séries brasileiras também.\n— Ótimo! Tenho feito a mesma coisa.\n— Você tem viajado para o Brasil?\n— Ainda não tenho ido, mas tenho planejado uma viagem para o ano que vem.\n— Vai gostar muito! O Brasil tem me surpreendido sempre.",
-        memoryPhrases: [
-          "Tenho estudado muito.",
-          "Ela tem trabalhado bastante.",
-          "Não tenho dormido bem.",
-          "O que você tem feito?",
-          "Tenho me sentido melhor."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre o que você tem feito nas últimas semanas: estudos, trabalho, hobbies, saúde. Use o Pretérito Perfeito Composto. Mínimo 6 frases.",
-        content: "# Pretérito Perfeito Composto\n\n## Formação\nTER no presente + particípio passado\n\neu tenho + falado/comido/partido\nvocê/ele/ela tem + falado/comido/partido\nnós temos + falado/comido/partido\nvocês/eles/elas têm + falado/comido/partido\n\n## Particípios regulares\n-AR → -ado: falar→falado · estudar→estudado · trabalhar→trabalhado\n-ER → -ido: comer→comido · beber→bebido · aprender→aprendido\n-IR → -ido: partir→partido · assistir→assistido · dormir→dormido\n\n## Particípios irregulares\nfazer→feito · dizer→dito · ver→visto · vir→vindo\npor→posto · abrir→aberto · escrever→escrito\ncolocar→colocado (regular!) · trazer→trazido (regular!)\n\n## Quando usar\nAção que CONTINUA até agora ou se repite nos últimos tempos:\nTenho estudado muito ultimamente. (repete, continua)\nEle tem chegado tarde ao trabalho. (padrão recente)\n\n## Diferença com Pretérito Perfeito Simples\nSimples (pontual, terminado): Ontem eu estudei 3 horas.\nComposto (recente, contínuo): Últimamente tenho estudado 3h por dia.\n\n## Marcadores\nultimamente · recentemente · nos últimos dias/semanas\nnestes últimos tempos · cada vez mais · frequentemente",
-        exercises: [
-          {id:"A2-U2-L1-E1",type:"multiple_choice",skill:"grammar",question:"'Ela ___ muito nos últimos meses.' (trabalhar — ação contínua recente)",options:["trabalhou","trabalhava","tem trabalhado","trabalha"],answer:2,explanation:"Pretérito Perfeito Composto para ação contínua recente: TEM TRABALHADO.",hint:"Ação que continua → TER + particípio"},
-          {id:"A2-U2-L1-E2",type:"fill_blank",skill:"grammar",question:"'Nós ___ muito bem ultimamente.' (dormir — composto)",answer:["temos dormido"],hint:"NÓS: TEMOS + particípio de DORMIR",explanation:"Nós TEMOS DORMIDO = Hemos dormido. Nós temos + dormido."},
-          {id:"A2-U2-L1-E3",type:"multiple_choice",skill:"grammar",question:"¿Cuál es el particípio irregular de FAZER?",options:["fazido","fazendo","feito","fazado"],answer:2,explanation:"FAZER → FEITO. Irregular. Tenho feito muito. = He hecho mucho.",hint:"FAZER → particípio completamente irregular"},
-          {id:"A2-U2-L1-E4",type:"translation",skill:"writing",question:"Traduce: 'Últimamente he estado estudiando português todos los días. He visto muchas series brasileñas y he aprendido mucho.'",answer:["ultimamente tenho estudado português todos os dias","tenho visto muitas séries brasileiras","tenho aprendido muito"],hint:"ultimamente · tenho estudado · tenho visto · tenho aprendido",explanation:"Ultimamente tenho estudado português todos os dias. Tenho visto muitas séries brasileiras e tenho aprendido muito."},
-          {id:"A2-U2-L1-E5",type:"free_writing",skill:"writing",question:"Contá o que você tem feito ultimamente: trabalho, estudos, hobby, saúde, relacionamentos. Mínimo 7 oraciones con Pretérito Perfeito Composto.",prompt:"Ultimamente tenho... / Nos últimos dias tenho... / Não tenho... / Ela tem me... / A gente tem...",hint:"tenho + particípio: falado · comido · feito · visto · dito · aprendido"}
-        ]
-      },
-      {
-        id: "A2-U2-L2",
-        title: "Mais-que-perfeito — o passado do passado",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Quando você chegou, a festa já tinha terminado?\n— Tinha sim. Quando cheguei, eles já tinham ido embora.\n— Que pena! Você não tinha avisado que ia chegar tarde?\n— Tinha avisado! Mas eles não tinham visto minha mensagem.\n— E você tinha comprado presente?\n— Tinha comprado um lindo! Acabei dando para minha sobrinha.\n— Melhor assim! Ela ficou feliz?\n— Ficou demais! Nunca tinha ganho um presente tão bonito.",
-        memoryPhrases: [
-          "Quando cheguei, ela já tinha saído.",
-          "Eles não tinham visto.",
-          "Tinha comprado antes.",
-          "Nunca tinha feito isso.",
-          "Já tinha terminado."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Conte uma situação em que você chegou tarde ou perdeu algo porque já tinha acontecido. Use o Mais-que-perfeito. Mínimo 5 frases com TINHA + particípio.",
-        content: "# Mais-que-perfeito Composto\n\n## Formação\nTER no Imperfeito + particípio passado\n\neu tinha + falado · você/ele/ela tinha + falado\nnós tínhamos + falado · vocês/eles/elas tinham + falado\n\n## Quando usar\nAção que aconteceu ANTES de outra ação passada:\nQuando cheguei, ela já TINHA SAÍDO. (saiu antes de chegar)\nEle não TINHA DORMIDO quando precisou trabalhar.\n\n## Linha do tempo\nMais-que-perfeito → Pretérito Perfeito → Presente\n(já tinha feito) → (quando aconteceu) → (agora)\n\n## Marcadores\njá · ainda não · nunca · antes de... · quando...\nao chegar / ao sair (gerundio compuesto)\n\n## Mais-que-perfeito Simples (literário)\neu falara · você/ele/ela falara · nós faláramos · vocês/eles/elas falaram\n→ Forma mais literária, menos usada na fala\n→ En PB oral se prefiere TINHA + particípio\n\n## Expressões comuns\nJá tinha (feito) quando... = Ya había (hecho) cuando...\nAinda não tinha (feito) quando... = Todavía no había...\nNunca tinha (feito) antes = Nunca había (hecho) antes",
-        exercises: [
-          {id:"A2-U2-L2-E1",type:"multiple_choice",skill:"grammar",question:"'Quando cheguei, ela já ___ embora.' (ir — mais-que-perfeito)",options:["foi","tinha ido","ia","teria ido"],answer:1,explanation:"Mais-que-perfeito: TINHA IDO. Acción anterior a otra pasada.",hint:"Ação anterior a outra passada → TINHA + particípio"},
-          {id:"A2-U2-L2-E2",type:"fill_blank",skill:"grammar",question:"'Eles não ___ minha mensagem quando liguei.' (ver — mais-que-perfeito negativo)",answer:["tinham visto"],hint:"NÃO TINHAM VISTO = no habían visto",explanation:"Não tinham visto = no habían visto. TINHAM + VER→VISTO."},
-          {id:"A2-U2-L2-E3",type:"multiple_choice",skill:"grammar",question:"¿Cuál frase usa el Mais-que-perfeito correctamente?",options:["Quando cheguei, ela sai.","Quando cheguei, ela tinha saído.","Quando cheguei, ela saiu.","Quando cheguei, ela sairá."],answer:1,explanation:"Mais-que-perfeito: TINHA SAÍDO. Saiu antes de chegar.",hint:"La acción anterior → Mais-que-perfeito"},
-          {id:"A2-U2-L2-E4",type:"translation",skill:"writing",question:"Traduce: 'Cuando llegué al aeropuerto, el avión ya había salido. Nunca me había pasado eso antes.'",answer:["quando cheguei ao aeroporto o avião já tinha partido","nunca tinha me acontecido isso antes"],hint:"quando cheguei · o avião já tinha partido · nunca tinha me acontecido",explanation:"Quando cheguei ao aeroporto, o avião já tinha partido. Nunca tinha me acontecido isso antes."},
-          {id:"A2-U2-L2-E5",type:"free_writing",skill:"writing",question:"Contá uma situação em que você chegou tarde e algo já tinha acontecido, ou uma situação que nunca tinha vivido antes. Mínimo 6 oraciones.",prompt:"Quando cheguei... já tinha... / Nunca tinha... antes. / Eles tinham... quando... / Eu não tinha...",hint:"já tinha + particípio · nunca tinha + particípio · ainda não tinha"}
-        ]
-      },
-      {
-        id: "A2-U2-L3",
-        title: "Conectivos e coesão textual",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Por que você decidiu morar em São Paulo?\n— Bem, primeiramente por causa do trabalho. Além disso, adoro o ritmo da cidade.\n— Mas não é difícil viver numa cidade tão grande?\n— É sim, porém os benefícios superam as dificuldades.\n— Como assim?\n— Por exemplo, as oportunidades de emprego são incríveis. No entanto, o trânsito é horrível.\n— Mesmo assim você prefere ficar?\n— Prefiro. Afinal, cada cidade tem seus prós e contras.",
-        memoryPhrases: [
-          "Além disso...",
-          "No entanto...",
-          "Por exemplo...",
-          "Portanto...",
-          "Afinal..."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Explique por que você escolheu sua cidade, trabalho ou estudo atual. Use pelo menos 5 conectivos diferentes (além disso, no entanto, portanto, por exemplo, afinal). Mínimo 6 frases.",
-        content: "# Conectivos e Coesão Textual\n\n## Conectivos de adição\ne = y · também = también · além disso = además\ntambém... como = tanto... como · inclusive = incluso\nnão só... mas também = no solo... sino también\n\n## Conectivos de contraste\nmas = pero · porém = sin embargo · no entanto = sin embargo\nentretanto = sin embargo · todavia = no obstante\nembora = aunque · apesar de = a pesar de\n\n## Conectivos de causa\nporque = porque · pois = pues/porque (formal)\npor causa de = a causa de · já que = ya que\nvisto que = dado que · uma vez que = una vez que\n\n## Conectivos de consequência\nportanto = por lo tanto · por isso = por eso\nassim = así que · logo = luego/por lo tanto\ndessa forma = de esta forma · consequentemente = consecuentemente\n\n## Conectivos de exemplo\npor exemplo = por ejemplo · como = como\ntal como = tal como · entre outros = entre otros\n\n## Conectivos de conclusão\nafinal = al fin y al cabo · enfim = en fin\nem resumo = en resumen · concluindo = concluyendo\nem suma = en suma\n\n## Conectivos de tempo\nprimeiramente = primeramente · depois = después\nem seguida = luego · finalmente = finalmente\nanteriormente = anteriormente · atualmente = actualmente",
-        exercises: [
-          {id:"A2-U2-L3-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál conectivo introduce una CONTRADICCIÓN?",options:["além disso","portanto","no entanto","por exemplo"],answer:2,explanation:"No entanto = sin embargo. Introduce una contradicción o contraste.",hint:"Para introducir una contradicción"},
-          {id:"A2-U2-L3-E2",type:"fill_blank",skill:"vocabulary",question:"'Gosto muito do Rio. ___, o custo de vida é muito alto.' (sin embargo)",answer:["no entanto","porém","entretanto","todavia"],hint:"Conectivo de contraste",explanation:"No entanto / Porém / Entretanto = sin embargo. Cualquiera de los cuatro es correcto."},
-          {id:"A2-U2-L3-E3",type:"multiple_choice",skill:"vocabulary",question:"'Não dormi bem, ___ estou cansado hoje.' (por eso)",options:["além disso","por isso","no entanto","embora"],answer:1,explanation:"Por isso = por eso (consecuencia). Não dormi → por isso estou cansado.",hint:"Para expresar consecuencia"},
-          {id:"A2-U2-L3-E4",type:"translation",skill:"writing",question:"Traduce: 'Me gusta estudiar português. Además, quiero conocer Brasil. Sin embargo, no tengo tiempo suficiente. Por eso, estudio 30 minutos por día.'",answer:["gosto de estudar português","além disso quero conhecer o brasil","no entanto não tenho tempo suficiente","por isso estudo trinta minutos por dia"],hint:"além disso · no entanto · por isso",explanation:"Gosto de estudar português. Além disso, quero conhecer o Brasil. No entanto, não tenho tempo suficiente. Por isso, estudo trinta minutos por dia."},
-          {id:"A2-U2-L3-E5",type:"free_writing",skill:"writing",question:"Escribí un párrafo sobre las vantagens e desvantagens de donde vivís. Usa mínimo 6 conectivos diferentes.",prompt:"Moro em... [vantagens] · Além disso... · No entanto... · Por exemplo... · Portanto... · Afinal...",hint:"adição: além disso · contraste: no entanto · causa: por causa de · consequência: por isso · exemplo: por exemplo"}
-        ]
-      },
-      {
-        id: "A2-U2-L4",
-        title: "Duração com HÁ, DESDE e FAZ",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Há quanto tempo você estuda português?\n— Há seis meses. Comecei em janeiro.\n— E mora no Brasil desde quando?\n— Moro aqui desde 2019. Faz cinco anos que estou aqui.\n— Você se adaptou bem?\n— Me adaptei! Faz dois anos que não tenho saudade de casa.\n— E sua família? Há quanto tempo não os vê?\n— Desde o Natal do ano passado. Faz seis meses. Tenho muita saudade.",
-        memoryPhrases: [
-          "Há quanto tempo você...?",
-          "Há seis meses.",
-          "Desde 2019.",
-          "Faz dois anos que...",
-          "Desde quando você...?"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre quanto tempo faz que você faz as coisas principais da sua vida: mora no lugar atual, trabalha, estuda, conhece seu melhor amigo/a, está casado/junto. Use HÁ, DESDE e FAZ.",
-        content: "# Duração: HÁ, DESDE e FAZ\n\n## HÁ + tempo (duración hasta ahora)\nHá + tiempo + que + verbo en presente:\nHá dois anos que moro aqui. (hace dos años que vivo aquí)\nHá quanto tempo você estuda? (¿hace cuánto que estudiás?)\n\nHá + tiempo (sin que, para resposta):\nHá dois anos. / Há seis meses. / Há muito tempo.\n\n## DESDE (desde un punto)\nDESDE + punto de tiempo:\nMoro aqui desde 2019. (desde 2019)\nDesde quando você estuda? (¿desde cuándo estudiás?)\nDesde que me casei, sou mais feliz.\n\n## FAZ + tiempo (= hace + tiempo)\nFaz + tiempo + que + verbo presente:\nFaz dois anos que moro aqui. (= Há dois anos que...)\nFaz quanto tempo? (= Há quanto tempo?)\n\n## Três formas equivalentes\nHá dois anos que moro aqui.\n= Faz dois anos que moro aqui.\n= Moro aqui desde 2019. (si se menciona el año)\n\n## No pretérito (duración terminada)\nFazia / Havia dois anos que eu morava lá (cuando me mudé).\n\n## Perguntas e respostas\n— Há quanto tempo você mora aqui?\n— Há três anos. / Desde 2021. / Faz três anos.",
-        exercises: [
-          {id:"A2-U2-L4-E1",type:"multiple_choice",skill:"grammar",question:"¿Cómo se dice 'Hace dos años que vivo en Brasil'?",options:["Desde dois anos vivo no Brasil.","Há dois anos que moro no Brasil.","Em dois anos moro no Brasil.","Por dois anos moro no Brasil."],answer:1,explanation:"HÁ + tempo + QUE + verbo presente = hace + tiempo + que. Há dois anos que moro.",hint:"HÁ + tempo + QUE + presente"},
-          {id:"A2-U2-L4-E2",type:"fill_blank",skill:"grammar",question:"'Estudo português ___ março.' (desde el mes de marzo)",answer:["desde"],hint:"Punto de inicio en el tiempo → DESDE",explanation:"DESDE + punto de tiempo: Estudo desde março. = Estudio desde marzo."},
-          {id:"A2-U2-L4-E3",type:"multiple_choice",skill:"grammar",question:"'___ quanto tempo você trabalha aqui?' (¿hace cuánto tiempo?)",options:["Desde","Faz","Há","Faz ou Há (ambos corretos)"],answer:3,explanation:"FAZ e HÁ son equivalentes. Ambos correctos para preguntar duración.",hint:"FAZ e HÁ son equivalentes en esta pregunta"},
-          {id:"A2-U2-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'Hace tres años que estudio español. Empecé desde que me mudé a Madrid. ¿Hace cuánto que vivís ahí?'",answer:["há três anos que estudo espanhol","comecei desde que me mudei para madrid","há quanto tempo você mora aí"],hint:"há três anos que · desde que me mudei · há quanto tempo",explanation:"Há três anos que estudo espanhol. Comecei desde que me mudei para Madrid. Há quanto tempo você mora aí?"},
-          {id:"A2-U2-L4-E5",type:"free_writing",skill:"writing",question:"Contá quanto tempo faz que você faz as coisas importantes da sua vida. Usa HÁ, DESDE e FAZ. Mínimo 6 oraciones.",prompt:"Há... que moro em... / Trabalho na... desde... / Faz... que conheço... / Estudo português há...",hint:"Há · Desde · Faz — os três significam hace/desde en diferentes estruturas"}
-        ]
-      },
-      {
-        id: "A2-U2-L5",
-        title: "Narrando no passado — história completa",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Me conta como foi sua última viagem!\n— Foi incrível! Eu já tinha comprado as passagens há meses quando finalmente chegou o dia.\n— Você foi sozinha?\n— Fui. Mas no avião conheci uma brasileira que morava em Recife. A gente não parou de conversar.\n— Que coincidência! E Recife? Como era?\n— Era lindo! O centro histórico tinha muito charme. Fui ao Frevo, que ainda não tinha conhecido.\n— Que experiência completa! Vai voltar?\n— Com certeza! Mal posso esperar.",
-        memoryPhrases: [
-          "Foi incrível!",
-          "Já tinha... quando...",
-          "No avião conheci...",
-          "Era muito bonito.",
-          "Mal posso esperar!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Narre sua última viagem ou experiência marcante usando todos os tempos do passado: Perfeito, Imperfeito e Mais-que-perfeito. Mínimo 8 frases.",
-        content: "# Narrando no Passado — Integração\n\n## Os três tempos do passado\n\n### Pretérito Perfeito (acción puntual)\nO que aconteceu: Fui ao Rio. / Conheci ela. / Comi feijoada.\n\n### Pretérito Imperfeito (contexto/hábito)\nComo era: Era verão. / O hotel ficava perto da praia.\nO que estava acontecendo: Eu dormia quando...\nHábito: Todo dia tomávamos café na varanda.\n\n### Mais-que-perfeito (antes do passado)\nO que já tinha acontecido: Quando cheguei, ela já tinha ido.\nO que nunca tinha feito: Nunca tinha visto algo assim.\n\n## Linha do tempo narrativa\n[TINHA FEITO] → [FIZ / ERA] → [PRESENTE]\n\n## Estrutura de uma narrativa rica\n1. CONTEXTO: Era..., o lugar ficava..., havia...\n2. ANTECEDENTE: Eu já tinha..., nunca tinha...\n3. ACONTECIMENTOS: De repente, logo depois, então...\n4. REAÇÃO: Fiquei surpreso/a, não acreditei...\n5. RESULTADO: No fim, afinal, por isso...\n\n## Conectores narrativos avançados\nmal... (= apenas): Mal cheguei, começou a chover.\nem seguida · logo após · ao mesmo tempo · enquanto isso\npor sua vez · de um lado... de outro...",
-        exercises: [
-          {id:"A2-U2-L5-E1",type:"multiple_choice",skill:"grammar",question:"'Quando ___ (chegar) ao hotel, minha mala já ___ (perder-se).'",options:["cheguei/tinha se perdido","chegava/se perdeu","cheguei/se perdia","tinha chegado/perdia"],answer:0,explanation:"Perfeito (cheguei=momento puntual) + Mais-que-perfeito (tinha se perdido=acción anterior).",hint:"Chegada = Perfeito · Mala perdida antes = Mais-que-perfeito"},
-          {id:"A2-U2-L5-E2",type:"fill_blank",skill:"grammar",question:"'O hotel ___ muito bonito. O mar ___ lindo da janela.' (ser, ver-se — descripción del pasado)",answer:["era","se via","era lindo"],hint:"Descripción del pasado → Imperfeito",explanation:"ERA (imperfeito = descripción) + SE VIA (imperfeito = contexto)."},
-          {id:"A2-U2-L5-E3",type:"multiple_choice",skill:"grammar",question:"'___ cheguei, começou a chover.' (apenas/mal llegué)",options:["Mal","Logo","Ainda","Já"],answer:0,explanation:"MAL + verbo = apenas, recién. Mal cheguei = Apenas cheguei = recién llegué.",hint:"MAL + verbo = apenas/recién"},
-          {id:"A2-U2-L5-E4",type:"translation",skill:"writing",question:"Traduce: 'Cuando llegué a Salvador, ya había estado lloviendo toda la semana. Pero el día que llegué, el sol salió y todo era hermoso.'",answer:["quando cheguei em salvador já tinha chovido a semana toda","mas no dia que cheguei o sol apareceu e tudo era lindo"],hint:"quando cheguei · já tinha chovido · mas · o sol apareceu · tudo era lindo",explanation:"Quando cheguei em Salvador, já tinha chovido a semana toda. Mas no dia que cheguei, o sol apareceu e tudo era lindo."},
-          {id:"A2-U2-L5-E5",type:"free_writing",skill:"writing",question:"Narre uma experiência marcante do passado usando os 3 tempos: Perfeito, Imperfeito e Mais-que-perfeito. Mínimo 10 oraciones.",prompt:"Era... (contexto) / Eu já tinha... (antecedente) / De repente... (acontecimento) / No fim... (resultado)",hint:"Imperfeito: era · havia · ficava · estava\nPerfeito: fui · vi · conheci · cheguei\nMais-que-perfeito: tinha feito · tinha ido · nunca tinha"}
-        ]
-      }
-    ]
-  }
-];
+export const CURRICULUM_ES_A2_PART1 = {
+  units: [
+    {
+      id: "ES-A2-U1",
+      title: "Viagens e Turismo",
+      description: "Vocabulário para viagens, hotéis, aeroportos e turismo",
+      lessons: [
+        {
+          id: "ES-A2-U1-L1",
+          title: "En el Aeropuerto — No Aeroporto",
+          shadowing: "— Buenos días. ¿A qué destino viaja?\n— A Buenos Aires. Tengo un vuelo a las tres.\n— ¿Factura equipaje?\n— Sí, una maleta grande.\n— ¿Ventana o pasillo?\n— Ventana, por favor.\n— Aquí tiene su tarjeta de embarque. La puerta es la B12.\n— ¿A qué hora embarcan?\n— A las dos y cuarenta. Buen viaje.",
+          memoryPhrases: [
+            "el vuelo = o voo",
+            "la maleta = a mala / a mochila",
+            "la tarjeta de embarque = o cartão de embarque",
+            "facturar equipaje = despachar bagagem",
+            "la puerta de embarque = o portão de embarque",
+            "el asiento = o assento"
+          ],
+          oralProduction: "Pratique o check-in de um voo em espanhol. Inclua destino, bagagem e assento.",
+          exercises: [
+            { id: "ES-A2-U1-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'cartão de embarque' em espanhol?", options: ["tarjeta de crédito", "tarjeta de embarque", "pasaporte", "billete"], answer: 1, explanation: "Tarjeta de embarque = cartão de embarque. Billete = bilhete/passagem. Pasaporte = passaporte." },
+            { id: "ES-A2-U1-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'facturar equipaje'?", options: ["Pagar a bagagem", "Despachar a bagagem", "Perder a bagagem", "Pesar a bagagem"], answer: 1, explanation: "Facturar equipaje = despachar bagagem (entregar a mala para ir no porão do avião)." },
+            { id: "ES-A2-U1-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El _____ sale a las tres de la tarde.' (O voo sai às três da tarde.)", answer: ["vuelo"], hint: "voo em espanhol", explanation: "Vuelo = voo. El vuelo sale = o voo parte/sai." },
+            { id: "ES-A2-U1-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Quero um assento na janela no voo para Madri.'", answer: ["Quiero un asiento de ventana en el vuelo a Madrid.", "Quiero asiento de ventana para el vuelo a Madrid."], explanation: "Asiento de ventana = assento de janela. Pasillo = corredor. Madrid = Madri." },
+            { id: "ES-A2-U1-L1-E5", type: "free_writing", skill: "writing", question: "Escreva um diálogo de check-in no aeroporto. Mínimo 8 falas.", prompt: "Inclua: destino · bagagem · assento · portão · horário de embarque", hint: "¿A qué destino viaja?, ¿Factura equipaje?, ¿Ventana o pasillo?, la puerta es..." }
+          ]
+        },
+        {
+          id: "ES-A2-U1-L2",
+          title: "En el Hotel — Reservas e Reclamações",
+          shadowing: "— Buenos días, tengo una reserva a nombre de Santos.\n— Sí, señor Santos. Una habitación doble para tres noches.\n— Exacto. ¿Puedo hacer el check-in ahora?\n— Por supuesto. Aquí tiene su llave. Habitación 415.\n— ¿El desayuno está incluido?\n— Sí, de siete a diez en el restaurante.\n— Perdone, pero hay un problema con el aire acondicionado.\n— Disculpe, enseguida enviamos a alguien.",
+          memoryPhrases: [
+            "la habitación doble/sencilla = quarto duplo/solteiro",
+            "el check-in/check-out = o check-in/check-out",
+            "la llave = a chave",
+            "el aire acondicionado = o ar-condicionado",
+            "hay un problema = há um problema",
+            "disculpe = desculpe"
+          ],
+          oralProduction: "Faça um check-in de hotel e reclame de um problema no quarto, em espanhol.",
+          exercises: [
+            { id: "ES-A2-U1-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'quarto de casal' em espanhol?", options: ["habitación sencilla", "habitación doble", "habitación triple", "suite"], answer: 1, explanation: "Habitación doble = quarto duplo/casal. Sencilla = solteiro/simples. Triple = triplo." },
+            { id: "ES-A2-U1-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'enseguida'?", options: ["Ontem", "Agora mesmo / imediatamente", "Amanhã", "Às vezes"], answer: 1, explanation: "Enseguida = agora mesmo / imediatamente. Muito útil para responder reclamações: 'enseguida lo arreglamos' = vamos resolver imediatamente." },
+            { id: "ES-A2-U1-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Tengo una _____ a nombre de García.' (Tenho uma reserva no nome de García.)", answer: ["reserva"], hint: "reserva em espanhol", explanation: "Reserva = reserva. 'A nombre de' = em nome de. Muito útil em hotéis e restaurantes." },
+            { id: "ES-A2-U1-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'O ar-condicionado não funciona e o quarto está muito quente.'", answer: ["El aire acondicionado no funciona y la habitación está muy caliente.", "El aire acondicionado no funciona y hace mucho calor en la habitación."], explanation: "No funciona = não funciona. Caliente = quente (objeto). Hace calor = está quente (temperatura ambiente)." },
+            { id: "ES-A2-U1-L2-E5", type: "free_writing", skill: "writing", question: "Você está insatisfeito com o seu quarto de hotel. Escreva o diálogo com a recepção. Mínimo 8 falas.", prompt: "Inclua: problema específico · pedido de solução · oferta do hotel · resolução", hint: "Hay un problema con..., ¿Puede cambiarme de habitación?, Disculpe, enseguida..." }
+          ]
+        },
+        {
+          id: "ES-A2-U1-L3",
+          title: "Pretérito Perfecto — Passado Recente",
+          shadowing: "— ¿Has estado en México?\n— Sí, he estado dos veces. Es increíble.\n— ¿Y has probado la comida mexicana?\n— ¡Claro! He comido tacos, enchiladas... todo.\n— ¿Has aprendido algo de español allí?\n— He mejorado mucho. He practicado todos los días.",
+          memoryPhrases: [
+            "he + participio = tenho + participado",
+            "has viajado = você viajou / você já viajou",
+            "ha comido = ele/ela comeu (recente)",
+            "hemos llegado = chegamos (agora)",
+            "¿Has + participio? = Você já + verbo?",
+            "participios irregulares: hecho, dicho, visto, vuelto, puesto"
+          ],
+          oralProduction: "Conte o que você já fez na sua vida usando o pretérito perfecto. Use 5 verbos diferentes.",
+          exercises: [
+            { id: "ES-A2-U1-L3-E1", type: "multiple_choice", skill: "grammar", question: "Como se forma o pretérito perfecto de 'viajar' para 'yo'?", options: ["yo viajé", "yo he viajado", "yo había viajado", "yo viajaba"], answer: 1, explanation: "He viajado = viajei / tenho viajado. Pretérito perfecto: HABER conjugado + participio (-ado/-ido)." },
+            { id: "ES-A2-U1-L3-E2", type: "multiple_choice", skill: "grammar", question: "Qual é o participio irregular de 'ver'?", options: ["vido", "veído", "visto", "véido"], answer: 2, explanation: "Visto = visto (participio de VER). Irregulares importantes: hecho (fazer), dicho (dizer), visto (ver), vuelto (voltar), puesto (colocar), abierto (abrir)." },
+            { id: "ES-A2-U1-L3-E3", type: "fill_blank", skill: "grammar", question: "Complete: '¿_____ probado el ceviche?' (Você já provou o ceviche?)", answer: ["Has"], hint: "auxiliar HABER para 'tú'", explanation: "¿Has probado? = Você já provou? HAS = auxiliar haber para tú no pretérito perfecto." },
+            { id: "ES-A2-U1-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Nunca fui ao Japão mas já comi sushi muitas vezes.'", answer: ["Nunca he ido a Japón pero he comido sushi muchas veces.", "Nunca he estado en Japón pero he comido sushi muchas veces."], explanation: "Nunca he ido = nunca fui. He comido = comi / já comi. Muchas veces = muitas vezes." },
+            { id: "ES-A2-U1-L3-E5", type: "free_writing", skill: "writing", question: "Escreva sobre suas experiências de viagem usando o pretérito perfecto. Mínimo 8 frases.", prompt: "Inclua: lugares que visitou · coisas que comeu · pessoas que conheceu · coisas que fez", hint: "He visitado, he comido, he conocido, he visto, he aprendido, he disfrutado..." }
+          ]
+        },
+        {
+          id: "ES-A2-U1-L4",
+          title: "Comparativos e Superlativos",
+          shadowing: "— ¿Cuál es más barato, el hotel o el hostal?\n— El hostal es más barato pero menos cómodo.\n— ¿Y el más caro de la ciudad?\n— El Hotel Palace es el más lujoso.\n— ¿Es tan bueno como dicen?\n— Sí, es tan bueno como un cinco estrellas.\n— Prefiero algo más económico.",
+          memoryPhrases: [
+            "más... que = mais... que",
+            "menos... que = menos... que",
+            "tan... como = tão... como",
+            "el/la más... = o/a mais...",
+            "mejor/peor = melhor/pior",
+            "mayor/menor = maior/menor"
+          ],
+          oralProduction: "Compare 3 cidades ou países que você conhece usando comparativos em espanhol.",
+          exercises: [
+            { id: "ES-A2-U1-L4-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'São Paulo é maior que Rio' em espanhol?", options: ["São Paulo es más grande que Rio", "São Paulo es mayor que Rio", "São Paulo es lo más grande de Rio", "A e B são corretas"], answer: 3, explanation: "Tanto 'más grande que' quanto 'mayor que' são corretos para comparar tamanho. Mayor/menor são formas irregulares de grande/pequeño." },
+            { id: "ES-A2-U1-L4-E2", type: "multiple_choice", skill: "grammar", question: "Como se diz 'O melhor restaurante da cidade'?", options: ["El más bien restaurante", "El mejor restaurante de la ciudad", "El más bueno restaurante", "El restaurante mejor"], answer: 1, explanation: "El mejor = o melhor. BUENO tem superlativo irregular: bueno → mejor (melhor) → el mejor (o melhor)." },
+            { id: "ES-A2-U1-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Este hotel es _____ caro _____ el otro.' (Este hotel é tão caro quanto o outro.)", answer: ["tan", "como"], hint: "estrutura de comparação de igualdade", explanation: "Tan... como = tão... quanto/como. Estrutura para comparar igualdade: tan + adjetivo + como." },
+            { id: "ES-A2-U1-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'O voo direto é mais caro mas mais rápido que o com escala.'", answer: ["El vuelo directo es más caro pero más rápido que el vuelo con escala.", "El vuelo directo es más caro pero más rápido que el de escala."], explanation: "Vuelo directo = voo direto. Con escala = com escala. Más caro pero más rápido = mais caro mas mais rápido." },
+            { id: "ES-A2-U1-L4-E5", type: "free_writing", skill: "writing", question: "Compare dois destinos turísticos que você conhece ou gostaria de conhecer. Mínimo 8 frases.", prompt: "Inclua: clima · custo · comida · atrações · qual prefere e por quê", hint: "Es más/menos..., tan... como, el mejor/peor, prefiero... porque..." }
+          ]
+        },
+        {
+          id: "ES-A2-U1-L5",
+          title: "Pedir Informações e Orientações",
+          shadowing: "— Perdona, ¿sabes dónde está el museo?\n— Sí, mira: sigue todo recto dos cuadras, gira a la izquierda en el semáforo y está justo enfrente.\n— ¿Está lejos?\n— No, a unos diez minutos a pie.\n— ¿Y hay alguna parada de metro cerca?\n— Sí, la estación Plaza Mayor está a cien metros.\n— Muchas gracias, muy amable.",
+          memoryPhrases: [
+            "sigue todo recto = continue em frente",
+            "gira a la izquierda/derecha = vire à esquerda/direita",
+            "en el semáforo = no semáforo",
+            "enfrente de = em frente a",
+            "a unos... metros/minutos = a uns... metros/minutos",
+            "muy amable = muito gentil"
+          ],
+          oralProduction: "Peça e dê direções para 3 lugares diferentes em espanhol, descrevendo o caminho completo.",
+          exercises: [
+            { id: "ES-A2-U1-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'vire à direita no semáforo' em espanhol?", options: ["Sigue a la derecha en el cruce", "Gira a la derecha en el semáforo", "Dobla derecha en la luz", "Ve a la derecha del semáforo"], answer: 1, explanation: "Gira a la derecha en el semáforo = vire à direita no semáforo. Semáforo = semáforo. Gira/dobla/tuerce = vire." },
+            { id: "ES-A2-U1-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'muy amable'?", options: ["Muito animado", "Muito gentil / muito simpático", "Muito amigo", "Muito longe"], answer: 1, explanation: "Muy amable = muito gentil / que gentileza. É a forma mais educada de agradecer uma ajuda ou favor." },
+            { id: "ES-A2-U1-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Está _____ enfrente del banco.' (Fica bem em frente ao banco.)", answer: ["justo"], hint: "palavra para enfatizar 'exatamente em frente'", explanation: "Justo enfrente = bem em frente / exatamente em frente. Justo = exatamente / bem (intensificador)." },
+            { id: "ES-A2-U1-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'Siga em frente dois quarteirões, vire à esquerda e o hotel fica à direita.'", answer: ["Siga todo recto dos cuadras, gire a la izquierda y el hotel está a la derecha.", "Sigue todo recto dos cuadras, gira a la izquierda y el hotel está a la derecha."], explanation: "Todo recto = em frente. Dos cuadras = dois quarteirões. Gire/gira = vire. A la derecha = à direita." },
+            { id: "ES-A2-U1-L5-E5", type: "free_writing", skill: "writing", question: "Você é guia turístico. Escreva as instruções detalhadas para chegar de um ponto famoso da sua cidade a outro. Mínimo 8 frases.", prompt: "Inclua: ponto de partida · direções detalhadas · pontos de referência · distância aproximada", hint: "Sal de..., sigue todo recto, gira a la..., en el semáforo, a mano derecha/izquierda, llegas a..." }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-A2-U2",
+      title: "Passado e Memórias",
+      description: "Pretérito indefinido e imperfecto para contar histórias",
+      lessons: [
+        {
+          id: "ES-A2-U2-L1",
+          title: "Pretérito Imperfecto — Hábitos do Passado",
+          shadowing: "— ¿Cómo eras de pequeño?\n— Era muy tímido. No hablaba mucho.\n— ¿Y qué hacías en verano?\n— Íbamos a la playa todos los años. Mi abuela cocinaba y nosotros jugábamos en el mar.\n— ¡Qué bonito! ¿Vivías en el campo?\n— No, vivíamos en la ciudad, pero pasábamos el verano en el pueblo.",
+          memoryPhrases: [
+            "era = era (ser, imperfecto)",
+            "tenía = tinha (ter, imperfecto)",
+            "vivía = morava (viver, imperfecto)",
+            "hacía = fazia (fazer, imperfecto)",
+            "jugaba = brincava/jogava (jogar, imperfecto)",
+            "de pequeño/a = quando era pequeno/a"
+          ],
+          oralProduction: "Descreva como você era e o que fazia quando tinha 10 anos, em espanhol. Mínimo 6 frases.",
+          exercises: [
+            { id: "ES-A2-U2-L1-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Eu morava no Rio' (hábito passado)?", options: ["Yo vivé en Río", "Yo vivía en Río", "Yo he vivido en Río", "Yo viví en Río"], answer: 1, explanation: "Vivía = morava. Pretérito imperfecto para hábitos/estados continuados no passado: -aba/-ía." },
+            { id: "ES-A2-U2-L1-E2", type: "multiple_choice", skill: "grammar", question: "Quando usar o Imperfecto vs Indefinido?", options: ["Imperfecto para ações únicas, Indefinido para hábitos", "Imperfecto para hábitos/estados contínuos, Indefinido para ações completas", "São iguais", "Imperfecto para o futuro"], answer: 1, explanation: "Imperfecto = hábito/estado contínuo no passado ('eu morava'). Indefinido = ação completa/única ('eu morei lá por 2 anos e vim embora')." },
+            { id: "ES-A2-U2-L1-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Cuando era niño, _____ al fútbol todos los días.' (Quando era criança, jogava futebol todos os dias.)", answer: ["jugaba"], hint: "imperfecto de 'jugar' para yo", explanation: "Jugaba = jogava/brincava. Imperfecto de -AR: yo -aba. Jugaba, hablaba, estudiaba..." },
+            { id: "ES-A2-U2-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Quando eu era criança, minha avó sempre me contava histórias antes de dormir.'", answer: ["Cuando era niño/niña, mi abuela siempre me contaba cuentos antes de dormir.", "De pequeño/a, mi abuela siempre me contaba historias antes de dormir."], explanation: "Cuando era niño/niña = quando era criança. Contaba = contava. Antes de dormir = antes de dormir." },
+            { id: "ES-A2-U2-L1-E5", type: "free_writing", skill: "writing", question: "Escreva sobre sua infância usando o pretérito imperfecto. Mínimo 8 frases.", prompt: "Inclua: onde morava · escola · brincadeiras · família · hábitos de fim de semana", hint: "Cuando era pequeño/a, vivía en..., iba a la escuela..., jugaba..., mi familia..." }
+          ]
+        },
+        {
+          id: "ES-A2-U2-L2",
+          title: "Contraste Indefinido vs Imperfecto",
+          shadowing: "— Ayer, mientras comía, sonó el teléfono.\n— ¿Y quién era?\n— Era mi jefe. Me dijo que llegó un cliente importante.\n— ¿Qué hiciste?\n— Terminé de comer rápido y fui a la oficina.\n— ¿Estaba lejos?\n— No, pero cuando llegué, el cliente ya se había ido.",
+          memoryPhrases: [
+            "mientras + imperfecto = enquanto + imperfeito",
+            "cuando llegué = quando cheguei (ação que interrompeu)",
+            "sonó el teléfono = o telefone tocou (ação pontual)",
+            "era = era (estado de fundo)",
+            "llegó = chegou (ação concluída)",
+            "ya + pluscuamperfecto = já tinha + participado"
+          ],
+          oralProduction: "Conte um dia em que aconteceu algo inesperado, usando imperfecto e indefinido.",
+          exercises: [
+            { id: "ES-A2-U2-L2-E1", type: "multiple_choice", skill: "grammar", question: "Escolha o correto: 'Mientras _____ (ducharse), _____ (sonar) el teléfono.'", options: ["me duchaba / sonó", "me duché / sonaba", "me duchaba / sonaba", "me duché / sonó"], answer: 0, explanation: "Me duchaba (ação contínua) + sonó (ação que interrompeu). Imperfecto para o fundo, Indefinido para a ação pontual." },
+            { id: "ES-A2-U2-L2-E2", type: "multiple_choice", skill: "grammar", question: "Complete: 'Cuando era pequeño, _____ (vivir) en Madrid.'", options: ["viví", "vivía", "he vivido", "viviera"], answer: 1, explanation: "Vivía = morava. 'Cuando era pequeño' pede imperfecto — é um estado contínuo/hábito da infância, não uma ação pontual." },
+            { id: "ES-A2-U2-L2-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Ayer _____ al supermercado y _____ a mi vecina.' (Ontem fui ao supermercado e encontrei minha vizinha.)", answer: ["fui, encontré"], hint: "duas ações pontuais e completas no passado", explanation: "Fui + encontré = indefinido (ações pontuais/completas no passado). Não é hábito, é algo que aconteceu uma vez." },
+            { id: "ES-A2-U2-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Enquanto eu estudava, meu irmão chegou em casa com uma novidade.'", answer: ["Mientras yo estudiaba, mi hermano llegó a casa con una novedad.", "Mientras estudiaba, mi hermano llegó a casa con una sorpresa."], explanation: "Mientras estudiaba = enquanto eu estudava (imperfecto). Llegó = chegou (indefinido — ação que interrompeu)." },
+            { id: "ES-A2-U2-L2-E5", type: "free_writing", skill: "writing", question: "Escreva uma história sobre algo interessante ou engraçado que aconteceu com você. Mínimo 10 frases.", prompt: "Inclua: onde você estava e o que fazia (imperfecto) · o que aconteceu de repente (indefinido) · como terminou", hint: "Era un día normal, yo estaba..., de repente..., entonces..., al final..." }
+          ]
+        },
+        {
+          id: "ES-A2-U2-L3",
+          title: "Verbos de Comunicação — Decir, Preguntar, Pedir",
+          shadowing: "— ¿Qué te dijo el médico?\n— Me dijo que tenía que descansar más.\n— ¿Y te preguntó sobre el estrés?\n— Sí, me preguntó qué hacía en el trabajo.\n— ¿Le pediste algo?\n— Le pedí una baja por enfermedad.\n— ¿Y te la dio?\n— Sí, me dio una semana.",
+          memoryPhrases: [
+            "me dijo que = me disse que",
+            "me preguntó = me perguntou",
+            "le pedí = pedi a ele/ela",
+            "me dio = me deu",
+            "decir → dijo (pretérito irregular)",
+            "pedir → pidió (pretérito com mudança e→i)"
+          ],
+          oralProduction: "Conte o que alguém te disse ou perguntou hoje usando decir, preguntar e pedir.",
+          exercises: [
+            { id: "ES-A2-U2-L3-E1", type: "multiple_choice", skill: "grammar", question: "Qual é o pretérito de 'decir' para 'él'?", options: ["decidió", "dijo", "decía", "ha dicho"], answer: 1, explanation: "Dijo = disse. Decir é completamente irregular no pretérito: dije, dijiste, dijo, dijimos, dijisteis, dijeron." },
+            { id: "ES-A2-U2-L3-E2", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Ela me pediu ajuda' em espanhol?", options: ["Ella me pidió ayuda", "Ella me pedió ayuda", "Ella me pedio ayuda", "Ella me preguntó ayuda"], answer: 0, explanation: "Me pidió = me pediu. PEDIR é irregular no pretérito (mudança e→i): pedí, pediste, pidió, pedimos, pedisteis, pidieron." },
+            { id: "ES-A2-U2-L3-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Mi jefe me _____ que llegara temprano.' (Meu chefe me disse para chegar cedo.)", answer: ["dijo"], hint: "pretérito de decir para él/ella", explanation: "Me dijo = me disse. Decir → dijo (3ª pessoa singular do pretérito indefinido)." },
+            { id: "ES-A2-U2-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Ela me perguntou onde eu morava e eu disse que era do Brasil.'", answer: ["Ella me preguntó dónde vivía y yo le dije que era de Brasil.", "Me preguntó dónde vivía y le dije que era brasileño/a."], explanation: "Me preguntó = me perguntou. Le dije = disse a ela. Que era de Brasil = que era do Brasil (estilo indireto)." },
+            { id: "ES-A2-U2-L3-E5", type: "free_writing", skill: "writing", question: "Escreva sobre uma conversa importante que você teve usando decir, preguntar e pedir. Mínimo 8 frases.", prompt: "Inclua: quem disse o quê · o que você perguntou · o que você pediu · o resultado", hint: "Me dijo que..., le pregunté..., me pidió que..., le pedí..., al final..." }
+          ]
+        },
+        {
+          id: "ES-A2-U2-L4",
+          title: "Pronomes de Objeto Indireto — Le, Les",
+          shadowing: "— ¿Le has escrito a tu madre?\n— Sí, le mandé un mensaje ayer.\n— ¿Y qué le dijiste?\n— Le conté que estoy bien y que ya llegué.\n— ¿Les vas a llamar a tus amigos también?\n— Sí, les voy a llamar esta tarde.\n— ¿Les traes algo de regalo?\n— Claro, les compré recuerdos.",
+          memoryPhrases: [
+            "le = a ele/ela/você (objeto indireto singular)",
+            "les = a eles/elas/vocês (objeto indireto plural)",
+            "le dije = disse a ele/ela",
+            "les mandé = mandei a eles/elas",
+            "le compré = comprei para ele/ela",
+            "se lo di = dei-o para ele/ela (combinação)"
+          ],
+          oralProduction: "Fale sobre o que você fez ou vai fazer para pessoas próximas usando le e les.",
+          exercises: [
+            { id: "ES-A2-U2-L4-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Eu disse a ela que cheguei' em espanhol?", options: ["La dije que llegué", "Le dije que llegué", "Les dije que llegué", "Lo dije que llegué"], answer: 1, explanation: "Le dije = disse a ela. LE é o pronome de objeto indireto para singular (ele/ela/você). Não confundir com LO/LA (objeto direto)." },
+            { id: "ES-A2-U2-L4-E2", type: "multiple_choice", skill: "grammar", question: "Complete: '_____ mandé flores a mis padres.'", options: ["Lo", "La", "Le", "Les"], answer: 3, explanation: "Les mandé = mandei a eles (meus pais = plural). LES para objeto indireto plural." },
+            { id: "ES-A2-U2-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete: '_____ voy a comprar un regalo a mi novia.' (Vou comprar um presente para minha namorada.)", answer: ["Le"], hint: "objeto indireto singular feminino", explanation: "Le = a ela (singular). Objeto indireto não distingue masculino/feminino: le dije, le compré, le mandé." },
+            { id: "ES-A2-U2-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Comprei presentes para meus amigos e dei-os a eles ontem.'", answer: ["Compré regalos para mis amigos y se los di ayer.", "Les compré regalos y se los di ayer."], explanation: "Les compré = comprei para eles. Se los di = dei-os a eles. SE substitui LE/LES antes de LO/LA/LOS/LAS." },
+            { id: "ES-A2-U2-L4-E5", type: "free_writing", skill: "writing", question: "Escreva sobre algo que você fez para pessoas importantes na sua vida recentemente. Mínimo 8 frases.", prompt: "Inclua: o que você deu/mandou/disse a essas pessoas · reação delas · como você se sentiu", hint: "Le regalé..., les dije..., le mandé..., les compré..., le conté que..." }
+          ]
+        },
+        {
+          id: "ES-A2-U2-L5",
+          title: "Expressar Sentimentos e Emoções",
+          shadowing: "— ¿Estás bien? Te noto triste.\n— Estoy un poco preocupado. Tengo un examen importante.\n— ¿Y cómo te sientes?\n— Nervioso. Pero también emocionado.\n— ¿Por qué emocionado?\n— Porque si apruebo, consigo el trabajo que quiero.\n— ¡Ánimo! Estoy seguro de que lo vas a hacer muy bien.",
+          memoryPhrases: [
+            "estoy preocupado/a = estou preocupado/a",
+            "me siento nervioso/a = estou nervoso/a",
+            "estoy emocionado/a = estou animado/a (positivo!)",
+            "¡Ánimo! = Coragem! / Vai lá!",
+            "estoy seguro/a de que = tenho certeza que",
+            "me alegra que = fico feliz que"
+          ],
+          oralProduction: "Descreva como você está se sentindo hoje e por quê, em espanhol. Use pelo menos 4 emoções.",
+          exercises: [
+            { id: "ES-A2-U2-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "CUIDADO! 'Estoy emocionado' em espanhol significa:", options: ["Estou emocionado (chorando)", "Estou animado / entusiasmado", "Estou com medo", "Estou com raiva"], answer: 1, explanation: "Emocionado em espanhol = animado, entusiasmado (positivo!). Para 'emocionado' no sentido de 'with tears' em espanhol se diz: 'me emocioné' = me emocionei, fiquei emocionado." },
+            { id: "ES-A2-U2-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se diz '¡Ánimo!' em português?", options: ["Animo!", "Coragem! / Vai lá! / Bora!", "Calma!", "Para!"], answer: 1, explanation: "¡Ánimo! = Coragem! / Vai lá! / Força! É uma palavra de encorajamento muito usada em espanhol." },
+            { id: "ES-A2-U2-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Me _____ que hayas llegado bien.' (Fico feliz que você tenha chegado bem.)", answer: ["alegra"], hint: "verbo alegrarse = alegrar-se", explanation: "Me alegra = fico feliz / me alegra. Funciona como GUSTAR: me alegra + que + subjuntivo." },
+            { id: "ES-A2-U2-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'Estou muito nervoso com a apresentação de amanhã mas tenho certeza que vai dar certo.'", answer: ["Estoy muy nervioso con la presentación de mañana pero estoy seguro de que va a salir bien.", "Estoy muy nervioso por la presentación de mañana pero estoy seguro de que lo voy a hacer bien."], explanation: "Nervioso = nervoso. Seguro de que = com certeza que. Va a salir bien = vai dar certo / vai sair bem." },
+            { id: "ES-A2-U2-L5-E5", type: "free_writing", skill: "writing", question: "Escreva sobre um momento em que você sentiu emoções intensas (positivas ou negativas). Mínimo 8 frases.", prompt: "Inclua: situação · como você se sentia · o que aconteceu · como terminou · como você se sente agora sobre isso", hint: "Me sentía..., estaba..., de repente..., me alegré/me puse triste/me asusté..., ahora..." }
+          ]
+        }
+      ]
+    }
+  ]
+};
