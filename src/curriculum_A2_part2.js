@@ -1,227 +1,228 @@
-// A2 — Unidades 3 y 4
-export const A2_U3_U4 = [
-  {
-    id: "A2-U3",
-    title: "No mundo — cidade, viagens e compras",
-    description: "Fazer planos, viajar, negociar e usar tecnologia",
-    lessons: [
-      {
-        id: "A2-U3-L1",
-        title: "Fazer planos e combinar encontros",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— O que você está fazendo no sábado?\n— Ainda não sei. Por quê?\n— Pensei em organizar um churrasco aqui em casa. Você topa?\n— Claro que topo! Que horas começa?\n— A partir do meio-dia. Pode trazer algo para beber?\n— Levo sim! Trago cerveja e refrigerante. Posso levar meu namorado também?\n— Pode sim! Quanto mais gente melhor. Avisa ele que vai ser casual.\n— Ótimo! Te vejo no sábado então. Qualquer coisa me manda mensagem.",
-        memoryPhrases: [
-          "Você topa?",
-          "Claro que topo!",
-          "A partir do meio-dia.",
-          "Qualquer coisa me avisa.",
-          "Te vejo lá!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Organize um encontro com um amigo brasileiro. Proponha uma atividade, combine o horário e o local, decida o que cada um vai levar ou fazer. Mínimo 8 falas.",
-        content: "# Fazer Planos e Combinar Encontros\n\n## Propor uma atividade\nO que você está fazendo...? = ¿Qué estás haciendo...?\nPensei em... = Pensé en...\nQue tal...? = ¿Qué tal...?\nE se a gente...? = ¿Y si nosotros...?\nVamos...? = ¿Vamos a...?\nTopas? / Topa? = ¿Te animás? (muito brasileiro)\n\n## Aceitar e recusar\nClaro que topo! · Com prazer! · Adoraria!\nQue boa ideia! · Perfeito!\nQue pena, não posso. · Já tenho compromisso.\nNão vai dar. · Talvez na próxima.\n\n## Combinar detalhes\nQue horas começa? · A partir das... = a partir de las...\nNo máximo às... = como máximo a las...\nPode ser às...? · Prefiro um pouco mais cedo/tarde.\nOnde nos encontramos? · Ponto de encontro = punto de encuentro\n\n## Confirmar e cancelar\nConfirmo sim! · Vou lá com certeza.\nPreciso cancelar. · Surgiu um imprevisto.\nPosso chegar um pouco atrasado/a?\nQualquer coisa te aviso. = Si pasa algo, te aviso.\n\n## Expressões típicas\nQuanto mais gente melhor. = Cuanta más gente mejor.\nCaual = casual (ropa/ambiente)\nAparece lá! = ¡Aparecete!",
-        exercises: [
-          {id:"A2-U3-L1-E1",type:"multiple_choice",skill:"vocabulary",question:"'Vou organizar uma festa. Você ___?' (¿te animás? — expressão brasileira)",options:["aceita","confirma","topa","aparece"],answer:2,explanation:"TOPA = ¿te animás? Es una expresión muy brasileña para proponer algo. Você topa? = ¿Querés ir?",hint:"Expressão brasileira para proponer algo"},
-          {id:"A2-U3-L1-E2",type:"fill_blank",skill:"vocabulary",question:"'___ as duas da tarde. Pode ser?' (a partir de las 2 — para combinar hora)",answer:["a partir das","a partir de"],hint:"A PARTIR DAS = a partir de las",explanation:"A partir das duas = a partir de las dos. Indica el horario de inicio."},
-          {id:"A2-U3-L1-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo decís 'Si pasa algo, te aviso'?",options:["Qualquer coisa te aviso.","Sempre que puder te falo.","Mesmo assim te digo.","Talvez te ligo."],answer:0,explanation:"Qualquer coisa te aviso = Si pasa algo, te aviso. Expressão muy usada en Brasil.",hint:"Qualquer coisa = si pasa algo"},
-          {id:"A2-U3-L1-E4",type:"translation",skill:"writing",question:"Traduce: '¿Qué tal el sábado a la tarde? Pensé en ir al cine. ¿Te animás? Si querés, después comemos algo.'",answer:["que tal no sábado à tarde","pensei em ir ao cinema","você topa","se quiser depois a gente come algo"],hint:"que tal · pensei em · você topa · se quiser · a gente come",explanation:"Que tal no sábado à tarde? Pensei em ir ao cinema. Você topa? Se quiser, depois a gente come algo."},
-          {id:"A2-U3-L1-E5",type:"free_writing",skill:"writing",question:"Escribe uma conversa completa onde você propõe e organiza um encontro com um amigo. Defina o que farão, quando, onde e o que cada um vai trazer. Mínimo 10 falas.",prompt:"— O que você está fazendo...? / — Pensei em... / — Topa? / — Claro! / — Que horas? / — A partir das...",hint:"topa · a partir das · pode trazer · qualquer coisa · te vejo lá"}
-        ]
-      },
-      {
-        id: "A2-U3-L2",
-        title: "Viajando pelo Brasil",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você tem alguma dica para quem vai ao Nordeste pela primeira vez?\n— Tenho várias! Primeiro, visite Fortaleza e depois vá para Jericoacoara.\n— Como se chega em Jeri?\n— É uma aventura! Você pega um ônibus até Jijoca e depois uma van ou buggy.\n— Vale a pena o trabalho?\n— Muito! As praias são de outro mundo. Não esqueça o protetor solar.\n— E hospedagem? Tem que reservar com antecedência?\n— No verão sim, com bastante antecedência. Tem pousadas incríveis lá.\n— Que legal! Mal posso esperar para ir.",
-        memoryPhrases: [
-          "Você tem alguma dica?",
-          "Visite e depois vá para...",
-          "Vale a pena!",
-          "Reserve com antecedência.",
-          "As praias são de outro mundo!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Um amigo vai ao Brasil pela primeira vez. Dê conselhos sobre onde ir, o que fazer, o que comer e o que evitar. Use o imperativo e expressões de conselho. Mínimo 7 frases.",
-        content: "# Viajando pelo Brasil\n\n## No aeroporto e na chegada\npassaporte = pasaporte · visto = visa · alfândega = aduana\nbagagem de mão = equipaje de mano\nesteira = cinta transportadora · cartão de embarque = tarjeta de embarque\ndespachar bagagem = documentar equipaje\nvoo = vuelo · escala = escala · atraso = retraso\n\n## Na pousada/hotel\nReserva no nome de... · Tem vaga?\nhospedagem = alojamiento · pousada = posada\ncafé da manhã incluído? · check-in / check-out\ndiária = noche (de hotel) · tem Wi-Fi?\n\n## Passeios e atrações\npasseio = excursión · guia turístico = guía\nentrada = entrada (boleto) · reservar com antecedência\ntemporada alta/baixa = temporada alta/baja\ntrilha = senderismo · mergulho = buceo\npasseio de barco = paseo en bote\n\n## Dicas de viagem\nProtetor solar = protector solar (ESSENCIAL no Brasil!)\nRepelente = repelente · câmbio = casa de cambio\nNão deixe objetos de valor na praia.\nCuidado com a corrente! = ¡Cuidado con la corriente!\n\n## O imperativo (consejos)\nVisite! · Experimente! · Reserve! · Vá!\nNão deixe de... = No dejes de...\nVale a pena... = Vale la pena...\nEvite... em época de... = Evitá... en época de...",
-        exercises: [
-          {id:"A2-U3-L2-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice 'reservar con anticipación' en português?",options:["reservar no dia","reservar com antecedência","combinar antes","avisar cedo"],answer:1,explanation:"Reservar com antecedência = reservar con anticipación. Muy importante para la temporada alta!",hint:"Com antecedência = con anticipación"},
-          {id:"A2-U3-L2-E2",type:"fill_blank",skill:"vocabulary",question:"'___ ir ao Pelourinho! É imperdível em Salvador.' (no dejes de — consejo)",answer:["não deixe de","não perca"],hint:"Não deixe de = no dejes de",explanation:"Não deixe de ir = No dejes de ir. Expressão de consejo muy usada."},
-          {id:"A2-U3-L2-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Qué es una 'pousada' en Brasil?",options:["Un hostel grande","Una posada/pequeño hotel","Un camping","Un resort"],answer:1,explanation:"Pousada = posada, pequeño hotel. Típico en destinos turísticos brasileños.",hint:"Pequeño alojamiento típico brasileño"},
-          {id:"A2-U3-L2-E4",type:"translation",skill:"writing",question:"Traduce: 'Si vas al Nordeste, visitá Lençóis Maranhenses. Vale la pena. Reservá con bastante anticipación en temporada alta.'",answer:["se você for ao nordeste","visite os lençóis maranhenses","vale muito a pena","reserve com bastante antecedência na temporada alta"],hint:"se você for · visite · vale muito a pena · reserve · na temporada alta",explanation:"Se você for ao Nordeste, visite os Lençóis Maranhenses. Vale muito a pena. Reserve com bastante antecedência na temporada alta."},
-          {id:"A2-U3-L2-E5",type:"free_writing",skill:"writing",question:"Describí um destino turístico que você conhece bem e dê pelo menos 5 dicas práticas para quem vai visitar pela primeira vez.",prompt:"[Lugar] é incrível! Primeiro visite... / Não deixe de... / Vale a pena... / Evite... / Reserve com...",hint:"Use o imperativo: visite · experimente · fique · vá · não esqueça · evite"}
-        ]
-      },
-      {
-        id: "A2-U3-L3",
-        title: "Negociando e resolvendo problemas",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Boa tarde! Tenho um problema com este produto.\n— Pois não, o que aconteceu?\n— Comprei essa camiseta ontem e já está descosturando.\n— Que pena! Tem a nota fiscal?\n— Tenho aqui. Posso trocar?\n— Claro! Mas preciso verificar se temos no estoque.\n— E se não tiver?\n— Nesse caso, fazemos o reembolso total.\n— Ótimo! Prefiro trocar se possível. Você tem no tamanho M?\n— Temos sim! Aqui está. Desculpe pelo transtorno.",
-        memoryPhrases: [
-          "Tenho um problema com...",
-          "Tem a nota fiscal?",
-          "Posso trocar?",
-          "Prefiro o reembolso.",
-          "Desculpe pelo transtorno."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Você comprou um produto com defeito. Vá ao atendimento ao cliente e resolva o problema: explique o defeito, peça troca ou reembolso e negocie uma solução. Mínimo 8 falas.",
-        content: "# Negociando e Resolvendo Problemas\n\n## No atendimento ao cliente\nTenho um problema com... · Quero fazer uma reclamação.\nIsso não está funcionando. · Está com defeito.\nComprei e já está... · Estou insatisfeito/a com...\n\n## Documentos e processo\nnota fiscal = factura/ticket · recibo = recibo\ngarantia = garantía · prazo de troca = plazo de cambio\nCódigo de Defesa do Consumidor = ley de defensa del consumidor\n(en Brasil el consumidor tiene 7 días para devolver cualquier producto)\n\n## Soluções possíveis\ntrocar = cambiar (el producto) · devolver = devolver\nreembolso = reembolso · crédito na loja = crédito en la tienda\nconserto = reparación · voucher = voucher\n\n## Negociar o preço\nIsso está muito caro. = Esto está muy caro.\nNão tem como baixar o preço? = ¿No hay forma de bajar el precio?\nSe eu pagar à vista, tem desconto? = ¿Si pago al contado, hay descuento?\nQuanto você dá de desconto? = ¿Cuánto de descuento me das?\n\n## Expressões de resolução\nDessa forma não me serve. = De esta forma no me sirve.\nPosso falar com o gerente? = ¿Puedo hablar con el gerente?\nDesculpe pelo transtorno. = Disculpe las molestias.\nVamos resolver isso. = Vamos a resolver esto.",
-        exercises: [
-          {id:"A2-U3-L3-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se llama el documento que prueba la compra en Brasil?",options:["recibo","comprovante","nota fiscal","cartão"],answer:2,explanation:"Nota fiscal = factura/ticket de compra. Es muy importante guardar en Brasil para garantías y cambios.",hint:"Documento oficial de compra en Brasil"},
-          {id:"A2-U3-L3-E2",type:"fill_blank",skill:"vocabulary",question:"'Quero fazer o ___ do produto. Não estou satisfeito.' (devolución/reembolso)",answer:["reembolso","devolução"],hint:"Devolver el dinero pagado",explanation:"Reembolso = reembolso. Devolução = devolución. Ambos correctos."},
-          {id:"A2-U3-L3-E3",type:"multiple_choice",skill:"grammar",question:"'Se eu ___ à vista, tem desconto?' (pagar — condicional real)",options:["pago","pagaria","pagar","paguei"],answer:2,explanation:"SE + verbo en futuro do subjuntivo (= infinitivo en este caso para verbos regulares): Se eu PAGAR.",hint:"SE + futuro do subjuntivo para condição real"},
-          {id:"A2-U3-L3-E4",type:"translation",skill:"writing",question:"Traduce: 'Quiero reclamar. Compré este celular hace tres días y ya no funciona. ¿Puedo cambiar o pedir el reembolso?'",answer:["quero fazer uma reclamação","comprei este celular há três dias e já não funciona","posso trocar ou pedir o reembolso"],hint:"reclamação · comprei há três dias · não funciona · trocar · reembolso",explanation:"Quero fazer uma reclamação. Comprei este celular há três dias e já não funciona. Posso trocar ou pedir o reembolso?"},
-          {id:"A2-U3-L3-E5",type:"free_writing",skill:"writing",question:"Escribe un diálogo completo entre un cliente insatisfeito e o atendente de uma loja. O cliente tem um problema e quer resolução. Mínimo 10 falas.",prompt:"— Boa tarde, posso ajudar? / — Tenho um problema com... / — Tem a nota fiscal? / — Tenho. Posso...? / — Claro!...",hint:"problema · nota fiscal · trocar · reembolso · garantia · desculpe pelo transtorno"}
-        ]
-      },
-      {
-        id: "A2-U3-L4",
-        title: "Tecnologia e redes sociais no Brasil",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você usa muitas redes sociais?\n— Uso bastante! Instagram e WhatsApp são os que mais uso.\n— E o TikTok?\n— Tenho conta mas não posto muito. Fico mais assistindo.\n— Você segue alguém brasileiro?\n— Sigo vários! É uma ótima forma de praticar o português.\n— Que dica boa! E para videochamada?\n— Prefiro o WhatsApp. É o mais popular no Brasil de longe.\n— Com certeza! Todo brasileiro tem WhatsApp.",
-        memoryPhrases: [
-          "Você usa redes sociais?",
-          "Sigo muita gente.",
-          "Manda um Pix!",
-          "Vou te marcar na foto.",
-          "Compartilha aqui no grupo!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Explique como você usa a tecnologia e as redes sociais no dia a dia. Que apps usa? Para quê? Como você usa o WhatsApp? Mínimo 6 frases.",
-        content: "# Tecnologia e Redes Sociais no Brasil\n\n## Redes sociais mais usadas no Brasil\nWhatsApp = ESSENCIAL! Todo brasileiro usa.\nInstagram = fotos, stories, reels\nTikTok = muito popular (Brasil é top 3 mundial)\nFacebook = ainda popular entre +35 anos\nYouTube = consumo massivo de conteúdo\nLinkedIn = rede profissional\nTwitter/X = debates e notícias\n\n## Verbos de tecnologia\npostar = postear · compartilhar = compartir\ncurtir = dar me gusta (= dar like)\ncomentár = comentar · seguir = seguir\nmarcar (alguém) = etiquetas (a alguien)\nfazer live = hacer live · salvar = guardar\nbaixar/fazer download · atualizar = actualizar\n\n## O WhatsApp no Brasil\nMandar mensagem = mandar mensaje\nLigar pelo WhatsApp = llamar por WhatsApp\nVideochamada = videollamada\nGrupo de família/trabalho = muy típico en Brasil!\nMensagem de voz = mensaje de voz\nCatálogo de produtos = catálogo de productos\n\n## Pagamentos digitais\nPix = transferencia instantánea (REVOLUCIONÓ Brasil)\nPagar pelo app · QR Code · Chave Pix = clave Pix\n\n## Gírias de internet\nHater = hater · Fake news = fake news\nViral = viral · Meme = meme\nStalkear = stalkear (ver el perfil de alguien)",
-        exercises: [
-          {id:"A2-U3-L4-E1",type:"multiple_choice",skill:"culture",question:"¿Qué app de mensajes es ESENCIAL en Brasil, usado por prácticamente toda la población?",options:["Telegram","WhatsApp","Signal","iMessage"],answer:1,explanation:"WhatsApp es absolutamente dominante en Brasil. Es el medio de comunicación principal de la mayoría de los brasileños.",hint:"El más popular en Brasil por lejos"},
-          {id:"A2-U3-L4-E2",type:"fill_blank",skill:"vocabulary",question:"'Vou te ___ nessa foto. Fica bem em você!' (etiquetar en foto)",answer:["marcar"],hint:"MARCAR = etiquetar en redes sociales",explanation:"Marcar (alguém) = etiquetar a alguien en una foto."},
-          {id:"A2-U3-L4-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Qué significa 'curtir' en el contexto de redes sociales?",options:["Disfrutar algo físicamente","Dar me gusta/like","Compartir contenido","Comentar algo"],answer:1,explanation:"Curtir = dar like / me gusta en redes sociales.",hint:"La acción del corazón o pulgar arriba"},
-          {id:"A2-U3-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'Seguí a muchos brasileños en Instagram para practicar. ¿Podés recomendarme cuentas de cultura brasileña?'",answer:["sigo muitos brasileiros no instagram para praticar","você pode me recomendar contas de cultura brasileira"],hint:"sigo · no instagram · para praticar · você pode me recomendar · contas",explanation:"Sigo muitos brasileiros no Instagram para praticar. Você pode me recomendar contas de cultura brasileira?"},
-          {id:"A2-U3-L4-E5",type:"free_writing",skill:"writing",question:"Describe como você usa a tecnologia no dia a dia: quais apps usa, como usa o WhatsApp, o que posta nas redes. Compare com como usa no seu país. Mínimo 6 oraciones.",prompt:"Uso muito... / Todos os dias... / No Brasil é diferente porque... / O app que mais uso é... / Para praticar português...",hint:"postar · curtir · seguir · compartilhar · mandar mensagem · fazer videochamada"}
-        ]
-      },
-      {
-        id: "A2-U3-L5",
-        title: "Saúde e bem-estar no Brasil",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você cuida muito da saúde?\n— Tento! Faço exercício três vezes por semana e como bem.\n— E vai ao médico com regularidade?\n— Vou sim. Tenho plano de saúde pelo trabalho.\n— E se precisar de algo urgente?\n— Uso o pronto-socorro. O SUS funciona bem para emergências.\n— Você toma remédio habitualmente?\n— Só vitaminas. Prefiro tratamentos naturais quando possível.\n— Que saudável! Como você controla o estresse?\n— Meditação e caminhada. São meus segredos.",
-        memoryPhrases: [
-          "Cuido bem da saúde.",
-          "Faço exercício regularmente.",
-          "Tenho plano de saúde.",
-          "Prefiro tratamentos naturais.",
-          "Como você se sente hoje?"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre seus hábitos de saúde: exercício, alimentação, sono, estresse, consultas médicas. O que você faz bem e o que poderia melhorar? Mínimo 7 frases.",
-        content: "# Saúde e Bem-Estar\n\n## Hábitos saudáveis\nfazer exercício = hacer ejercicio · malhar = entrenar\ncaminhar · correr · nadar · pedalar · alongar = estirar\ncomer saudável · se alimentar bem · beber água\ndormir bem · descansar · meditar · respirar fundo\nevitar estresse · ter uma rotina\n\n## No médico\nConsultório = consultorio · Clínica = clínica\nReceita médica = receta médica · Prescrição\nexame = análisis/examen · resultado = resultado\nCirurgia = cirugía · internação = internación\ntratamento = tratamiento · fisioterapia = fisioterapia\n\n## Medicamentos\nremédio = medicamento · comprimido = comprimido\ncápsula = cápsula · xarope = jarabe · pomada = pomada\ngota = gota · injeção = inyección\nWithout receita = sin receta · Farmácia de plantão = farmacia de guardia\n\n## Especialidades médicas\nclínico geral = clínico general · cardiologista\ndermatologista · ortopedista · ginecologista\nnutricionista · psicólogo/psiquiatra\n\n## Saúde mental\nEstou me sentindo... ansioso/deprimido/esgotado\nPreciso de apoio psicológico.\nBurnout = síndrome de esgotamento profissional\nCuide-se! = ¡Cuidate!",
-        exercises: [
-          {id:"A2-U3-L5-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice 'análisis/examen médico' en português?",options:["receita","exame","consulta","resultado"],answer:1,explanation:"Exame = análisis/examen médico. Receita=receta, Consulta=consulta, Resultado=resultado.",hint:"Lo que el médico pide para diagnosticar"},
-          {id:"A2-U3-L5-E2",type:"fill_blank",skill:"vocabulary",question:"'Preciso de uma ___ médica para comprar esse remédio.' (receta)",answer:["receita"],hint:"Documento del médico para comprar medicamentos",explanation:"Receita médica = receta médica. Necesaria para ciertos medicamentos en Brasil."},
-          {id:"A2-U3-L5-E3",type:"multiple_choice",skill:"grammar",question:"'Você ___ fazer mais exercício. Faz bem para a saúde.' (deber — consejo)",options:["deve","deveria","pode","precisa"],answer:1,explanation:"DEVERIA = condicional de DEVER. Para consejo suave: Você DEVERIA fazer mais exercício.",hint:"Consejo suave → condicional DEVERIA"},
-          {id:"A2-U3-L5-E4",type:"translation",skill:"writing",question:"Traduce: 'Desde que empecé a hacer ejercicio, me siento mucho mejor. Debería dormir más también, pero no consigo.'",answer:["desde que comecei a fazer exercício me sinto muito melhor","deveria dormir mais também","mas não consigo"],hint:"desde que comecei · me sinto · deveria dormir · não consigo",explanation:"Desde que comecei a fazer exercício, me sinto muito melhor. Deveria dormir mais também, mas não consigo."},
-          {id:"A2-U3-L5-E5",type:"free_writing",skill:"writing",question:"Describí seus hábitos de saúde atuais e o que você gostaria de melhorar. Compare com hábitos brasileiros que você conhece ou imagina. Mínimo 7 oraciones.",prompt:"Atualmente eu... / Faço exercício... / Me alimento... / Gostaria de... / No Brasil as pessoas...",hint:"atualmente · regularmente · deveria · conseguir · gostaria de · me sentir melhor"}
-        ]
-      }
-    ]
-  },
-  {
-    id: "A2-U4",
-    title: "Trabalho, escola e sociedade",
-    description: "Ambiente profissional, educação, família e opiniões",
-    lessons: [
-      {
-        id: "A2-U4-L1",
-        title: "No ambiente de trabalho",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você pode me atualizar sobre o projeto?\n— Claro! Já terminamos a primeira fase. Estamos na revisão agora.\n— Ótimo! Tem algum impedimento?\n— Temos um problema com o prazo. O cliente quer para a próxima semana.\n— Isso vai dar?\n— Se trabalharmos em equipe, vai. Precisamos de mais um desenvolvedor.\n— Vou ver o que posso fazer. Quanto ao orçamento, está dentro do previsto?\n— Está sim. Na verdade, estamos abaixo do orçamento.\n— Excelente! Manda um relatório até sexta.",
-        memoryPhrases: [
-          "Pode me atualizar?",
-          "Estamos na revisão.",
-          "Temos um impedimento.",
-          "Vou ver o que posso fazer.",
-          "Manda até sexta."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Você tem uma reunião de status do projeto. Explique o andamento, os problemas e as soluções propostas. Use vocabulário profissional. Mínimo 7 frases.",
-        content: "# No Ambiente de Trabalho\n\n## Vocabulário profissional\nreunião = reunión · pauta = orden del día\nprazo = plazo · entrega = entrega · deadline = deadline\norçamento = presupuesto · relatório = informe\ncliente = cliente · fornecedor = proveedor\nproposta = propuesta · contrato = contrato\nfatura = factura · pagamento = pago\n\n## Funções e hierarquia\ndiretor/a · gerente · coordenador/a\nanalista · assistente · estagiário/a=pasante\nsócio/a=socio · CEO · RH=Recursos Humanos\nfreelancer · CLT (trabajador con vínculo formal)\nPJ (Pessoa Jurídica = autónomo/independente)\n\n## Comunicação profissional\nPode me atualizar? = ¿Me podés actualizar?\nQuanto ao... = En cuanto a...\nDito isso... = Dicho eso...\nCom relação a... = Con relación a...\nFico no aguardo = Quedo en espera\nAtenciosamente = Atentamente (para emails)\n\n## Reuniões\nA reunião vai começar. · Pode compartilhar a tela?\nVamos à próxima pauta. · Ficamos por aqui.\nAté a próxima reunião. · Mando a ata depois.\nAta de reunião = acta de reunión",
-        exercises: [
-          {id:"A2-U4-L1-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice 'plazo' en português en contexto laboral?",options:["pauta","prazo","pedido","proposta"],answer:1,explanation:"Prazo = plazo. O prazo é sexta-feira = El plazo es el viernes.",hint:"El tiempo límite para entregar algo"},
-          {id:"A2-U4-L1-E2",type:"fill_blank",skill:"vocabulary",question:"'___ ao orçamento, está dentro do previsto.' (en cuanto al)",answer:["quanto ao","com relação ao"],hint:"Expressão para introducir un tema específico",explanation:"Quanto ao / Com relação ao = En cuanto al. Muy usado en reuniones y emails profesionales."},
-          {id:"A2-U4-L1-E3",type:"multiple_choice",skill:"vocabulary",question:"En Brasil, CLT significa:",options:["Contrato de Longo Termo","Consolidação das Leis do Trabalho (vínculo formal)","Contrato para Licitação Técnica","Certificado de Licença Trabalhista"],answer:1,explanation:"CLT = Consolidação das Leis do Trabalho. Trabajador CLT tiene derechos laborales plenos en Brasil.",hint:"El vínculo laboral formal en Brasil"},
-          {id:"A2-U4-L1-E4",type:"translation",skill:"writing",question:"Traduce: '¿Me podés actualizar sobre el proyecto? Necesito el informe hasta el viernes sin falta.'",answer:["você pode me atualizar sobre o projeto","preciso do relatório até sexta sem falta"],hint:"pode me atualizar · sobre o projeto · relatório · até sexta · sem falta",explanation:"Você pode me atualizar sobre o projeto? Preciso do relatório até sexta sem falta."},
-          {id:"A2-U4-L1-E5",type:"free_writing",skill:"writing",question:"Describí um dia típico de trabalho seu: reuniões, tarefas, prazos, interações com colegas. Use vocabulário profissional. Mínimo 7 oraciones.",prompt:"No trabalho, todos os dias eu... / Tenho reunião de... / Meu prazo esta semana é... / Trabalho com...",hint:"reunião · prazo · relatório · cliente · equipe · orçamento · coordenador"}
-        ]
-      },
-      {
-        id: "A2-U4-L2",
-        title: "Educação e sistema escolar brasileiro",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Seu filho está em qual série?\n— Está no sétimo ano do fundamental. E sua filha?\n— Já está no terceiro ano do ensino médio. Vai prestar vestibular esse ano.\n— Que ansiedade! Está se preparando bem?\n— Está! Faz cursinho há seis meses. Quer fazer medicina.\n— Que área difícil! A concorrência é enorme.\n— É sim. Mas ela é muito dedicada. A nota do ENEM vai contar bastante.\n— Torço para ela! Com esforço e dedicação, vai conseguir.",
-        memoryPhrases: [
-          "Está em qual série?",
-          "Vai prestar vestibular.",
-          "Faz cursinho.",
-          "A nota do ENEM conta.",
-          "Com dedicação vai conseguir!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre sua experiência educacional: onde estudou, o que estudou e por quê. Compare com o sistema educacional brasileiro que você acabou de aprender. Mínimo 6 frases.",
-        content: "# Educação e Sistema Escolar Brasileiro\n\n## Estrutura do ensino\nEducação Infantil = preescolar (0-5 años)\nFundamental I = primaria (1° al 5° año, 6-10 años)\nFundamental II = secundaria básica (6° al 9° año)\nEnsino Médio = bachillerato (3 años)\nEnsino Superior = universidad\n\n## Universidades\nUniversidade Pública = gratuita y de excelencia\nUSP, UNICAMP, UFRJ = las más prestigiosas\nUniversidade Particular = privada\nFaculdade = instituto/facultad más pequeño\n\n## El acceso a la universidad\nVestibular = examen de ingreso (por universidad)\nENEM = Exame Nacional do Ensino Médio (examen nacional)\nSISU = sistema de ingreso por nota del ENEM\nProUni = becas para universidades privadas\nFIES = crédito educativo\nCursinho = preparatorio para el vestibular\n\n## Vocabulário escolar\nprova = examen · nota = nota\nrecuperação = recuperación · reprovação = repetir año\nbolsa de estudos = beca · mensalidade = cuota mensual\nprofessor/a · aluno/a · diretor/a · coordenador/a\nformatura = graduación · diploma = diploma\n\n## Expressões\nPrestar vestibular = dar el examen de ingreso\nTirar uma boa nota = sacar buena nota\nFicar de recuperação = quedar en recuperación",
-        exercises: [
-          {id:"A2-U4-L2-E1",type:"multiple_choice",skill:"culture",question:"¿Cómo se llama el examen nacional que abre el acceso a universidades públicas en Brasil?",options:["Vestibular","ENEM","SISU","ProUni"],answer:1,explanation:"ENEM = Exame Nacional do Ensino Médio. La nota del ENEM permite ingresar a universidades públicas via SISU.",hint:"El examen nacional que todos hacen en Brasil"},
-          {id:"A2-U4-L2-E2",type:"fill_blank",skill:"culture",question:"El último año de escuela secundaria en Brasil se llama ___ Médio.",answer:["ensino"],hint:"El nivel antes de la universidad",explanation:"Ensino Médio = bachillerato (3 años). Después viene o Ensino Superior (universidad)."},
-          {id:"A2-U4-L2-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Qué es un 'cursinho' en Brasil?",options:["Una escuela primaria pequeña","Un curso preparatorio para el vestibular","Una clase particular de idiomas","Un mini curso en una universidad"],answer:1,explanation:"Cursinho = curso preparatorio intensivo para el vestibular/ENEM. Muy común en Brasil.",hint:"Preparatorio intensivo para entrar a la universidad"},
-          {id:"A2-U4-L2-E4",type:"translation",skill:"writing",question:"Traduce: 'Mi hijo está en el último año del secundario y va a dar el ENEM en noviembre. Estudia mucho en el preparatorio.'",answer:["meu filho está no último ano do ensino médio","vai fazer o enem em novembro","estuda muito no cursinho"],hint:"último ano do ensino médio · vai fazer o ENEM · em novembro · cursinho",explanation:"Meu filho está no último ano do ensino médio e vai fazer o ENEM em novembro. Estuda muito no cursinho."},
-          {id:"A2-U4-L2-E5",type:"free_writing",skill:"writing",question:"Contá sobre sua trajetória educacional: onde estudou, o que foi difícil, o que você aprendeu de mais importante. Compare com o sistema brasileiro. Mínimo 7 oraciones.",prompt:"Estudei em... / No meu país o sistema é... / No Brasil é diferente porque... / A coisa mais importante que aprendi foi...",hint:"trajetória · sistema educacional · vestibular · ENEM · universidade pública/privada"}
-        ]
-      },
-      {
-        id: "A2-U4-L3",
-        title: "Família moderna e relacionamentos",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você tem namorado?\n— Tenho sim. A gente está junto há dois anos.\n— Que ótimo! Vocês moram juntos?\n— Não ainda. Eu moro com minha mãe e ele com os pais.\n— E vocês pensam em morar juntos?\n— Pensamos! Estamos procurando apartamento.\n— Muito bem! E casamento, entrou em pauta?\n— Ainda não. Por enquanto queremos só nos conhecer melhor.\n— Faz sentido. Com calma tudo dá certo!",
-        memoryPhrases: [
-          "A gente está junto há...",
-          "Moramos juntos.",
-          "Estamos namorando.",
-          "Entramos em acordo.",
-          "Com calma tudo dá certo!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre sua situação familiar atual: com quem mora, como é sua família, quais são os valores que você considera mais importantes numa família. Mínimo 6 frases.",
-        content: "# Família Moderna e Relacionamentos\n\n## Tipos de família no Brasil\nfamília nuclear = familia nuclear (pai, mãe, filhos)\nfamília monoparental = familia monoparental (un padre)\nfamília extensa = familia extendida (avós, tios, etc.)\ncasal homoafetivo = pareja homoafectiva\nunião estável = unión de hecho\nfamília reconstituída = familia reconstituida (padrasto/madrasta)\n\n## Relacionamentos\nficar com alguém = salir (sin compromiso) — muy br!\nnamorar = tener novio/a, estar en una relación\nnamo/namorido = novio (coloquial)\nfiancé/noiva = prometido/a · casar = casarse\nseparar / se divorciar · ex = ex\namizade = amistad · amigo/a com benefícios\n\n## Expressões sobre relacionamentos\nFicamos juntos. = Estamos juntos.\nA gente se entende. = Nos entendemos.\nTemos tudo em comum. = Tenemos todo en común.\nNão está funcionando. = No está funcionando.\nTerminamos. = Terminamos.\nEstamos em pausa. = Estamos en pausa.\n\n## Valores familiares\nunião = unión · respeito = respeto\ncomunicação = comunicación · companheirismo = compañerismo\napoio = apoyo · cumplicidade = complicidad",
-        exercises: [
-          {id:"A2-U4-L3-E1",type:"multiple_choice",skill:"culture",question:"'Ficar com alguém' en Brasil significa:",options:["Vivir juntos","Una relación sin compromiso formal (salir)","Estar casado","Ser solo amigos"],answer:1,explanation:"Ficar = salir con alguien sin compromiso formal. Es una etapa antes del namorar en Brasil.",hint:"La etapa antes de formalizar una relación en Brasil"},
-          {id:"A2-U4-L3-E2",type:"fill_blank",skill:"vocabulary",question:"'A gente está ___ há dois anos.' (estar en una relación — juntos)",answer:["junto","juntos"],hint:"Estar em uma relação → junto/juntos",explanation:"Estar junto/juntos = estar en una relación. A gente está junto há dois anos."},
-          {id:"A2-U4-L3-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Qué es la 'união estável' en Brasil?",options:["El matrimonio civil","La unión de hecho/concubinato legal","El noviazgo formal","La convivencia sin derechos"],answer:1,explanation:"União estável = unión de hecho con derechos legales. Es reconocida por la ley brasileña.",hint:"Convivencia con derechos, sin matrimonio formal"},
-          {id:"A2-U4-L3-E4",type:"translation",skill:"writing",question:"Traduce: 'Mi hermana lleva tres años con el novio. Están pensando en mudarse juntos. La familia apoya mucho la relación.'",answer:["minha irmã está com o namorado há três anos","estão pensando em morar juntos","a família apoia muito o relacionamento"],hint:"está com o namorado há · pensando em morar juntos · a família apoia",explanation:"Minha irmã está com o namorado há três anos. Estão pensando em morar juntos. A família apoia muito o relacionamento."},
-          {id:"A2-U4-L3-E5",type:"free_writing",skill:"writing",question:"Contá sobre um relacionamento importante para você (amoroso ou de amizade): como se conheceram, quanto tempo faz, o que vocês têm em comum, o que é difícil. Mínimo 7 oraciones.",prompt:"Conheço... há... / Nos conhecemos quando... / A gente tem em comum... / O que é mais fácil é... / O que às vezes é difícil é...",hint:"há + tempo · nos conhecemos · temos em comum · nos entendemos · às vezes · funciona porque"}
-        ]
-      },
-      {
-        id: "A2-U4-L4",
-        title: "Expressando opiniões e argumentando",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você acha que o home office veio para ficar?\n— Acho que sim. Na minha opinião, o trabalho remoto trouxe muito mais benefícios do que problemas.\n— Discordo um pouco. Acho que a interação pessoal é insubstituível.\n— É verdade que a interação é importante. Porém, a flexibilidade compensa.\n— Você tem razão em parte. Mas nem todo trabalho se adapta ao home office.\n— Concordo! Cada caso é um caso. O ideal seria um modelo híbrido.\n— Essa sim é uma boa solução. Dá para conciliar o melhor dos dois mundos.",
-        memoryPhrases: [
-          "Na minha opinião...",
-          "Acho que sim/não.",
-          "Concordo com você.",
-          "Discordo um pouco.",
-          "Você tem razão."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Dê sua opinião sobre um tema atual (home office, redes sociais, educação pública). Apresente 2 argumentos a favor e 2 contra. Use expressões de opinião e conectivos. Mínimo 8 frases.",
-        content: "# Expressando Opiniões e Argumentando\n\n## Dar sua opinião\nNa minha opinião... = En mi opinión...\nAcho que... / Não acho que... = Creo que...\nPara mim... = Para mí...\nNo meu ponto de vista... = Desde mi punto de vista...\nTenho a impressão de que... = Tengo la impresión de que...\nEstou convicto/a de que... = Estoy convencido/a de que...\n\n## Concordar\nConcordo (totalmente)! = (Totalmente) de acuerdo.\nVocê tem razão. = Tenés razón.\nExatamente! / Com certeza! / Sem dúvida!\nÉ verdade! · Pensava a mesma coisa.\n\n## Discordar\nDiscordo. = No estoy de acuerdo.\nNão acho bem assim. = No creo que sea así.\nTem certeza? = ¿Estás seguro/a?\nDivergimos nesse ponto. = Diferimos en ese punto.\nVejo de outra forma. = Lo veo de otra forma.\n\n## Matizar (acordar en parte)\nVocê tem razão em parte. = Tenés razón en parte.\nÉ verdade que... mas... = Es cierto que... pero...\nSim, porém... = Sí, sin embargo...\nDependendo do caso... = Dependiendo del caso...\n\n## Concluir\nPortanto... / Logo... / Assim...\nEm conclusão... / Para concluir...\nEm suma... / Resumindo...",
-        exercises: [
-          {id:"A2-U4-L4-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál expresión usás para concordar parcialmente?",options:["Concordo totalmente!","Discordo completamente.","Você tem razão em parte.","Não acho bem assim."],answer:2,explanation:"Você tem razão em parte = Tenés razón en parte. Para concordar parcialmente.",hint:"Concordar parcialmente"},
-          {id:"A2-U4-L4-E2",type:"fill_blank",skill:"vocabulary",question:"'Na minha ___, o trabalho remoto é muito produtivo.' (opinión)",answer:["opinião"],hint:"Palavra para expressar un punto de vista personal",explanation:"Na minha opinião = En mi opinión. Expresión formal para dar punto de vista."},
-          {id:"A2-U4-L4-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo matizás una opinión diciendo 'Es cierto que... pero...'?",options:["Concordo, logo...","É verdade que... mas...","Discordo porque...","Portanto, acho que..."],answer:1,explanation:"É verdade que... mas... = Es cierto que... pero... Para matizar, conceder parcialmente.",hint:"Para conceder algo pero introducir un pero"},
-          {id:"A2-U4-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'En mi opinión, las redes sociales tienen más aspectos negativos que positivos. Sin embargo, bien usadas, pueden ser una herramienta increíble.'",answer:["na minha opinião as redes sociais têm mais aspectos negativos do que positivos","no entanto bem usadas podem ser uma ferramenta incrível"],hint:"na minha opinião · mais... do que... · no entanto · bem usadas · ferramenta",explanation:"Na minha opinião, as redes sociais têm mais aspectos negativos do que positivos. No entanto, bem usadas, podem ser uma ferramenta incrível."},
-          {id:"A2-U4-L4-E5",type:"free_writing",skill:"writing",question:"Escolha um tema atual e escreva um parágrafo de opinião completo: apresente sua posição, dê 3 argumentos, reconheça uma perspectiva oposta e conclua. Mínimo 8 oraciones.",prompt:"Tema: [educação/tecnologia/trabalho/meio ambiente]\nNa minha opinião... / Primeiramente... / Além disso... / É verdade que... mas... / Portanto...",hint:"na minha opinião · além disso · no entanto · é verdade que · portanto · em conclusão"}
-        ]
-      },
-      {
-        id: "A2-U4-L5",
-        title: "Revisão A2 — Unidades 1 a 4",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Como você tem se saído com o português?\n— Tenho me saído bem! Já consigo me comunicar em várias situações.\n— O que você acha mais difícil?\n— Os tempos verbais, com certeza. Mas tenho estudado bastante.\n— E o que você já domina?\n— Me sinto confiante para conversar, fazer compras e até discutir opiniões.\n— Incrível! Você tem evoluído muito.\n— Obrigado! Ainda tenho muito a aprender, mas estou no caminho certo.\n— Com essa dedicação, vai chegar ao B1 logo!",
-        memoryPhrases: [
-          "Tenho me saído bem!",
-          "Consigo me comunicar.",
-          "Me sinto confiante.",
-          "Ainda tenho muito a aprender.",
-          "Estou no caminho certo!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Avalie seu próprio progresso no português. O que você já consegue fazer? O que ainda é difícil? Quais são seus próximos objetivos? Use estruturas do A2. Mínimo 8 frases.",
-        content: "# Revisão A2 — Unidades 1 a 4\n\n## O que você domina no A2 (U1-U4)\n\n### Gramática\n✅ Verbos reflexivos e pronominais\n✅ Irregulares avançados: saber, trazer, pôr, conseguir\n✅ Futuro com IR + infinitivo e futuro simples\n✅ Condicional (gostaria, poderia, seria)\n✅ Pronomes oblíquos (me, te, se, nos, lhe)\n✅ Pretérito Perfeito Composto (tenho feito)\n✅ Mais-que-perfeito (tinha feito)\n✅ Conectivos e coesão textual\n✅ Duração com HÁ, DESDE e FAZ\n\n### Vocabulário\n✅ Planos e encontros\n✅ Viagens e turismo no Brasil\n✅ Atendimento ao cliente e negociação\n✅ Tecnologia e redes sociais\n✅ Saúde e bem-estar\n✅ Ambiente profissional e reuniões\n✅ Sistema educacional brasileiro\n✅ Família e relacionamentos\n✅ Expressões de opinião e argumento\n\n## Para o A2 (U5-U8)\n→ Sentimentos e emoções\n→ Narrar histórias pessoais\n→ Carta e email formais\n→ Meio ambiente e sociedade\n→ Cultura brasileira aprofundada\n→ Introdução ao subjuntivo",
-        exercises: [
-          {id:"A2-U4-L5-E1",type:"multiple_choice",skill:"grammar",question:"¿Cuál usa el condicional correctamente?",options:["Eu gostei de ir ao Brasil.","Eu gostaria de ir ao Brasil.","Eu gosto de ir ao Brasil.","Eu fui gostar do Brasil."],answer:1,explanation:"GOSTARIA = condicional de GOSTAR. Para deseo hipotético o pedido educado.",hint:"Condicional de GOSTAR = GOSTARIA"},
-          {id:"A2-U4-L5-E2",type:"fill_blank",skill:"grammar",question:"'Ela ___ muito bem ultimamente. Está ficando excelente!' (trabalhar — ação recente contínua)",answer:["tem trabalhado"],hint:"Ação recente e contínua → TER + particípio",explanation:"Pretérito Perfeito Composto: TEM TRABALHADO. Ação contínua/recente."},
-          {id:"A2-U4-L5-E3",type:"multiple_choice",skill:"grammar",question:"'Quando ___ no Brasil, já ___ três anos estudando português.'",options:["cheguei/tinha estudado","chego/estudava","cheguei/estudava","tinha chegado/estudei"],answer:0,explanation:"Cheguei (perfeito, puntual) + tinha estudado (mais-que-perfeito, anterior).",hint:"Chegada = Perfeito · Estudo anterior = Mais-que-perfeito"},
-          {id:"A2-U4-L5-E4",type:"translation",skill:"writing",question:"Traduce: 'Hace dos años que vivo en São Paulo. Últimamente he estado trabajando mucho. Gostaria de tener más tiempo libre.'",answer:["há dois anos que moro em são paulo","ultimamente tenho trabalhado muito","gostaria de ter mais tempo livre"],hint:"há dois anos que · ultimamente tenho trabalhado · gostaria de ter",explanation:"Há dois anos que moro em São Paulo. Ultimamente tenho trabalhado muito. Gostaria de ter mais tempo livre."},
-          {id:"A2-U4-L5-E5",type:"free_writing",skill:"writing",question:"REVISÃO: Escreva um texto completo sobre sua vida atual e planos futuros, usando estruturas do A2: reflexivos, condicional, composto, mais-que-perfeito e conectivos. Mínimo 10 oraciones.",prompt:"Atualmente me sinto... / Tenho me dedicado a... / Há... que... / Gostaria de... / No entanto... / Portanto...",hint:"reflexivos · condicional · tenho + particípio · tinha + particípio · há/desde/faz · conectivos"}
-        ]
-      }
-    ]
-  }
-];
+export const CURRICULUM_ES_A2_PART2 = {
+  units: [
+    {
+      id: "ES-A2-U3",
+      title: "Saúde, Conselhos e Obrigações",
+      description: "Expressões de obrigação, conselho e vocabulário de saúde",
+      lessons: [
+        {
+          id: "ES-A2-U3-L1",
+          title: "Hay que, Tener que, Deber — Obrigação e Conselho",
+          shadowing: "— Doctor, me duele mucho la espalda.\n— Tiene que descansar más y no debe levantar cosas pesadas.\n— ¿Hay que tomar medicamentos?\n— Sí, debe tomar estos antiinflamatorios. Y debería hacer fisioterapia.\n— ¿Cuándo debo volver?\n— Si no mejora, debe volver en una semana.",
+          memoryPhrases: [
+            "tener que + inf. = ter que / precisar (obrigação pessoal)",
+            "deber + inf. = dever (obrigação/conselho)",
+            "hay que + inf. = é preciso (impessoal)",
+            "debería + inf. = deveria (conselho suave)",
+            "no debe = não deve",
+            "es necesario = é necessário"
+          ],
+          oralProduction: "Dê 5 conselhos de saúde para um amigo imaginário usando tener que, deber e hay que.",
+          exercises: [
+            { id: "ES-A2-U3-L1-E1", type: "multiple_choice", skill: "grammar", question: "Qual é a diferença entre 'hay que' e 'tener que'?", options: ["São iguais", "Hay que é impessoal (geral), tener que é pessoal (específico)", "Hay que é mais forte", "Tener que é impessoal"], answer: 1, explanation: "Hay que estudiar = é preciso estudar (geral). Tengo que estudiar = eu tenho que estudar (específico para mim)." },
+            { id: "ES-A2-U3-L1-E2", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Você deveria dormir mais' (conselho suave)?", options: ["Tienes que dormir más", "Debes dormir más", "Deberías dormir más", "Hay que dormir más"], answer: 2, explanation: "Deberías = deveria (condicional de deber). É a forma mais suave e educada para dar conselhos." },
+            { id: "ES-A2-U3-L1-E3", type: "fill_blank", skill: "grammar", question: "Complete: '_____ hacer más ejercicio para estar sano.' (É preciso fazer mais exercício para ser saudável.)", answer: ["Hay que"], hint: "expressão impessoal de obrigação", explanation: "Hay que = é preciso / é necessário. Sempre seguido de infinitivo, sem sujeito específico." },
+            { id: "ES-A2-U3-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Você deve beber mais água e não deveria tomar tanto café.'", answer: ["Debes beber más agua y no deberías tomar tanto café.", "Tienes que beber más agua y no deberías tomar tanto café."], explanation: "Debes/Tienes que = você deve/tem que. No deberías = não deveria (conselho negativo suave)." },
+            { id: "ES-A2-U3-L1-E5", type: "free_writing", skill: "writing", question: "Escreva uma lista de recomendações de saúde para alguém que está estressado. Mínimo 8 frases.", prompt: "Inclua: o que tem que fazer · o que deve evitar · o que deveria tentar · hábitos gerais (hay que)", hint: "Tienes que..., no debes..., deberías..., hay que..., es importante que..." }
+          ]
+        },
+        {
+          id: "ES-A2-U3-L2",
+          title: "En la Farmacia — Na Farmácia",
+          shadowing: "— Buenos días. ¿Tiene algo para el dolor de cabeza?\n— ¿Tiene alergia a algún medicamento?\n— No, que yo sepa.\n— Le recomiendo este ibuprofeno. Tómelo cada ocho horas.\n— ¿Con o sin receta?\n— Este es sin receta. Pero si el dolor continúa más de tres días, debe ver a un médico.\n— ¿Cuánto cuesta?\n— Cuatro euros con noventa.",
+          memoryPhrases: [
+            "el medicamento = o medicamento",
+            "la receta = a receita médica",
+            "sin receta = sem receita",
+            "tómelo cada... horas = tome-o a cada... horas",
+            "¿tiene alergia a? = você tem alergia a?",
+            "que yo sepa = que eu saiba"
+          ],
+          oralProduction: "Pratique uma conversa em farmácia: descreva seus sintomas e pergunte sobre medicamentos.",
+          exercises: [
+            { id: "ES-A2-U3-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'sem receita médica' em espanhol?", options: ["sin receta", "sin doctor", "sin medicina", "sin pastilla"], answer: 0, explanation: "Sin receta = sem receita. Con receta = com receita. Receta = receita (tanto culinária quanto médica em espanhol)." },
+            { id: "ES-A2-U3-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'que yo sepa'?", options: ["Que eu aprenda", "Que eu saiba", "Porque eu sei", "Segundo eu sei"], answer: 1, explanation: "Que yo sepa = que eu saiba. É uma expressão muito útil para indicar incerteza educada. 'No, que yo sepa' = não, que eu saiba." },
+            { id: "ES-A2-U3-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Tome una _____ cada seis horas.' (Tome um comprimido a cada seis horas.)", answer: ["pastilla", "tableta"], hint: "comprimido em espanhol", explanation: "Pastilla/tableta = comprimido. Jarabe = xarope. Gotas = gotas. Crema = creme." },
+            { id: "ES-A2-U3-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Tenho dor de garganta. Você tem algo sem receita para isso?'", answer: ["Tengo dolor de garganta. ¿Tiene algo sin receta para eso?", "Me duele la garganta. ¿Tiene algo sin receta?"], explanation: "Dolor de garganta = dor de garganta. Sin receta = sem receita. Para eso = para isso." },
+            { id: "ES-A2-U3-L2-E5", type: "free_writing", skill: "writing", question: "Escreva um diálogo completo em uma farmácia. Você tem vários sintomas diferentes. Mínimo 10 falas.", prompt: "Inclua: descrição dos sintomas · alergias · medicamentos recomendados · como tomar · preço", hint: "Me duele..., tengo..., ¿Tiene alergia a...?, Tómelo cada..., ¿Cuánto cuesta?" }
+          ]
+        },
+        {
+          id: "ES-A2-U3-L3",
+          title: "Futuro Simples — Predicções e Promessas",
+          shadowing: "— ¿Qué harás este verano?\n— Viajaré a Argentina con mi familia.\n— ¿Cuánto tiempo estaréis allí?\n— Estaremos tres semanas. Visitaremos Buenos Aires y Mendoza.\n— ¿Y el trabajo?\n— Mi jefe me dijo que podré trabajar desde allá.\n— ¡Qué bien! Seguro que lo pasaréis genial.",
+          memoryPhrases: [
+            "viajaré = viajarei",
+            "estaré = estarei",
+            "haré = farei",
+            "podré = poderei",
+            "vendrá = virá",
+            "tendrá = terá"
+          ],
+          oralProduction: "Fale sobre seus planos para o próximo ano usando o futuro simples. Mínimo 6 frases.",
+          exercises: [
+            { id: "ES-A2-U3-L3-E1", type: "multiple_choice", skill: "grammar", question: "Como se forma o futuro simples de 'hablar' para 'yo'?", options: ["hablaré", "hablaré", "hablarié", "he hablado"], answer: 0, explanation: "Hablaré = falarei. Futuro simples regular: infinitivo + terminações (-é, -ás, -á, -emos, -éis, -án)." },
+            { id: "ES-A2-U3-L3-E2", type: "multiple_choice", skill: "grammar", question: "Qual é o futuro de 'hacer' para 'yo' (irregular)?", options: ["haceré", "haré", "hacerá", "haré"], answer: 1, explanation: "Haré = farei. HACER tem radical irregular no futuro: har- (não hacer-). Outros irregulares: tener→tendr-, venir→vendr-, poder→podr-, saber→sabr-." },
+            { id: "ES-A2-U3-L3-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'El año que viene _____ a España.' (No ano que vem irei à Espanha.)", answer: ["iré"], hint: "futuro de 'ir' para yo", explanation: "Iré = irei. IR no futuro: iré, irás, irá, iremos, iréis, irán. Regular com o infinitivo ir." },
+            { id: "ES-A2-U3-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'No próximo verão farei uma viagem pela América do Sul.'", answer: ["El próximo verano haré un viaje por América del Sur.", "El verano que viene haré un viaje por Sudamérica."], explanation: "Haré = farei. Viaje = viagem. Por = pela (movimento por um lugar). El próximo verano = no próximo verão." },
+            { id: "ES-A2-U3-L3-E5", type: "free_writing", skill: "writing", question: "Escreva uma redação sobre o que você fará nos próximos 5 anos usando o futuro simples. Mínimo 8 frases.", prompt: "Inclua: trabalho · viagens · família · estudos · objetivos pessoais", hint: "Trabajaré en..., viajaré a..., estudiaré..., tendré..., podré..." }
+          ]
+        },
+        {
+          id: "ES-A2-U3-L4",
+          title: "Condicional — Situações Hipotéticas",
+          shadowing: "— Si tuvieras más dinero, ¿qué harías?\n— Viajaría por todo el mundo. ¿Y tú?\n— Yo compraría una casa en la playa.\n— ¿Y si pudieras vivir en otro país, dónde vivirías?\n— Viviría en Italia. Me encanta la cultura italiana.\n— Yo preferiría quedarme en Brasil. No cambiaría nada.",
+          memoryPhrases: [
+            "haría = faria",
+            "viajaría = viajaria",
+            "compraría = compraria",
+            "viviría = moraria",
+            "querría = queria / gostaria",
+            "me gustaría = eu gostaria"
+          ],
+          oralProduction: "Responda: Se você pudesse fazer qualquer coisa amanhã, o que faria? Use o condicional.",
+          exercises: [
+            { id: "ES-A2-U3-L4-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Eu gostaria de visitar o Japão' em espanhol?", options: ["Me gusto visitar Japón", "Me gustaría visitar Japón", "Yo gustaría Japón", "Me gusté visitar Japón"], answer: 1, explanation: "Me gustaría = eu gostaria. GUSTAR no condicional: me gustaría, te gustaría, le gustaría, nos gustaría, les gustaría." },
+            { id: "ES-A2-U3-L4-E2", type: "multiple_choice", skill: "grammar", question: "Qual é o condicional de 'hacer' para 'yo'?", options: ["hacería", "haría", "harería", "hacía"], answer: 1, explanation: "Haría = faria. HACER no condicional usa o radical irregular har- (mesmo do futuro): haría, harías, haría, haríamos, haríais, harían." },
+            { id: "ES-A2-U3-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Con más tiempo, _____ más.' (Com mais tempo, estudaria mais.)", answer: ["estudiaría"], hint: "condicional de 'estudiar' para yo", explanation: "Estudiaría = estudaria. Condicional regular -AR: estudiar + -ía = estudiaría." },
+            { id: "ES-A2-U3-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Se eu tivesse um milhão de dólares, compraria uma casa e viajaria pelo mundo.'", answer: ["Si tuviera un millón de dólares, compraría una casa y viajaría por el mundo.", "Si tuviese un millón de dólares, compraría una casa y viajaría por el mundo."], explanation: "Si tuviera = se eu tivesse (subjuntivo). Compraría = compraria. Viajaría = viajaria." },
+            { id: "ES-A2-U3-L4-E5", type: "free_writing", skill: "writing", question: "Escreva sobre o que você faria se pudesse mudar algo na sua vida. Mínimo 8 frases.", prompt: "Inclua: trabalho · local de moradia · estudos · relacionamentos · hábitos", hint: "Si pudiera..., cambiaría..., viviría en..., trabajaría de..., estudiaría..." }
+          ]
+        },
+        {
+          id: "ES-A2-U3-L5",
+          title: "Conectores Discursivos — Organizar o Discurso",
+          shadowing: "— ¿Por qué aprendes español?\n— Primero, porque me gusta mucho la cultura latina. Además, necesito el idioma para mi trabajo.\n— ¿Y es difícil para un brasileño?\n— En realidad, no tanto. Sin embargo, la gramática tiene sus complicaciones.\n— ¿Como cuáles, por ejemplo?\n— Bueno, el subjuntivo es bastante difícil. Pero, por otro lado, la pronunciación es más fácil que el inglés.",
+          memoryPhrases: [
+            "primero = primeiro / em primeiro lugar",
+            "además = além disso",
+            "sin embargo = no entanto / porém",
+            "por otro lado = por outro lado",
+            "en realidad = na verdade",
+            "por ejemplo = por exemplo"
+          ],
+          oralProduction: "Explique por que você está aprendendo espanhol usando pelo menos 5 conectores diferentes.",
+          exercises: [
+            { id: "ES-A2-U3-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'no entanto / porém' em espanhol?", options: ["además", "sin embargo", "por lo tanto", "en realidad"], answer: 1, explanation: "Sin embargo = no entanto / porém. É o conector adversativo mais usado em espanhol." },
+            { id: "ES-A2-U3-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'além disso' em espanhol?", options: ["también", "además", "por eso", "así que"], answer: 1, explanation: "Además = além disso. También = também. Por eso = por isso. Así que = então / portanto." },
+            { id: "ES-A2-U3-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: '_____, no estoy de acuerdo con esa idea.' (Na verdade, não concordo com essa ideia.)", answer: ["En realidad"], hint: "expressão para contradizer ou corrigir", explanation: "En realidad = na verdade / na realidade. Usado para corrigir uma ideia ou revelar a realidade." },
+            { id: "ES-A2-U3-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'O espanhol é parecido com o português. No entanto, há muitas diferenças importantes.'", answer: ["El español es parecido al portugués. Sin embargo, hay muchas diferencias importantes.", "El español se parece al portugués. Sin embargo, hay muchas diferencias importantes."], explanation: "Parecido al = parecido com o. Sin embargo = no entanto. Hay = há." },
+            { id: "ES-A2-U3-L5-E5", type: "free_writing", skill: "writing", question: "Escreva um texto argumentativo sobre as vantagens e desvantagens de aprender espanhol sendo brasileiro. Mínimo 10 frases.", prompt: "Inclua: vantagens (primero, además) · desvantagens (sin embargo, por otro lado) · conclusão (en definitiva, en resumen)", hint: "Primero, la ventaja es..., Además,..., Sin embargo,..., Por otro lado,..., En definitiva..." }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-A2-U4",
+      title: "Trabalho, Tecnologia e Sociedade",
+      description: "Vocabulário do mundo profissional e tecnológico",
+      lessons: [
+        {
+          id: "ES-A2-U4-L1",
+          title: "En el Trabajo — Situações Profissionais",
+          shadowing: "— Buenos días. ¿Puede comunicarme con el señor López?\n— Un momento, por favor. Lo siento, en este momento está en una reunión.\n— ¿Puede decirle que llamó el señor Silva?\n— Por supuesto. ¿Quiere dejar algún mensaje?\n— Sí, dígale que lo llamaré esta tarde.\n— Perfecto. Le daré el recado.",
+          memoryPhrases: [
+            "¿Puede comunicarme con...? = Pode me transferir para...?",
+            "está en una reunión = está em uma reunião",
+            "dejar un mensaje = deixar uma mensagem",
+            "le daré el recado = vou passar o recado",
+            "dígale que = diga a ele que",
+            "lo llamaré = vou ligar para ele"
+          ],
+          oralProduction: "Pratique uma ligação profissional em espanhol: ligue para uma empresa e deixe uma mensagem.",
+          exercises: [
+            { id: "ES-A2-U4-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'deixar uma mensagem' em espanhol?", options: ["dejar un mensaje", "poner un mensaje", "dar un mensaje", "hacer un mensaje"], answer: 0, explanation: "Dejar un mensaje = deixar uma mensagem. DEJAR = deixar (no sentido de largar, depositar)." },
+            { id: "ES-A2-U4-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'Le daré el recado'?", options: ["Vou dar um presente a ele", "Vou passar o recado para ele", "Vou ligar para ele", "Vou escrever para ele"], answer: 1, explanation: "Le daré el recado = vou passar o recado para ele. Recado = recado. Le (objeto indireto) = a ele/ela." },
+            { id: "ES-A2-U4-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El director está en una _____.' (O diretor está em uma reunião.)", answer: ["reunión"], hint: "reunião em espanhol", explanation: "Reunión = reunião. 'Estar en una reunión' = estar em uma reunião / estar em reunião." },
+            { id: "ES-A2-U4-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Por favor, diga a ela que eu liguei e que vou ligar de novo às três.'", answer: ["Por favor, dígale que llamé y que la llamaré de nuevo a las tres.", "Por favor, dígale que llamé y que voy a llamarla de nuevo a las tres."], explanation: "Dígale = diga a ela. Llamé = liguei. La llamaré = vou ligar para ela. De nuevo = de novo." },
+            { id: "ES-A2-U4-L1-E5", type: "free_writing", skill: "writing", question: "Escreva um diálogo de uma ligação profissional. Você quer falar com alguém que não está disponível. Mínimo 8 falas.", prompt: "Inclua: cumprimento profissional · pedido de transferência · mensagem · despedida formal", hint: "Buenos días, ¿puedo hablar con...?, está en reunión, ¿quiere dejar un mensaje?, dígale que..." }
+          ]
+        },
+        {
+          id: "ES-A2-U4-L2",
+          title: "La Tecnología — Vocabulário Digital",
+          shadowing: "— ¿Has visto mi móvil?\n— No, pero ¿lo has buscado en la bolsa?\n— Sí, no está. ¡Ah, espera! Lo tenía en el bolsillo.\n— ¿Tienes batería?\n— Poca. ¿Puedo cargar el móvil aquí?\n— Claro, hay un enchufe detrás del sofá.\n— Gracias. ¿Tienes wifi? Necesito enviar un email urgente.",
+          memoryPhrases: [
+            "el móvil / el celular = o celular",
+            "la batería = a bateria",
+            "cargar = carregar",
+            "el enchufe = a tomada / o plugue",
+            "el wifi = o wifi",
+            "enviar un email = enviar um e-mail"
+          ],
+          oralProduction: "Fale sobre como você usa a tecnologia no dia a dia em espanhol. Mínimo 5 frases.",
+          exercises: [
+            { id: "ES-A2-U4-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'celular' em espanhol (duas versões)?", options: ["teléfono y celular", "móvil (España) y celular (Am. Latina)", "smartphone y telefono", "móvil y teléfono"], answer: 1, explanation: "Móvil = celular (Espanha). Celular = celular (América Latina). Ambos são compreendidos em todo o mundo hispânico." },
+            { id: "ES-A2-U4-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'cargar el móvil'?", options: ["Carregar o celular (peso)", "Carregar o celular (bateria)", "Ligar o celular", "Guardar o celular"], answer: 1, explanation: "Cargar el móvil = carregar o celular (bateria). Cargar = carregar (em todos os sentidos)." },
+            { id: "ES-A2-U4-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Necesito _____ este documento por email.' (Preciso enviar este documento por e-mail.)", answer: ["enviar", "mandar"], hint: "enviar em espanhol", explanation: "Enviar/mandar = enviar/mandar. São sinônimos. Enviar un email = enviar/mandar um e-mail." },
+            { id: "ES-A2-U4-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Meu celular está sem bateria. Você tem um carregador?'", answer: ["Mi móvil/celular está sin batería. ¿Tienes un cargador?", "Mi celular está sin batería. ¿Tienes cargador?"], explanation: "Sin batería = sem bateria. Cargador = carregador. ¿Tienes? = você tem?" },
+            { id: "ES-A2-U4-L2-E5", type: "free_writing", skill: "writing", question: "Escreva sobre seu uso de tecnologia: quais apps usa, quanto tempo fica no celular, se isso é bom ou ruim. Mínimo 8 frases.", prompt: "Inclua: apps favoritos · rede social que mais usa · tempo de tela · vantagens e desvantagens", hint: "Uso mucho..., paso... horas al día en..., me parece útil/perjudicial porque..." }
+          ]
+        },
+        {
+          id: "ES-A2-U4-L3",
+          title: "Subjuntivo Presente — Introdução",
+          shadowing: "— Quiero que vengas a mi fiesta.\n— ¿Cuándo es?\n— El sábado. Espero que puedas venir.\n— No sé si podré. Mi jefe quiere que trabajemos el sábado.\n— ¡Qué mal! Ojalá que no tengas que trabajar.\n— Yo también espero que me dé el día libre.",
+          memoryPhrases: [
+            "quiero que + subj. = quero que",
+            "espero que + subj. = espero que",
+            "ojalá que + subj. = tomara que / oxalá",
+            "es importante que + subj. = é importante que",
+            "no creo que + subj. = não acho que",
+            "subjuntivo: -e (ER→-a), -a (AR→-e)"
+          ],
+          oralProduction: "Use quiero que, espero que e ojalá para falar sobre seus desejos e expectativas.",
+          exercises: [
+            { id: "ES-A2-U4-L3-E1", type: "multiple_choice", skill: "grammar", question: "Complete: 'Quiero que tú _____ (venir) a la fiesta.'", options: ["vienes", "vengas", "viene", "vas a venir"], answer: 1, explanation: "Vengas = subjuntivo de venir. Depois de 'quiero que' sempre vai o SUBJUNTIVO. Venir subjuntivo: venga, vengas, venga, vengamos, vengáis, vengan." },
+            { id: "ES-A2-U4-L3-E2", type: "multiple_choice", skill: "grammar", question: "Quando se usa o subjuntivo?", options: ["Para falar do passado", "Para desejos, dúvidas, emoções, recomendações com mudança de sujeito", "Para o futuro sempre", "Para perguntas"], answer: 1, explanation: "Subjuntivo = modo do desejo, dúvida, emoção. Aparece depois de: querer que, esperar que, es importante que, ojalá, no creo que..." },
+            { id: "ES-A2-U4-L3-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Espero que todo _____ bien.' (Espero que tudo corra bem.)", answer: ["salga", "vaya"], hint: "subjuntivo de 'salir' ou 'ir' para todo (él)", explanation: "Salga bien = saia bem / dê certo. Ou: vaya bien. Ambos corretos. Subjuntivo de salir: salga." },
+            { id: "ES-A2-U4-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Quero que você estude mais e que não use tanto o celular.'", answer: ["Quiero que estudies más y que no uses tanto el móvil/celular.", "Quiero que estudies más y que no uses tanto el teléfono."], explanation: "Quiero que + subjuntivo. Estudies = subjuntivo de estudiar. Uses = subjuntivo de usar." },
+            { id: "ES-A2-U4-L3-E5", type: "free_writing", skill: "writing", question: "Escreva uma carta para alguém importante expressando seus desejos para ele/ela usando o subjuntivo. Mínimo 8 frases.", prompt: "Inclua: quiero que..., espero que..., ojalá..., es importante que..., no quiero que...", hint: "Quiero que seas feliz, espero que tengas éxito, ojalá puedas..." }
+          ]
+        },
+        {
+          id: "ES-A2-U4-L4",
+          title: "Estilo Indireto — Contar o que Outros Disseram",
+          shadowing: "— ¿Qué te dijo el jefe?\n— Me dijo que llegaría tarde.\n— ¿Y sobre el proyecto?\n— Dijo que estaba muy bien pero que teníamos que cambiar el final.\n— ¿Te preguntó algo?\n— Sí, me preguntó si ya habíamos enviado el informe.\n— ¿Y qué le dijiste?\n— Le dije que lo mandaríamos mañana.",
+          memoryPhrases: [
+            "me dijo que + imperfecto = me disse que + imperfeito",
+            "preguntó si = perguntou se",
+            "dijo que llegaría = disse que chegaria",
+            "me pidió que + imperfecto subj. = me pediu que",
+            "añadió que = acrescentou que",
+            "contestó que = respondeu que"
+          ],
+          oralProduction: "Conte o que alguém disse em uma conversa recente usando o estilo indireto.",
+          exercises: [
+            { id: "ES-A2-U4-L4-E1", type: "multiple_choice", skill: "grammar", question: "Como se transforma 'Estoy cansado' em estilo indireto?", options: ["Dijo que estoy cansado", "Dijo que estaba cansado", "Dijo que estuvo cansado", "Dijo que estaría cansado"], answer: 1, explanation: "Dijo que estaba cansado. No estilo indireto: presente → imperfecto. 'Estoy' → 'estaba'." },
+            { id: "ES-A2-U4-L4-E2", type: "multiple_choice", skill: "grammar", question: "Como se transforma '¿Tienes tiempo?' em estilo indireto?", options: ["Preguntó que tengo tiempo", "Preguntó si tenía tiempo", "Preguntó si tiene tiempo", "Preguntó que tuviera tiempo"], answer: 1, explanation: "Me preguntó si tenía tiempo. Perguntas indiretas: ¿...? → si + imperfecto. O 'se' substitui o sinal de interrogação." },
+            { id: "ES-A2-U4-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'María dijo que _____ el próximo lunes.' (María disse que viria na próxima segunda.)", answer: ["vendría"], hint: "venir no condicional = virá (estilo indireto)", explanation: "Vendría = viria. Futuro no estilo indireto → condicional. 'Vendré' → 'dijo que vendría'." },
+            { id: "ES-A2-U4-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Meu chefe disse que o projeto estava bom mas que precisávamos de mais tempo.'", answer: ["Mi jefe dijo que el proyecto estaba bien pero que necesitábamos más tiempo.", "Mi jefe dijo que el proyecto era bueno pero que necesitábamos más tiempo."], explanation: "Dijo que... estaba = estava (estilo indireto). Necesitábamos = precisávamos (imperfecto)." },
+            { id: "ES-A2-U4-L4-E5", type: "free_writing", skill: "writing", question: "Escreva o relato de uma conversa importante que você teve, contando o que cada pessoa disse usando o estilo indireto. Mínimo 10 frases.", prompt: "Inclua: contexto da conversa · o que cada pessoa disse · perguntas e respostas · o que foi decidido", hint: "Le pregunté..., me dijo que..., me preguntó si..., contesté que..., al final acordamos que..." }
+          ]
+        },
+        {
+          id: "ES-A2-U4-L5",
+          title: "Revisão A2 — Consolidação",
+          shadowing: "— ¿Sabes lo que me pasó ayer?\n— No, cuéntame.\n— Pues estaba en el metro, tranquilamente, cuando de repente se me cayó el móvil a las vías.\n— ¡No me digas! ¿Lo recuperaste?\n— Sí, al final un empleado me ayudó a sacarlo con un palo.\n— ¡Qué historia! Cuántas veces te he dicho que tengas cuidado con el móvil.\n— Ya lo sé. Pero todo salió bien al final.",
+          memoryPhrases: [
+            "cuéntame = me conta / conte-me",
+            "de repente = de repente",
+            "se me cayó = caiu (acidental: se me/te/le cayó)",
+            "al final = no final / por fim",
+            "¡No me digas! = Não me diga! / Sério?",
+            "ya lo sé = já sei"
+          ],
+          oralProduction: "Conte uma história engraçada ou surpreendente que aconteceu com você, usando todos os tempos que aprendeu no A2.",
+          exercises: [
+            { id: "ES-A2-U4-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'se me cayó el móvil'?", options: ["Eu derrubei o celular (intencional)", "O celular caiu (acidental — sem culpa direta)", "Perdi o celular", "Quebrei o celular"], answer: 1, explanation: "Se me cayó = caiu (acidentalmente). A estrutura SE + pronome + verbo indica acidente involuntário: se me olvidó (esqueci sem querer), se le rompió (quebrou sem querer)." },
+            { id: "ES-A2-U4-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se diz '¡No me digas!' em português?", options: ["Não me diga!", "Me diz!", "Que maravilha!", "Não importa!"], answer: 0, explanation: "¡No me digas! = Não me diga! / Sério?! É uma expressão de surpresa, equivalente a 'Nossa!' em contexto informal." },
+            { id: "ES-A2-U4-L5-E3", type: "fill_blank", skill: "grammar", question: "Complete: '_____ estaba durmiendo cuando _____ el teléfono.' (Eu estava dormindo quando o telefone tocou.)", answer: ["Yo, sonó"], hint: "imperfecto para ação de fundo + indefinido para ação pontual", explanation: "Estaba durmiendo (imperfecto: ação contínua) + sonó (indefinido: ação pontual que interrompeu)." },
+            { id: "ES-A2-U4-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'De repente, enquanto eu caminhava, comecei a chover muito forte.'", answer: ["De repente, mientras caminaba, empezó a llover muy fuerte.", "De repente, mientras yo caminaba, comenzó a llover muy fuerte."], explanation: "Mientras caminaba = enquanto caminhava (imperfecto). Empezó a llover = começou a chover (indefinido)." },
+            { id: "ES-A2-U4-L5-E5", type: "free_writing", skill: "writing", question: "Escreva uma história completa sobre algo que aconteceu com você ou alguém que você conhece. Use todos os tempos do A2. Mínimo 12 frases.", prompt: "Inclua: contexto (imperfecto) · eventos principais (indefinido) · diálogos (estilo indireto) · como terminou · sua opinião atual", hint: "Era un día normal..., de repente..., me dijo que..., al final..., ahora creo que..." }
+          ]
+        }
+      ]
+    }
+  ]
+};
