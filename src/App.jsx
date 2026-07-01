@@ -668,7 +668,7 @@ const DIALOGUES = {
         { speaker: "Filósofa", role: "assistant", text: "Sapir-Whorf em versão fraca: a língua que falamos molda o que conseguimos pensar." },
         { speaker: "Estudante", role: "user", text: "E o que conseguimos pensar molda o que conseguimos fazer." },
         { speaker: "Filósofa", role: "assistant", text: "Exato. Por isso ensinar filosofia da linguagem não é luxo acadêmico — é necessidade democrática." },
-        { speaker: "Estudante", role: "user", text: "Como isso se aplica ao espanhol brasileiro especificamente?" },
+        { speaker: "Estudante", role: "user", text: "Como isso se aplica ao português brasileiro especificamente?" },
         { speaker: "Filósofa", role: "assistant", text: "O preconceito linguístico no Brasil é uma forma de exclusão social que se disfarça de correção gramatical." },
         { speaker: "Estudante", role: "user", text: "Atacar o sotaque é atacar a pessoa — não a língua." },
       ]
@@ -724,15 +724,15 @@ const DIALOGUES = {
       ]
     },
     {
-      title: "Metalinguagem: falar sobre a língua em espanhol",
+      title: "Metalinguagem: falar sobre a língua em português",
       emoji: "🔬",
       lines: [
-        { speaker: "Linguista", role: "assistant", text: "O que você acha mais fascinante na fonologia do espanhol brasileiro?" },
+        { speaker: "Linguista", role: "assistant", text: "O que você acha mais fascinante na fonologia do português brasileiro?" },
         { speaker: "Estudante", role: "user", text: "A palatalização — como 'dia' vira 'djia' e 'tia' vira 'tchia' em certas regiões." },
         { speaker: "Linguista", role: "assistant", text: "Excelente observação. E isso varia diatopicamente — no Rio, mais marcado; no interior de São Paulo, menos." },
         { speaker: "Estudante", role: "user", text: "E a neutralização de /e/ e /i/ átonos — como 'menino' pode soar 'menenu' no mesmo falante?" },
         { speaker: "Linguista", role: "assistant", text: "Você está pensando como fonólogo. O PB é um laboratório extraordinário de variação em tempo real." },
-        { speaker: "Estudante", role: "user", text: "E morfologicamente — 'deletar' segue o paradigma verbal espanhol apesar de vir do inglês." },
+        { speaker: "Estudante", role: "user", text: "E morfologicamente — 'deletar' segue o paradigma verbal português apesar de vir do inglês." },
         { speaker: "Linguista", role: "assistant", text: "Isso é empréstimo com adaptação morfológica. O PB não importa verbos estrangeiros diretamente — os aportuguesiza." },
         { speaker: "Estudante", role: "user", text: "A língua como sistema que assimila o exterior sem perder sua lógica interna." },
         { speaker: "Linguista", role: "assistant", text: "Isso é exatamente o que distingue uma língua viva de uma que está morrendo." },
@@ -841,49 +841,48 @@ function CelebrationOverlay({ show, msg }) {
 
 const LISTENING_RECS = {
   A1: {
-    podcasts: ["Português do Zero (Spotify) — episódios de 5 min, ritmo lento"],
-    series:   ["Chaves (YouTube) — diálogos curtos, vocabulário simples"],
-    musicas:  ["Garota de Ipanema — Tom Jobim", "Aquarela do Brasil — Ary Barroso"],
-    dica:     "Não precisa entender tudo. Focalize no ritmo e na entonação.",
+    podcasts: ["Español con Juan (YouTube) — ritmo lento, vocabulário básico", "Dreaming Spanish (YouTube) — input compreensível nível iniciante"],
+    series:   ["Extra en Español (YouTube) — série didática para iniciantes"],
+    musicas:  ["La Bamba — Ritchie Valens", "Cucurrucucú Paloma — versão espanhol"],
+    dica:     "Não precisa entender tudo. Focalize no ritmo e na entonação do espanhol neutro.",
   },
   A2: {
-    podcasts: ["Café Brasil (Spotify) — conversas do cotidiano", "Rádio Relógio (YouTube) — notícias lentas"],
-    series:   ["Turma da Mônica (Netflix) — linguagem simples e clara"],
-    musicas:  ["Evidências — Chitãozinho & Xororó", "País Tropical — Jorge Ben Jor"],
-    dica:     "Tente repetir frases que você entender. Shadowing com áudio real.",
+    podcasts: ["Coffee Break Spanish (Spotify) — lições curtas", "Español con Pablo (YouTube)"],
+    series:   ["Club de Cuervos (Netflix) — espanhol mexicano"],
+    musicas:  ["Besame Mucho — versão clássica", "Oye Como Va — Santana"],
+    dica:     "Tente repetir frases que você entender. Shadowing com áudio real em espanhol.",
   },
   B1: {
-    podcasts: ["Naruhodo! (Spotify) — ciência e curiosidades", "Temperatura Máxima Podcast"],
-    series:   ["3% (Netflix) — espanhol neutro, ritmo moderado"],
-    musicas:  ["Farofa Carioca — Seu Jorge", "Não Me Deixe Só — Legião Urbana"],
-    dica:     "Tente assistir 5 minutos sem legenda, depois com legenda em espanhol.",
+    podcasts: ["Notes in Spanish (Spotify) — conversas do cotidiano"],
+    series:   ["La Casa de Papel (Netflix)", "Club de Cuervos (Netflix)"],
+    musicas:  ["Despacito — Luis Fonsi", "Bailando — Enrique Iglesias"],
+    dica:     "Assista 5 minutos sem legenda, depois com legenda em espanhol.",
   },
   B2: {
-    podcasts: ["Xadrez Verbal (Spotify) — política e atualidades", "Roda Viva Podcast"],
-    series:   ["Arcanjo Renegado (Globoplay)", "Cidade Invisível (Netflix)"],
-    musicas:  ["O Que É, O Que É — Gonzaguinha", "Tocando em Frente — Almir Sater"],
+    podcasts: ["El Hilo (Spotify) — jornalismo latinoamericano", "Radio Ambulante (NPR)"],
+    series:   ["Narcos México (Netflix)", "Élite (Netflix)"],
+    musicas:  ["Clandestino — Manu Chao", "Latinoamérica — Calle 13"],
     dica:     "Escute sem legenda. O que não entender, anote e pesquise depois.",
   },
   C1: {
-    podcasts: ["Café Filosófico (YouTube)", "Rádio Novelo Apresenta (Spotify)"],
-    series:   ["Correio Feminino (Globoplay)", "Dom (Amazon Prime)"],
-    musicas:  ["Construção — Chico Buarque", "Cálice — Chico Buarque & Milton Nascimento"],
+    podcasts: ["Pensamiento Crítico (Spotify)", "El País Semanal Podcast"],
+    series:   ["El Ministerio del Tiempo (Netflix)", "Vis a Vis (Netflix)"],
+    musicas:  ["A Dios le Pido — Juanes", "Pies Descalzos — Shakira"],
     dica:     "Leia sobre o tema antes de escutar — contexto facilita a compreensão.",
   },
   C2: {
-    podcasts: ["Fronteiras no Tempo (Spotify)", "Estadão Notícias"],
-    series:   ["Segunda Chamada (Globoplay)", "Verdades Secretas (Globoplay)"],
-    musicas:  ["Língua — Caetano Veloso", "O Estrangeiro — Caetano Veloso"],
-    dica:     "Assista filmes brasileiros sem legenda. Anote expressões idiomáticas.",
+    podcasts: ["El País Audio", "Foco Económico (Spotify)"],
+    series:   ["El Tiempo entre Costuras (Netflix)", "Gran Hotel (Netflix)"],
+    musicas:  ["Todo Cambia — Mercedes Sosa", "Gracias a la Vida — Violeta Parra"],
+    dica:     "Assista filmes em espanhol sem legenda. Anote expressões idiomáticas.",
   },
   Master: {
-    podcasts: ["Milênio — Rádio Cultura", "Foro de Teresina (Piauí)", "Café Filosófico CPFL"],
-    series:   ["Questão de Família (Globoplay)", "O Mecanismo (Netflix)"],
-    musicas:  ["Paratodos — Chico Buarque", "Saudosa Maloca — Adoniran Barbosa"],
-    dica:     "Escute literatura narrada em voz alta: Machado de Assis, Clarice Lispector no YouTube.",
+    podcasts: ["Aquí la Tierra (RTVE)", "El Mundo en 24 horas (RFI Español)"],
+    series:   ["Isabel (Netflix)", "Carlos Rey Emperador (Netflix)"],
+    musicas:  ["Alfonsina y el Mar — Mercedes Sosa", "Canción con Todos — Astor Piazzolla"],
+    dica:     "Escute literatura narrada: Borges, García Márquez, Isabel Allende no YouTube.",
   },
 };
-
 export default function App() {
   const [screen, setScreen]               = useState(() => load("pb_level",null) ? "session" : "welcome");
   const [onboardStep, setOnboardStep]     = useState(0);
@@ -935,7 +934,7 @@ export default function App() {
     utt.lang = "es-MX";
     utt.rate = 0.85;
     utt.pitch = 1;
-    // Intentar usar una voz es-MX si está disponible
+    // Intentar usar una voz pt-BR si está disponible
     const voices = window.speechSynthesis.getVoices();
     const ptVoice = voices.find(v => v.lang === "es-MX") || voices.find(v => v.lang.startsWith("pt"));
     if (ptVoice) utt.voice = ptVoice;
@@ -992,10 +991,6 @@ export default function App() {
     if (i === evalQs[evalIdx].ans) setEvalScore(s => s+1);
   };
 
-  const checkEvalQ = () => {
-    setEvalAnswered(true);
-  };
-
   const nextEvalQ = () => {
     const correct  = evalSelected === evalQs[evalIdx].ans;
     const newScore = evalScore + (correct ? 1 : 0);
@@ -1046,10 +1041,10 @@ export default function App() {
     if (ms > 0 && ms < 86400000) {
       setTimeout(() => {
         if (Notification.permission === "granted") {
-          new Notification("🇧🇷 Espanhol", {
+          new Notification("🇪🇸 Pipa Akd — Espanhol", {
             body: streak.count > 0
               ? `🔥 ¡No pierdas tu racha de ${streak.count} días! Practicá hoy.`
-              : "¡Hora de practicar espanhol! 💪",
+              : "¡Hora de practicar português! 💪",
             icon: "/icon-192.png",
             tag: "daily-reminder"
           });
@@ -1118,7 +1113,7 @@ export default function App() {
         // Ejercicio abierto (sin única respuesta correcta) — checklist de autoevaluación
         const checklist = ex.prompt ? ex.prompt.replace(/^Incluí?:?\s*/i, "") : null;
         setAiFeedback(
-          `📝 TU RESPUESTA:\n${userAnswer}\n\n✅ AUTOAVALIAÇÃO — este exercício é aberto (sem resposta única). Verifica se a tua resposta inclui:\n${checklist ? checklist.split("·").map(s => "• " + s.trim()).join("\n") : "• Tudo o que o enunciado pediu"}\n\n${ex.hint ? "💡 Dica: " + ex.hint : ""}\n\nSe cumpriste esses pontos com frases corretas em espanhol, está bem!`
+          `📝 TU RESPUESTA:\n${userAnswer}\n\n✅ AUTOAVALIAÇÃO — este exercício é aberto (sem resposta única). Verifica se a tua resposta inclui:\n${checklist ? checklist.split("·").map(s => "• " + s.trim()).join("\n") : "• Tudo o que o enunciado pediu"}\n\n${ex.hint ? "💡 Dica: " + ex.hint : ""}\n\nSe cumpriste esses pontos com frases corretas em português, está bem!`
         );
       }
       setExerciseFeedback({ ok:true, msg:"Autoavaliação disponível abaixo 👇" });
@@ -1193,17 +1188,17 @@ export default function App() {
     const msgs = [...chatMessages, { role:"user", content:msg }];
     setChatMessages(msgs); setChatLoading(true);
     try {
-      const sys = `Eres PROF. BRASIL, el mejor y más paciente profesor de espanhol do Brasil. El alumno está en nivel ${assignedLevel || "B1"}.
+      const sys = `Eres PROF. BRASIL, el mejor y más paciente profesor de português do Brasil. El alumno está en nivel ${assignedLevel || "B1"}.
 
 REGLAS ABSOLUTAS:
-- Siempre responde PRIMERO en espanhol do Brasil, adaptado al nivel ${assignedLevel}
+- Siempre responde PRIMERO en português do Brasil, adaptado al nivel ${assignedLevel}
 - Incluye traducciones al español entre [corchetes] cuando sea útil para el nivel
 - Corrige errores INMEDIATAMENTE y con amabilidad: señala el error, da la forma correcta y explica brevemente
 - Haz UNA pregunta de seguimiento al final para continuar la conversación
 - Nivel A1-A2: frases muy simples, mucho vocabulario entre corchetes, máximo 3-4 oraciones
 - Nivel B1-B2: estructuras más complejas, menos traducción, incluye expresiones idiomáticas
 - Nivel C1-C2-Master: debate culto, matices, referencias culturales y literarias, mínima traducción
-- Si el alumno escribe en español: responde en espanhol con la traducción entre [corchetes]
+- Si el alumno escribe en español: responde en português con la traducción entre [corchetes]
 - Elogia los aciertos genuinamente
 - Eres paciente, nunca frustrante, siempre motivador`;
       const reply = await callAI(msgs.map(m => ({role:m.role, content:m.content})), sys);
@@ -1227,7 +1222,7 @@ REGLAS ABSOLUTAS:
     setChatMessages(msgs);
     setChatLoading(true);
     try {
-      const sys = `Eres PROF. BRASIL, el mejor y más paciente profesor de espanhol do Brasil. El alumno está en nivel ${assignedLevel}. Habla SIEMPRE en espanhol do Brasil. Corrige errores con amabilidad. Sé conversacional, natural y motivador. Máximo 3-4 frases por respuesta.`;
+      const sys = `Eres PROF. BRASIL, el mejor y más paciente profesor de português do Brasil. El alumno está en nivel ${assignedLevel}. Habla SIEMPRE en português do Brasil. Corrige errores con amabilidad. Sé conversacional, natural y motivador. Máximo 3-4 frases por respuesta.`;
       const res = await fetch("/api/chat", {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify({ messages: msgs, systemPrompt: sys })
@@ -1236,7 +1231,7 @@ REGLAS ABSOLUTAS:
       const reply = data.text || "Olá! Vamos praticar? Como posso te ajudar?";
       setChatMessages([...msgs, { role:"assistant", content: reply }]);
     } catch(e) {
-      setChatMessages([...msgs, { role:"assistant", content:"Olá! Vamos praticar espanhol! Como posso te ajudar?" }]);
+      setChatMessages([...msgs, { role:"assistant", content:"Olá! Vamos praticar português! Como posso te ajudar?" }]);
     }
     setChatLoading(false);
   };
@@ -1313,7 +1308,7 @@ REGLAS ABSOLUTAS:
             <span style={{fontSize:34}}>🇧🇷</span>
           </div>
           <h1 style={{fontSize:27, fontWeight:800, color:"var(--color-text-primary)", margin:"0 0 8px", letterSpacing:"-0.02em"}}>
-            Espanhol
+            Português do Brasil
           </h1>
           <p style={{fontSize:15, color:"var(--color-text-secondary)", margin:0, lineHeight:1.5}}>
             Do zero à fluência real.<br/>A1 → Master.
@@ -1324,7 +1319,7 @@ REGLAS ABSOLUTAS:
           {[
             { icon:"headphones", color:"var(--bg-accent)", colorIcon:"var(--text-accent)", title:"Shadowing real", desc:"Imite o ritmo e a entonação brasileira desde o primeiro dia" },
             { icon:"pencil", color:"var(--bg-pro)", colorIcon:"var(--text-pro)", title:"1.440 exercícios", desc:"De A1 a Master — a progressão mais completa do mercado" },
-            { icon:"volume", color:"var(--bg-warning)", colorIcon:"var(--text-warning)", title:"Áudio em es-MX", desc:"Escute cada diálogo e pratique a pronúncia em espanhol" },
+            { icon:"volume", color:"var(--bg-warning)", colorIcon:"var(--text-warning)", title:"Áudio em pt-BR", desc:"Escute cada diálogo e pratique a pronúncia" },
           ].map(item => (
             <div key={item.title} style={{display:"flex", gap:14, alignItems:"center", background:"var(--color-background-primary)", borderRadius:16, padding:"14px 16px", boxShadow:"var(--shadow-card)"}}>
               <div style={{width:38, height:38, borderRadius:11, background:item.color, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0}}>
@@ -1418,11 +1413,11 @@ REGLAS ABSOLUTAS:
 
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:8}}>
           {!evalAnswered ? (
-            <button onClick={checkEvalAnswer} disabled={evalUserAnswer===""} style={{cursor:evalUserAnswer===""?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalUserAnswer===""?0.4:1}}>
+            <button onClick={() => setEvalAnswered(true)} disabled={evalSelected===null} style={{cursor:evalSelected===null?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalSelected===null?0.4:1}}>
               ✓ Confirmar
             </button>
           ) : (
-            <button onClick={nextEvalQuestion} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
+            <button onClick={nextEvalQ} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
               {evalIdx+1 < evalQs.length ? "Próxima →" : "Ver resultado →"}
             </button>
           )}
@@ -1623,13 +1618,13 @@ REGLAS ABSOLUTAS:
                   <div key={unit.id} style={{marginBottom:"1.25rem"}}>
                     <div style={{display:"flex", justifyContent:"space-between", marginBottom:6}}>
                       <p style={{fontSize:13, fontWeight:500, color:"var(--color-text-primary)", margin:0}}>Unidad {ui+1}: {unit.title}</p>
-                      <span style={{fontSize:12, color:"#085041"}}>{unitPct}%</span>
+                      <span style={{fontSize:12, color:"#0369A1"}}>{unitPct}%</span>
                     </div>
                     <div style={{background:"var(--color-background-secondary)", borderRadius:99, height:8, marginBottom:8}}>
-                      <div style={{background:"#1D9E75", height:8, borderRadius:99, width:`${unitPct}%`, transition:"width 0.4s"}} />
+                      <div style={{background:"#0EA5E9", height:8, borderRadius:99, width:`${unitPct}%`, transition:"width 0.4s"}} />
                     </div>
                     <div style={{display:"flex", gap:12, fontSize:12}}>
-                      <span style={{color:"#085041"}}>✅ {correct} correctos</span>
+                      <span style={{color:"#0369A1"}}>✅ {correct} correctos</span>
                       <span style={{color:"#A32D2D"}}>❌ {wrong} errores</span>
                       <span style={{color:"var(--color-text-tertiary)"}}>⏳ {pending} pendientes</span>
                     </div>
@@ -1739,8 +1734,8 @@ REGLAS ABSOLUTAS:
           )}
           {chatMessages.map((msg, i) => (
             <div key={i} style={{display:"flex", justifyContent:msg.role==="user"?"flex-end":"flex-start"}}>
-              <div style={{maxWidth:"85%", padding:"10px 14px", borderRadius:"var(--border-radius-lg)", background:msg.role==="user"?"#1D9E75":"var(--color-background-secondary)", color:msg.role==="user"?"#fff":"var(--color-text-primary)", fontSize:13, lineHeight:1.65}}>
-                {msg.role==="assistant" && <span style={{fontSize:11, fontWeight:600, color:"#085041", display:"block", marginBottom:4}}>🤖 Prof. Brasil</span>}
+              <div style={{maxWidth:"85%", padding:"10px 14px", borderRadius:"var(--border-radius-lg)", background:msg.role==="user"?"#0EA5E9":"var(--color-background-secondary)", color:msg.role==="user"?"#fff":"var(--color-text-primary)", fontSize:13, lineHeight:1.65}}>
+                {msg.role==="assistant" && <span style={{fontSize:11, fontWeight:600, color:"#0369A1", display:"block", marginBottom:4}}>🤖 Prof. Brasil</span>}
                 {msg.content}
               </div>
             </div>
@@ -1762,7 +1757,7 @@ REGLAS ABSOLUTAS:
             placeholder="Escribe en português..."
             style={{flex:1, padding:"10px 14px", border:"0.5px solid var(--color-border-secondary)", borderRadius:"var(--border-radius-md)", fontSize:14, background:"var(--color-background-primary)", color:"var(--color-text-primary)", fontFamily:"var(--font-sans)", outline:"none"}}
           />
-          <button onClick={sendChat} disabled={chatLoading || !chatInput.trim()} style={{padding:"10px 18px", background:chatLoading||!chatInput.trim()?"var(--color-background-secondary)":"#1D9E75", color:chatLoading||!chatInput.trim()?"var(--color-text-tertiary)":"#fff", border:"none", borderRadius:"var(--border-radius-md)", fontSize:14, fontWeight:600, cursor:chatLoading||!chatInput.trim()?"default":"pointer", fontFamily:"var(--font-sans)"}}>
+          <button onClick={sendChat} disabled={chatLoading || !chatInput.trim()} style={{padding:"10px 18px", background:chatLoading||!chatInput.trim()?"var(--color-background-secondary)":"#0EA5E9", color:chatLoading||!chatInput.trim()?"var(--color-text-tertiary)":"#fff", border:"none", borderRadius:"var(--border-radius-md)", fontSize:14, fontWeight:600, cursor:chatLoading||!chatInput.trim()?"default":"pointer", fontFamily:"var(--font-sans)"}}>
             {chatLoading ? "..." : "→"}
           </button>
         </div>
