@@ -1,4 +1,6 @@
 import { CURRICULUM_ES_A1 } from "./curriculum_A1";
+import { CURRICULUM_A2 as CURRICULUM_ES_A2 } from "./curriculum_A2";
+
 
 export const REFERENCE = {
   pronouns: {
@@ -404,8 +406,6 @@ export const REFERENCE = {
 // Importações dos outros níveis (placeholder — serão criados)
 const emptyLevel = { units: [] };
 
-// A2-Master serão adicionados gradualmente
-const CURRICULUM_ES_A2 = emptyLevel;
 const CURRICULUM_ES_B1 = emptyLevel;
 const CURRICULUM_ES_B2 = emptyLevel;
 const CURRICULUM_ES_C1 = emptyLevel;
