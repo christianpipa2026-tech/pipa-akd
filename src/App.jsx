@@ -841,13 +841,13 @@ function CelebrationOverlay({ show, msg }) {
 
 const LISTENING_RECS = {
   A1: {
-    podcasts: ["Español con Juan (YouTube) — ritmo lento, vocabulário básico", "Dreaming Spanish (YouTube) — input compreensível nível iniciante"],
-    series:   ["Extra en Español (YouTube) — série didática para iniciantes"],
+    podcasts: ["Español con Juan (YouTube) — ritmo lento", "Dreaming Spanish (YouTube) — iniciante"],
+    series:   ["Extra en Español (YouTube) — série didática"],
     musicas:  ["La Bamba — Ritchie Valens", "Cucurrucucú Paloma — versão espanhol"],
-    dica:     "Não precisa entender tudo. Focalize no ritmo e na entonação do espanhol neutro.",
+    dica:     "Não precisa entender tudo. Focalize no ritmo e na entonação do espanhol.",
   },
   A2: {
-    podcasts: ["Coffee Break Spanish (Spotify) — lições curtas", "Español con Pablo (YouTube)"],
+    podcasts: ["Coffee Break Spanish (Spotify)", "Español con Pablo (YouTube)"],
     series:   ["Club de Cuervos (Netflix) — espanhol mexicano"],
     musicas:  ["Besame Mucho — versão clássica", "Oye Como Va — Santana"],
     dica:     "Tente repetir frases que você entender. Shadowing com áudio real em espanhol.",
@@ -883,6 +883,8 @@ const LISTENING_RECS = {
     dica:     "Escute literatura narrada: Borges, García Márquez, Isabel Allende no YouTube.",
   },
 };
+
+
 export default function App() {
   const [screen, setScreen]               = useState(() => load("pb_level",null) ? "session" : "welcome");
   const [onboardStep, setOnboardStep]     = useState(0);
@@ -1404,20 +1406,20 @@ REGLAS ABSOLUTAS:
             let bg="var(--color-background-secondary)", border="1.5px solid transparent", color="var(--color-text-primary)";
             if (evalAnswered) {
               if (i===q.answer) { bg="var(--bg-success)"; border="1.5px solid var(--text-success)"; color="var(--text-success)"; }
-              else if (parseInt(evalSelected)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
-            } else if (parseInt(evalSelected)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
-            return <button key={i} onClick={() => !evalAnswered && setEvalSelected(String(i))}
+              else if (parseInt(evalUserAnswer)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
+            } else if (parseInt(evalUserAnswer)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
+            return <button key={i} onClick={() => !evalAnswered && setEvalUserAnswer(String(i))}
               style={{display:"block", width:"100%", textAlign:"left", cursor:evalAnswered?"default":"pointer", border, borderRadius:12, padding:"12px 16px", fontSize:14, fontWeight:500, background:bg, color, marginBottom:8, fontFamily:"var(--font-sans)", transition:"all 0.15s"}}>{opt}</button>;
           })}
         </div>
 
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:8}}>
           {!evalAnswered ? (
-            <button onClick={() => setEvalAnswered(true)} disabled={evalSelected===null} style={{cursor:evalSelected===null?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalSelected===null?0.4:1}}>
+            <button onClick={checkEvalAnswer} disabled={evalUserAnswer===""} style={{cursor:evalUserAnswer===""?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalUserAnswer===""?0.4:1}}>
               ✓ Confirmar
             </button>
           ) : (
-            <button onClick={nextEvalQ} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
+            <button onClick={nextEvalQuestion} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
               {evalIdx+1 < evalQs.length ? "Próxima →" : "Ver resultado →"}
             </button>
           )}
@@ -1494,7 +1496,7 @@ REGLAS ABSOLUTAS:
           <div style={{display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:14, flexWrap:"wrap", gap:10}}>
             <div>
               <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", letterSpacing:"0.08em", textTransform:"uppercase", margin:"0 0 4px"}}>Português do Brasil</p>
-              <p style={{fontSize:19, fontWeight:700, color:"#fff", margin:0, letterSpacing:"-0.02em"}}>Nível {assignedLevel}</p>
+              <p style={{fontSize:19, fontWeight:700, color:"#fff", margin:0, letterSpacing:"-0.02em"}}>Nível de Espanhol {assignedLevel}</p>
             </div>
             <div style={{display:"flex", alignItems:"center", gap:8, flexWrap:"wrap"}}>
               {streak.count > 0 && (
