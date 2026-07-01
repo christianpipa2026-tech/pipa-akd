@@ -404,7 +404,6 @@ export const REFERENCE = {
 // Importações dos outros níveis (placeholder — serão criados)
 const emptyLevel = { units: [] };
 
-import { CURRICULUM_ES_A1 } from "./curriculum_A1";
 // A2-Master serão adicionados gradualmente
 const CURRICULUM_ES_A2 = emptyLevel;
 const CURRICULUM_ES_B1 = emptyLevel;
@@ -460,3 +459,6 @@ export const CONVERSATIONS = {
   A1: ["Presentaciones y saludos", "En el restaurante", "En la tienda"],
   A2: [], B1: [], B2: [], C1: [], C2: [], Master: []
 };
+
+// Alias para compatibilidade com App.jsx
+export { FULL_CURRICULUM as CURRICULUM };
