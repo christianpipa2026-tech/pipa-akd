@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Aprenda Pipa Akd com IA — de A1 a Master, grátis" />
-    <title>Pipa Akd — Aprenda Español</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.47.0/iconfont/tabler-icons.min.css" />
-    <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #FBFAF7; color: #1A1A18; -webkit-font-smoothing: antialiased; }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#0EA5E9" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Pipa Akd — Aprenda Español</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #F0F9FF; color: #1A1A18; -webkit-font-smoothing: antialiased; }
+    :root {
+      --color-accent: #0EA5E9;
+      --color-accent-dark: #0369A1;
+      --color-accent-warm: #F59E0B;
+      --color-background-primary: #ffffff;
+      --color-background-secondary: #F0F9FF;
+      --color-text-primary: #1A1A18;
+      --color-text-secondary: #5F5E56;
+      --color-text-tertiary: #8C8A7E;
+      --color-border-tertiary: rgba(14,165,233,0.12);
+      --color-border-secondary: rgba(14,165,233,0.25);
+      --border-radius-sm: 6px;
+      --border-radius-md: 10px;
+      --border-radius-lg: 16px;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --shadow-card: 0 1px 2px rgba(14,165,233,0.06), 0 1px 1px rgba(14,165,233,0.04);
+      --bg-accent: #E0F2FE; --text-accent: #0369A1;
+      --bg-pro: #EEEDFE; --text-pro: #3C3489;
+      --bg-warning: #FAEEDA; --text-warning: #854F0B;
+      --bg-success: #DCFCE7; --text-success: #166534;
+      --bg-danger: #FCEBEB; --text-danger: #A32D2D;
+    }
+    @media (prefers-color-scheme: dark) {
       :root {
-        /* Paleta premium — verde Brasil + terracota + papel cálido */
-        --color-accent: #0EA5E9;
-        --color-accent-dark: #0369A1;
-        --color-accent-warm: #C77B3D;
-        --color-background-primary: #ffffff;
-        --color-background-secondary: #F4F2EB;
-        --color-text-primary: #1A1A18;
-        --color-text-secondary: #5F5E56;
-        --color-text-tertiary: #8C8A7E;
-        --color-border-tertiary: rgba(26,26,24,0.10);
-        --color-border-secondary: rgba(26,26,24,0.22);
-        --border-radius-sm: 6px;
-        --border-radius-md: 10px;
-        --border-radius-lg: 16px;
-        --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        --shadow-card: 0 1px 2px rgba(26,26,24,0.04), 0 1px 1px rgba(26,26,24,0.03);
-        --bg-accent: #E6F1FB; --text-accent: #0C447C;
-        --bg-pro: #EEEDFE; --text-pro: #3C3489;
-        --bg-warning: #FAEEDA; --text-warning: #854F0B;
-        --bg-success: #EAF3DE; --text-success: #27500A;
+        --color-accent: #38BDF8;
+        --color-accent-dark: #0EA5E9;
+        --color-background-primary: #1C1C1A;
+        --color-background-secondary: #1E2A35;
+        --color-text-primary: #F2EFE6;
+        --color-text-secondary: #B6B3A6;
+        --color-text-tertiary: #84826F;
+        --color-border-tertiary: rgba(56,189,248,0.12);
+        --color-border-secondary: rgba(56,189,248,0.22);
+        --shadow-card: 0 1px 2px rgba(0,0,0,0.3);
       }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --color-accent: #38BDF8;
-          --color-accent-dark: #0EA5E9;
-          --color-accent-warm: #D98F50;
-          --color-background-primary: #1C1C1A;
-          --color-background-secondary: #28281F;
-          --color-text-primary: #F2EFE6;
-          --color-text-secondary: #B6B3A6;
-          --color-text-tertiary: #84826F;
-          --color-border-tertiary: rgba(255,255,255,0.10);
-          --color-border-secondary: rgba(255,255,255,0.22);
-          --shadow-card: 0 1px 2px rgba(0,0,0,0.3);
-        }
-        body { background: #141412; }
-      }
-      h1, h2, h3 { letter-spacing: -0.02em; }
-      ::selection { background: var(--color-accent); color: #fff; }
-      :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script>
+      body { background: #0C1A24; }
+    }
+    h1, h2, h3 { letter-spacing: -0.02em; }
+    ::selection { background: var(--color-accent); color: #fff; }
+    :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+  </style>
+  <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js").then((reg) => {
-        console.log("SW registrado:", reg.scope);
-      }).catch((err) => {
-        console.log("SW error:", err);
-      });
+      navigator.serviceWorker.register("/sw.js").catch(() => {});
     }
   </script>
+</head>
+<body>
+  <div id="root" style="max-width:480px;margin:0 auto;padding:0 1rem 2rem;min-height:100vh"></div>
+  <script src="/static/js/main.chunk.js"></script>
+  <script src="/static/js/bundle.js"></script>
 </body>
 </html>
