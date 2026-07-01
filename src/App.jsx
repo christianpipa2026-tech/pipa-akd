@@ -1405,20 +1405,20 @@ REGLAS ABSOLUTAS:
             let bg="var(--color-background-secondary)", border="1.5px solid transparent", color="var(--color-text-primary)";
             if (evalAnswered) {
               if (i===q.answer) { bg="var(--bg-success)"; border="1.5px solid var(--text-success)"; color="var(--text-success)"; }
-              else if (parseInt(evalUserAnswer)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
-            } else if (parseInt(evalUserAnswer)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
-            return <button key={i} onClick={() => !evalAnswered && setEvalUserAnswer(String(i))}
+              else if (parseInt(evalSelected)===i) { bg="#FCEBEB"; border="1.5px solid #E24B4A"; color="#A32D2D"; }
+            } else if (parseInt(evalSelected)===i) { bg="var(--bg-accent)"; border="1.5px solid var(--text-accent)"; color="var(--text-accent)"; }
+            return <button key={i} onClick={() => !evalAnswered && setEvalSelected(String(i))}
               style={{display:"block", width:"100%", textAlign:"left", cursor:evalAnswered?"default":"pointer", border, borderRadius:12, padding:"12px 16px", fontSize:14, fontWeight:500, background:bg, color, marginBottom:8, fontFamily:"var(--font-sans)", transition:"all 0.15s"}}>{opt}</button>;
           })}
         </div>
 
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:8}}>
           {!evalAnswered ? (
-            <button onClick={checkEvalAnswer} disabled={evalUserAnswer===""} style={{cursor:evalUserAnswer===""?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalUserAnswer===""?0.4:1}}>
+            <button onClick={checkEvalQ} disabled={evalSelected===""} style={{cursor:evalSelected===""?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalSelected===""?0.4:1}}>
               ✓ Confirmar
             </button>
           ) : (
-            <button onClick={nextEvalQuestion} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
+            <button onClick={nextEvalQ} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
               {evalIdx+1 < evalQs.length ? "Próxima →" : "Ver resultado →"}
             </button>
           )}
