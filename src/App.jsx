@@ -57,7 +57,7 @@ const LEVELS = [
   { id:"Master", label:"Master", desc:"Nativo/Experto",color:"#F1EFE8", text:"#2C2C2A", detail:"Sociolingüística, investigación, crítica literaria" },
 ];
 const LEVEL_ORDER = ["A1","A2","B1","B2","C1","C2","Master"];
-const SKILL_ICONS = { reading:"📖", listening:"🎧", writing:"✍️", speaking:"🗣️", grammar:"📐", vocabulary:"🔤", culture:"🇧🇷", pronunciation:"🔊" };
+const _SKILL_ICONS = { reading:"📖", listening:"🎧", writing:"✍️", speaking:"🗣️", grammar:"📐", vocabulary:"🔤", culture:"🇧🇷", pronunciation:"🔊" };
 
 const EVAL_QUESTIONS = {
   A1:[
@@ -914,7 +914,7 @@ export default function App() {
   const [exerciseAnswered, setExerciseAnswered] = useState(false);
   const [exerciseFeedback, setExerciseFeedback] = useState(null);
   const [aiFeedback, setAiFeedback]       = useState(null);
-  const [aiLoading, setAiLoading]         = useState(false);
+  const [aiLoading, _setAiLoading]         = useState(false);
   const [sessionMode, setSessionMode]     = useState("curriculum");
   const [chatMessages, setChatMessages]   = useState([]);
   const [chatInput, setChatInput]         = useState("");
@@ -987,7 +987,7 @@ export default function App() {
     setEvalAnswered(false); setEvalSelected(null); setScreen("eval");
   };
 
-  const handleEvalAnswer = (i) => {
+  const _handleEvalAnswer = (i) => {
     if (evalAnswered) return;
     setEvalSelected(i); setEvalAnswered(true);
     if (i === evalQs[evalIdx].ans) setEvalScore(s => s+1);
@@ -1009,7 +1009,7 @@ export default function App() {
   };
 
   // ── Lessons & Exercises ───────────────────────────────────────────────────
-  const updateStreak = () => {
+  const _updateStreak = () => {
     const today = new Date().toDateString();
     setStreak(prev => {
       const yesterday = new Date(Date.now() - 86400000).toDateString();
@@ -1214,7 +1214,7 @@ REGLAS ABSOLUTAS:
     setChatLoading(false);
   };
 
-  const startSituation = async (ctx) => {
+  const _startSituation = async (ctx) => {
     const opening = `Olá Prof. Brasil! Quero praticar esta situação: "${ctx}". Pode começar a simulação você?`;
     setChatMessages([]);
     setChatInput("");
@@ -1246,7 +1246,7 @@ REGLAS ABSOLUTAS:
 
   // ── Styles ────────────────────────────────────────────────────────────────
   const S    = { fontFamily:"var(--font-sans)", padding:"1rem 0" };
-  const card = { background:"var(--color-background-primary)", border:"0.5px solid var(--color-border-tertiary)", borderRadius:"var(--border-radius-lg)", padding:"1.25rem", marginBottom:"1rem" };
+  const _card = { background:"var(--color-background-primary)", border:"0.5px solid var(--color-border-tertiary)", borderRadius:"var(--border-radius-lg)", padding:"1.25rem", marginBottom:"1rem" };
   const btn  = (e={}) => ({ cursor:"pointer", border:"0.5px solid var(--color-border-secondary)", borderRadius:"var(--border-radius-md)", padding:"9px 18px", fontSize:14, background:"transparent", color:"var(--color-text-primary)", fontFamily:"var(--font-sans)", ...e });
   const btnP = (e={}) => ({ ...btn(), background:"#0EA5E9", border:"none", color:"#fff", fontWeight:500, ...e });
 
