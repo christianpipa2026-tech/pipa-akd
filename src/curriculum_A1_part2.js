@@ -1,167 +1,228 @@
-// A1 — Unidades 3 y 4
-export const A1_U3_U4 = [
-  {
-    id: "A1-U3",
-    title: "Comida, rotina e tempo",
-    description: "Alimentación brasileña, rutina diaria y el tiempo",
-    lessons: [
-      {
-        id: "A1-U3-L1",
-        title: "A comida brasileira",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você já comeu feijoada?\n— Ainda não! Como é?\n— É incrível! Feijão preto com várias carnes, arroz, couve e laranja.\n— Parece pesado!\n— É, mas delicioso! É o prato nacional do Brasil.\n— E o que você recomenda para começar?\n— Começa com pão de queijo e suco de maracujá. Você vai amar!",
-        memoryPhrases: ["Você já comeu...?","Ainda não! Como é?","É delicioso/a!","O que você recomenda?","Que vontade!"],
-        oralProduction: "SITUAÇÃO ORAL: Um amigo quer te ensinar sobre comida brasileira. Você faz perguntas sobre 3 pratos que não conhece. Simule os dois lados da conversa. Mínimo 8 falas.",
-        content: "# A Comida Brasileira\n\n## Pratos típicos\nfeijoada=plato nacional (feijão preto con carnes)\narroz e feijão=base de toda refeição\nchurrasco=asado · pão de queijo=pan de queso\nbrigadeiro=dulce de chocolate · açaí · coxinha=croqueta de pollo\ntapioca · pastel=empanada frita\n\n## Bebidas\nágua · suco=jugo · vitamina=batido con leche\ncafé · leite · cerveja · caipirinha\nrefrigerante=refresco · água de coco\n\n## Frutas brasileiras\nmaracujá=maracuyá · goiaba=guayaba · manga · abacaxi=piña\ncaju=marañón · açaí · jambo · cupuaçu\n\n## No restaurante\nO cardápio, por favor. · Quero pedir...\nEstá delicioso! · A conta, por favor.\n10% de gorjeta=10% de propina (comum no Brasil)",
-        exercises: [
-          {id:"A1-U3-L1-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál es el plato nacional brasileño?",options:["churrasco","coxinha","feijoada","tapioca"],answer:2,explanation:"Feijoada é o prato nacional: feijão preto com carnes.",hint:"Feijão preto con carnes"},
-          {id:"A1-U3-L1-E2",type:"fill_blank",skill:"vocabulary",question:"¿Cómo se dice 'jugo/zumo' en português?",answer:["suco"],hint:"Empieza con S",explanation:"Suco = jugo/zumo."},
-          {id:"A1-U3-L1-E3",type:"multiple_choice",skill:"grammar",question:"'Eu ___ de feijoada.' (gustar de)",options:["gosto","gosta","gostas","gostamos"],answer:0,explanation:"GOSTAR para EU = GOSTO. Siempre con DE.",hint:"GOSTAR para EU — siempre con DE"},
-          {id:"A1-U3-L1-E4",type:"translation",skill:"writing",question:"Traduce: 'Quiero pedir un jugo de maracuyá y un pan de queso, por favor.'",answer:["quero pedir um suco de maracujá","um pão de queijo","por favor"],hint:"quero pedir · suco de · pão de queijo",explanation:"Quero pedir um suco de maracujá e um pão de queijo, por favor."},
-          {id:"A1-U3-L1-E5",type:"free_writing",skill:"writing",question:"Describí tus comidas favoritas y lo que comés en un día típico. Menciona al menos una comida brasileña. Mínimo 5 oraciones.",prompt:"Meu prato favorito é... / No café da manhã... / No almoço... / No jantar...",hint:"café da manhã=desayuno · almoço=almuerzo · jantar=cena"}
-        ]
-      },
-      {
-        id: "A1-U3-L2",
-        title: "As horas e a rotina",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Que horas são?\n— São sete e meia da manhã.\n— Já? Preciso me levantar! A que horas você começa?\n— Começo às nove. Mas antes tomo banho, tomo café e levo os filhos na escola.\n— E que horas você almoça?\n— Geralmente ao meio-dia.",
-        memoryPhrases: ["Que horas são?","São... e meia.","A que horas você...?","Começo às nove.","Geralmente às..."],
-        oralProduction: "SITUAÇÃO ORAL: Descreva sua rotina diária completa com horários. Comece com acordar e termine com dormir. Use 8 verbos de rotina diferentes.",
-        content: "# As Horas e a Rotina\n\n## As horas\nQue horas são? = ¿Qué hora es?\nSão duas horas. (plural para 2+) · É uma hora. (singular)\nÉ meio-dia. / É meia-noite.\ne meia=y media · e quinze=y cuarto\nem ponto=en punto · da manhã/tarde/noite\n\n## Verbos de rotina\nacordar=despertar · se levantar=levantarse\ntomar banho=ducharse · tomar café=desayunar\nalmoçar=almorzar · jantar=cenar · dormir\ntrabalhar · estudar · ir para · chegar · voltar\n\n## Marcadores de tempo\ncedo=temprano · tarde=tarde\nsempre · nunca · às vezes · geralmente\ntodos os dias · de vez em quando\nprimeiro · depois · em seguida · finalmente\n\n## A que horas?\nA que horas você acorda?\nEu acordo às seis da manhã.\nÀS = a las (a + as = às)",
-        exercises: [
-          {id:"A1-U3-L2-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice 'ducharse' en português?",options:["se vestir","acordar","tomar banho","almoçar"],answer:2,explanation:"Tomar banho = ducharse.",hint:"Literalmente tomar baño"},
-          {id:"A1-U3-L2-E2",type:"fill_blank",skill:"grammar",question:"'___ sete horas da manhã.' (son las — para iniciar)",answer:["são"],hint:"¿Singular o plural para las 7?",explanation:"SÃO sete horas — plural para más de una hora."},
-          {id:"A1-U3-L2-E3",type:"multiple_choice",skill:"grammar",question:"'Eu acordo ___ seis horas.' (a las)",options:["em","a","às","de"],answer:2,explanation:"Para horas: ÀS (a + as). Para la una: À UMA.",hint:"Contracción a + as = às"},
-          {id:"A1-U3-L2-E4",type:"translation",skill:"writing",question:"Traduce: 'Me despierto a las 6, me ducho, desayuno y llego al trabajo a las 9 en punto.'",answer:["acordo às seis","tomo banho","tomo café da manhã","chego ao trabalho às nove em ponto"],hint:"acordo · tomo banho · tomo café da manhã · chego ao trabalho · em ponto",explanation:"Acordo às seis, tomo banho, tomo café da manhã e chego ao trabalho às nove em ponto."},
-          {id:"A1-U3-L2-E5",type:"free_writing",skill:"writing",question:"Describí tu rutina diaria completa con horarios. Mínimo 7 oraciones.",prompt:"De manhã, às... / Depois... / Geralmente almoço... / À tarde... / À noite... / Durmo às...",hint:"Conectores: primeiro · depois · em seguida · finalmente"}
-        ]
-      },
-      {
-        id: "A1-U3-L3",
-        title: "Os dias da semana e o calendário",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você tem tempo na sexta à tarde?\n— Sexta não, tenho reunião. Que tal sábado de manhã?\n— Sábado funciona! Às dez?\n— Perfeito! Nos vemos sábado, dia vinte e três.\n— E na semana que vem você trabalha na segunda?\n— Segunda é feriado! Dia de Tiradentes.",
-        memoryPhrases: ["Que dia é hoje?","Hoje é segunda-feira.","Na semana que vem...","No fim de semana...","É feriado!"],
-        oralProduction: "SITUAÇÃO ORAL: Planifica em voz alta sua semana ideal. Menciona o que faria cada dia da semana. Use os dias corretamente.",
-        content: "# Os Dias da Semana e o Calendário\n\n## Os dias\nsegunda-feira=lunes · terça-feira=martes · quarta-feira=miércoles\nquinta-feira=jueves · sexta-feira=viernes\nsábado=sábado · domingo=domingo\n\n> Em PB coloquial: segunda · terça · quarta · quinta · sexta\n\n## Como usar\nHoje é segunda-feira. · Amanhã é terça.\nNa segunda = el lunes próximo\nNa semana que vem = la semana que viene\nNo fim de semana = el fin de semana\n\n## As estações do Brasil\nprimavera (setembro-novembro) · verão (dezembro-fevereiro)\noutono (março-maio) · inverno (junho-agosto)\n\n> IMPORTANTE: El verano en Brasil es en DEZEMBRO/JANEIRO!\n\n## Feriados importantes\nCarnaval=febrero/marzo · Páscoa · Tiradentes=21 abril\nDia do Trabalho=1 mayo · Independência=7 setembro\nNatal=25 dezembro · Réveillon=31 dezembro",
-        exercises: [
-          {id:"A1-U3-L3-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Qué día es 'quarta-feira'?",options:["martes","miércoles","jueves","viernes"],answer:1,explanation:"Quarta-feira = miércoles. Segunda=lunes, Terça=martes, Quinta=jueves.",hint:"El cuarto día (quarta = cuarta)"},
-          {id:"A1-U3-L3-E2",type:"fill_blank",skill:"vocabulary",question:"En Brasil el verano ocurre en el mes de ___ (diciembre en português).",answer:["dezembro"],hint:"El último mes del año",explanation:"Dezembro = diciembre. ¡El verano en Brasil es de dezembro a fevereiro!"},
-          {id:"A1-U3-L3-E3",type:"multiple_choice",skill:"grammar",question:"'Tenho uma reunião ___ sexta.' (el viernes próximo)",options:["em","de","na","no"],answer:2,explanation:"NA sexta = el viernes (em + a = na).",hint:"em + a = NA (femenino)"},
-          {id:"A1-U3-L3-E4",type:"translation",skill:"writing",question:"Traduce: 'Esta semana trabajo el lunes, miércoles y viernes. El fin de semana descanso.'",answer:["esta semana trabalho na segunda","na quarta","na sexta","no fim de semana descanso"],hint:"esta semana · na segunda/quarta/sexta · no fim de semana",explanation:"Esta semana trabalho na segunda, na quarta e na sexta. No fim de semana descanso."},
-          {id:"A1-U3-L3-E5",type:"free_writing",skill:"writing",question:"Describí tu semana típica día a día. Incluí el fin de semana y mencioná las estaciones en Brasil vs tu país.",prompt:"Na segunda... / Na terça... / No fim de semana geralmente... / No verão brasileiro...",hint:"En Brasil el verão es en dezembro/janeiro/fevereiro"}
-        ]
-      },
-      {
-        id: "A1-U3-L4",
-        title: "O tempo e o clima brasileiro",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Como está o tempo hoje em São Paulo?\n— Está nublado e um pouco frio. Uns dezoito graus.\n— Que diferente! Aqui no Rio está sol e calor, trinta e dois graus!\n— E vai chover?\n— A previsão diz que sim, à tarde. Rio no verão: sol de manhã e chuva à tarde!\n— Típico! Vou levar guarda-chuva então.",
-        memoryPhrases: ["Como está o tempo?","Está sol e calor.","Está frio/quente.","Vai chover hoje?","A previsão diz que..."],
-        oralProduction: "SITUAÇÃO ORAL: Descreva o clima do seu país em diferentes épocas. Compare com o clima brasileiro que você conhece. Mínimo 6 frases.",
-        content: "# O Tempo e o Clima\n\n## Como descrever o tempo\nEstá sol. · Está quente. · Está frio. · Está nublado.\nEstá ventando. · Está chovendo. · Está nevando.\nTem sol. · Tem vento. · Tem neblina.\n\n## A temperatura\nQuantos graus está? / Que temperatura está?\nquente=caliente (25°C+) · ameno=agradable (18-24°C)\nfresco=fresco (12-17°C) · frio=frío (menos de 12°C)\n\n## O clima do Brasil\nAmazônia: calor e chuva o ano todo\nNordeste: sol e calor, com época seca\nSudeste (SP/RJ): quatro estações amenas\nSul: inverno frio, pode nevar em Curitiba!\n\n## Vocabulário essencial\nchuva=lluvia · tempestade=tormenta · raio=rayo\nnuvem=nube · céu=cielo · guarda-chuva=paraguas\nprevisão do tempo=pronóstico del tiempo",
-        exercises: [
-          {id:"A1-U3-L4-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice 'Hace calor' en português?",options:["Está quente.","Tem calor.","Faz calor.","É quente."],answer:0,explanation:"Está quente = Hace calor. En PB se usa ESTAR para el clima.",hint:"ESTAR para el tiempo atmosférico"},
-          {id:"A1-U3-L4-E2",type:"fill_blank",skill:"vocabulary",question:"¿Cómo se dice 'paraguas' en português?",answer:["guarda-chuva"],hint:"Literalmente guarda (protege) la chuva (lluvia)",explanation:"Guarda-chuva = paraguas."},
-          {id:"A1-U3-L4-E3",type:"multiple_choice",skill:"culture",question:"¿En qué región de Brasil puede nevar ocasionalmente?",options:["Amazônia","Nordeste","Rio de Janeiro","Sul (sur)"],answer:3,explanation:"El Sur de Brasil (Curitiba, Serra Gaúcha) puede tener nieve en invierno.",hint:"La región más fría de Brasil"},
-          {id:"A1-U3-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'Hoy está nublado y hace frío en São Paulo. La temperatura es de 15 grados. Va a llover por la tarde.'",answer:["hoje está nublado e frio em são paulo","a temperatura está a quinze graus","vai chover à tarde"],hint:"nublado · frio · quinze graus · vai chover · à tarde",explanation:"Hoje está nublado e frio em São Paulo. A temperatura está a quinze graus. Vai chover à tarde."},
-          {id:"A1-U3-L4-E5",type:"free_writing",skill:"writing",question:"Describí el clima de tu ciudad a lo largo del año y comparalo con el clima brasileño. Mínimo 5 oraciones.",prompt:"Na minha cidade, no verão... / No inverno... / Em comparação, o Brasil... / O clima que mais me gusta é...",hint:"Usa: está · tem · vai chover/nevar · graus · quente/frio/ameno"}
-        ]
-      },
-      {
-        id: "A1-U3-L5",
-        title: "Verbos IR, TER, FAZER, QUERER",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— O que você vai fazer no fim de semana?\n— Vou ao mercado sábado. Depois quero ir ao cinema.\n— Que filme você quer ver?\n— Não sei ainda. Você tem alguma sugestão?\n— Tem um filme brasileiro ótimo em cartaz.\n— Ótimo! Posso ir com você?\n— Claro! A gente vai juntos às três.",
-        memoryPhrases: ["O que você vai fazer?","Vou ao mercado.","Quero ir ao cinema.","Você tem...?","A gente vai juntos."],
-        oralProduction: "SITUAÇÃO ORAL: Planifique seu próximo fim de semana em voz alta. Use IR, TER, FAZER e QUERER pelo menos uma vez cada um. Mínimo 6 frases.",
-        content: "# Verbos IR, TER, FAZER, QUERER\n\n## IR (ir)\neu vou · você/a gente/ele/ela vai · nós vamos · vocês/eles/elas vão\n\nIR + ao/à/para = ir a:\nVou ao mercado. (ao = a + o) · Vou à escola. (à = a + a)\n\nIR + infinitivo = futuro próximo (el más usado en PB oral):\nVou falar. = Voy a hablar.\nEla vai estudar. · A gente vai viajar.\n\n## TER (tener)\neu tenho · você/a gente/ele/ela tem · nós temos · vocês/eles/elas têm\nUsos: posesión · edad · existência (hay) · obligación (TER QUE)\nTenho que estudar. = Tengo que estudiar.\n\n## FAZER (hacer)\neu faço · você/a gente/ele/ela faz · nós fazemos · vocês/eles/elas fazem\nO que você faz? · Faço exercício todo dia.\n\n## QUERER (querer)\neu quero · você/a gente/ele/ela quer · nós queremos · vocês/eles/elas querem\nQuero... / Quer um café? / Não quero.",
-        exercises: [
-          {id:"A1-U3-L5-E1",type:"multiple_choice",skill:"grammar",question:"'Eu ___ ao mercado amanhã.' (ir)",options:["vai","vou","vamos","vão"],answer:1,explanation:"IR para EU = VOU.",hint:"IR en primera persona singular"},
-          {id:"A1-U3-L5-E2",type:"fill_blank",skill:"grammar",question:"'A gente ___ viajar no verão.' (ir + infinitivo)",answer:["vai"],hint:"IR para a gente (= 3ª persona singular)",explanation:"A gente + IR = VAI. A gente vai viajar = nosotros vamos a viajar."},
-          {id:"A1-U3-L5-E3",type:"multiple_choice",skill:"grammar",question:"¿Cuál expresa obligación con TER?",options:["Tenho um carro.","Tenho vinte anos.","Tem três pessoas aqui.","Tenho que estudar."],answer:3,explanation:"TER QUE + infinitivo = tener que (obligación).",hint:"TER QUE + infinitivo = obligación"},
-          {id:"A1-U3-L5-E4",type:"translation",skill:"writing",question:"Traduce: 'Esta noche voy a hacer la cena. Quiero cocinar algo brasileño. ¿Tenés una receta?'",answer:["esta noite vou fazer o jantar","quero cozinhar algo brasileiro","você tem uma receita"],hint:"esta noite · vou fazer · cozinhar=cocinar · receita=receta",explanation:"Esta noite vou fazer o jantar. Quero cozinhar algo brasileiro. Você tem uma receita?"},
-          {id:"A1-U3-L5-E5",type:"free_writing",skill:"writing",question:"Describí tus planes para la próxima semana usando IR + infinitivo, TER QUE, FAZER y QUERER. Mínimo 6 oraciones.",prompt:"Na próxima semana vou... / Tenho que... / Quero... / Também vou fazer...",hint:"IR + infinitivo es el futuro más natural en PB oral"}
-        ]
-      }
-    ]
-  },
-  {
-    id: "A1-U4",
-    title: "Lugares, transportes e compras",
-    description: "Ciudad, transporte, restaurante y dinero",
-    lessons: [
-      {
-        id: "A1-U4-L1",
-        title: "A cidade e os lugares",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Com licença! Onde fica o Museu do Ipiranga?\n— Fica no bairro do Ipiranga, perto do metrô.\n— Fica longe daqui?\n— Uns vinte minutos de metrô.\n— E tem como ir a pé?\n— Não recomendo, é longe demais. Melhor pegar o metrô na linha dois.\n— Muito obrigado!\n— De nada! Seja bem-vindo a São Paulo!",
-        memoryPhrases: ["Com licença! Onde fica...?","Fica perto/longe daqui.","Uns... minutos a pé/de metrô.","Tem como ir a pé?","Muito obrigado/a!"],
-        oralProduction: "SITUAÇÃO ORAL: Um turista te pede direções para 3 lugares. Dê as direções em português. Use vocabulário de localização.",
-        content: "# A Cidade e os Lugares\n\n## Lugares essenciais\nbanco · farmácia · supermercado · hospital\nescola · universidade · restaurante · padaria=panadería\nlivraria=librería · shopping=centro comercial\npraia=playa · parque · praça=plaza · museu\n\n## Localizações\nno centro · no bairro de...\nperto de · longe de · na esquina de... com...\natrás de · na frente de · ao lado de · entre...\n\n## Perguntar direções\nCom licença! = ¡Disculpe!\nOnde fica...? = ¿Dónde queda?\nComo chego a...? = ¿Cómo llego a...?\nFica longe daqui? · Tem como ir a pé?\n\n## Dar direções\nVai reto/direto. · Vira à esquerda/direita.\nTraversa a rua. · Fica na esquina.\nFica no segundo quarteirão.",
-        exercises: [
-          {id:"A1-U4-L1-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice '¡Disculpe!' para llamar la atención en português?",options:["Desculpe!","Com licença!","Perdão!","Atenção!"],answer:1,explanation:"Com licença = disculpe (para interrumpir).",hint:"Para interrumpir cortésmente"},
-          {id:"A1-U4-L1-E2",type:"fill_blank",skill:"vocabulary",question:"'Onde ___ o supermercado?' (quedar/estar)",answer:["fica"],hint:"Verbo FICAR para localización",explanation:"FICAR = quedar. Onde fica? = ¿Dónde queda?"},
-          {id:"A1-U4-L1-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Qué significa 'Vira à esquerda'?",options:["Seguí recto","Girá a la derecha","Cruzá la calle","Girá a la izquierda"],answer:3,explanation:"Vira à esquerda = girá a la izquierda.",hint:"Esquerda = izquierda"},
-          {id:"A1-U4-L1-E4",type:"translation",skill:"writing",question:"Traduce: '¡Disculpe! ¿Dónde queda el hospital más cercano? ¿Está lejos de aquí?'",answer:["com licença","onde fica o hospital mais próximo","fica longe daqui"],hint:"com licença · onde fica · hospital mais próximo · longe daqui",explanation:"Com licença! Onde fica o hospital mais próximo? Fica longe daqui?"},
-          {id:"A1-U4-L1-E5",type:"free_writing",skill:"writing",question:"Describí cómo llegar desde tu casa hasta 3 lugares importantes de tu ciudad. Usá vocabulario de direcciones.",prompt:"Para chegar ao/à... da minha casa: / Primeiro... / Depois... / Vira... / Fica...",hint:"Usa: vai reto · vira · atravessa · fica na esquina"}
-        ]
-      },
-      {
-        id: "A1-U4-L2",
-        title: "O transporte público",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Como você vai trabalhar todo dia?\n— Pego o metrô até a estação República, depois caminho uns dez minutos.\n— Nunca tenta de Uber?\n— Às vezes, quando tô atrasada. Mas o metrô é mais rápido no horário de pico.\n— E de ônibus?\n— O ônibus demora muito. São Paulo é um caos no trânsito!\n— Eu prefiro andar de bicicleta quando posso.\n— Que saudável!",
-        memoryPhrases: ["Como você vai trabalhar?","Pego o metrô/ônibus.","Ando a pé/de bicicleta.","O trânsito está um caos!","Prefiro pegar um Uber."],
-        oralProduction: "SITUAÇÃO ORAL: Explique como é o transporte público na sua cidade. Compare com o que você sabe sobre São Paulo ou Rio. Mínimo 5 frases.",
-        content: "# O Transporte Público\n\n## Meios de transporte\nmetrô=metro · ônibus=autobús · trem=tren · barca=ferry\ntáxi · Uber/99=app de transporte\nbicicleta · patinete elétrico · carro · moto · avião\n\n## Verbos de transporte\npegar + o = tomar: Pego o metrô. (tomo el metro)\nandar de + vehículo: Ando de bicicleta. / Andamos de carro.\nir de + vehículo: Vou de ônibus.\ncaminhar / ir a pé=caminar / ir a pie\n\n## Vocabulário\nestação=estación · ponto de ônibus=parada\npassagem=boleto · cartão de transporte=tarjeta\nhorário de pico=hora pico · trânsito=tráfico\n\n## Frases úteis\nQual linha vai para...? · Onde é a próxima parada?\nPreciso descer aqui. · Este ônibus passa em...?\n\n## Transporte em SP/RJ\nSão Paulo: pior trânsito do mundo! Metrô = mejor opción.\n99/Uber: muito populares en todo Brasil.",
-        exercises: [
-          {id:"A1-U4-L2-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice 'autobús' en português?",options:["trem","metrô","ônibus","barca"],answer:2,explanation:"Ônibus = autobús. Trem=tren, Metrô=metro.",hint:"Con acento en la Ô"},
-          {id:"A1-U4-L2-E2",type:"fill_blank",skill:"grammar",question:"'Eu ___ de bicicleta para o trabalho.' (ir en bicicleta)",answer:["ando"],hint:"ANDAR DE + vehículo",explanation:"ANDAR DE + vehículo = ir en. Ando de bicicleta / de carro."},
-          {id:"A1-U4-L2-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Qué significa 'horário de pico'?",options:["Horario de almuerzo","Hora pico/rush hour","Horario de cierre","Último servicio"],answer:1,explanation:"Horário de pico = hora pico. El momento de más tráfico.",hint:"El momento de más tráfico"},
-          {id:"A1-U4-L2-E4",type:"translation",skill:"writing",question:"Traduce: 'Normalmente tomo el metro hasta la estación central. Después camino cinco minutos hasta el trabajo.'",answer:["normalmente pego o metrô até a estação central","depois caminho cinco minutos até o trabalho"],hint:"pego o metrô=tomo el metro · até=hasta · caminho=camino",explanation:"Normalmente pego o metrô até a estação central. Depois caminho cinco minutos até o trabalho."},
-          {id:"A1-U4-L2-E5",type:"free_writing",skill:"writing",question:"Describí cómo te transportás normalmente. ¿Qué cambiarías del sistema? Mínimo 5 oraciones.",prompt:"Normalmente eu... / Uso... / O transporte na minha cidade é... / Preferia que...",hint:"Compará con el transporte público brasileiro"}
-        ]
-      },
-      {
-        id: "A1-U4-L3",
-        title: "Fazer compras e artesanato",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Bom dia! Posso te ajudar?\n— Sim! Estou procurando um presente para minha mãe.\n— Que tipo de presente?\n— Algo típico do Brasil. Ela adora artesanato.\n— Temos lindas peças de cerâmica e bijuterias.\n— Quanto custa essa aqui?\n— Esse colar é cento e cinquenta reais.\n— Tem algo mais em conta?\n— Temos essas pulseiras por quarenta reais.\n— Perfeito! Vou levar três.",
-        memoryPhrases: ["Posso te ajudar?","Estou procurando...","Quanto custa isso?","Tem algo mais em conta?","Vou levar!"],
-        oralProduction: "SITUAÇÃO ORAL: Você está numa feira de artesanato. Simule a conversa completa: pergunte sobre 2 produtos, o preço, se tem desconto e decida o que comprar. Mínimo 8 falas.",
-        content: "# Fazer Compras\n\n## No comércio\nPosso te ajudar? · Estou só olhando.\nEstou procurando... · Você tem...?\nQual é o preço? / Quanto custa?\n\n## Os preços\nÉ barato/caro. · Tem desconto?\nEm promoção=en oferta · Em conta=a buen precio\nParcelado em... vezes=en cuotas de... · À vista=al contado\n\n## Formas de pagamento\nCartão de crédito/débito · Dinheiro=efectivo\nPix=transferencia instantánea (muy usado en Brasil!)\n\n## Produtos típicos brasileiros\nartesanato · cerâmica · bijuteria\npedras brasileiras · cachaça · café\n\n## Expressões\nVou levar! · Não vou levar, obrigado/a.\nPode embrulhar para presente? (¿Envolver para regalo?)\nTem troco para cem reais? (¿Tiene cambio para cien?)",
-        exercises: [
-          {id:"A1-U4-L3-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Qué significa 'Em conta' en el contexto de compras?",options:["En la cuenta bancaria","A buen precio/barato","En la factura","A crédito"],answer:1,explanation:"Em conta = a buen precio, barato. Tem algo mais em conta?",hint:"Precio accesible"},
-          {id:"A1-U4-L3-E2",type:"fill_blank",skill:"vocabulary",question:"En Brasil el pago digital instantáneo más popular se llama ___.",answer:["pix"],hint:"Sistema de pagamento instantâneo del Banco Central",explanation:"Pix = sistema de pago instantáneo del Banco Central do Brasil."},
-          {id:"A1-U4-L3-E3",type:"multiple_choice",skill:"grammar",question:"'Posso ___ com cartão?' (pagar)",options:["pago","paguei","pagar","pagando"],answer:2,explanation:"PODER + infinitivo: Posso PAGAR.",hint:"PODER + infinitivo"},
-          {id:"A1-U4-L3-E4",type:"translation",skill:"writing",question:"Traduce: '¿Cuánto cuesta ese collar? ¿Tiene algo más barato? ¿Puedo pagar con Pix?'",answer:["quanto custa esse colar","tem algo mais em conta","posso pagar com pix"],hint:"colar=collar · em conta=barato · posso pagar com",explanation:"Quanto custa esse colar? Tem algo mais em conta? Posso pagar com Pix?"},
-          {id:"A1-U4-L3-E5",type:"free_writing",skill:"writing",question:"Describí tu experiencia comprando en mercados o ferias. ¿Cómo lo harías en Brasil? Mínimo 5 oraciones.",prompt:"Quando vou ao mercado... / Geralmente compro... / No Brasil, eu gostaria de comprar... / Vou tentar negociar...",hint:"Negociar=negociar · tentar=intentar · gostaria=me gustaría"}
-        ]
-      },
-      {
-        id: "A1-U4-L4",
-        title: "No restaurante",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Boa tarde! Mesa para quantas pessoas?\n— Para dois, por favor.\n— Aqui está o cardápio.\n— Obrigado. Qual é o prato do dia?\n— Hoje é frango grelhado com arroz, feijão e salada.\n— Ótimo! E tem opção vegetariana?\n— Temos! Uma massa com legumes.\n— Eu quero o frango e ela quer a massa.\n— Para beber?\n— Uma água sem gás e um suco de laranja.",
-        memoryPhrases: ["Mesa para quantas pessoas?","Qual é o prato do dia?","Tem opção vegetariana?","Eu quero... e ela quer...","A conta, por favor."],
-        oralProduction: "SITUAÇÃO ORAL: Você está num restaurante brasileiro com um amigo. Simule a conversa completa: pedir mesa, cardápio, comida, bebida e a conta. Mínimo 10 falas.",
-        content: "# No Restaurante\n\n## Chegando\nMesa para quantas pessoas? · Tem reserva?\nPode sentar aqui? · Este lugar está ocupado?\n\n## Pedindo\nO cardápio/menu, por favor.\nQual é o prato do dia? · O que você recomenda?\nTem opção vegetariana/vegana?\nQuero pedir... / Para mim,...\nPode trazer sem...?\n\n## Bebidas\nÁgua com/sem gás · Suco natural de...\nRefrigerante · Cerveja · Vinho\n\n## No final\nEstá delicioso! · O garçom, por favor.\nA conta, por favor.\nEstá incluída a gorjeta?\n10% é o padrão no Brasil para o serviço.",
-        exercises: [
-          {id:"A1-U4-L4-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se llama el menú/carta en un restaurante?",options:["lista","cardápio","pedido","conta"],answer:1,explanation:"Cardápio = menú/carta.",hint:"La carta con los platos"},
-          {id:"A1-U4-L4-E2",type:"fill_blank",skill:"vocabulary",question:"'Água ___ gás, por favor.' (sin)",answer:["sem"],hint:"Sem = sin (opuesto de com=con)",explanation:"Sem = sin. Com = con. Água sem gás = agua sin gas."},
-          {id:"A1-U4-L4-E3",type:"multiple_choice",skill:"grammar",question:"'Eu ___ o frango e ela ___ a salada.' (querer)",options:["quer/quero","quero/quer","quero/quero","quer/quer"],answer:1,explanation:"EU + QUERER = QUERO. ELA + QUERER = QUER.",hint:"QUERER: eu=quero, ela=quer"},
-          {id:"A1-U4-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'Disculpe, ¿cuál es el plato del día? ¿Tiene opción sin gluten? La cuenta, por favor.'",answer:["com licença qual é o prato do dia","tem opção sem glúten","a conta por favor"],hint:"com licença · prato do dia · sem glúten · a conta",explanation:"Com licença, qual é o prato do dia? Tem opção sem glúten? A conta, por favor."},
-          {id:"A1-U4-L4-E5",type:"free_writing",skill:"writing",question:"Describí tu restaurante brasileiro ideal. ¿Qué tiene en el cardápio? ¿Cómo es el ambiente? ¿Qué pedirías? Mínimo 5 oraciones.",prompt:"Meu restaurante ideal teria... / No cardápio haveria... / Eu pediria... / O ambiente seria...",hint:"haveria=habría · pediria=pediría · seria=sería"}
-        ]
-      },
-      {
-        id: "A1-U4-L5",
-        title: "Os números grandes e o dinheiro",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Qual é o aluguel desse apartamento?\n— Dois mil e quinhentos reais por mês.\n— E o condomínio?\n— Mais oitocentos reais.\n— Total três mil e trezentos. Está caro para o bairro?\n— Na média. Outros custam entre quatro e cinco mil.\n— E conta de luz e água?\n— Mais ou menos duzentos reais juntos.",
-        memoryPhrases: ["Quanto custa/fica?","Dois mil reais.","Entre... e... reais.","Por mês/semana/ano.","Está caro/barato."],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre o custo de vida em São Paulo ou Rio (real ou imaginário). Compare com os preços na sua cidade. Mínimo 6 frases com números.",
-        content: "# Números Grandes e o Dinheiro\n\n## Números 100-1.000.000\n100=cem · 200=duzentos · 300=trezentos · 400=quatrocentos\n500=quinhentos · 600=seiscentos · 700=setecentos\n800=oitocentos · 900=novecentos · 1.000=mil\n2.000=dois mil · 10.000=dez mil · 1.000.000=um milhão\n\nCombinando:\n1.500=mil e quinhentos\n2.750=dois mil setecentos e cinquenta\n\n## A moeda brasileira\nReal (R$) = real · Reais = reales (plural)\n1 real = 100 centavos\nR$ 25,90 = vinte e cinco reais e noventa centavos\n\n## Vocabulário financeiro\naluguel=alquiler · condomínio=expensas\nconta de luz=factura electricidad · conta de água\npreço=precio · custo=costo · gratuito/grátis · pago\neconomizar=ahorrar · gastar · desconto · promoção",
-        exercises: [
-          {id:"A1-U4-L5-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se dice 'dos mil quinientos' en português?",options:["dois centos e cinquenta","dois mil e quinhentos","duzentos e cinquenta","dois bilhões"],answer:1,explanation:"2.500 = dois mil e quinhentos.",hint:"2.000 + 500"},
-          {id:"A1-U4-L5-E2",type:"fill_blank",skill:"vocabulary",question:"La moneda de Brasil se llama ___ (singular).",answer:["real"],hint:"La unidad monetaria de Brasil",explanation:"Real = la moneda. Plural: reais. Símbolo: R$."},
-          {id:"A1-U4-L5-E3",type:"multiple_choice",skill:"vocabulary",question:"R$ 1.750,00 se lee como:",options:["mil e setecentos e cinquenta reais","setecentos e cinquenta reais","mil reais e setecentos","um milhão"],answer:0,explanation:"R$ 1.750 = mil e setecentos e cinquenta reais.",hint:"1.000 + 700 + 50"},
-          {id:"A1-U4-L5-E4",type:"translation",skill:"writing",question:"Traduce: 'El alquiler es de mil ochocientos reales por mes. Los gastos comunes son trescientos reales.'",answer:["o aluguel é de mil e oitocentos reais por mês","o condomínio é de trezentos reais"],hint:"aluguel · mil e oitocentos · por mês · condomínio · trezentos",explanation:"O aluguel é de mil e oitocentos reais por mês. O condomínio é de trezentos reais."},
-          {id:"A1-U4-L5-E5",type:"free_writing",skill:"writing",question:"Describí el costo de vida en tu ciudad y comparalo con São Paulo o Rio. Mínimo 5 oraciones.",prompt:"Na minha cidade, o aluguel custa... / A comida por mês fica... / No Brasil, os preços são...",hint:"custa=cuesta · fica=queda · mais/menos caro"}
-        ]
-      }
-    ]
-  }
-];
+export const CURRICULUM_ES_A1_PART2 = {
+  units: [
+    {
+      id: "ES-A1-U3",
+      title: "Comida e Restaurante",
+      description: "Vocabulário de alimentos, pedidos e restaurantes",
+      lessons: [
+        {
+          id: "ES-A1-U3-L1",
+          title: "Los Alimentos — Os Alimentos",
+          shadowing: "— ¿Qué hay para desayunar?\n— Hay pan, huevos, fruta y café.\n— ¿Tienes leche?\n— Sí, hay leche en el refrigerador.\n— ¿Y para el almuerzo?\n— Vamos a comer arroz con pollo.",
+          memoryPhrases: [
+            "el pan = o pão",
+            "los huevos = os ovos",
+            "la leche = o leite",
+            "el arroz = o arroz",
+            "el pollo = o frango",
+            "la fruta = a fruta"
+          ],
+          oralProduction: "Diga em voz alta o que você comeu hoje usando vocabulário em espanhol.",
+          exercises: [
+            { id: "ES-A1-U3-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'frango' em espanhol?", options: ["pavo", "cerdo", "pollo", "res"], answer: 2, explanation: "Pollo = frango em espanhol. Pavo = peru, cerdo = porco, res = boi/vaca." },
+            { id: "ES-A1-U3-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'los huevos'?", options: ["Os ovos", "Os ovários", "As frutas", "Os pães"], answer: 0, explanation: "Los huevos = os ovos. É uma das palavras mais comuns em espanhol culinário." },
+            { id: "ES-A1-U3-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Quiero _____ con leche.' (Quero café com leite.)", answer: ["café"], hint: "a bebida quente mais popular", explanation: "Café = café. Em espanhol é masculino: el café." },
+            { id: "ES-A1-U3-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Tenho arroz, feijão e frango para o almoço.'", answer: ["Tengo arroz, frijoles y pollo para el almuerzo."], explanation: "Frijoles = feijão (México/América Latina). Almuerzo = almoço. Pollo = frango." },
+            { id: "ES-A1-U3-L1-E5", type: "free_writing", skill: "writing", question: "Escreva o menu do seu café da manhã, almoço e jantar ideais em espanhol.", prompt: "Inclua: desayuno · almuerzo · cena · pelo menos 8 alimentos", hint: "desayuno = café da manhã, almuerzo = almoço, cena = jantar" }
+          ]
+        },
+        {
+          id: "ES-A1-U3-L2",
+          title: "En el Restaurante — No Restaurante",
+          shadowing: "— Buenas tardes. ¿Tienen mesa para dos?\n— Sí, por supuesto. Por aquí, por favor.\n— ¿Qué nos recomienda?\n— El pollo asado está muy bueno hoy.\n— Perfecto. Dos pollos asados y dos aguas, por favor.\n— ¿Algo más?\n— La cuenta, por favor.",
+          memoryPhrases: [
+            "¿Tienen mesa para...? = Têm mesa para...?",
+            "¿Qué nos recomienda? = O que nos recomenda?",
+            "La cuenta, por favor = A conta, por favor",
+            "¿Algo más? = Mais alguma coisa?",
+            "por supuesto = claro / é claro",
+            "Para mí... = Para mim..."
+          ],
+          oralProduction: "Pratique um diálogo de restaurante em voz alta: peça uma mesa, faça seu pedido e peça a conta.",
+          exercises: [
+            { id: "ES-A1-U3-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se pede a conta em espanhol?", options: ["La mesa, por favor", "La cuenta, por favor", "El menú, por favor", "El agua, por favor"], answer: 1, explanation: "La cuenta = a conta. 'La cuenta, por favor' é a frase mais importante num restaurante!" },
+            { id: "ES-A1-U3-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'por supuesto'?", options: ["Por favor", "Claro / É claro", "Por enquanto", "Por acaso"], answer: 1, explanation: "Por supuesto = claro / é claro / com certeza. Equivale a 'claro que sim'." },
+            { id: "ES-A1-U3-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: '_____ mí, una ensalada.' (Para mim, uma salada.)", answer: ["Para"], hint: "indica para quem é o pedido", explanation: "Para mí = para mim. 'Para mí' + pedido é a forma mais comum de pedir em restaurante." },
+            { id: "ES-A1-U3-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Você pode nos recomendar algo especial hoje?'", answer: ["¿Puede recomendarnos algo especial hoy?", "¿Nos puede recomendar algo especial hoy?"], explanation: "Puede = pode. Recomendarnos = nos recomendar. Algo = algo. Hoy = hoje." },
+            { id: "ES-A1-U3-L2-E5", type: "free_writing", skill: "writing", question: "Escreva um diálogo completo de restaurante em espanhol. Mínimo 8 falas.", prompt: "Inclua: pedir mesa · perguntar o menu · fazer pedido · pedir a conta · pagar", hint: "La cuenta, para mí, ¿qué recomienda?, por supuesto" }
+          ]
+        },
+        {
+          id: "ES-A1-U3-L3",
+          title: "Las Bebidas e Expresiones de Cantidad",
+          shadowing: "— ¿Qué vas a tomar?\n— Quiero un jugo de naranja, por favor.\n— ¿Grande o pequeño?\n— Grande, por favor. ¿Cuánto cuesta?\n— Son tres pesos.\n— ¿Tiene agua sin gas?\n— Sí, claro.",
+          memoryPhrases: [
+            "el jugo / el zumo = o suco",
+            "el agua = a água (atenção: masculino com artigo!)",
+            "sin gas / con gas = sem gás / com gás",
+            "¿Cuánto cuesta? = Quanto custa?",
+            "¿Cuánto cuestan? = Quanto custam?",
+            "mucho / poco = muito / pouco"
+          ],
+          oralProduction: "Peça 3 bebidas diferentes em espanhol com detalhes (tamanho, com/sem gás, etc.).",
+          exercises: [
+            { id: "ES-A1-U3-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'suco de laranja' em espanhol?", options: ["agua de naranja", "jugo de naranja", "leche de naranja", "té de naranja"], answer: 1, explanation: "Jugo de naranja = suco de laranja. Na Espanha usam 'zumo', na América Latina usam 'jugo'." },
+            { id: "ES-A1-U3-L3-E2", type: "multiple_choice", skill: "grammar", question: "Qual é correto: '_____ agua está fría'?", options: ["La", "El", "Los", "Las"], answer: 1, explanation: "El agua (masculino!) = a água. Em espanhol, substantivos femininos que começam com A tônico usam 'el' no singular: el agua, el alma, el aula." },
+            { id: "ES-A1-U3-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: '¿Cuánto _____?' (Quanto custa?)", answer: ["cuesta"], hint: "verbo costar no presente, singular", explanation: "Cuesta = custa. ¿Cuánto cuesta? = Quanto custa? Para plural: ¿Cuánto cuestan?" },
+            { id: "ES-A1-U3-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Quero uma água com gás e um suco de maçã, por favor.'", answer: ["Quiero un agua con gas y un jugo de manzana, por favor."], explanation: "Un agua (masculino no singular). Jugo de manzana = suco de maçã. Manzana = maçã." },
+            { id: "ES-A1-U3-L3-E5", type: "free_writing", skill: "writing", question: "Você está num café. Peça bebidas para você e dois amigos. Escreva o diálogo completo.", prompt: "Inclua: saudação · pedidos com detalhes · preços · pagamento", hint: "Para mí..., Para él/ella..., ¿Cuánto cuesta?, La cuenta" }
+          ]
+        },
+        {
+          id: "ES-A1-U3-L4",
+          title: "Verbos Irregulares Essenciais — Querer, Poder, Tener",
+          shadowing: "— ¿Quieres venir conmigo?\n— Sí, quiero, pero no puedo. Tengo que trabajar.\n— ¿Y mañana puedes?\n— Sí, mañana puedo. ¿A qué hora quieres ir?\n— Quiero ir a las diez. ¿Tienes tiempo?\n— Sí, tengo tiempo por la mañana.",
+          memoryPhrases: [
+            "querer: quiero, quieres, quiere, queremos, quieren",
+            "poder: puedo, puedes, puede, podemos, pueden",
+            "tener: tengo, tienes, tiene, tenemos, tienen",
+            "quiero = quero / eu quero",
+            "puedo = posso",
+            "tengo que = tenho que / preciso"
+          ],
+          oralProduction: "Conjugue querer, poder e tener em voz alta para todas as pessoas. Depois crie 2 frases com cada um.",
+          exercises: [
+            { id: "ES-A1-U3-L4-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Eu posso ajudar' em espanhol?", options: ["Yo puede ayudar", "Yo puedo ayudar", "Yo podemos ayudar", "Yo podes ayudar"], answer: 1, explanation: "Puedo = posso. Poder é irregular: puedo, puedes, puede, podemos, pueden." },
+            { id: "ES-A1-U3-L4-E2", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Ela tem um carro' em espanhol?", options: ["Ella tiene un coche", "Ella tengo un coche", "Ella tienes un coche", "Ella tenemos un coche"], answer: 0, explanation: "Tiene = tem (ela/ele). Tener: tengo, tienes, tiene, tenemos, tienen." },
+            { id: "ES-A1-U3-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Nosotros _____ ir mañana.' (Nós queremos ir amanhã.)", answer: ["queremos"], hint: "querer conjugado na 1ª pessoa plural", explanation: "Queremos = queremos. Nosotros + querer = queremos (forma regular no plural)." },
+            { id: "ES-A1-U3-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Quero ir mas não posso porque tenho muito trabalho.'", answer: ["Quiero ir pero no puedo porque tengo mucho trabajo."], explanation: "Quiero, puedo, tengo = os três verbos irregulares essenciais numa só frase!" },
+            { id: "ES-A1-U3-L4-E5", type: "free_writing", skill: "writing", question: "Escreva sobre seus planos para o fim de semana usando querer, poder e tener. Mínimo 6 frases.", prompt: "Inclua: o que você quer fazer · o que você pode fazer · o que você tem que fazer", hint: "Quiero, puedo, tengo que + infinitivo" }
+          ]
+        },
+        {
+          id: "ES-A1-U3-L5",
+          title: "El Tiempo — O Tempo e as Estações",
+          shadowing: "— ¿Cómo está el tiempo hoy?\n— Hace mucho calor. Son treinta y cinco grados.\n— ¡Qué calor! ¿Y para mañana?\n— Dicen que va a llover.\n— ¿En qué estación estamos?\n— Estamos en verano. El invierno en Brasil es en julio.",
+          memoryPhrases: [
+            "Hace calor/frío = Está quente/frio",
+            "Hace sol/viento = Tem sol/vento",
+            "Llueve / Está lloviendo = Chove / Está chovendo",
+            "la primavera/el verano = a primavera/o verão",
+            "el otoño/el invierno = o outono/o inverno",
+            "¿Qué tiempo hace? = Como está o tempo?"
+          ],
+          oralProduction: "Descreva o tempo hoje e nessa estação do ano onde você mora, em espanhol.",
+          exercises: [
+            { id: "ES-A1-U3-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'Está quente' em espanhol?", options: ["Está caliente", "Hace calor", "Tiene calor", "Hay calor"], answer: 1, explanation: "Hace calor = está quente / faz calor. Em espanhol usamos HACER para o tempo: hace calor, hace frío, hace sol, hace viento." },
+            { id: "ES-A1-U3-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'verão' em espanhol?", options: ["primavera", "otoño", "verano", "invierno"], answer: 2, explanation: "Verano = verão. Cuidado: 'primavera' existe em espanhol com o mesmo significado!" },
+            { id: "ES-A1-U3-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: '¿Qué tiempo _____?' (Como está o tempo?)", answer: ["hace"], hint: "verbo fazer (tiempo)", explanation: "Hace = faz. ¿Qué tiempo hace? = Como está o tempo? / Que tempo faz?" },
+            { id: "ES-A1-U3-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'No inverno faz frio e chove muito aqui.'", answer: ["En invierno hace frío y llueve mucho aquí."], explanation: "En invierno = no inverno. Hace frío = faz frio. Llueve = chove. Mucho = muito." },
+            { id: "ES-A1-U3-L5-E5", type: "free_writing", skill: "writing", question: "Escreva uma descrição do tempo típico de cada estação na cidade onde você mora.", prompt: "Inclua: as 4 estações · temperaturas · que tipo de tempo faz · o que você gosta", hint: "primavera, verano, otoño, invierno, hace calor/frío, llueve, hay sol" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-A1-U4",
+      title: "Cidade e Transportes",
+      description: "Vocabulário para se orientar na cidade e usar transportes",
+      lessons: [
+        {
+          id: "ES-A1-U4-L1",
+          title: "En la Ciudad — Na Cidade",
+          shadowing: "— Perdona, ¿dónde está el banco?\n— Está a dos cuadras de aquí, a la derecha.\n— ¿Y la farmacia?\n— La farmacia está al lado del supermercado.\n— Muchas gracias.\n— De nada. ¡Buena suerte!",
+          memoryPhrases: [
+            "el banco = o banco",
+            "la farmacia = a farmácia",
+            "el supermercado = o supermercado",
+            "a la derecha / a la izquierda = à direita / à esquerda",
+            "recto / todo recto = em frente / sempre em frente",
+            "cerca / lejos = perto / longe"
+          ],
+          oralProduction: "Dê direções para 3 lugares diferentes na sua cidade, em espanhol.",
+          exercises: [
+            { id: "ES-A1-U4-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'à direita' em espanhol?", options: ["a la izquierda", "a la derecha", "todo recto", "al lado"], answer: 1, explanation: "A la derecha = à direita. A la izquierda = à esquerda. Todo recto = sempre em frente." },
+            { id: "ES-A1-U4-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'al lado de'?", options: ["Em frente de", "Atrás de", "Ao lado de", "Longe de"], answer: 2, explanation: "Al lado de = ao lado de. Outras preposições de lugar: enfrente de (em frente de), detrás de (atrás de)." },
+            { id: "ES-A1-U4-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El hotel está _____ la izquierda.' (O hotel fica à esquerda.)", answer: ["a"], hint: "preposição de direção", explanation: "A la izquierda = à esquerda. A la derecha = à direita." },
+            { id: "ES-A1-U4-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'O banco fica ao lado da farmácia, à esquerda.'", answer: ["El banco está al lado de la farmacia, a la izquierda."], explanation: "Está al lado de = fica ao lado de. A la izquierda = à esquerda." },
+            { id: "ES-A1-U4-L1-E5", type: "free_writing", skill: "writing", question: "Escreva as direções da sua casa até o supermercado mais próximo, em espanhol.", prompt: "Inclua: direções (derecha/izquierda) · distância · pontos de referência", hint: "Doble a la derecha, siga todo recto, está a dos cuadras" }
+          ]
+        },
+        {
+          id: "ES-A1-U4-L2",
+          title: "Los Transportes — Os Transportes",
+          shadowing: "— ¿Cómo vas al trabajo?\n— Voy en metro. Es más rápido.\n— ¿No hay autobús?\n— Sí, pero el metro es más cómodo.\n— ¿Cuánto cuesta el billete?\n— Un euro con cincuenta.\n— ¡Qué barato!",
+          memoryPhrases: [
+            "el metro = o metrô",
+            "el autobús = o ônibus",
+            "el taxi = o táxi",
+            "el avión = o avião",
+            "en coche = de carro",
+            "a pie = a pé"
+          ],
+          oralProduction: "Explique em espanhol como você vai ao trabalho, escola ou outros lugares que você frequenta.",
+          exercises: [
+            { id: "ES-A1-U4-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'ônibus' em espanhol?", options: ["el metro", "el autobús", "el tren", "el taxi"], answer: 1, explanation: "El autobús = o ônibus. Em alguns países da América Latina também usam 'el bus' ou 'el colectivo'." },
+            { id: "ES-A1-U4-L2-E2", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Eu vou de carro'?", options: ["Voy en pie", "Voy a coche", "Voy en coche", "Voy con coche"], answer: 2, explanation: "En coche = de carro. Em espanhol usa-se EN para meio de transporte: en metro, en autobús, en avión. Exceção: a pie (a pé)." },
+            { id: "ES-A1-U4-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Voy al aeropuerto _____ taxi.' (Vou ao aeroporto de táxi.)", answer: ["en"], hint: "preposição para meios de transporte", explanation: "En taxi = de táxi. Sempre EN com meios de transporte (exceto a pie)." },
+            { id: "ES-A1-U4-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Prefiro o metrô porque é mais rápido e mais barato que o táxi.'", answer: ["Prefiero el metro porque es más rápido y más barato que el taxi."], explanation: "Prefiero = prefiro. Más rápido = mais rápido. Más barato = mais barato. Que = que (comparação)." },
+            { id: "ES-A1-U4-L2-E5", type: "free_writing", skill: "writing", question: "Escreva sobre como você se locomove na sua cidade. Prefere qual transporte e por quê?", prompt: "Inclua: meios de transporte que usa · comparações (más/menos) · por que prefere", hint: "Voy en..., prefiero..., es más/menos... que..." }
+          ]
+        },
+        {
+          id: "ES-A1-U4-L3",
+          title: "Ir + Infinitivo — Futuro Próximo",
+          shadowing: "— ¿Qué vas a hacer este fin de semana?\n— Voy a descansar. Estoy muy cansado.\n— ¿No vas a salir?\n— Sí, voy a salir el domingo. Voy a ver una película.\n— ¿Con quién vas a ir?\n— Voy a ir con mi familia.",
+          memoryPhrases: [
+            "voy a + infinitivo = vou + infinitivo",
+            "vas a + infinitivo = vai + infinitivo (você)",
+            "va a + infinitivo = vai + infinitivo (ele/ela)",
+            "vamos a + infinitivo = vamos + infinitivo",
+            "van a + infinitivo = vão + infinitivo",
+            "este fin de semana = neste fim de semana"
+          ],
+          oralProduction: "Fale sobre seus planos para esta semana usando IR + infinitivo. Mínimo 5 frases.",
+          exercises: [
+            { id: "ES-A1-U4-L3-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Vou viajar' em espanhol?", options: ["Yo va a viajar", "Yo voy a viajar", "Yo vamos a viajar", "Yo van a viajar"], answer: 1, explanation: "Voy a viajar = vou viajar. Estrutura: IR conjugado + A + infinitivo." },
+            { id: "ES-A1-U4-L3-E2", type: "multiple_choice", skill: "grammar", question: "Complete: 'Ellos _____ a estudiar mañana.'", options: ["voy", "va", "vamos", "van"], answer: 3, explanation: "Van = vão (eles). IR no presente: voy, vas, va, vamos, van. Para ellos: van." },
+            { id: "ES-A1-U4-L3-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Mañana _____ a llover.' (Amanhã vai chover.)", answer: ["va"], hint: "IR para 3ª pessoa singular (o tempo)", explanation: "Va a llover = vai chover. O sujeito é implícito (o tempo). Use va (3ª pessoa singular)." },
+            { id: "ES-A1-U4-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Nós vamos visitar nossa família neste fim de semana.'", answer: ["Vamos a visitar a nuestra familia este fin de semana."], explanation: "Vamos a visitar = vamos visitar. A nuestra familia = nossa família (com a preposição 'a' antes de pessoas)." },
+            { id: "ES-A1-U4-L3-E5", type: "free_writing", skill: "writing", question: "Escreva sobre seus planos para as próximas férias usando IR + infinitivo. Mínimo 7 frases.", prompt: "Inclua: para onde vai · o que vai fazer · com quem · quando vai voltar", hint: "Voy a ir a..., voy a hacer..., vamos a..., van a..." }
+          ]
+        },
+        {
+          id: "ES-A1-U4-L4",
+          title: "Verbos Reflexivos — Rotina Diária",
+          shadowing: "— ¿A qué hora te levantas?\n— Me levanto a las seis y media.\n— ¿Y te duchas por la mañana?\n— Sí, me ducho y me peino. ¿Y tú?\n— Yo me levanto tarde. Me quedo en cama hasta las ocho.\n— ¡Qué suerte!",
+          memoryPhrases: [
+            "levantarse = levantar-se (me levanto, te levantas...)",
+            "ducharse = tomar banho (me ducho, te duchas...)",
+            "peinarse = pentear-se (me peino, te peinas...)",
+            "acostarse = deitar-se (me acuesto, te acuestas...)",
+            "llamarse = chamar-se (me llamo, te llamas...)",
+            "quedarse = ficar (me quedo, te quedas...)"
+          ],
+          oralProduction: "Descreva sua rotina diária em espanhol usando verbos reflexivos. Mínimo 5 ações.",
+          exercises: [
+            { id: "ES-A1-U4-L4-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Eu me levanto' em espanhol?", options: ["Yo levanto", "Me levanto", "Te levantas", "Se levanta"], answer: 1, explanation: "Me levanto = eu me levanto. Verbos reflexivos sempre têm o pronome reflexivo: me, te, se, nos, se." },
+            { id: "ES-A1-U4-L4-E2", type: "multiple_choice", skill: "grammar", question: "Como se diz 'Ela toma banho' em espanhol?", options: ["Ella ducho", "Ella te duchas", "Ella se ducha", "Ella nos duchamos"], answer: 2, explanation: "Se ducha = toma banho (ela). Verbos reflexivos 3ª pessoa: sempre SE + verbo conjugado." },
+            { id: "ES-A1-U4-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete: '¿A qué hora _____ acuestas?' (A que horas você vai dormir?)", answer: ["te"], hint: "pronome reflexivo para 'tú'", explanation: "Te acuestas = você vai dormir/se deita. Reflexivo para 'tú' é sempre TE." },
+            { id: "ES-A1-U4-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Nós nos levantamos às seis e nos deitamos às onze.'", answer: ["Nos levantamos a las seis y nos acostamos a las once."], explanation: "Nos levantamos = nos levantamos. Nos acostamos = nos deitamos. Nos = pronome reflexivo para nosotros." },
+            { id: "ES-A1-U4-L4-E5", type: "free_writing", skill: "writing", question: "Escreva sua rotina completa de um dia típico usando verbos reflexivos. Mínimo 8 frases.", prompt: "Inclua: hora de acordar · banho · café da manhã · trabalho/estudo · hora de dormir", hint: "Me levanto, me ducho, me peino, me acuesto, me quedo..." }
+          ]
+        },
+        {
+          id: "ES-A1-U4-L5",
+          title: "Las Compras — As Compras",
+          shadowing: "— Buenos días. ¿Qué desea?\n— Quiero una camisa azul, talla mediana.\n— ¿Cómo le queda esta?\n— Me queda bien, pero ¿tiene en otro color?\n— Sí, tenemos en blanco y en negro.\n— ¿Cuánto cuesta?\n— Cuarenta euros.\n— Me la llevo.",
+          memoryPhrases: [
+            "¿Qué desea? = O que deseja? / Em que posso ajudar?",
+            "¿Cuánto cuesta? = Quanto custa?",
+            "Me la llevo = Vou levar",
+            "¿Tiene en otro color? = Tem em outra cor?",
+            "talla = tamanho (roupa)",
+            "Me queda bien = Me cai bem / Me serve"
+          ],
+          oralProduction: "Pratique uma conversa de compra em uma loja de roupas em espanhol.",
+          exercises: [
+            { id: "ES-A1-U4-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'Me la llevo'?", options: ["Não vou levar", "Vou levar", "Vou pensar", "É muito caro"], answer: 1, explanation: "Me la llevo = vou levar (isso). É a forma de dizer que você vai comprar algo numa loja." },
+            { id: "ES-A1-U4-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'tamanho M' em espanhol?", options: ["talla pequeña", "talla mediana", "talla grande", "talla extra"], answer: 1, explanation: "Talla mediana = tamanho médio (M). Pequeña = P, Mediana = M, Grande = G, Extra grande = XL." },
+            { id: "ES-A1-U4-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: '¿Cómo le _____?' (Como fica? / Como está servindo?)", answer: ["queda"], hint: "verbo quedar para roupa", explanation: "¿Cómo le queda? = Como fica? / Como está servindo? Me queda bien = me serve / me cai bem." },
+            { id: "ES-A1-U4-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'Você tem essa camisa em tamanho grande e em cor preta?'", answer: ["¿Tiene esta camisa en talla grande y en color negro?", "¿Tiene esta camisa en grande y en negro?"], explanation: "¿Tiene? = você tem? Esta camisa = essa camisa. En talla grande = em tamanho grande. En negro = em preto." },
+            { id: "ES-A1-U4-L5-E5", type: "free_writing", skill: "writing", question: "Escreva um diálogo completo de compras numa loja de roupas. Mínimo 10 falas.", prompt: "Inclua: cumprimento · pedir ajuda · perguntar preço · tamanho/cor · decisão de compra", hint: "¿Qué desea?, ¿Cuánto cuesta?, ¿Tiene en...?, Me la llevo / No me la llevo" }
+          ]
+        }
+      ]
+    }
+  ]
+};
