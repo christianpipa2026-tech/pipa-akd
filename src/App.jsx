@@ -793,7 +793,7 @@ function RecsOverlay({ show, level, onClose }) {
       <div style={{background:"var(--color-background-primary)", borderRadius:"20px 20px 0 0", padding:"24px 20px 32px", width:"100%", maxWidth:480, maxHeight:"80vh", overflowY:"auto"}} onClick={e => e.stopPropagation()}>
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:18}}>
           <div>
-            <p style={{fontSize:11, fontWeight:700, color:"var(--color-accent)", letterSpacing:"0.06em", textTransform:"uppercase", margin:"0 0 3px"}}>Unidade completa 🎉</p>
+            <p style={{fontSize:11, fontWeight:700, color:"var(--color-accent)", letterSpacing:"0.06em", textTransform:"uppercase", margin:"0 0 3px"}}>¡Unidad completa! 🎉</p>
             <h2 style={{fontSize:18, fontWeight:800, color:"var(--color-text-primary)", margin:0, letterSpacing:"-0.02em"}}>Treine o ouvido agora</h2>
           </div>
           <button onClick={onClose} style={{cursor:"pointer", border:"none", background:"var(--color-background-secondary)", borderRadius:999, width:32, height:32, fontSize:16, display:"flex", alignItems:"center", justifyContent:"center", color:"var(--color-text-secondary)", fontFamily:"var(--font-sans)"}}>×</button>
@@ -936,7 +936,7 @@ export default function App() {
     utt.lang = "es-MX";
     utt.rate = 0.85;
     utt.pitch = 1;
-    // Intentar usar una voz pt-BR si está disponible
+    // Intentar usar una voz es-MX si está disponible
     const voices = window.speechSynthesis.getVoices();
     const ptVoice = voices.find(v => v.lang === "es-MX") || voices.find(v => v.lang.startsWith("pt"));
     if (ptVoice) utt.voice = ptVoice;
@@ -1114,16 +1114,16 @@ export default function App() {
       if (modelo) {
         // Hay respuesta modelo exacta — comparación directa
         setAiFeedback(
-          `📝 TU RESPUESTA:\n${userAnswer}\n\n✅ RESPUESTA MODELO:\n${modelo}\n\n💡 Compará tu respuesta con el modelo. Fijate en: ortografía, concordância (gênero/número), conjugação verbal, e vocabulário usado.`
+          `📝 TU RESPUESTA:\n${userAnswer}\n\n✅ RESPUESTA MODELO:\n${modelo}\n\n💡 Compara tu respuesta con el modelo. Fíjate en: ortografía, concordancia (género/número), conjugación verbal y vocabulario.`
         );
       } else {
         // Ejercicio abierto (sin única respuesta correcta) — checklist de autoevaluación
         const checklist = ex.prompt ? ex.prompt.replace(/^Incluí?:?\s*/i, "") : null;
         setAiFeedback(
-          `📝 TU RESPUESTA:\n${userAnswer}\n\n✅ AUTOAVALIAÇÃO — este exercício é aberto (sem resposta única). Verifica se a tua resposta inclui:\n${checklist ? checklist.split("·").map(s => "• " + s.trim()).join("\n") : "• Tudo o que o enunciado pediu"}\n\n${ex.hint ? "💡 Dica: " + ex.hint : ""}\n\nSe cumpriste esses pontos com frases corretas em português, está bem!`
+          `📝 TU RESPUESTA:\n${userAnswer}\n\n✅ AUTOEVALUACIÓN — este ejercicio es abierto (sin respuesta única). Verifica que tu respuesta incluya:\n${checklist ? checklist.split("·").map(s => "• " + s.trim()).join("\n") : "• Todo lo que el enunciado pedía"}\n\n${ex.hint ? "💡 Dica: " + ex.hint : ""}\n\nSi cumpliste esos puntos con frases correctas en español, ¡está bien!`
         );
       }
-      setExerciseFeedback({ ok:true, msg:"Autoavaliação disponível abaixo 👇" });
+      setExerciseFeedback({ ok:true, msg:"Autoevaluación disponible abajo 👇" });
       saveProgress({...progress, [ex.id]: true});
     }
   };
@@ -1263,7 +1263,7 @@ REGLAS ABSOLUTAS:
 
     return (
       <div style={S}>
-        <button onClick={() => setRefSection(null)} style={{cursor:"pointer", border:"none", background:"transparent", color:"var(--color-text-tertiary)", fontFamily:"var(--font-sans)", fontSize:13, padding:0, marginBottom:16, display:"flex", alignItems:"center", gap:4}}>← Voltar</button>
+        <button onClick={() => setRefSection(null)} style={{cursor:"pointer", border:"none", background:"transparent", color:"var(--color-text-tertiary)", fontFamily:"var(--font-sans)", fontSize:13, padding:0, marginBottom:16, display:"flex", alignItems:"center", gap:4}}>← Volver</button>
 
         <div style={{background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", borderRadius:16, padding:"16px 18px", marginBottom:16}}>
           <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", textTransform:"uppercase", letterSpacing:"0.06em", margin:"0 0 4px"}}>{icons[refSection]} Referência</p>
@@ -1315,7 +1315,7 @@ REGLAS ABSOLUTAS:
             <span style={{fontSize:34}}>🇧🇷</span>
           </div>
           <h1 style={{fontSize:27, fontWeight:800, color:"var(--color-text-primary)", margin:"0 0 8px", letterSpacing:"-0.02em"}}>
-            Português do Brasil
+            Pipa Akd — Aprenda Español
           </h1>
           <p style={{fontSize:15, color:"var(--color-text-secondary)", margin:0, lineHeight:1.5}}>
             Do zero à fluência real.<br/>A1 → Master.
@@ -1325,8 +1325,8 @@ REGLAS ABSOLUTAS:
         <div style={{display:"flex", flexDirection:"column", gap:10, marginBottom:"2.25rem"}}>
           {[
             { icon:"headphones", color:"var(--bg-accent)", colorIcon:"var(--text-accent)", title:"Shadowing real", desc:"Imite o ritmo e a entonação brasileira desde o primeiro dia" },
-            { icon:"pencil", color:"var(--bg-pro)", colorIcon:"var(--text-pro)", title:"1.440 exercícios", desc:"De A1 a Master — a progressão mais completa do mercado" },
-            { icon:"volume", color:"var(--bg-warning)", colorIcon:"var(--text-warning)", title:"Áudio em pt-BR", desc:"Escute cada diálogo e pratique a pronúncia" },
+            { icon:"pencil", color:"var(--bg-pro)", colorIcon:"var(--text-pro)", title:"1.440 ejercicios", desc:"De A1 a Master — la progresión más completa del mercado" },
+            { icon:"volume", color:"var(--bg-warning)", colorIcon:"var(--text-warning)", title:"Áudio em es-MX", desc:"Escute cada diálogo e pratique a pronúncia" },
           ].map(item => (
             <div key={item.title} style={{display:"flex", gap:14, alignItems:"center", background:"var(--color-background-primary)", borderRadius:16, padding:"14px 16px", boxShadow:"var(--shadow-card)"}}>
               <div style={{width:38, height:38, borderRadius:11, background:item.color, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0}}>
@@ -1500,7 +1500,7 @@ REGLAS ABSOLUTAS:
         <div style={{background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", borderRadius:20, padding:"18px 20px 22px", marginBottom:16}}>
           <div style={{display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:14, flexWrap:"wrap", gap:10}}>
             <div>
-              <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", letterSpacing:"0.08em", textTransform:"uppercase", margin:"0 0 4px"}}>Português do Brasil</p>
+              <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", letterSpacing:"0.08em", textTransform:"uppercase", margin:"0 0 4px"}}>Pipa Akd — Espanhol</p>
               <p style={{fontSize:19, fontWeight:700, color:"#fff", margin:0, letterSpacing:"-0.02em"}}>Nível de Espanhol {assignedLevel}</p>
             </div>
             <div style={{display:"flex", alignItems:"center", gap:8, flexWrap:"wrap"}}>
@@ -1536,7 +1536,7 @@ REGLAS ABSOLUTAS:
             </div>
             <span style={{fontSize:12, fontWeight:600, color:"#fff"}}>{pct}%</span>
           </div>
-          <p style={{fontSize:12, color:"rgba(255,255,255,0.75)", margin:"6px 0 0"}}>{done}/{allEx.length} exercícios completados</p>
+          <p style={{fontSize:12, color:"rgba(255,255,255,0.75)", margin:"6px 0 0"}}>{done}/{allEx.length} ejercicios completados</p>
         </div>
 
         {/* Reference materials */}
@@ -1548,7 +1548,7 @@ REGLAS ABSOLUTAS:
         </div>
 
         <div style={{display:"flex", gap:8, marginBottom:"1.25rem", flexWrap:"wrap"}}>
-          {[["curriculum","book-2","Lições"],["situations","theater","Situações"],["stats","chart-bar","Progresso"]].map(([m,icon,l]) => (
+          {[["curriculum","book-2","Lecciones"],["situations","theater","Situaciones"],["stats","chart-bar","Progreso"]].map(([m,icon,l]) => (
             <button key={m} onClick={() => setSessionMode(m)} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:6, padding:"9px 16px", borderRadius:10, fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)", background:sessionMode===m?"var(--color-accent)":"var(--color-background-primary)", color:sessionMode===m?"#fff":"var(--color-text-secondary)", border:sessionMode===m?"none":"0.5px solid var(--color-border-secondary)", boxShadow:sessionMode===m?"var(--shadow-card)":"none"}}>
               <i className={`ti ti-${icon}`} style={{fontSize:15}} aria-hidden="true"></i>
               {l}
@@ -1569,7 +1569,7 @@ REGLAS ABSOLUTAS:
                       <span style={{fontSize:17, color:unitComplete?"var(--text-success)":"var(--color-text-tertiary)"}}>{unitComplete ? "✓" : "📚"}</span>
                     </div>
                     <div>
-                      <p style={{fontSize:11, fontWeight:700, color:"var(--color-accent)", letterSpacing:"0.04em", textTransform:"uppercase", margin:"0 0 2px"}}>Unidade {ui+1}</p>
+                      <p style={{fontSize:11, fontWeight:700, color:"var(--color-accent)", letterSpacing:"0.04em", textTransform:"uppercase", margin:"0 0 2px"}}>Unidad {ui+1}</p>
                       <p style={{fontSize:14.5, fontWeight:600, color:"var(--color-text-primary)", margin:0}}>{unit.title}</p>
                     </div>
                   </div>
@@ -1612,7 +1612,7 @@ REGLAS ABSOLUTAS:
 
         {sessionMode==="stats" && <div>
           <div style={{background:"var(--color-background-primary)", borderRadius:16, padding:18, boxShadow:"var(--shadow-card)"}}>
-            <div style={{display:"flex", alignItems:"center", gap:10, marginBottom:14}}><span style={{fontSize:20}}>📊</span><h2 style={{fontSize:15, fontWeight:700, color:"var(--color-text-primary)", margin:0}}>Progresso em {assignedLevel}</h2></div>
+            <div style={{display:"flex", alignItems:"center", gap:10, marginBottom:14}}><span style={{fontSize:20}}>📊</span><h2 style={{fontSize:15, fontWeight:700, color:"var(--color-text-primary)", margin:0}}>Mi progreso en {assignedLevel}</h2></div>
             {(() => {
               const units = FULL_CURRICULUM[assignedLevel]?.units || [];
               return units.map((unit, ui) => {
@@ -1688,7 +1688,7 @@ REGLAS ABSOLUTAS:
           <div style={{background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", borderRadius:20, padding:"18px 20px 22px", marginBottom:16}}>
             <button onClick={() => setSessionMode("situations")} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:6, border:"none", background:"rgba(255,255,255,0.18)", borderRadius:999, padding:"7px 14px", marginBottom:14}}>
               <span style={{color:"#fff", fontSize:16}}>←</span>
-              <span style={{color:"#fff", fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)"}}>Voltar</span>
+              <span style={{color:"#fff", fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)"}}>Volver</span>
             </button>
             <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:14}}>
               <div style={{width:42, height:42, borderRadius:12, background:"rgba(255,255,255,0.18)", display:"flex", alignItems:"center", justifyContent:"center", fontSize:20, flexShrink:0}}>{currentDialogue.emoji}</div>
@@ -1696,7 +1696,7 @@ REGLAS ABSOLUTAS:
             </div>
             <div style={{display:"flex", gap:8}}>
               <button onClick={() => speakDialogue(currentDialogue.lines)} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:6, border:"none", borderRadius:10, padding:"8px 16px", fontSize:13, fontWeight:600, background:"#fff", color:"var(--color-accent-dark)", fontFamily:"var(--font-sans)"}}>
-                <span style={{fontSize:14}}>▶</span> Ouvir diálogo
+                <span style={{fontSize:14}}>▶</span> Escuchar diálogo
               </button>
               <button onClick={() => window.speechSynthesis.cancel()} style={{cursor:"pointer", border:"none", borderRadius:10, padding:"6px 12px", background:"rgba(255,255,255,0.18)", fontSize:14, color:"#fff", fontWeight:700, lineHeight:1, fontFamily:"var(--font-sans)"}}>
                 ■
@@ -1812,7 +1812,7 @@ REGLAS ABSOLUTAS:
     const SoundBtn = ({ onPlay }) => (
       <div style={{display:"flex", gap:6}}>
         <button onClick={onPlay} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:5, border:"none", borderRadius:8, padding:"6px 12px", fontSize:12, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
-          <span style={{fontSize:12}}>▶</span> Ouvir
+          <span style={{fontSize:12}}>▶</span> Escuchar
         </button>
         <button onClick={() => window.speechSynthesis.cancel()} style={{cursor:"pointer", border:"none", borderRadius:8, padding:"6px 12px", background:"var(--color-background-secondary)", fontSize:14, color:"var(--color-text-primary)", fontFamily:"var(--font-sans)", fontWeight:700, lineHeight:1}}>
           ■
@@ -1827,7 +1827,7 @@ REGLAS ABSOLUTAS:
           <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:16}}>
             <button onClick={() => setScreen("session")} style={{cursor:"pointer", border:"none", background:"rgba(255,255,255,0.18)", borderRadius:999, padding:"7px 14px", display:"flex", alignItems:"center", gap:6}}>
               <span style={{color:"#fff", fontSize:16}}>←</span>
-              <span style={{color:"#fff", fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)"}}>Voltar</span>
+              <span style={{color:"#fff", fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)"}}>Volver</span>
             </button>
             {streak.count > 0 && (
               <div style={{display:"flex", alignItems:"center", gap:6, background:"rgba(255,255,255,0.18)", padding:"5px 12px", borderRadius:999}}>
@@ -1836,7 +1836,7 @@ REGLAS ABSOLUTAS:
               </div>
             )}
           </div>
-          <p style={{color:"rgba(255,255,255,0.75)", fontSize:11, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", margin:"0 0 5px"}}>{currentUnit?.title || "Lição"}</p>
+          <p style={{color:"rgba(255,255,255,0.75)", fontSize:11, fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase", margin:"0 0 5px"}}>{currentUnit?.title || "Lección"}</p>
           <h1 style={{color:"#fff", fontSize:21, fontWeight:700, margin:"0 0 14px", lineHeight:1.25, letterSpacing:"-0.02em"}}>{lesson.title}</h1>
           <div style={{display:"flex", alignItems:"center", gap:8}}>
             <div style={{flex:1, height:6, background:"rgba(255,255,255,0.25)", borderRadius:999, overflow:"hidden"}}>
@@ -1848,7 +1848,7 @@ REGLAS ABSOLUTAS:
 
         {/* OBJECTIVES */}
         {lesson.objectives && (
-          <Block bgIcon="var(--bg-success)" colorIcon="var(--text-success)" icon="🎯" title="Objetivos da lição">
+          <Block bgIcon="var(--bg-success)" colorIcon="var(--text-success)" icon="🎯" title="Objetivos de la lección">
             {lesson.objectives.map((o,i) => (
               <p key={i} style={{fontSize:13, color:"var(--color-text-secondary)", margin:"4px 0", lineHeight:1.5}}>· {o}</p>
             ))}
@@ -1946,7 +1946,7 @@ REGLAS ABSOLUTAS:
         )}
 
         <button onClick={() => startLessonExercises(lesson)} style={{cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", gap:8, width:"100%", marginTop:6, padding:16, background:"var(--color-accent)", color:"#fff", border:"none", borderRadius:16, fontSize:15, fontWeight:600, fontFamily:"var(--font-sans)"}}>
-          Praticar esta lição <span style={{fontSize:16}}>→</span>
+          Practicar esta lección <span style={{fontSize:16}}>→</span>
         </button>
       </div>
     );
@@ -1962,11 +1962,11 @@ REGLAS ABSOLUTAS:
           <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:12}}>
             <button onClick={() => { setReviewMode(false); setReviewExercises([]); setScreen("session"); }} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:6, border:"none", background:"rgba(255,255,255,0.18)", borderRadius:999, padding:"7px 14px"}}>
               <span style={{color:"#fff", fontSize:16}}>←</span>
-              <span style={{color:"#fff", fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)"}}>Voltar</span>
+              <span style={{color:"#fff", fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)"}}>Volver</span>
             </button>
             <div style={{textAlign:"right"}}>
               <p style={{fontSize:11, color:"rgba(255,255,255,0.75)", margin:0}}>{reviewMode ? "Repaso de errores" : currentLesson?.title}</p>
-              <p style={{fontSize:12, fontWeight:600, color:"#fff", margin:"2px 0 0"}}>Exercício {exerciseIdx+1} de {total}</p>
+              <p style={{fontSize:12, fontWeight:600, color:"#fff", margin:"2px 0 0"}}>Ejercicio {exerciseIdx+1} de {total}</p>
             </div>
           </div>
           <div style={{height:6, background:"rgba(255,255,255,0.25)", borderRadius:999, overflow:"hidden"}}>
@@ -2042,7 +2042,7 @@ REGLAS ABSOLUTAS:
             </button>
           ) : (
             <button onClick={nextExercise} style={{cursor:"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)"}}>
-              {exerciseIdx+1 < total ? "Próximo exercício" : "Finalizar lição"} <span style={{fontSize:16}}>→</span>
+              {exerciseIdx+1 < total ? "Próximo ejercicio" : "Finalizar lección"} <span style={{fontSize:16}}>→</span>
             </button>
           )}
           {ex.hint && !exerciseAnswered && (
