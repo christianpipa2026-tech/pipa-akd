@@ -992,6 +992,10 @@ export default function App() {
     if (i === evalQs[evalIdx].ans) setEvalScore(s => s+1);
   };
 
+  const checkEvalQ = () => {
+    setEvalAnswered(true);
+  };
+
   const nextEvalQ = () => {
     const correct  = evalSelected === evalQs[evalIdx].ans;
     const newScore = evalScore + (correct ? 1 : 0);
@@ -1414,7 +1418,7 @@ REGLAS ABSOLUTAS:
 
         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:8}}>
           {!evalAnswered ? (
-            <button onClick={checkEvalQ} disabled={evalSelected===""} style={{cursor:evalSelected===""?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalSelected===""?0.4:1}}>
+            <button onClick={checkEvalQ} disabled={evalSelected===null} style={{cursor:evalSelected===null?"not-allowed":"pointer", display:"flex", alignItems:"center", gap:7, border:"none", borderRadius:14, padding:"13px 22px", fontSize:14, fontWeight:600, background:"var(--color-accent)", color:"#fff", fontFamily:"var(--font-sans)", opacity:evalSelected===null?0.4:1}}>
               ✓ Confirmar
             </button>
           ) : (
