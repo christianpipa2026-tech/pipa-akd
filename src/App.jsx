@@ -1095,9 +1095,14 @@ export default function App() {
 
     } else {
       // translation / free_writing — mostrar respuesta modelo para autocorrección
-      if (userAnswer.trim().length < 15) {
+      if (ex.type === "free_writing" && userAnswer.trim().length < 15) {
         setExerciseAnswered(false);
         setExerciseFeedback({ ok:null, msg:"Por favor escribe una respuesta más completa." });
+        return;
+      }
+      if (userAnswer.trim().length < 1) {
+        setExerciseAnswered(false);
+        setExerciseFeedback({ ok:null, msg:"Por favor escribe tu respuesta." });
         return;
       }
       // Construir la respuesta modelo a partir de explanation y/o answer
