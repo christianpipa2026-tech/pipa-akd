@@ -1,5 +1,6 @@
 import { CURRICULUM_ES_A1 } from "./curriculum_A1";
 import { CURRICULUM_A2 as CURRICULUM_ES_A2 } from "./curriculum_A2";
+import { CURRICULUM_B1 as CURRICULUM_ES_B1 } from "./curriculum_B1";
 
 
 export const REFERENCE = {
@@ -406,7 +407,7 @@ export const REFERENCE = {
 // Importações dos outros níveis (placeholder — serão criados)
 const emptyLevel = { units: [] };
 
-const CURRICULUM_ES_B1 = emptyLevel;
+
 const CURRICULUM_ES_B2 = emptyLevel;
 const CURRICULUM_ES_C1 = emptyLevel;
 const CURRICULUM_ES_C2 = emptyLevel;
