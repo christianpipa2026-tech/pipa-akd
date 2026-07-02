@@ -1,227 +1,228 @@
-// B1 — Unidades 3 y 4
-export const B1_U3_U4 = [
-  {
-    id: "B1-U3",
-    title: "Comunicação avançada — debate, argumentação e persuasão",
-    description: "Expressar-se com precisão, defender ideias e convencer",
-    lessons: [
-      {
-        id: "B1-U3-L1",
-        title: "Debatendo — estrutura e vocabulário",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Vou defender que a educação pública deve ser prioridade nacional.\n— Interessante. Qual é o seu principal argumento?\n— O principal é que a educação é um direito fundamental. Sem ela, nenhum outro direito é garantido.\n— Entendo seu ponto, no entanto, discordo da solução proposta.\n— Por quê? Pode elaborar?\n— Porque investir apenas em educação pública sem reformar o sistema é insuficiente.\n— Você tem um ponto válido. Porém, o debate não é só sobre investimento, é sobre acesso.\n— Concordo em parte. Mas precisamos de dados concretos para essa discussão.",
-        memoryPhrases: [
-          "Qual é o seu argumento principal?",
-          "Você tem um ponto válido.",
-          "Discordo da solução proposta.",
-          "Pode elaborar?",
-          "Concordo em parte, mas..."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Debata com um parceiro imaginário sobre educação pública vs. privada no Brasil. Apresente 3 argumentos, rebata 2 contra-argumentos e conclua. Mínimo 10 frases com vocabulário de debate.",
-        content: "# Debatendo — Estrutura e Vocabulário\n\n## Estrutura de um debate\n1. TESE: Defendo que...\n2. ARGUMENTO 1: Em primeiro lugar...\n3. ARGUMENTO 2: Além disso / Em segundo lugar...\n4. ARGUMENTO 3: Por fim / Finalmente...\n5. CONTRA-ARGUMENTO: No entanto / Porém...\n6. REFUTAÇÃO: Apesar disso / Ainda assim...\n7. CONCLUSÃO: Portanto / Em suma...\n\n## Apresentar sua posição\nDefendo que... · Sou a favor de...\nSou contra... · Na minha perspectiva...\nDo meu ponto de vista... · Acredito firmemente que...\n\n## Argumentar\nEm primeiro lugar... · Além disso...\nNão só... como também... · Sem contar que...\nO fato é que... · Os dados mostram que...\nÉ comprovado que... · Vale lembrar que...\n\n## Rebater argumentos\nNo entanto... · Porém... · Todavia...\nAinda assim... · Apesar disso...\nEm contrapartida... · Por outro lado...\nSeu argumento seria válido se...\nPermita-me discordar... · Respeitosamente, creio que...\n\n## Conceder e manter posição\nVocê tem razão em parte, mas...\nReconheço que... porém...\nÉ verdade que... no entanto...",
-        exercises: [
-          {id:"B1-U3-L1-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál expresión introduce el argumento principal de un debate?",options:["Em contrapartida...","Em primeiro lugar...","Apesar disso...","Por outro lado..."],answer:1,explanation:"Em primeiro lugar = En primer lugar. Introduce el argumento principal de la tesis.",hint:"Para introducir el primer argumento"},
-          {id:"B1-U3-L1-E2",type:"fill_blank",skill:"vocabulary",question:"'Você tem razão em parte, ___ precisamos considerar outros fatores.' (conceder y mantener posición)",answer:["mas","porém","no entanto","todavia"],hint:"Concessão seguida de contraposição",explanation:"Mas/Porém/No entanto = Pero/Sin embargo. Para conceder e manter posição."},
-          {id:"B1-U3-L1-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál frase introduce una refutación educada?",options:["Você está completamente errado.","Permita-me discordar respeitosamente.","Isso não faz sentido.","Seu argumento é inválido."],answer:1,explanation:"Permita-me discordar respeitosamente = Permítame discrepar respetuosamente. Educada y formal.",hint:"Refutação educada y formal"},
-          {id:"B1-U3-L1-E4",type:"translation",skill:"writing",question:"Traduce: 'Defiendo que la educación pública es un derecho fundamental. En primer lugar, sin educación ningún otro derecho es posible. Además, los datos muestran que los países más desarrollados invierten más en educación.'",answer:["defendo que a educação pública é um direito fundamental","em primeiro lugar sem educação nenhum outro direito é possível","além disso os dados mostram que os países mais desenvolvidos investem mais em educação"],hint:"defendo que · em primeiro lugar · além disso · os dados mostram",explanation:"Defendo que a educação pública é um direito fundamental. Em primeiro lugar, sem educação nenhum outro direito é possível. Além disso, os dados mostram que os países mais desenvolvidos investem mais em educação."},
-          {id:"B1-U3-L1-E5",type:"free_writing",skill:"writing",question:"Escreva um parágrafo argumentativo completo sobre um tema que você defende: tese, 3 argumentos, reconhecimento do contra-argumento e conclusão. Mínimo 10 orações.",prompt:"Defendo que... / Em primeiro lugar... / Além disso... / Por fim... / É verdade que... porém... / Portanto...",hint:"tese clara · 3 argumentos com conectivos · concessão + refutação · conclusão forte"}
-        ]
-      },
-      {
-        id: "B1-U3-L2",
-        title: "Linguagem formal e informal — registro preciso",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Tô muito na correria hoje, sabe?\n— É, a semana tá pesada pra todo mundo.\n— É isso. Mas falando sério, você conseguiu aquela reunião com o cliente?\n— Consegui sim. Agendei para a próxima quarta.\n— Boa! Como você vai apresentar a proposta?\n— Vou ser bem direto. Apresentar os dados, os benefícios e o custo.\n— Mas lembra que ele é bem formal. Vai ter que adaptar o tom.\n— Boa observação. Com ele, preciso ser mais cuidadoso no vocabulário.\n— Exatamente. Deixa de ser informal e vai na formalidade.",
-        memoryPhrases: [
-          "Tô na correria. (informal)",
-          "Estou muito ocupado. (formal)",
-          "Que foi? (informal)",
-          "O que ocorreu? (formal)",
-          "Precisamos adequar o registro."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Conte a mesma situação duas vezes — primeiro de forma informal (para um amigo) e depois de forma formal (para o chefe). Mínimo 6 frases em cada registro.",
-        content: "# Linguagem Formal e Informal — Registros\n\n## Vocabulário comparado\nInformal → Formal\ntô = estou · tá = está · pra = para\ngente = pessoas/nós · a gente = nós\nnego/negão = pessoa · cara = senhor\ntrem (MG) = coisa · troço = objeto\npô / poxa = expressão de espanto → ah\ncaramba = caramba → nossa\n\n## Construções diferentes\nInformal: A gente foi lá.\nFormal: Nós fomos ao local.\n\nInformal: Me dá uma ideia.\nFormal: Poderia me dar uma sugestão?\n\nInformal: Tô precisando de ajuda.\nFormal: Necessito de assistência.\n\nInformal: O projeto tá show.\nFormal: O projeto está excelente.\n\n## Emails: informal vs. formal\nInformal: Oi João, tudo bem?\nFormal: Prezado Sr. João,\n\nInformal: Obrigado! Beijos.\nFormal: Agradeço antecipadamente. Atenciosamente,\n\n## Situações e registros\nAmigos/família → informal\nChefe/cliente → formal\nReunião de trabalho → semi-formal a formal\nWhatsApp profissional → semi-formal\nDocumentos/emails → formal\n\n## Verbos formais mais usados\nNecessitar (precisar) · Solicitar (pedir)\nInformar (avisar) · Comunicar (falar)\nAguardar (esperar) · Encaminhar (mandar)",
-        exercises: [
-          {id:"B1-U3-L2-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál es la versión formal de 'Tô precisando de ajuda'?",options:["Preciso de ajuda urgente.","Necessito de assistência.","Me ajuda aí.","Pode me dar uma força?"],answer:1,explanation:"NECESSITO DE ASSISTÊNCIA = forma más formal. PRECISAR → NECESSITAR. AJUDA → ASSISTÊNCIA.",hint:"PRECISAR → NECESSITAR · AJUDA → ASSISTÊNCIA"},
-          {id:"B1-U3-L2-E2",type:"fill_blank",skill:"vocabulary",question:"'___ pela atenção dispensada.' (agradecer formal — fórmula de encerramento)",answer:["agradeço antecipadamente","agradeço"],hint:"Fórmula formal de agradecimento em emails",explanation:"Agradeço antecipadamente pela atenção dispensada = Agradezco de antemano la atención prestada."},
-          {id:"B1-U3-L2-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál es la forma más formal de 'Manda isso pra mim'?",options:["Manda esse negócio.","Me encaminha isso.","Poderia encaminhar-me o documento?","Me passa isso por favor."],answer:2,explanation:"PODERIA ENCAMINHAR-ME O DOCUMENTO? = muy formal. MANDAR → ENCAMINHAR. ISSO → O DOCUMENTO.",hint:"La más formal: condicional + verbo formal + objeto específico"},
-          {id:"B1-U3-L2-E4",type:"translation",skill:"writing",question:"Traduce en registro formal: 'Hola, te escribo porque necesito que me mandes el informe cuanto antes. Gracias!'",answer:["prezado fulano venho por meio desta solicitar o envio do relatório com urgência","agradeço antecipadamente"],hint:"Prezado · venho solicitar · o envio do relatório · com urgência · agradeço antecipadamente",explanation:"Prezado [nome], Venho por meio desta solicitar o envio do relatório com urgência. Agradeço antecipadamente."},
-          {id:"B1-U3-L2-E5",type:"free_writing",skill:"writing",question:"Escreva a mesma mensagem em dois registros: 1) informal para um amigo e 2) formal para um cliente. O tema: você precisou adiar uma reunião. Mínimo 6 frases em cada versão.",prompt:"INFORMAL: Ei [amigo], tudo bem? Olha, sobre aquela reunião... / FORMAL: Prezado Sr./Sra. [nome], Venho por meio desta...",hint:"informal: tô, tá, a gente, gírias. formal: necessito, solicito, venho informar, agradeço antecipadamente"}
-        ]
-      },
-      {
-        id: "B1-U3-L3",
-        title: "Texto dissertativo — escrevendo com impacto",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Como você estrutura seus textos em português?\n— Começo sempre pela tese. Depois desenvolvo os argumentos.\n— E a conclusão?\n— A conclusão retoma a tese e fecha com uma reflexão ou proposta.\n— Você usa muitos conectivos?\n— Uso bastante. São eles que dão fluidez ao texto.\n— Alguma dica para quem está começando?\n— Leia muito em português. A leitura forma a estrutura mental do idioma.\n— Boa dica! E a prática de escrita?\n— Essencial! Escreva todo dia, mesmo que seja pouco. A consistência transforma.",
-        memoryPhrases: [
-          "A tese é a posição central.",
-          "Em primeiro lugar...",
-          "Por outro lado...",
-          "A conclusão retoma a tese.",
-          "A consistência transforma."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Explique para alguém como escrever um bom texto dissertativo. Dê a estrutura, dicas de conectivos e exemplos. Mínimo 8 frases.",
-        content: "# Texto Dissertativo\n\n## Estrutura clássica\nINTRODUÇÃO (1 parágrafo)\n- Contextualização do tema\n- Tese: sua posição clara\n\nDESENVOLVIMENTO (2-3 parágrafos)\n- Cada parágrafo = 1 argumento principal\n- Evidência/exemplo/dado que sustenta\n- Conexão com o próximo parágrafo\n\nCONCLUSÃO (1 parágrafo)\n- Retomada da tese (sem repetir igual)\n- Síntese dos argumentos\n- Reflexão final ou proposta de solução\n\n## Conectivos por função\nIntrodução: Atualmente · No contexto atual · Sabe-se que\nAdição: além disso · não só... como também · outrossim\nContraste: no entanto · por outro lado · em contrapartida\nCausa: pois · uma vez que · tendo em vista que\nConclusão: portanto · dessa forma · em suma · logo\n\n## Linguagem dissertativa\nÉ notório que... · Pode-se afirmar que...\nConforme dados do IBGE... · Segundo especialistas...\nÀ luz desses fatos... · Nesse contexto...\nFaz-se necessário que... · Urge que...\n\n## Erros comuns\n❌ Começar com 'Eu acho que' (muito informal)\n✅ 'É possível observar que' / 'Sabe-se que'\n❌ Parágrafo sem argumento claro\n✅ Cada parágrafo: tópico + desenvolvimento + ligação",
-        exercises: [
-          {id:"B1-U3-L3-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál conector introduce la conclusión de un texto dissertativo?",options:["Em primeiro lugar","Além disso","Portanto / Dessa forma","Uma vez que"],answer:2,explanation:"PORTANTO / DESSA FORMA = Por lo tanto / De esta forma. Para introducir la conclusión.",hint:"Para introducir la conclusión"},
-          {id:"B1-U3-L3-E2",type:"fill_blank",skill:"vocabulary",question:"'___ dados do IBGE, o Brasil tem mais de 210 milhões de habitantes.' (según — citação formal)",answer:["conforme","segundo","de acordo com"],hint:"Para citar fuentes en texto formal",explanation:"Conforme / Segundo / De acordo com = Según. Para citar fuentes en texto académico/dissertativo."},
-          {id:"B1-U3-L3-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál frase es apropiada para INICIAR un texto dissertativo?",options:["Eu acho que a tecnologia é importante.","Atualmente, a tecnologia transformou profundamente a sociedade.","A tecnologia é muito boa para nós.","Vou falar sobre a tecnologia."],answer:1,explanation:"ATUALMENTE + contextualização impersonal = apertura correcta de texto dissertativo.",hint:"Texto dissertativo: contextualização impessoal, sem 'eu acho'"},
-          {id:"B1-U3-L3-E4",type:"translation",skill:"writing",question:"Traduce en estilo dissertativo formal: 'Las redes sociales transformaron la manera en que nos comunicamos. Sin embargo, también generaron nuevos problemas sociales.'",answer:["as redes sociais transformaram profundamente a forma como nos comunicamos","no entanto também geraram novos problemas sociais"],hint:"transformaram profundamente · a forma como nos comunicamos · no entanto · também geraram",explanation:"As redes sociais transformaram profundamente a forma como nos comunicamos. No entanto, também geraram novos problemas sociais."},
-          {id:"B1-U3-L3-E5",type:"free_writing",skill:"writing",question:"Escreva um texto dissertativo completo (introdução + 2 argumentos + conclusão) sobre: 'O papel das redes sociais na sociedade brasileira contemporânea'. Mínimo 12 orações.",prompt:"INTRO: Atualmente... / Pode-se afirmar que... / DESENVOLVIMENTO: Em primeiro lugar... / Além disso... / CONCLUSÃO: Portanto... / Dessa forma...",hint:"intro com contextualização · 2 parágrafos de argumento · conclusão que retoma a tese"}
-        ]
-      },
-      {
-        id: "B1-U3-L4",
-        title: "Apresentação oral profissional",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Bom dia a todos. Hoje vou apresentar os resultados do terceiro trimestre.\n— Como referência, no período anterior tivemos um crescimento de 12%.\n— Este trimestre, superamos as expectativas com 18% de crescimento.\n— Para ilustrar, vejam o gráfico na tela. Os números falam por si.\n— Em segundo lugar, gostaria de destacar a expansão para o Nordeste.\n— Essa foi uma decisão estratégica que já mostrou resultados expressivos.\n— Por fim, proponho que no próximo trimestre foquemos na retenção de clientes.\n— Estou à disposição para perguntas. Muito obrigado pela atenção.",
-        memoryPhrases: [
-          "Hoje vou apresentar...",
-          "Como referência...",
-          "Para ilustrar...",
-          "Gostaria de destacar...",
-          "Estou à disposição."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Faça uma apresentação profissional de 3 minutos sobre um projeto, produto ou resultado. Use a estrutura completa: abertura, desenvolvimento (3 pontos), dados e conclusão com proposta. Mínimo 10 frases.",
-        content: "# Apresentação Oral Profissional\n\n## Abertura\nBom dia/boa tarde a todos.\nMeu nome é... e hoje apresentarei...\nO objetivo desta apresentação é...\nVou dividir a apresentação em X partes.\n\n## Referências e contexto\nComo referência... · Como ponto de partida...\nPara contextualizar... · Vale lembrar que...\nNo período anterior... · Historicamente...\n\n## Apresentar dados\nOs números mostram que... · Segundo os dados...\nO gráfico ilustra... · Como podemos ver...\nO resultado foi... · Atingimos...\nSuperamos / Ficamos abaixo de...\n\n## Transições\nEm primeiro lugar... · Em segundo lugar...\nAlém disso... · Gostaria de destacar...\nPassando para o próximo ponto...\nNo que se refere a... · Com relação a...\n\n## Proposta e conclusão\nProponho que... · Sugiro que...\nO próximo passo é... · A estratégia para...\nEm resumo... · Para concluir...\nFico à disposição para perguntas.\n\n## Vocabulário de negócios\ncrescimento = crecimiento · meta = meta/objetivo\nresultados = resultados · desempenho = desempeño\nexecutar = ejecutar · implementar · estratégia",
-        exercises: [
-          {id:"B1-U3-L4-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál frase se usa para hacer la TRANSICIÓN entre puntos de una presentación?",options:["Estou à disposição.","Passando para o próximo ponto...","Para contextualizar...","Em resumo..."],answer:1,explanation:"PASSANDO PARA O PRÓXIMO PONTO = Pasando al siguiente punto. Transición entre secciones.",hint:"Para pasar de un punto al siguiente"},
-          {id:"B1-U3-L4-E2",type:"fill_blank",skill:"vocabulary",question:"'___ os dados, o crescimento foi de 18% este trimestre.' (según los datos — citación formal)",answer:["segundo","conforme","de acordo com"],hint:"Según los datos = Segundo/Conforme/De acordo com os dados",explanation:"Segundo os dados = Según los datos. Para citar fuentes en presentaciones."},
-          {id:"B1-U3-L4-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo terminás formalmente una presentación antes de abrir el debate?",options:["Fim da apresentação!","Tchau e obrigado!","Fico à disposição para perguntas.","É isso aí, pessoal."],answer:2,explanation:"FICO À DISPOSIÇÃO PARA PERGUNTAS = Quedo a disposición para preguntas. Fórmula formal de cierre.",hint:"Fórmula formal para abrir espaço para perguntas"},
-          {id:"B1-U3-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'Buenos días a todos. Hoy voy a presentar los resultados del proyecto. Para contextualizar, en el trimestre anterior tuvimos un crecimiento del 12%.'",answer:["bom dia a todos","hoje vou apresentar os resultados do projeto","para contextualizar no trimestre anterior tivemos um crescimento de doze por cento"],hint:"bom dia a todos · hoje vou apresentar · para contextualizar · no trimestre anterior · crescimento",explanation:"Bom dia a todos. Hoje vou apresentar os resultados do projeto. Para contextualizar, no trimestre anterior tivemos um crescimento de 12%."},
-          {id:"B1-U3-L4-E5",type:"free_writing",skill:"writing",question:"Escreva o roteiro completo de uma apresentação profissional sobre um tema que você domina. Inclua: abertura, 3 pontos com dados/exemplos, transições e conclusão com proposta. Mínimo 12 orações.",prompt:"Bom dia! Hoje vou apresentar... / Para contextualizar... / Em primeiro lugar... / Passando para... / Gostaria de destacar... / Por fim, proponho que...",hint:"abertura formal · referências · 3 pontos com transições · dados · conclusão + proposta · disponível para perguntas"}
-        ]
-      },
-      {
-        id: "B1-U3-L5",
-        title: "Comunicação não violenta e resolução de conflitos",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Precisamos conversar sobre o que aconteceu na reunião.\n— Claro. Me sinto um pouco desconfortável com o que foi dito.\n— Entendo. Quando você disse aquilo, me senti desrespeitado.\n— Não era minha intenção. Lamento se soou assim.\n— Agradeço por isso. O que me incomoda é quando...\n— Entendo sua perspectiva. O que você precisa é que eu...\n— Isso ajudaria muito. Você consegue fazer isso?\n— Posso tentar. E o que eu precisaria de você é...\n— Com certeza. Vamos chegar a um acordo?",
-        memoryPhrases: [
-          "Me sinto desconfortável com...",
-          "Quando você disse isso, eu senti...",
-          "Não era minha intenção.",
-          "O que eu preciso é...",
-          "Vamos chegar a um acordo."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Simule uma conversa de resolução de conflito usando linguagem não violenta. Expresse seus sentimentos, necessidades e faça um pedido claro. Mínimo 8 frases.",
-        content: "# Comunicação Não Violenta — CNV\n\n## Os 4 componentes da CNV\n1. OBSERVAÇÃO: O que aconteceu (sem julgamento)\n2. SENTIMENTO: Como você se sentiu\n3. NECESSIDADE: O que você precisa\n4. PEDIDO: O que você pede concretamente\n\n## Observações sem julgamento\nQuando você [ação concreta]...\nNa reunião de ontem, quando...\nAo receber seu email, percebi que...\n\n## Expressar sentimentos\nMe sinto... (triste/frustrado/desconfortável)\nFiquei... (surpreso/chateado/preocupado)\nEssa situação me deixa...\n\n## Expressar necessidades\nO que eu preciso é...\nPara mim é importante...\nNecessito que...\n\n## Fazer pedidos\nVocê poderia...?\nO que eu te peço é...\nSeria possível...?\nPoderíamos combinar que...?\n\n## Receber críticas\nEntendo o que você está dizendo.\nLamento se soou assim.\nNão era minha intenção.\nO que eu quis dizer foi...\n\n## Vocabulário de resolução\nchegar a um acordo = llegar a un acuerdo\nentrar em consenso = llegar a un consenso\ndisponível para conversar · aberto a feedback\npedir desculpas = disculparse",
-        exercises: [
-          {id:"B1-U3-L5-E1",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál frase expresa un SENTIMENTO en comunicación no violenta?",options:["Você sempre chega atrasado!","Você é muito descuidado.","Quando você chega tarde, me sinto desrespeitado.","O problema é você."],answer:2,explanation:"CNV: observação (quando você chega tarde) + sentimento (me sinto desrespeitado). Sin juicio.",hint:"CNV: observação concreta + sentimento (eu), sem julgamento do outro"},
-          {id:"B1-U3-L5-E2",type:"fill_blank",skill:"vocabulary",question:"'O que eu ___ de você é mais comunicação sobre os prazos.' (necesito — CNV)",answer:["preciso","necessito"],hint:"PRECISAR/NECESSITAR DE = necesitar (necessidade na CNV)",explanation:"O que eu PRECISO de você = Lo que necesito de vos. Expresión de necesidad en CNV."},
-          {id:"B1-U3-L5-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál respuesta usa comunicación no violenta al recibir una crítica?",options:["Isso não é verdade!","Você está exagerando.","Entendo o que você está dizendo. Lamento se soou assim.","A culpa não é minha."],answer:2,explanation:"Entendo + Lamento se soou assim = CNV para recibir crítica. Sin defensiva, reconociendo el impacto.",hint:"CNV: receber crítica = entender + reconhecer o impacto"},
-          {id:"B1-U3-L5-E4",type:"translation",skill:"writing",question:"Traduce en estilo CNV: 'Cuando no recibo respuesta a mis emails, me siento ignorado. Necesito que respondas dentro de 24 horas. ¿Podés hacer eso?'",answer:["quando não recebo resposta aos meus emails me sinto ignorado","preciso que você responda dentro de vinte e quatro horas","você consegue fazer isso"],hint:"quando não recebo · me sinto ignorado · preciso que responda · dentro de 24 horas · você consegue",explanation:"Quando não recebo resposta aos meus emails, me sinto ignorado. Preciso que você responda dentro de 24 horas. Você consegue fazer isso?"},
-          {id:"B1-U3-L5-E5",type:"free_writing",skill:"writing",question:"Escreva um diálogo de resolução de conflito usando os 4 componentes da CNV: observação, sentimento, necessidade e pedido. Mínimo 10 falas entre duas pessoas.",prompt:"A: Precisamos conversar sobre... / B: Claro. / A: Quando você... me sinto... / B: Não era minha intenção... / A: O que eu preciso é... / B: Podemos combinar que...",hint:"observação sem julgamento · sentimento (eu) · necessidade · pedido concreto · resposta empática"}
-        ]
-      }
-    ]
-  },
-  {
-    id: "B1-U4",
-    title: "Brasil contemporâneo — sociedade e política",
-    description: "Entender e falar sobre o Brasil atual com profundidade",
-    lessons: [
-      {
-        id: "B1-U4-L1",
-        title: "Sistema político e governança brasileira",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você entende bem o sistema político brasileiro?\n— Razoavelmente. É uma república presidencialista com três poderes.\n— Exatamente. E o Congresso? Sabe como funciona?\n— Sei que tem o Senado e a Câmara dos Deputados.\n— Isso. E o processo eleitoral? O voto é obrigatório aqui.\n— Sim! É diferente do meu país. Todos os maiores de 18 anos devem votar.\n— E o que você acha disso?\n— Acho interessante. Garante maior participação, mas também pode gerar votos sem reflexão.\n— É um debate importante. Democracia exige participação consciente.",
-        memoryPhrases: [
-          "É uma república presidencialista.",
-          "O voto é obrigatório.",
-          "O Congresso é bicameral.",
-          "Os três poderes são...",
-          "A democracia exige participação."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Explique o sistema político do Brasil para um estrangeiro. Compare com o sistema do seu país. Dê sua opinião sobre voto obrigatório. Mínimo 8 frases.",
-        content: "# Sistema Político Brasileiro\n\n## Forma de governo\nRepública Federativa do Brasil\nPresidencialismo = el presidente es jefe de estado y gobierno\nFederalismo = União + 26 estados + DF + 5.570 municípios\n\n## Os três poderes\nExecutivo: Presidente + governadores + prefeitos\nLegislativo: Congresso Nacional = Senado + Câmara\nJudiciário: STF · STJ · TRF · TSE (eleitoral)\n\n## O Congresso\nSenado Federal: 81 senadores (3 por estado)\nCâmara dos Deputados: 513 deputados (proporcional)\n\n## Sistema eleitoral\nVoto obrigatório = 18-70 anos\nVoto facultativo = 16-17 e maiores de 70\nEleições a cada 4 anos (presidente e governadores)\nPrefeitos e vereadores: a cada 4 anos (anos pares)\n\n## Partidos políticos\nBrasil tem mais de 30 partidos registrados!\nSistema multipartidário e de coalizão\nPT, PL, MDB, PSDB, PP, PDT, PSB = principais\n\n## Vocabulário político\neleitores = electores · candidato = candidato\ncampanha = campaña · urna eletrônica = urna electrónica\nmandato = mandato · reeleição = reelección\nimpeachment · coalização = coalición",
-        exercises: [
-          {id:"B1-U4-L1-E1",type:"multiple_choice",skill:"culture",question:"¿Cuántos senadores tiene el Senado Federal del Brasil?",options:["513","81","26","100"],answer:1,explanation:"O Senado Federal tem 81 senadores (3 por cada estado + DF).",hint:"3 senadores por estado × 27 unidades federativas"},
-          {id:"B1-U4-L1-E2",type:"fill_blank",skill:"culture",question:"No Brasil, o voto é ___ para pessoas entre 18 e 70 anos.",answer:["obrigatório"],hint:"No Brasil o voto não é opcional para essa faixa etária",explanation:"Voto obrigatório para 18-70 anos. Facultativo para 16-17 e maiores de 70."},
-          {id:"B1-U4-L1-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cómo se llama el sistema donde el presidente es simultáneamente jefe de estado y de gobierno?",options:["Parlamentarismo","Presidencialismo","Monarquia constitucional","Federalismo"],answer:1,explanation:"PRESIDENCIALISMO = el presidente es jefe de estado Y de gobierno al mismo tiempo.",hint:"El sistema político donde el presidente concentra el poder ejecutivo"},
-          {id:"B1-U4-L1-E4",type:"translation",skill:"writing",question:"Traduce: 'Brasil es una república presidencialista y federal. El Congreso Nacional está compuesto por el Senado y la Cámara de Diputados. El voto es obligatorio para los adultos.'",answer:["o brasil é uma república presidencialista e federativa","o congresso nacional é composto pelo senado e pela câmara dos deputados","o voto é obrigatório para os adultos"],hint:"república presidencialista e federativa · composto pelo senado e pela câmara · voto obrigatório",explanation:"O Brasil é uma república presidencialista e federativa. O Congresso Nacional é composto pelo Senado e pela Câmara dos Deputados. O voto é obrigatório para os adultos."},
-          {id:"B1-U4-L1-E5",type:"free_writing",skill:"writing",question:"Escreva um texto comparando o sistema político do seu país com o do Brasil. Mencione: forma de governo, poder legislativo, sistema eleitoral e participação cidadã. Mínimo 10 orações.",prompt:"No Brasil... / No meu país... / Uma diferença importante é... / Em ambos os países... / Na minha opinião...",hint:"república/monarquia · presidencialismo/parlamentarismo · voto obrigatório/facultativo · congresso/parlamento"}
-        ]
-      },
-      {
-        id: "B1-U4-L2",
-        title: "Desigualdade social e mobilidade no Brasil",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Como você enxerga a desigualdade no Brasil?\n— É muito gritante. O Brasil é um dos países mais desiguais do mundo.\n— Por que você acha que isso acontece?\n— São vários fatores: histórico escravagista, concentração de renda, acesso desigual à educação.\n— E o que tem melhorado?\n— Programas como o Bolsa Família ajudaram muito a reduzir a pobreza extrema.\n— Mas ainda há muito a fazer, né?\n— Muito. A mobilidade social existe, mas é difícil. O ponto de partida importa demais.\n— É um tema que merece atenção constante da sociedade e do governo.",
-        memoryPhrases: [
-          "É um dos mais desiguais.",
-          "O histórico pesa muito.",
-          "A mobilidade existe, mas...",
-          "O ponto de partida importa.",
-          "Merece atenção constante."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Dê sua opinião sobre desigualdade social no Brasil ou no seu país. Use dados e argumentos. Apresente causas, consequências e possíveis soluções. Mínimo 8 frases.",
-        content: "# Desigualdade Social e Mobilidade\n\n## O contexto brasileiro\nCoeficiente de Gini = medida de desigualdade (Brasil ≈ 0.52)\nConcentração de renda = concentración de ingresos\n1% mais rico tem mais que 50% do total\nPobreza extrema = pobreza extrema\nFome ainda afeta milhões de brasileiros\n\n## Causas históricas\nEscravidão (1500-1888) = 388 anos de trabalho forçado\nConcentração de terras = latifúndio\nFalta de acesso à educação de qualidade\nCorrupção e má gestão de recursos públicos\nRacismo estrutural que limita oportunidades\n\n## Programas sociais\nBolsa Família / Bolsa Família = transferência de renda\nMinha Casa Minha Vida = habitação popular\nProUni = bolsas universitárias\nCREI/CRAS = assistência social\nSUS = saúde universal gratuita\n\n## Mobilidade social\nAscensão social = ascenso social\nClasse C = classe média brasileira emergente\nCota = cuota (racial, social, escolar)\nCotas raciais nas universidades = política afirmativa\n\n## Vocabulário\ngritante = flagrante · gritante\nabismo social = abismo social\nfavelado = persona de favela\nperiferia = periferia · vulnerável = vulnerable",
-        exercises: [
-          {id:"B1-U4-L2-E1",type:"multiple_choice",skill:"culture",question:"¿Cuántos años duró la esclavitud en Brasil?",options:["188 años","288 años","388 años","488 años"],answer:2,explanation:"La esclavitud en Brasil duró 388 años (1500-1888), la más larga de las Américas.",hint:"Desde el año 1500 hasta 1888"},
-          {id:"B1-U4-L2-E2",type:"fill_blank",skill:"vocabulary",question:"O ___ Família é o principal programa de transferência de renda do Brasil para famílias em situação de pobreza.",answer:["bolsa","Bolsa"],hint:"O nome completo do programa social mais conhecido do Brasil",explanation:"Bolsa Família = programa de transferencia de renda condicional para familias en pobreza."},
-          {id:"B1-U4-L2-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Qué son las 'cotas raciais' en las universidades brasileñas?",options:["Límite de estudiantes por raza","Becas solo para blancos","Cuotas afirmativas para negros, pardos e indígenas","Requisito de hablar lengua indígena"],answer:2,explanation:"Cotas raciais = cuotas afirmativas para negros, pardos e indígenas en universidades públicas. Política de reparación histórica.",hint:"Política afirmativa de reparação histórica"},
-          {id:"B1-U4-L2-E4",type:"translation",skill:"writing",question:"Traduce: 'La desigualdad social en Brasil es muy notoria. Tiene causas históricas profundas, como la esclavitud. Los programas sociales han ayudado, pero queda mucho por hacer.'",answer:["a desigualdade social no brasil é muito gritante","tem causas históricas profundas como a escravidão","os programas sociais ajudaram mas ainda há muito a fazer"],hint:"desigualdade · gritante · causas históricas · escravidão · programas sociais · ainda há muito",explanation:"A desigualdade social no Brasil é muito gritante. Tem causas históricas profundas, como a escravidão. Os programas sociais ajudaram, mas ainda há muito a fazer."},
-          {id:"B1-U4-L2-E5",type:"free_writing",skill:"writing",question:"Escreva um texto argumentativo sobre desigualdade social no Brasil ou no seu país. Inclua: causas históricas, situação atual, programas existentes e propostas de melhoria. Mínimo 12 orações.",prompt:"A desigualdade social no Brasil/meu país é... / Historicamente... / Atualmente... / Os programas como... / Para resolver isso, seria necessário que...",hint:"desigualdade · causas históricas · situação atual · programas sociais · propostas com subjuntivo"}
-        ]
-      },
-      {
-        id: "B1-U4-L3",
-        title: "Cultura pop e entretenimento brasileiro",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você acompanha alguma novela brasileira?\n— Acompanho! Comecei a assistir para praticar o português.\n— Qual você está vendo?\n— Uma da Globo. Estou viciada! A história é muito bem feita.\n— Novela é uma ótima forma de aprender o português coloquial.\n— Com certeza! Aprendo gírias, expressões, entonação...\n— E música? Ouve algum artista brasileiro?\n— Ouço muito sertanejo e MPB. Mas estou descobrindo o pagode também.\n— O pagode é muito rico em vocabulário e sentimento.\n— É verdade! Cada música é uma lição de português e de vida.",
-        memoryPhrases: [
-          "Estou viciado/a na novela!",
-          "A Globo domina a TV.",
-          "Ouço MPB para praticar.",
-          "O pagode tem muito sentimento.",
-          "Cada música é uma lição."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre como você usa a cultura pop brasileira para aprender português. O que assiste, ouve e lê. Qual é o mais útil para o aprendizado? Mínimo 7 frases.",
-        content: "# Cultura Pop e Entretenimento Brasileiro\n\n## Televisão\nRede Globo = a maior emissora, domina audiência\nNovela = soap opera, fenômeno cultural único no Brasil\nHorário nobre = prime time (às 21h na Globo)\nJornal Nacional = noticiário mais assistido\nMultishow, GNT, GloboNews = canais a cabo da Globo\nRecord, SBT, Band = outras grandes emissoras\n\n## Streaming\nNetflix Brasil produz séries originais incríveis\nDisney+ · Amazon Prime · Globoplay\nGloboplay = streaming da Globo com arquivo de novelas\n\n## Música brasileira\nMPB (Música Popular Brasileira) = Chico Buarque, Milton Nascimento\nSamba = Zeca Pagodinho, Beth Carvalho\nPagode = Thiaguinho, Ferrugem\nSertanejo = Marília Mendonça, Gusttavo Lima (enorme!)\nFunk carioca = Anitta, MC Kevinho\nForró = muito popular no Nordeste\nBossa Nova = João Gilberto, Tom Jobim\nAxé = axé music da Bahia · Reggaeton brasileiro\n\n## Cinema e séries\nGloboplay, Netflix Brasil produzem muito\nO Mecanismo, Sintonia, Vai Rir do Quê?\nLinneu, Chaves no Brasil (adaptação)\n\n## Dica de aprendizado\nNovela da Globo: português coloquial real\nJornal Nacional: português formal/neutro\nPagode/MPB: vocabulário emocional rico",
-        exercises: [
-          {id:"B1-U4-L3-E1",type:"multiple_choice",skill:"culture",question:"¿Qué es el 'horário nobre' en la TV brasileña?",options:["El horario de la mañana","El prime time nocturno (alrededor de las 21h)","El horario de los domingos","Los programas de noticias"],answer:1,explanation:"Horário nobre = prime time. En Brasil, alrededor de las 21h, cuando la Globo pasa su novela principal.",hint:"El horario de mayor audiencia en la TV brasileña"},
-          {id:"B1-U4-L3-E2",type:"fill_blank",skill:"culture",question:"O gênero musical mais popular do Brasil atualmente é o ___, representado por artistas como Gusttavo Lima e Marília Mendonça.",answer:["sertanejo"],hint:"El género que domina las paradas musicales brasileñas",explanation:"Sertanejo = el género más popular en Brasil. Una mezcla de música country brasileña con pop."},
-          {id:"B1-U4-L3-E3",type:"multiple_choice",skill:"culture",question:"¿Para qué sirve el Globoplay?",options:["Una app de musica","El streaming de la Globo con novelas y series","Un canal de noticias","Una red social brasileña"],answer:1,explanation:"Globoplay = el servicio de streaming de la Rede Globo. Tiene el archivo completo de novelas.",hint:"El Netflix de la Rede Globo"},
-          {id:"B1-U4-L3-E4",type:"translation",skill:"writing",question:"Traduce: 'Empecé a ver novelas brasileñas para practicar el portugués. Es una manera increíble de aprender el habla coloquial y las expresiones del día a día.'",answer:["comecei a assistir novelas brasileiras para praticar o português","é uma maneira incrível de aprender a fala coloquial e as expressões do dia a dia"],hint:"comecei a assistir · para praticar · maneira incrível · fala coloquial · expressões do dia a dia",explanation:"Comecei a assistir novelas brasileiras para praticar o português. É uma maneira incrível de aprender a fala coloquial e as expressões do dia a dia."},
-          {id:"B1-U4-L3-E5",type:"free_writing",skill:"writing",question:"Escreva uma recomendação cultural para alguém que quer aprender português através da cultura brasileira. Sugira: novelas, músicas, séries, filmes e podcasts com justificativa para cada. Mínimo 10 orações.",prompt:"Para aprender português, recomendo... / Assista... porque... / Ouça... pois... / Leia... para... / A melhor forma de...",hint:"recomendo que · assista · porque ensina · ouça · pois aprende · subjuntivo nos conselhos"}
-        ]
-      },
-      {
-        id: "B1-U4-L4",
-        title: "Trabalho e mercado profissional no Brasil",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você trabalha com carteira assinada ou é autônomo?\n— Sou CLT. Tenho todos os direitos trabalhistas garantidos.\n— E o 13º salário? Já recebeu?\n— Recebi em dezembro. É uma das melhores partes de ser CLT!\n— E você pensa em empreender algum dia?\n— Penso! Tenho um projeto de consultoria que quero abrir.\n— Vai ser PJ então.\n— Exatamente. A liberdade é maior, mas tenho que me preocupar com os impostos.\n— Vale a pena pesquisar bem antes de decidir.\n— Com certeza. Cada modelo tem suas vantagens e desvantagens.",
-        memoryPhrases: [
-          "Trabalho com carteira assinada.",
-          "Tenho todos os direitos.",
-          "O 13º é em dezembro.",
-          "Quero empreender um dia.",
-          "Cada modelo tem vantagens."
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Fale sobre sua experiência profissional: em que área trabalha, que tipo de contrato tem, o que gosta e não gosta do seu trabalho. Compare com o modelo de trabalho brasileiro. Mínimo 8 frases.",
-        content: "# Trabalho e Mercado Profissional no Brasil\n\n## Tipos de contrato\nCLT (Consolidação das Leis do Trabalho):\n- Carteira assinada = empleo formal\n- 13º salário = aguinaldo (diciembre)\n- FGTS = fondo de desempleo\n- Férias remuneradas = 30 días al año\n- Licença maternidade/paternidade\n- Plano de saúde (en muchas empresas)\n\nPJ (Pessoa Jurídica) / Autônomo:\n- Maior liberdade e salario más alto\n- Sin derechos laborales directos\n- Responsable de sus impuestos\n- Nota fiscal obligatoria\n\nEstágio = pasantía (estudiantes)\nAprendiz = joven aprendiz\n\n## Vocabulário profissional\nrescisão = rescisión · demissão = despido\npedido de demissão = renuncia voluntaria\nsalário mínimo = salario mínimo\nholerite/contracheque = recibo de sueldo\nPIS/COFINS/IRPF = impuestos del trabajador\nplano de carreira = plan de carrera\npromoção = ascenso · bonificação = bonificación\n\n## O mercado brasileiro\nDesemprego = desempleo (≈10%)\nInformalidade = trabajo informal (≈40%)\nStartups = ecosistema fuerte en SP\nAgronegoócio = agronegocio (pilar económico)",
-        exercises: [
-          {id:"B1-U4-L4-E1",type:"multiple_choice",skill:"culture",question:"¿Qué es el '13º salário' en Brasil?",options:["Un bono por productividad","Un aguinaldo equivalente a un mes de sueldo pagado en diciembre","Un seguro de desempleo","Un beneficio solo para funcionarios públicos"],answer:1,explanation:"13º salário = aguinaldo de un mes de sueldo. Derecho de todos los trabajadores CLT en diciembre.",hint:"Un sueldo extra que todos los CLT reciben en diciembre"},
-          {id:"B1-U4-L4-E2",type:"fill_blank",skill:"vocabulary",question:"'Trabelho com ___ assinada. Tenho todos os direitos trabalhistas.' (registro/carteira)",answer:["carteira"],hint:"O documento que formaliza o trabalho no Brasil",explanation:"Carteira assinada = empleo formal. La carteira de trabalho es el documento que formaliza el vínculo laboral."},
-          {id:"B1-U4-L4-E3",type:"multiple_choice",skill:"vocabulary",question:"¿Cuál es la diferencia principal entre CLT y PJ en Brasil?",options:["CLT gana más dinero","PJ tiene derechos laborales plenos","CLT tiene derechos laborales garantizados; PJ tiene más libertad pero sin esos derechos","No hay diferencia legal"],answer:2,explanation:"CLT = derechos laborales (13º, FGTS, férias). PJ = libertad y generalmente mayor salario, pero sin esos derechos.",hint:"La diferencia fundamental entre empleo formal e informal"},
-          {id:"B1-U4-L4-E4",type:"translation",skill:"writing",question:"Traduce: 'Trabajo en relación de dependencia y tengo todos los derechos garantizados. Mi empresa da plan de salud y vale alimentación. En diciembre recibo el aguinaldo.'",answer:["trabalho com carteira assinada e tenho todos os direitos garantidos","minha empresa dá plano de saúde e vale alimentação","em dezembro recebo o décimo terceiro"],hint:"com carteira assinada · direitos garantidos · plano de saúde · vale alimentação · décimo terceiro",explanation:"Trabalho com carteira assinada e tenho todos os direitos garantidos. Minha empresa dá plano de saúde e vale alimentação. Em dezembro recebo o décimo terceiro."},
-          {id:"B1-U4-L4-E5",type:"free_writing",skill:"writing",question:"Escreva sobre o sistema de trabalho ideal na sua opinião: CLT ou PJ? Quais direitos você considera essenciais? Compare com o seu país e dê sua posição argumentada. Mínimo 10 orações.",prompt:"Na minha opinião, o modelo ideal de trabalho é... / Os direitos que considero essenciais são... / No Brasil... / No meu país... / Portanto...",hint:"CLT vs PJ · direitos trabalhistas · 13º · FGTS · férias · liberdade · impostos · argumentação"}
-        ]
-      },
-      {
-        id: "B1-U4-L5",
-        title: "Revisão B1 — Unidades 3 e 4",
-        shadowing: "Lê 3 vezes em voz alta:\n\n— Você tem acompanhado as notícias do Brasil?\n— Tenho! É muito importante para aprender a língua no contexto real.\n— O que você achou mais interessante?\n— A questão da desigualdade social me chamou muito a atenção.\n— É um tema central na política brasileira.\n— Sim. E o sistema político é muito complexo. Muitos partidos!\n— É verdade. Mas a democracia funciona, apesar das dificuldades.\n— Defendo que um cidadão informado é fundamental para qualquer democracia.\n— Concordo totalmente. E por isso aprender português importa tanto!",
-        memoryPhrases: [
-          "Me chamou muito a atenção.",
-          "É um tema central.",
-          "A democracia funciona, apesar de...",
-          "Um cidadão informado é fundamental.",
-          "Por isso importa tanto!"
-        ],
-        oralProduction: "SITUAÇÃO ORAL: Debata sobre um tema brasileiro atual usando tudo que aprendeu: argumentação, registro formal, voz passiva, subjuntivo e vocabulário de política/sociedade. Mínimo 10 frases.",
-        content: "# Revisão B1 — Unidades 3 e 4\n\n## Comunicação avançada\n✅ Estrutura de debate: tese + argumentos + refutação + conclusão\n✅ Linguagem formal vs. informal\n✅ Texto dissertativo: introdução + desenvolvimento + conclusão\n✅ Apresentação oral profissional\n✅ Comunicação não violenta\n\n## Brasil contemporâneo\n✅ Sistema político: república federativa, 3 poderes, voto obrigatório\n✅ Desigualdade: causas históricas, programas sociais, mobilidade\n✅ Cultura pop: novela, sertanejo, MPB, funk, Globo\n✅ Mercado de trabalho: CLT vs. PJ, 13º, FGTS, férias\n\n## Integração gramatical\n✅ Subjuntivo em todos os contextos\n✅ Voz passiva: SER + particípio, passiva com SE\n✅ Discurso indireto com mudanças de tempo\n✅ Verbos com preposição corretos\n✅ Gerúndio e infinitivo pessoal",
-        exercises: [
-          {id:"B1-U4-L5-E1",type:"multiple_choice",skill:"grammar",question:"REVISÃO — ¿Cuál usa subjuntivo futuro correctamente después de SE?",options:["Se você vá, me avisa.","Se você for, me avisa.","Se você foi, me avisa.","Se você iria, me avisa."],answer:1,explanation:"SE + condición futura → subjuntivo futuro. IR → FOR. Se você FOR, me avisa.",hint:"SE + futuro → subjuntivo futuro. IR → FOR"},
-          {id:"B1-U4-L5-E2",type:"fill_blank",skill:"grammar",question:"REVISÃO PASSIVA: 'O projeto ___ pela equipe técnica na próxima semana.' (implementar — futuro passiva)",answer:["será implementado"],hint:"Passiva no futuro: SERÁ + particípio",explanation:"SERÁ IMPLEMENTADO = voz passiva no futuro. SER no futuro + particípio."},
-          {id:"B1-U4-L5-E3",type:"multiple_choice",skill:"vocabulary",question:"REVISÃO — ¿Cuál connective introduce una concesión (algo verdadero pero que no cambia tu posición)?",options:["Portanto","Além disso","Apesar disso / Ainda assim","Em primeiro lugar"],answer:2,explanation:"APESAR DISSO / AINDA ASSIM = A pesar de eso / Aún así. Introduce concesión manteniendo posición.",hint:"Para introducir una concesión: a pesar de algo, tu posición se mantiene"},
-          {id:"B1-U4-L5-E4",type:"translation",skill:"writing",question:"Traduce: 'El sistema político brasileño es complejo. Aunque tenga muchos partidos, la democracia funciona. Es fundamental que los ciudadanos participen activamente.'",answer:["o sistema político brasileiro é complexo","embora tenha muitos partidos a democracia funciona","é fundamental que os cidadãos participem ativamente"],hint:"embora tenha (subj) · a democracia funciona · é fundamental que participem (subj)",explanation:"O sistema político brasileiro é complexo. Embora tenha muitos partidos, a democracia funciona. É fundamental que os cidadãos participem ativamente."},
-          {id:"B1-U4-L5-E5",type:"free_writing",skill:"writing",question:"TEXTO FINAL INTEGRADO B1 U3-U4: Escreva um texto argumentativo sobre um tema social do Brasil usando: subjuntivo, voz passiva, conectivos de debate, vocabulário formal e registro adequado. Mínimo 14 orações.",prompt:"TEMA (escolha): desigualdade · sistema político · trabalho · cultura\nINTRO: Atualmente no Brasil... / ARGUMENTOS: Em primeiro lugar... / Além disso... / CONTRA: Embora... / CONCLUSÃO: Portanto...",hint:"todos os recursos B1: subj + passiva + disc indireto + verbos + ger/inf + debate + formal"}
-        ]
-      }
-    ]
-  }
-];
+export const CURRICULUM_ES_B1_PART2 = {
+  units: [
+    {
+      id: "ES-B1-U3",
+      title: "Narração e Estilo Literário",
+      description: "Técnicas de narração, descrição e estilo em espanhol",
+      lessons: [
+        {
+          id: "ES-B1-U3-L1",
+          title: "Narrar no Passado — Combinar Tempos com Maestria",
+          shadowing: "— Era una noche de tormenta cuando todo empezó. Llevaba tres horas esperando cuando, de repente, sonó el teléfono. Era ella. Me dijo que había tenido un accidente. Salí corriendo y, cuando llegué al hospital, ya la habían operado. Nunca olvidaré ese momento.",
+          memoryPhrases: [
+            "era una noche de... = era uma noite de...",
+            "llevaba + tiempo + gerundio = fazia tempo que",
+            "de repente = de repente",
+            "había tenido = tinha tido (pluscuamperfecto)",
+            "ya habían + participio = já tinham + participado",
+            "nunca olvidaré = nunca esquecerei"
+          ],
+          oralProduction: "Conte um acontecimento marcante da sua vida usando 4 tempos verbais diferentes.",
+          exercises: [
+            { id: "ES-B1-U3-L1-E1", type: "multiple_choice", skill: "grammar", question: "O que é o Pluscuamperfecto? 'Cuando llegué, ya había comido.'", options: ["Ação futura", "Ação passada anterior a outra ação passada", "Ação habitual no passado", "Ação presente"], answer: 1, explanation: "Había comido = tinha comido. Pluscuamperfecto (HABER imperfeito + participio) = ação ANTERIOR a outra ação passada. 'Cuando llegué (passado), ya había comido (passado anterior)'." },
+            { id: "ES-B1-U3-L1-E2", type: "multiple_choice", skill: "grammar", question: "Complete: 'Llevaba dos horas esperando cuando _____ (llegar) él.'", options: ["llegaba", "había llegado", "llegó", "llega"], answer: 2, explanation: "Llegó = chegou (indefinido). 'Llevaba esperando' (ação contínua) + llegó (ação pontual que interrompeu) = imperfecto + indefinido." },
+            { id: "ES-B1-U3-L1-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Cuando llegamos al cine, la película ya _____ (empezar).'" , answer: ["había empezado"], hint: "pluscuamperfecto: ação anterior", explanation: "Había empezado = tinha começado. Pluscuamperfecto para indicar que a ação era anterior à nossa chegada." },
+            { id: "ES-B1-U3-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Quando cheguei ao escritório, todos já tinham saído e as luzes estavam apagadas.'", answer: ["Cuando llegué a la oficina, todos ya se habían ido y las luces estaban apagadas.", "Cuando llegué al trabajo, ya todos se habían marchado y las luces estaban apagadas."], explanation: "Habían ido/marchado = tinham ido. Estaban apagadas = estavam apagadas (estado/resultado)." },
+            { id: "ES-B1-U3-L1-E5", type: "free_writing", skill: "writing", question: "Escreva um conto curto em espanhol com começo, meio e fim usando todos os tempos do passado. Mínimo 12 frases.", prompt: "Inclua: contexto (imperfecto) · evento principal (indefinido) · ação anterior (pluscuamperfecto) · diálogos · resolução", hint: "Era una tarde..., de repente..., ya había..., entonces..., al final..." }
+          ]
+        },
+        {
+          id: "ES-B1-U3-L2",
+          title: "Recursos Retóricos e Expressividade",
+          shadowing: "— Su voz era como el agua de un río: suave pero imparable.\n— No solo habló, sino que convenció a todos.\n— Cuanto más lo pensaba, menos lo entendía.\n— No era ni feo ni guapo, era simplemente invisible.\n— Llegó, vio y venció, como siempre.\n— ¡Qué manera de hablar tiene este hombre!",
+          memoryPhrases: [
+            "como + sustantivo = como (comparação/metáfora)",
+            "no solo... sino que = não só... mas também",
+            "cuanto más... más = quanto mais... mais",
+            "ni... ni = nem... nem",
+            "¡Qué + adjetivo! = Que + adjetivo!",
+            "tan... que = tão... que"
+          ],
+          oralProduction: "Descreva um lugar ou pessoa usando pelo menos 3 recursos retóricos em espanhol.",
+          exercises: [
+            { id: "ES-B1-U3-L2-E1", type: "multiple_choice", skill: "grammar", question: "Como se diz 'não só... mas também' em espanhol?", options: ["o... o...", "ni... ni...", "no solo... sino que", "tanto... como"], answer: 2, explanation: "No solo... sino que = não só... mas também. 'No solo habla español, sino que también habla portugués.'" },
+            { id: "ES-B1-U3-L2-E2", type: "multiple_choice", skill: "grammar", question: "Complete: '_____ más estudio, _____ aprendo.'", options: ["Tanto/más", "Cuanto/más", "Más/tanto", "Cuando/más"], answer: 1, explanation: "Cuanto más... más = quanto mais... mais. 'Cuanto más estudio, más aprendo' = quanto mais estudo, mais aprendo." },
+            { id: "ES-B1-U3-L2-E3", type: "fill_blank", skill: "grammar", question: "Complete: '¡_____ ciudad más bonita tiene España!' (Que cidade linda a Espanha tem!)", answer: ["Qué"], hint: "exclamação com adjetivo", explanation: "¡Qué + substantivo/adjetivo! = Que...! para exclamações. '¡Qué ciudad más bonita!' = Que cidade linda!" },
+            { id: "ES-B1-U3-L2-E4", type: "translation", skill: "writing", question: "Traduza usando recursos retóricos: 'Não só fala espanhol, como também escreve melhor que um nativo.'", answer: ["No solo habla español, sino que también escribe mejor que un nativo.", "No solo habla español, sino que escribe incluso mejor que un hablante nativo."], explanation: "No solo... sino que también = não só... mas também. Mejor que = melhor que. Nativo = nativo." },
+            { id: "ES-B1-U3-L2-E5", type: "free_writing", skill: "writing", question: "Escreva uma descrição rica e expressiva de um lugar que você ama usando recursos retóricos. Mínimo 8 frases.", prompt: "Inclua: metáforas · comparações · exclamações · no solo sino que · cuanto más...", hint: "Es como..., tan... que..., no solo tiene... sino que además..., ¡qué...!, cuanto más..." }
+          ]
+        },
+        {
+          id: "ES-B1-U3-L3",
+          title: "Vocabulário Avançado — Falsos Cognatos e Registro",
+          shadowing: "— Necesito que me presentes a tu jefe.\n— ¿Para qué? ¿Estás buscando empleo?\n— En realidad, quiero hablar con él sobre el proyecto. Hay que aclarar algunos malentendidos.\n— Entiendo. Pero deberías tener cuidado con cómo te expresas.\n— Tienes razón. A veces soy demasiado directo.\n— No es eso. Es que en los negocios hay ciertos códigos.",
+          memoryPhrases: [
+            "presentar = apresentar (NÃO 'presentar' como em PB coloquial)",
+            "el malentendido = o mal-entendido",
+            "aclarar = esclarecer",
+            "tener cuidado = ter cuidado",
+            "demasiado = demais / demasiado",
+            "los negocios = os negócios"
+          ],
+          oralProduction: "Fale sobre uma situação profissional delicada que você viveu usando vocabulário formal.",
+          exercises: [
+            { id: "ES-B1-U3-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'esclarecer um mal-entendido' em espanhol?", options: ["limpiar un malentendido", "aclarar un malentendido", "resolver un mal", "limpiar una confusión"], answer: 1, explanation: "Aclarar un malentendido = esclarecer um mal-entendido. Aclarar = aclarar/esclarecer. Malentendido = mal-entendido." },
+            { id: "ES-B1-U3-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'ser demasiado directo' em espanhol?", options: ["Ser muito direto (pode ser negativo)", "Ser muito honesto", "Ser extrovertido demais", "Falar muito"], answer: 0, explanation: "Demasiado directo = direto demais (pode ter conotação negativa). Demasiado = demais (excesso). Diferente de 'muy directo' (muito direto, neutro)." },
+            { id: "ES-B1-U3-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Hay que _____ la situación antes de que empeore.' (É preciso esclarecer a situação antes que piore.)", answer: ["aclarar"], hint: "esclarecer em espanhol", explanation: "Aclarar = esclarecer / aclarar. 'Aclarar la situación' = esclarecer a situação." },
+            { id: "ES-B1-U3-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Preciso apresentar meu projeto ao diretor amanhã. Devo tomar cuidado com o vocabulário técnico.'", answer: ["Necesito presentar mi proyecto al director mañana. Debo tener cuidado con el vocabulario técnico.", "Tengo que presentar mi proyecto al director mañana. Debería tener cuidado con el vocabulario técnico."], explanation: "Presentar = apresentar. Debo tener cuidado = devo ter cuidado. Vocabulario técnico = vocabulário técnico." },
+            { id: "ES-B1-U3-L3-E5", type: "free_writing", skill: "writing", question: "Escreva um e-mail formal em espanhol para um cliente importante explicando um problema e propondo uma solução. Mínimo 10 frases.", prompt: "Inclua: saudação formal · explicação do problema · pedido de desculpas · solução proposta · encerramento formal", hint: "Estimado/a..., le escribo para..., lamentamos..., le proponemos..., quedo a su disposición..." }
+          ]
+        },
+        {
+          id: "ES-B1-U3-L4",
+          title: "Expressões Idiomáticas do Espanhol",
+          shadowing: "— ¿Cómo te fue en la entrevista?\n— Me fue de maravilla. Creo que les caí bien.\n— ¡Menos mal! Estaba con el agua al cuello de los nervios.\n— Al final resultó ser pan comido.\n— ¡No me digas! Cuando me lo contaron, me quedé de piedra.\n— Sí, al final todo salió a pedir de boca.",
+          memoryPhrases: [
+            "de maravilla = de maravilha / muito bem",
+            "caerle bien a alguien = cair nas graças de alguém",
+            "el agua al cuello = água pelo pescoço (em apuros)",
+            "pan comido = moleza / fácil demais",
+            "quedarse de piedra = ficar de pedra / chocado",
+            "a pedir de boca = redondinho / perfeito"
+          ],
+          oralProduction: "Use pelo menos 4 expressões idiomáticas para contar algo que aconteceu com você recentemente.",
+          exercises: [
+            { id: "ES-B1-U3-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'me quedé de piedra'?", options: ["Fiquei com fome de pedra", "Fiquei chocado / sem reação", "Fiquei feliz", "Fiquei com sono"], answer: 1, explanation: "Quedarse de piedra = ficar de pedra / ficar chocado / ficar sem reação. É uma das expressões mais usadas para surpresa extrema." },
+            { id: "ES-B1-U3-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'pan comido'?", options: ["Algo gostoso", "Pão velho", "Algo muito fácil / moleza", "Algo barato"], answer: 2, explanation: "Pan comido = moleza / muito fácil. 'El examen fue pan comido' = a prova foi mamão com açúcar / foi moleza." },
+            { id: "ES-B1-U3-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Estoy con el agua al _____. Tengo mucho trabajo.' (Estou com água pelo pescoço. Tenho muito trabalho.)", answer: ["cuello"], hint: "parte do corpo que fica na água quando estamos afogando", explanation: "El agua al cuello = água pelo pescoço / em apuros. Cuello = pescoço. Indica que a situação está crítica." },
+            { id: "ES-B1-U3-L4-E4", type: "translation", skill: "writing", question: "Traduza usando expressões idiomáticas: 'A apresentação foi moleza e o chefe ficou impressionado.'", answer: ["La presentación fue pan comido y el jefe quedó impresionado.", "La presentación estuvo chupada y el jefe quedó muy impresionado."], explanation: "Pan comido / chupado = moleza. Quedó impresionado = ficou impressionado." },
+            { id: "ES-B1-U3-L4-E5", type: "free_writing", skill: "writing", question: "Escreva uma história usando pelo menos 6 expressões idiomáticas em espanhol. Mínimo 10 frases.", prompt: "Use: de maravilla · caer bien · pan comido · quedarse de piedra · a pedir de boca · estar con el agua al cuello", hint: "Conta uma situação difícil que acabou bem, usando expressões ao longo da narrativa." }
+          ]
+        },
+        {
+          id: "ES-B1-U3-L5",
+          title: "Negociação e Persuasão",
+          shadowing: "— Entiendo su posición, pero me gustaría proponer una alternativa.\n— Le escucho.\n— ¿Qué le parecería si reducimos el precio a cambio de un pedido mayor?\n— Es interesante, pero necesitaría que me dieran un 15% de descuento.\n— Podríamos llegar hasta un 10%.\n— Si me garantizan la entrega en una semana, acepto el 10%.\n— Trato hecho. Le enviamos el contrato mañana.",
+          memoryPhrases: [
+            "entiendo su posición = entendo sua posição",
+            "me gustaría proponer = gostaria de propor",
+            "¿qué le parecería si...? = e se...? / o que acharia se...?",
+            "a cambio de = em troca de",
+            "podríamos llegar hasta = poderíamos chegar até",
+            "trato hecho = negócio fechado"
+          ],
+          oralProduction: "Pratique uma negociação em espanhol: você quer comprar algo e o vendedor quer um preço mais alto.",
+          exercises: [
+            { id: "ES-B1-U3-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'trato hecho'?", options: ["Trato feito / negócio fechado", "Trato difícil", "Trato desfeito", "Trato em andamento"], answer: 0, explanation: "Trato hecho = negócio fechado / trato feito. É a expressão que se usa para confirmar um acordo: equivale a 'fechado!' ou 'combinado!'." },
+            { id: "ES-B1-U3-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se faz uma proposta alternativa educada em espanhol?", options: ["Dame el precio", "¿Qué le parecería si...?", "Quiero que me dé", "Necesito un descuento"], answer: 1, explanation: "¿Qué le parecería si...? = o que acharia se...? / e se...? É a forma mais diplomática de propor uma alternativa em negociações." },
+            { id: "ES-B1-U3-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Le ofrezco este precio _____ de una entrega más rápida.' (Ofereço este preço em troca de uma entrega mais rápida.)", answer: ["a cambio"], hint: "expressão para indicar troca/contrapartida", explanation: "A cambio de = em troca de. 'A cambio de' indica a contrapartida em uma negociação." },
+            { id: "ES-B1-U3-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'Entendo sua posição, mas gostaria de propor um desconto de 20% em troca de pagamento imediato.'", answer: ["Entiendo su posición, pero me gustaría proponer un descuento del 20% a cambio de un pago inmediato.", "Entiendo su postura, pero quisiera proponer un 20% de descuento a cambio de pago inmediato."], explanation: "Me gustaría proponer = gostaria de propor. Descuento del 20% = desconto de 20%. A cambio de = em troca de." },
+            { id: "ES-B1-U3-L5-E5", type: "free_writing", skill: "writing", question: "Escreva um diálogo de negociação completo em espanhol. Mínimo 12 falas.", prompt: "Inclua: proposta inicial · contraproposta · concessões mútuas · acordo final · confirmação", hint: "Me gustaría..., ¿qué le parecería si...?, podríamos..., a cambio de..., si me garantiza..., trato hecho." }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-B1-U4",
+      title: "Mundo Profissional e Acadêmico",
+      description: "Espanhol para contextos profissionais e acadêmicos avançados",
+      lessons: [
+        {
+          id: "ES-B1-U4-L1",
+          title: "Entrevistas de Emprego em Espanhol",
+          shadowing: "— Buenos días. Siéntese, por favor. ¿Me puede hablar un poco de usted?\n— Por supuesto. Soy licenciado en Administración por la UFRJ. Llevo cinco años trabajando en el sector financiero.\n— ¿Por qué quiere trabajar con nosotros?\n— Porque su empresa tiene una filosofía de trabajo que comparto plenamente.\n— ¿Cuáles son sus puntos fuertes?\n— Soy muy organizado y tengo facilidad para el trabajo en equipo.\n— ¿Y sus puntos débiles?\n— A veces soy demasiado perfeccionista, pero lo gestiono bien.",
+          memoryPhrases: [
+            "soy licenciado/a en = me formei em / sou formado em",
+            "llevo X años trabajando = faz X anos que trabalho",
+            "comparto plenamente = concordo plenamente",
+            "puntos fuertes/débiles = pontos fortes/fracos",
+            "tengo facilidad para = tenho facilidade para",
+            "lo gestiono bien = eu gerencio bem isso"
+          ],
+          oralProduction: "Pratique uma entrevista de emprego completa em espanhol: apresentação, experiência e pontos fortes/fracos.",
+          exercises: [
+            { id: "ES-B1-U4-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'me formei em Direito' em espanhol?", options: ["Soy de Derecho", "Soy formado en Derecho", "Soy licenciado en Derecho", "Estudié el Derecho"], answer: 2, explanation: "Soy licenciado en Derecho = me formei em Direito. Licenciado = formado/graduado. O termo varia: en España 'licenciado', en América Latina também 'egresado' ou 'graduado'." },
+            { id: "ES-B1-U4-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se expressa experiência de trabalho de forma natural?", options: ["Tengo 5 años de trabajo", "Trabajo 5 años aquí", "Llevo 5 años trabajando en...", "He trabajado 5 años antes"], answer: 2, explanation: "Llevo 5 años trabajando en... = faz 5 anos que trabalho em... É a forma mais natural e idiomática para expressar tempo de experiência." },
+            { id: "ES-B1-U4-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Mi principal _____ es la capacidad de liderazgo.' (Meu principal ponto forte é a capacidade de liderança.)", answer: ["punto fuerte", "fortaleza"], hint: "ponto forte em espanhol", explanation: "Punto fuerte = ponto forte. Fortaleza também funciona. Punto débil = ponto fraco." },
+            { id: "ES-B1-U4-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Faz três anos que trabalho no setor de tecnologia e tenho facilidade para aprender novas ferramentas.'", answer: ["Llevo tres años trabajando en el sector tecnológico y tengo facilidad para aprender nuevas herramientas.", "Llevo tres años en el sector de tecnología y me resulta fácil aprender nuevas herramientas."], explanation: "Llevo tres años trabajando = faz três anos que trabalho. Tengo facilidad para = tenho facilidade para." },
+            { id: "ES-B1-U4-L1-E5", type: "free_writing", skill: "writing", question: "Escreva suas respostas para as 5 perguntas mais comuns de uma entrevista de emprego em espanhol.", prompt: "Responda: quem é você · experiência · por que esta empresa · pontos fortes · onde se vê em 5 anos", hint: "Soy licenciado en..., llevo X años en..., me interesa su empresa porque..., mi punto fuerte es..., en 5 años espero..." }
+          ]
+        },
+        {
+          id: "ES-B1-U4-L2",
+          title: "Redação Acadêmica em Espanhol",
+          shadowing: "— ¿Cómo empiezo mi ensayo?\n— Primero, presenta el tema con claridad. Luego, desarrolla tu argumento principal.\n— ¿Y cómo cito las fuentes?\n— Puedes usar el sistema APA o Chicago. Lo importante es ser consistente.\n— ¿Qué extensión debe tener?\n— Depende del nivel. Un ensayo de B2 suele tener entre 300 y 500 palabras.\n— ¿Y cómo termino?\n— Con una conclusión que recapitule tus puntos principales.",
+          memoryPhrases: [
+            "el ensayo = a redação / o ensaio",
+            "citar las fuentes = citar as fontes",
+            "desarrollar el argumento = desenvolver o argumento",
+            "en primer lugar... en segundo lugar = em primeiro lugar... em segundo lugar",
+            "a modo de conclusión = a modo de conclusão",
+            "cabe señalar que = cabe ressaltar que"
+          ],
+          oralProduction: "Estruture oralmente um ensaio sobre 'Os benefícios do bilinguismo' em espanhol.",
+          exercises: [
+            { id: "ES-B1-U4-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'em primeiro lugar' em espanhol formal?", options: ["Primero", "En primer lugar", "Antes", "Para empezar"], answer: 1, explanation: "En primer lugar = em primeiro lugar (formal). Primero = primeiro (informal). En segundo lugar, en tercer lugar para seguir a ordem." },
+            { id: "ES-B1-U4-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se introduz uma conclusão formal?", options: ["Al final", "A modo de conclusión / En conclusión", "Para terminar (informal)", "B e C"], answer: 3, explanation: "'A modo de conclusión' e 'En conclusión' são formais. 'Para terminar' é mais informal mas aceito. 'Al final' = no final (não é conector de conclusão)." },
+            { id: "ES-B1-U4-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: '_____ señalar que este fenómeno es relativamente nuevo.' (Cabe ressaltar que este fenômeno é relativamente novo.)", answer: ["Cabe"], hint: "expressão formal para introduzir um ponto importante", explanation: "Cabe señalar que = cabe ressaltar que / vale notar que. Expressão muito usada na escrita acadêmica em espanhol." },
+            { id: "ES-B1-U4-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Em primeiro lugar, é preciso ressaltar que o espanhol é o segundo idioma mais falado do mundo.'", answer: ["En primer lugar, cabe señalar que el español es el segundo idioma más hablado del mundo.", "En primer lugar, hay que destacar que el español es el segundo idioma más hablado del mundo."], explanation: "En primer lugar = em primeiro lugar. Cabe señalar = cabe ressaltar. Más hablado = mais falado." },
+            { id: "ES-B1-U4-L2-E5", type: "free_writing", skill: "writing", question: "Escreva um ensaio acadêmico sobre 'As vantagens de aprender espanhol sendo brasileiro'. Mínimo 12 frases.", prompt: "Inclua: introdução com tese · 3 argumentos desenvolvidos · concessão · conclusão", hint: "En este ensayo..., en primer lugar..., asimismo..., sin embargo..., en conclusión..." }
+          ]
+        },
+        {
+          id: "ES-B1-U4-L3",
+          title: "Medios de Comunicación e Notícias",
+          shadowing: "— ¿Has leído las noticias de hoy?\n— Sí, según el periódico, el gobierno ha aprobado una nueva ley.\n— ¿Qué dice exactamente?\n— Al parecer, afectará a miles de trabajadores.\n— ¿Cómo lo han presentado los medios?\n— Los medios oficiales lo presentan como algo positivo, pero la oposición discrepa.\n— Hay que contrastar las fuentes.\n— Exacto. No hay que fiarse de una sola fuente.",
+          memoryPhrases: [
+            "según el periódico = segundo o jornal",
+            "al parecer = ao que parece",
+            "los medios de comunicación = a mídia",
+            "contrastar las fuentes = checar as fontes",
+            "la oposición discrepa = a oposição discorda",
+            "hay que fiarse de = é preciso confiar em"
+          ],
+          oralProduction: "Comente uma notícia atual usando vocabulário de mídia e expressões de distanciamento.",
+          exercises: [
+            { id: "ES-B1-U4-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se expressa 'ao que parece' em espanhol?", options: ["al parecer", "al parece", "como parece", "según parece / al parecer"], answer: 3, explanation: "Al parecer / según parece = ao que parece / aparentemente. São expressões de distanciamento — indicam que você não confirma a informação." },
+            { id: "ES-B1-U4-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'contrastar las fuentes'?", options: ["Colorir as fontes", "Comparar e verificar diferentes fontes de informação", "Citar as fontes", "Encontrar as fontes"], answer: 1, explanation: "Contrastar las fuentes = checar/comparar as fontes. É fundamental no jornalismo e no consumo crítico de notícias." },
+            { id: "ES-B1-U4-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: '_____ el ministro, la economía está mejorando.' (Segundo o ministro, a economia está melhorando.)", answer: ["Según"], hint: "preposição para indicar fonte da informação", explanation: "Según = segundo / de acordo com. 'Según el ministro' = segundo o ministro. Muito usado no jornalismo." },
+            { id: "ES-B1-U4-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Ao que parece, segundo os meios de comunicação, a nova lei afetará muitos trabalhadores.'", answer: ["Al parecer, según los medios de comunicación, la nueva ley afectará a muchos trabajadores.", "Según los medios de comunicación, al parecer la nueva ley afectará a muchos trabajadores."], explanation: "Al parecer = ao que parece. Según los medios = segundo os meios. Afectará = afetará (futuro)." },
+            { id: "ES-B1-U4-L3-E5", type: "free_writing", skill: "writing", question: "Escreva um texto jornalístico curto sobre uma situação atual no Brasil, em espanhol. Mínimo 10 frases.", prompt: "Inclua: título · lead (quem, o que, quando, onde) · desenvolvimento · citação · análise", hint: "Según fuentes..., al parecer..., el gobierno ha..., la oposición afirma que..., los expertos señalan..." }
+          ]
+        },
+        {
+          id: "ES-B1-U4-L4",
+          title: "Diferenças Culturais Hispano-Brasileiras",
+          shadowing: "— ¿Te ha sorprendido algo de la cultura brasileña?\n— Sí, la informalidad. Aquí la gente se tutea enseguida.\n— ¿En España no es así?\n— En España también, pero en contextos formales somos más reservados.\n— ¿Y la puntualidad?\n— En España somos puntuales en el trabajo, pero en lo social, tardamos.\n— ¿Como en Brasil?\n— Sí, pero con menos extremo. En Brasil la 'hora brasileña' es legendaria.",
+          memoryPhrases: [
+            "tutearse = usar o 'tú' mútuo / tratar de você",
+            "la informalidad = a informalidade",
+            "ser reservado = ser reservado / mais fechado",
+            "la puntualidad = a pontualidade",
+            "en lo social = no contexto social",
+            "legendario = lendário"
+          ],
+          oralProduction: "Compare a cultura do Brasil com a de um país hispânico que você conhece ou estudou.",
+          exercises: [
+            { id: "ES-B1-U4-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'tutearse'?", options: ["Falar mal um do outro", "Usar o 'tú' mutuamente / tratar de você", "Cumprimentar formalmente", "Discutir"], answer: 1, explanation: "Tutearse = usar o 'tú' mutuamente entre duas pessoas. 'Nos tuteamos desde el principio' = nos tratamos de 'tú' desde o início." },
+            { id: "ES-B1-U4-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'a 'hora brasileira'' em contexto cultural?", options: ["la hora del trabajo", "la hora brasileña (llegar tarde es normal)", "la hora oficial", "la hora de comer"], answer: 1, explanation: "La hora brasileña = a hora brasileira (chegar tarde). É uma expressão bem conhecida nos países hispânicos para se referir à cultura de pontualidade flexível no Brasil." },
+            { id: "ES-B1-U4-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'En España, en contextos formales, la gente es más _____.' (Na Espanha, em contextos formais, as pessoas são mais reservadas.)", answer: ["reservada"], hint: "menos expansivo, mais fechado", explanation: "Reservado = reservado. 'Ser reservado' = ser mais fechado, menos expansivo. Contrário de 'abierto' ou 'extrovertido'." },
+            { id: "ES-B1-U4-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'A informalidade brasileira surpreende muitos hispânicos. No Brasil, as pessoas se tratam de 'você' muito rapidamente.'", answer: ["La informalidad brasileña sorprende a muchos hispanohablantes. En Brasil, la gente se tutea muy rápidamente.", "La informalidad de Brasil sorprende a muchos hispanos. En Brasil, la gente empieza a tutearse muy rápido."], explanation: "La informalidad brasileña = a informalidade brasileira. Se tutea = trata de você. Muy rápidamente = muito rapidamente." },
+            { id: "ES-B1-U4-L4-E5", type: "free_writing", skill: "writing", question: "Escreva um texto comparando a cultura brasileira com a de um país hispânico que você conhece ou que estudou. Mínimo 10 frases.", prompt: "Inclua: pontualidade · informalidade · comida · família · trabalho · vida social", hint: "Mientras en Brasil..., en cambio en..., tanto Brasil como..., una diferencia importante es..., sin embargo..." }
+          ]
+        },
+        {
+          id: "ES-B1-U4-L5",
+          title: "Revisão B1 e Preparação para B2",
+          shadowing: "— Después de este nivel, ¿te sientes preparado para el B2?\n— Más o menos. El subjuntivo ya lo domino, pero me cuesta la espontaneidad.\n— Es normal. A este nivel ya puedes comunicarte en casi cualquier situación.\n— Sí, pero aún me falta fluidez. Pienso demasiado antes de hablar.\n— Eso mejora con la práctica. ¿Cuánto tiempo llevas estudiando?\n— Ocho meses. He progresado bastante.\n— Y lo que falta es exponerse más al español real: películas, podcasts, conversaciones.",
+          memoryPhrases: [
+            "me cuesta = tenho dificuldade com",
+            "dominar = dominar",
+            "la espontaneidad = a espontaneidade",
+            "me falta fluidez = me falta fluência",
+            "exponerse a = se expor a",
+            "he progresado = progredi / tenho progredido"
+          ],
+          oralProduction: "Faça uma autoavaliação do seu espanhol atual: o que você domina, o que ainda está desenvolvendo e seus planos.",
+          exercises: [
+            { id: "ES-B1-U4-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'me cuesta el subjuntivo'?", options: ["O subjuntivo é caro", "Tenho dificuldade com o subjuntivo", "Preciso pagar para aprender subjuntivo", "Quero aprender subjuntivo"], answer: 1, explanation: "Me cuesta = tenho dificuldade com. 'Costar' no sentido figurado = custar esforço, ser difícil. 'Me cuesta mucho' = custa-me muito / tenho muita dificuldade." },
+            { id: "ES-B1-U4-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'exponerse al español real'?", options: ["Explicar o espanhol", "Se expor / ter contato com o espanhol autêntico", "Estudar gramática", "Fazer testes"], answer: 1, explanation: "Exponerse a = se expor a / ter contato com. 'Exponerse al español real' = ter contato com o espanhol autêntico (filmes, podcasts, conversas reais)." },
+            { id: "ES-B1-U4-L5-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Cuando _____ (llegar) al nivel B2, podré ver películas sin subtítulos.' (Quando chegar ao nível B2, poderei ver filmes sem legendas.)", answer: ["llegue"], hint: "subjuntivo de LLEGAR para yo (futuro/hipotético)", explanation: "Llegue = chegar (subj.). 'Cuando' com referência ao futuro sempre pede subjuntivo em espanhol." },
+            { id: "ES-B1-U4-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'Faz 8 meses que estudo espanhol e já domino a gramática, mas ainda me falta fluência.'", answer: ["Llevo 8 meses estudiando español y ya domino la gramática, pero todavía me falta fluidez.", "Hace 8 meses que estudio español y domino la gramática, pero me falta fluidez todavía."], explanation: "Llevo 8 meses estudiando = faz 8 meses que estudo. Ya domino = já domino. Me falta fluidez = me falta fluência." },
+            { id: "ES-B1-U4-L5-E5", type: "free_writing", skill: "writing", question: "Escreva uma carta para alguém que vai começar a aprender espanhol, com conselhos baseados na sua experiência no B1. Mínimo 12 frases.", prompt: "Inclua: o que você aprendeu · dificuldades que encontrou · estratégias que funcionaram · o que faria diferente · motivação", hint: "He aprendido que..., lo más difícil fue..., te recomiendo que..., si pudiera empezar de nuevo..., lo importante es..." }
+          ]
+        }
+      ]
+    }
+  ]
+};
