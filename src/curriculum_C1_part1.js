@@ -1,407 +1,228 @@
-// C1 PART 1 — Unidades 1 y 2
-// 12 lecciones · 60 ejercicios
-
-export const C1_U1_U2 = [
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 1 — Estilística e Figuras de Linguagem Avançadas
-  // ══════════════════════════════════════════════════════
-  {
-    id: "C1-U1",
-    title: "Estilística e Figuras de Linguagem Avançadas",
-    level: "C1",
-    lessons: [
-      {
-        id: "C1-U1-L1",
-        title: "Figuras de linguagem: da metáfora ao paradoxo",
-        objectives: ["Identificar e usar figuras de linguagem com precisão C1", "Analisar o efeito estilístico de cada figura"],
-        shadowingDialogue: {
-          title: "Análise literária",
-          lines: [
-            { speaker: "Crítica", text: "Drummond usa o paradoxo de forma magistral: 'No meio do caminho tinha uma pedra'." },
-            { speaker: "Aluno", text: "A pedra é uma metáfora de obstáculo, mas o paradoxo está na repetição obsessiva?" },
-            { speaker: "Crítica", text: "Exatamente. A anáfora cria ritmo hipnótico e o paradoxo revela a persistência do obstáculo existencial." },
-            { speaker: "Aluno", text: "É como se o eu-lírico não conseguisse superar o trauma, e a forma reforça o conteúdo." },
-            { speaker: "Crítica", text: "Perfeito. Em literatura, forma e conteúdo são inseparáveis. Isso é o que chamamos de iconicidade." }
+export const CURRICULUM_ES_C1_PART1 = {
+  units: [
+    {
+      id: "ES-C1-U1",
+      title: "Domínio Lingüístico Total — Precisión y Matiz",
+      description: "Control total del idioma con precisión y naturalidad en cualquier contexto",
+      lessons: [
+        {
+          id: "ES-C1-U1-L1",
+          title: "Perífrasis Verbales Avanzadas",
+          shadowing: "— Llevo tiempo dándole vueltas a esa propuesta.\n— ¿Y qué has concluido?\n— Que hay que ponerse a trabajar cuanto antes. Llevamos demasiado tiempo sin hacer nada.\n— ¿No te da por abandonar a veces?\n— Me da por cuestionarlo todo, pero acabo volviendo al mismo punto.\n— Así que sigues sin decidirte.\n— Sigo pensando, vamos. Que no es poco.",
+          memoryPhrases: [
+            "llevar + gerundio = estar + gerundio (duración)",
+            "ponerse a + inf. = começar a (de repente)",
+            "darle vueltas a algo = ficar ruminando algo",
+            "dar por + inf. = ter vontade de / dar para",
+            "acabar + gerundio = acabar + gerundio",
+            "seguir sin + inf. = continuar sem + inf."
+          ],
+          oralProduction: "Use 5 perífrases verbais avançadas para descrever um projeto que você está desenvolvendo.",
+          exercises: [
+            { id: "ES-C1-U1-L1-E1", type: "multiple_choice", skill: "grammar", question: "Qual é o significado de 'llevo tres años estudiando español'?", options: ["Estudiei por três anos", "Há três anos que estudo espanhol (continua)", "Estudiarei por três anos", "Terminei de estudar há três anos"], answer: 1, explanation: "Llevar + gerúndio = faz tempo que + verbo (ação que continua no presente). Indica duração de uma ação que ainda está em curso." },
+            { id: "ES-C1-U1-L1-E2", type: "multiple_choice", skill: "grammar", question: "Qual é a diferença entre 'empezar a' e 'ponerse a'?", options: ["São iguais", "'Ponerse a' implica início súbito ou com esforço; 'empezar a' é mais neutro", "'Empezar a' é mais formal", "'Ponerse a' é para ações físicas"], answer: 1, explanation: "'Ponerse a trabajar' implica começar de forma decidida ou súbita. 'Empezar a trabajar' é neutro. 'Ponerse a' tem conotação de início enérgico." },
+            { id: "ES-C1-U1-L1-E3", type: "fill_blank", skill: "grammar", question: "Complete: '_____ sin entender por qué me rechazaron.' (Continuo sem entender por que me rejeitaram.)", answer: ["Sigo"], hint: "perífrasis de continuidade com negação", explanation: "Sigo sin entender = continuo sem entender. SEGUIR + sin + infinitivo = continuar sem fazer algo." },
+            { id: "ES-C1-U1-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Faz horas que fico pensando no assunto e acabo sempre voltando à mesma conclusão.'", answer: ["Llevo horas dándole vueltas al asunto y acabo siempre volviendo a la misma conclusión.", "Llevo horas pensando en el asunto y siempre acabo llegando a la misma conclusión."], explanation: "Llevo horas + gerúndio = faz horas que. Acabo volviendo = acabo voltando. Dándole vueltas = pensando, ruminando." },
+            { id: "ES-C1-U1-L1-E5", type: "free_writing", skill: "writing", question: "Escreva um texto usando pelo menos 6 perífrases verbais diferentes em contextos naturais. Mínimo 10 frases.", prompt: "Inclua: llevar + gerundio · ponerse a · acabar + gerundio · seguir sin · darle vueltas · volver a + inf.", hint: "Llevo tiempo queriendo..., al final me puse a..., acabo siempre..., sigo sin entender..., le doy vueltas a..." }
           ]
         },
-        keyPhrases: [
-          "Metáfora / Metonímia / Sinédoque / Catacrese — figuras de semelhança",
-          "Anáfora / Epífora / Quiasmo / Gradação — figuras de repetição e construção",
-          "Paradoxo / Oxímoro / Antítese / Ironia — figuras de pensamento",
-          "Hipérbole / Litotes / Eufemismo / Perífrase — figuras de intensidade"
-        ],
-        guidedProduction: [
-          "Identifique as figuras em: 'Ela tinha um sorriso de mel e olhos de pedra.'",
-          "Crie uma frase usando oxímoro para descrever o amor.",
-          "Reescreva usando litotes: 'O texto é muito bom.'"
-        ],
-        grammar: {
-          title: "Figuras de Linguagem C1: Análise e Produção",
-          explanation: "Figuras de semelhança: metáfora (substituição por semelhança), metonímia (parte pelo todo, causa pelo efeito), sinédoque (espécie pelo gênero). Figuras de pensamento: paradoxo (contradição aparente que revela verdade), oxímoro (termos opostos unidos — 'doce amargo'), antítese (oposição sem fusão), ironia (dizer o contrário com intenção crítica). Figuras de construção: quiasmo (inversão paralela — 'Uns têm o que comer; outros comem o que têm'), gradação clímax/anticlímax.",
-          conjugation: "Identificar: A figura X produz o efeito de Y, reforçando a ideia de Z. / O uso de X cria uma tensão entre A e B que problematiza C."
-        },
-        exercises: [
-          { type: "identify", prompt: "Identifique a figura: 'A vida é uma peça de teatro onde ninguém ensaiou o papel.'", answer: "Metáfora. A vida é comparada a uma peça de teatro sem ensaio, sugerindo a imprevisibilidade e falta de controle da existência humana." },
-          { type: "identify", prompt: "Identifique a figura: 'Feliz infelicidade a minha, que me faz tão miserável!'", answer: "Oxímoro/Paradoxo. 'Feliz infelicidade' une termos contraditórios, revelando a complexidade do estado emocional do eu-lírico." },
-          { type: "identify", prompt: "Identifique a figura: 'Vim, vi, venci.' (Júlio César)", answer: "Assíndeto e gradação clímax. A ausência de conjunções acelera o ritmo e os verbos formam uma progressão de conquistas em ordem crescente." },
-          { type: "production", prompt: "Escreva um parágrafo usando três figuras de linguagem diferentes para descrever a cidade de São Paulo.", answer: "São Paulo é uma fera insone que devora seus filhos e os regurgita como executivos às sete da manhã. Seus arranha-céus tocam o céu enquanto suas favelas escavam o subsolo da dignidade. A metrópole respira: seus pulmões são o metrô lotado, seu coração a Paulista, suas veias as marginais em eterna convulsão — vida e morte, riqueza e miséria, velocidade e paralisia coexistindo num paradoxo glorioso e cruel." },
-          { type: "identify", prompt: "Identifique e explique o efeito: 'Não é que ele seja desonesto — apenas nunca diz a verdade.'", answer: "Litotes e ironia. A litotes nega o oposto ('não é desonesto') para afirmar indiretamente a qualidade. A ironia emerge no contraste com a segunda oração, que contradiz implicitamente a afirmação anterior, criando humor e crítica." }
-        ]
-      },
-      {
-        id: "C1-U1-L2",
-        title: "Registro linguístico: do culto ao coloquial",
-        objectives: ["Transitar com fluidez entre registros linguísticos", "Analisar marcas de registro em textos autênticos"],
-        shadowingDialogue: {
-          title: "Código linguístico e contexto",
-          lines: [
-            { speaker: "Sociolinguista", text: "Todo falante nativo alterna registros instintivamente. É o que chamamos de alternância de código." },
-            { speaker: "Estudante", text: "Então o mesmo falante que diz 'tô por dentro' numa roda de amigos dirá 'estou ciente' numa reunião?" },
-            { speaker: "Sociolinguista", text: "Exatamente. E isso não é erro — é competência sociolinguística plena." },
-            { speaker: "Estudante", text: "O problema é quando o falante só domina um dos registros, não é?" },
-            { speaker: "Sociolinguista", text: "Precisamente. O monolinguismo de registro é uma desvantagem social e profissional real." }
+        {
+          id: "ES-C1-U1-L2",
+          title: "Modalidade e Evidencialidade — Dever, Poder, Querer",
+          shadowing: "— Debe de haber salido ya. No coge el teléfono.\n— O puede que esté ocupado.\n— No, debería estar disponible a estas horas.\n— Quizás haya tenido algún problema.\n— Puede que sí. En todo caso, habrá que esperar.\n— ¿No podrías llamar a alguien que lo conozca?\n— Podría, pero prefiero no agobiarle.",
+          memoryPhrases: [
+            "debe de + inf. = deve (dedução)",
+            "debería + inf. = deveria (expectativa)",
+            "puede que + subj. = pode ser que",
+            "habrá que + inf. = vai ser preciso",
+            "podría = poderia (condicional)",
+            "deber vs deber de (obrigação vs dedução)"
+          ],
+          oralProduction: "Especule sobre o que pode estar acontecendo em 3 situações usando deber de, puede que e quizás.",
+          exercises: [
+            { id: "ES-C1-U1-L2-E1", type: "multiple_choice", skill: "grammar", question: "Qual é a diferença entre 'debe hacer' e 'debe de hacer'?", options: ["São iguais", "'Debe hacer' = obrigação; 'debe de hacer' = probabilidade/dedução", "'Debe de' é mais formal", "'Debe' é para o passado"], answer: 1, explanation: "'Debe hacer' = tem obrigação de fazer. 'Debe de hacer' = provavelmente faz (dedução). Distinção importante no C1!" },
+            { id: "ES-C1-U1-L2-E2", type: "multiple_choice", skill: "grammar", question: "Complete: 'No contesta. _____ estar durmiendo.' (Provavelmente está dormindo.)", options: ["Debe hacer", "Debe de estar", "Debería estar", "Podría ser"], answer: 1, explanation: "Debe de estar = deve estar (dedução). Para especulação sobre o presente: debe de + infinitivo composto ou simples." },
+            { id: "ES-C1-U1-L2-E3", type: "fill_blank", skill: "grammar", question: "Complete: '_____ que haya perdido el tren.' (Pode ser que tenha perdido o trem.)", answer: ["Puede"], hint: "puede que + subjuntivo", explanation: "Puede que + subjuntivo = pode ser que. 'Puede que haya perdido' = pode ser que tenha perdido." },
+            { id: "ES-C1-U1-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Deveria estar aqui às 9h. Provavelmente teve algum problema no trânsito.'", answer: ["Debería estar aquí a las 9. Debe de haber tenido algún problema de tráfico.", "Debería estar aquí a las 9. Puede que haya tenido algún problema con el tráfico."], explanation: "Debería estar = deveria estar (expectativa não cumprida). Debe de haber tenido = provavelmente teve (dedução)." },
+            { id: "ES-C1-U1-L2-E5", type: "free_writing", skill: "writing", question: "Escreva um texto especulando sobre as causas de um problema ou situação desconhecida, usando todos os modais estudados. Mínimo 8 frases.", prompt: "Cenário: Um colega não apareceu para uma reunião importante. Especule o que pode ter acontecido.", hint: "Debe de haber..., puede que..., debería..., quizás..., habrá que..., podría ser que..." }
           ]
         },
-        keyPhrases: [
-          "Registro culto / formal / técnico / científico / literário",
-          "Registro coloquial / informal / popular / gíria / regional",
-          "Alternância de código (code-switching) — competência sociolinguística",
-          "Norma culta ≠ único registro correto — adequação ao contexto"
-        ],
-        guidedProduction: [
-          "Reescreva em registro culto: 'O cara tava na bronca com o chefe e saiu pra espairecer.'",
-          "Reescreva em coloquial: 'A situação econômica apresenta perspectivas desalentadoras.'",
-          "Em que situações você usaria cada registro? Dê 3 exemplos."
-        ],
-        grammar: {
-          title: "Marcas de Registro C1",
-          explanation: "Registro culto: vocabulário preciso, concordância rigorosa, pronomes oblíquos (lhe, o, a), colocação pronominal normativa, conectivos formais, sem gírias. Registro coloquial: 'a gente', 'tá/tô', pronomes retos como objeto ('vi ele'), ausência de concordância variável, gírias, elipses. Intermediário (PB padrão real): mistura controlada dos dois — 'a gente foi' mas 'não obstante'. Nenhum é 'errado' — todos têm função social.",
-          conjugation: "Culto: 'O que você fez?' → 'O que fizeste?' (PE) / Coloquial: 'O que você fez?' ou 'Cê fez o quê?' / Coloquialíssimo: 'Que que você fez?'"
-        },
-        exercises: [
-          { type: "rewrite", prompt: "Reescreva em registro culto formal: 'Tô achando que esse negócio não vai dar certo, não.'", answer: "Tenho sérias dúvidas quanto à viabilidade deste empreendimento." },
-          { type: "rewrite", prompt: "Reescreva em coloquial natural: 'Não me é possível comparecer ao evento supracitado.'", answer: "Não consigo ir não, desculpa." },
-          { type: "identify", prompt: "Identifique o registro e as marcas linguísticas: 'A gente tava conversando e aí ele chegou.'", answer: "Coloquial. Marcas: 'a gente' (pronome coletivo informal), 'tava' (apócope de estava), 'aí' (conector narrativo informal). Em culto: 'Estávamos conversando quando ele chegou.'" },
-          { type: "production", prompt: "Escreva o mesmo acontecimento em dois registros: uma mensagem para um amigo e um email para seu chefe.", answer: "Para amigo (WhatsApp): 'Mano, perdi a reunião de hoje! O trânsito tava um caos absurdo, cheguei e já tinha acabado tudo. Me passa o que rolou?'\n\nPara o chefe (email): 'Prezado diretor, venho por meio deste comunicar que não pude comparecer à reunião das 14h em função de congestionamento excepcional. Solicito que me seja enviado o registro das deliberações. Desde já agradeço. Atenciosamente.'" },
-          { type: "analysis", prompt: "Por que a alternância de registro é uma habilidade valiosa e não uma inconsistência?", answer: "A alternância de registro é uma manifestação da competência sociolinguística plena. Um falante que domina múltiplos registros consegue adaptar sua comunicação a diferentes contextos — profissionais, familiares, acadêmicos — maximizando a eficácia da interação. É análogo à competência de um músico que toca jazz e música clássica: a flexibilidade não é incoerência, mas domínio ampliado do sistema. O monolinguismo de registro, ao contrário, limita as possibilidades comunicativas e de inserção social do falante." }
-        ]
-      },
-      {
-        id: "C1-U1-L3",
-        title: "Sintaxe avançada: inversão, elipse e anacoluto",
-        objectives: ["Identificar e usar estruturas sintáticas expressivas C1", "Compreender o efeito estilístico da ruptura sintática"],
-        shadowingDialogue: {
-          title: "Estilística da frase",
-          lines: [
-            { speaker: "Editor", text: "Sua prosa é correta, mas previsível. Experimente inverter a ordem sintática para criar ênfase." },
-            { speaker: "Escritora", text: "Você quer dizer começar com o predicado? Tipo 'Bela era a cidade' em vez de 'A cidade era bela'?" },
-            { speaker: "Editor", text: "Isso. O hipérbato desloca o elemento mais expressivo para o início, criando foco imediato." },
-            { speaker: "Escritora", text: "E o anacoluto? Posso usar numa narrativa mais moderna?" },
-            { speaker: "Editor", text: "Pode, com cuidado. 'Eu, honestamente, essa situação me exaure' — captura a voz interior de forma autêntica." }
+        {
+          id: "ES-C1-U1-L3",
+          title: "Subjuntivo Composto e Sequência de Tempos",
+          shadowing: "— Me alegra que hayas podido venir.\n— Temía que no hubiera plazas.\n— Ojalá hubiera venido antes. Me perdí el comienzo.\n— Es una pena que no hayas llegado más temprano.\n— Sí, aunque dudo que hayan dicho algo importante todavía.\n— Espero que haya valido la pena el desplazamiento.\n— Sin duda. Aunque hubiera sido más corto, habría valido la pena.",
+          memoryPhrases: [
+            "haya + participio = subjuntivo perfecto",
+            "hubiera + participio = subjuntivo pluscuamperfecto",
+            "me alegra que hayas = fico feliz que você tenha",
+            "es una pena que no hayas = é uma pena que você não tenha",
+            "ojalá hubiera = tomara que tivesse",
+            "aunque hubiera sido = mesmo que tivesse sido"
+          ],
+          oralProduction: "Expresse reações a 5 situações passadas usando o subjuntivo composto.",
+          exercises: [
+            { id: "ES-C1-U1-L3-E1", type: "multiple_choice", skill: "grammar", question: "Complete: 'Me alegra que _____ (llegar) bien.' (Fico feliz que você tenha chegado bem.)", options: ["llegaras", "hayas llegado", "llegas", "llegarías"], answer: 1, explanation: "Hayas llegado = tenha chegado. Subjuntivo perfecto (haya + participio) para ação passada em relação ao verbo principal presente." },
+            { id: "ES-C1-U1-L3-E2", type: "multiple_choice", skill: "grammar", question: "Complete: 'Era una pena que no _____ (poder) venir ayer.'", options: ["hayas podido", "puedas", "hubieras podido", "podrías"], answer: 2, explanation: "Hubieras podido = tivesses podido. Verbo principal no passado (era) → subjuntivo pluscuamperfecto (hubiera + participio)." },
+            { id: "ES-C1-U1-L3-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Ojalá _____ (saber) la respuesta.' (Tomara que você soubesse / tivesse sabido a resposta.)", answer: ["hubieras sabido", "hubiera sabido"], hint: "desejo sobre algo que não aconteceu no passado", explanation: "Ojalá hubieras/hubiera sabido = tomara que tivesses/tivesse sabido. Desejo impossível sobre o passado → pluscuamperfecto de subjuntivo." },
+            { id: "ES-C1-U1-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'É uma pena que ele não tenha podido vir. Tomara que tivesse estado aqui para ver isso.'", answer: ["Es una pena que no haya podido venir. Ojalá hubiera estado aquí para ver esto.", "Es una lástima que no haya podido venir. Ojalá hubiera podido estar aquí para ver esto."], explanation: "No haya podido = não tenha podido (subj. perfecto). Ojalá hubiera estado = tomara que tivesse estado (subj. pluscuamperfecto)." },
+            { id: "ES-C1-U1-L3-E5", type: "free_writing", skill: "writing", question: "Escreva sobre reações a eventos passados usando subjuntivo perfecto e pluscuamperfecto. Mínimo 10 frases.", prompt: "Inclua: alegria e tristeza por ações passadas · desejos sobre o passado · dúvidas sobre o passado", hint: "Me alegra que hayas..., es una pena que no hubieras..., ojalá hubiera..., dudo que haya..., no creo que hubiera..." }
           ]
         },
-        keyPhrases: [
-          "Hipérbato: inversão da ordem canônica para ênfase",
-          "Anacoluto: ruptura sintática expressiva da fala interior",
-          "Zeugma: omissão de termo já expresso para concisão",
-          "Elipse: supressão de elemento recuperável pelo contexto"
-        ],
-        guidedProduction: [
-          "Reescreva com hipérbato para enfatizar o adjetivo: 'A noite era silenciosa e fria.'",
-          "Identifique o zeugma: 'Ela tinha fé; eu, dúvidas.'",
-          "Crie um anacoluto que capture o pensamento fragmentado de uma personagem ansiosa."
-        ],
-        grammar: {
-          title: "Figuras de Construção Sintática C1",
-          explanation: "Hipérbato: deslocamento de elementos para posição não canônica. 'Das estrelas, surgiu o silêncio.' Anacoluto: ruptura do plano sintático inicial, frequente na oralidade e narrativa moderna. 'Eu, essas críticas, não me afetam mais.' Zeugma: omissão de termo já enunciado. 'Ele ama o trabalho; eu, a liberdade.' Silepse: concordância com o sentido, não a forma. 'O casal chegaram felizes.' Pleonasmo vicioso vs. expressivo: 'subir para cima' (vicioso) vs. 'ver com os próprios olhos' (expressivo-enfático).",
-          conjugation: "Hipérbato: elemento enfatizado + restante da oração. Zeugma: A tem X; B, [tem] Y. Anacoluto: sujeito destacado + retomada por pronome."
-        },
-        exercises: [
-          { type: "identify", prompt: "Identifique a figura: 'Uns têm o que comer; outros comem o que têm.'", answer: "Quiasmo (inversão paralela cruzada) + zeugma implícito. A estrutura ABBA cria simetria que ressalta a ironia da desigualdade social." },
-          { type: "rewrite", prompt: "Crie hipérbato para enfatizar o tempo: 'Chegou cedo para a reunião mais importante de sua vida.'", answer: "Cedo chegou — para a reunião mais importante de sua vida." },
-          { type: "production", prompt: "Escreva um parágrafo de narrativa usando hipérbato, anacoluto e zeugma.", answer: "Silenciosa estava a casa quando ela entrou. Eu, a verdade, já sabia desde o começo — mas preferi o conforto da dúvida. Ela trouxe flores; eu, desculpas. E assim vivemos: ela com sua certeza renovada a cada manhã, eu com minha elegante evasão." },
-          { type: "identify", prompt: "Identifique silepse e explique: 'A maioria dos estudantes não entenderam a questão.'", answer: "Silepse de número: o verbo concorda com o sentido plural de 'estudantes' em vez da forma singular de 'maioria'. É uma concordância ideológica, frequente no PB, especialmente na oralidade." },
-          { type: "analysis", prompt: "Por que o anacoluto é uma figura e não um erro gramatical?", answer: "O anacoluto é considerado figura de linguagem quando usado com intencionalidade expressiva, especialmente para reproduzir o fluxo caótico do pensamento ou da fala interior. Na narrativa modernista e contemporânea, é recurso estilístico deliberado. O erro ocorre quando o autor perde o fio sintático por descuido. A distinção está na intencionalidade e no efeito: se a ruptura produz sentido expressivo, é figura; se é apenas inconsistência, é erro." }
-        ]
-      },
-      {
-        id: "C1-U1-L4",
-        title: "Intertextualidade e metaficção",
-        objectives: ["Identificar e analisar intertextualidade em textos complexos", "Produzir texto com recursos intertextuais"],
-        shadowingDialogue: {
-          title: "Análise intertextual",
-          lines: [
-            { speaker: "Professora", text: "Toda obra dialoga com outras obras — é o que Bakhtin chama de dialogismo." },
-            { speaker: "Aluno", text: "E quando o diálogo é explícito, com citação ou referência direta, é intertextualidade?" },
-            { speaker: "Professora", text: "Isso. E quando o texto fala sobre sua própria construção, é metaficção ou metalinguagem." },
-            { speaker: "Aluno", text: "Como em Machado de Assis, quando o narrador Brás Cubas fala ao leitor diretamente?" },
-            { speaker: "Professora", text: "Exatamente. É uma das primeiras manifestações de metaficção na literatura brasileira." }
+        {
+          id: "ES-C1-U1-L4",
+          title: "Orações Concessivas e Adversativas Avançadas",
+          shadowing: "— Por más que lo intento, no consigo entenderle.\n— Es que habla muy rápido. Y encima con acento gallego.\n— Con todo, es un conferenciante brillante.\n— Aun así, me cuesta seguirle. A pesar de que lo conozco de hace años.\n— Pues a mí me parece fascinante, pese a la dificultad.\n— Cada uno es cada uno. Sea como fuere, el contenido es excelente.",
+          memoryPhrases: [
+            "por más que + subj. = por mais que",
+            "con todo = mesmo assim / apesar de tudo",
+            "aun así = mesmo assim",
+            "pese a (que) = apesar de (que)",
+            "sea como fuere = seja como for (futuro subj.)",
+            "a pesar de que = apesar de que"
+          ],
+          oralProduction: "Use 5 conectores concessivos diferentes para falar sobre algo que admira apesar dos seus defeitos.",
+          exercises: [
+            { id: "ES-C1-U1-L4-E1", type: "multiple_choice", skill: "grammar", question: "Complete: '_____ lo estudie, no lo entiendo.' (Por mais que eu estude, não entendo.)", options: ["Aunque", "Por más que", "A pesar de que", "Pese a que"], answer: 1, explanation: "Por más que + subjuntivo = por mais que. Estrutura concessiva que indica esforço máximo sem resultado." },
+            { id: "ES-C1-U1-L4-E2", type: "multiple_choice", skill: "grammar", question: "O que significa 'sea como fuere'?", options: ["Seja como for (futuro do subjuntivo — forma arcaica elegante)", "É como é", "Como quiser", "Seja lá o que for"], answer: 0, explanation: "Sea como fuere = seja como for. 'Fuere' é o futuro do subjuntivo, forma praticamente arcaica em espanhol moderno mas que se mantém em expressões fixas e registros formais/literários." },
+            { id: "ES-C1-U1-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete: '_____ todas las dificultades, siguió adelante.' (Apesar de todas as dificuldades, continuou.)", answer: ["Pese a", "A pesar de"], hint: "conector concessivo sem verbo", explanation: "Pese a / A pesar de + substantivo (sem verbo conjugado). Com verbo: pese a que / a pesar de que + indicativo ou subjuntivo." },
+            { id: "ES-C1-U1-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Por mais que tente, não consigo convencê-lo. Mesmo assim, continuo tentando.'", answer: ["Por más que lo intente, no consigo convencerle. Aun así, sigo intentándolo.", "Por más que intente, no logro convencerle. Con todo, continúo intentándolo."], explanation: "Por más que intente = por mais que tente (subj.). Aun así / Con todo = mesmo assim. Sigo intentándolo = continuo tentando." },
+            { id: "ES-C1-U1-L4-E5", type: "free_writing", skill: "writing", question: "Escreva um texto sobre uma situação em que perseverou apesar das dificuldades, usando conectores concessivos variados. Mínimo 10 frases.", prompt: "Inclua: por más que · con todo · aun así · pese a que · aunque · a pesar de · sea como fuere", hint: "Por más que intenté..., con todo, seguí..., aun así no me rendí..., pese a que todo parecía..., sea como fuere..." }
           ]
         },
-        keyPhrases: [
-          "Intertextualidade: diálogo entre textos (citação, alusão, paródia, pastiche)",
-          "Metaficção / metalinguagem: texto que fala sobre si mesmo",
-          "Dialogismo (Bakhtin): toda voz é resposta a outra voz",
-          "Paródia: imitação crítica / Pastiche: imitação homenagem"
-        ],
-        guidedProduction: [
-          "Identifique a intertextualidade em: 'Ser ou não ser startup — eis a questão.'",
-          "O que é paródia? Como difere da pastiche?",
-          "Crie uma frase com intertextualidade explícita referenciando algo que você conhece."
-        ],
-        grammar: {
-          title: "Intertextualidade C1: Tipos e Funções",
-          explanation: "Citação: reprodução literal de outro texto com aspas. Alusão: referência implícita sem citar a fonte. Paródia: imitação crítica que subverte o original. Pastiche: imitação homenagem que reproduz o estilo. Epígrafe: citação inicial que contextualiza a obra. Hipotexto (texto-base) vs. hipertexto (texto derivado). Metalinguagem: a linguagem que fala de si mesma — 'Esta frase está em negrito.' Metaficção: ficção que expõe seu próprio artifício.",
-          conjugation: "A obra dialoga com / remete a / subverte / homenageia / parodia / ressignifica / retoma / transforma / relê / questiona"
-        },
-        exercises: [
-          { type: "identify", prompt: "Identifique o tipo de intertextualidade: 'Macunaíma, herói sem nenhum caráter, acordou certo dia decidido a ser influencer.'", answer: "Paródia. Retoma o texto-fonte de Mário de Andrade ('herói sem nenhum caráter') para subvertê-lo com humor contemporâneo, criando contraste cômico entre o arquétipo literário e a cultura digital." },
-          { type: "identify", prompt: "Identifique: 'No princípio era o Verbo — e o Verbo era fake news.'", answer: "Paródia do Evangelho de João (1:1). A substituição do conceito teológico central por 'fake news' cria efeito irônico e crítico sobre a pós-verdade contemporânea." },
-          { type: "production", prompt: "Escreva um parágrafo de metaficção (o narrador comenta a própria narrativa).", answer: "Poderia começar esta história de outra forma — com o sol raiando ou um crime passional — mas escolhi começá-la com o narrador em crise: eu, que lhes escrevo, não sei bem o que fazer com esta personagem. Ela insiste em não morrer quando deveria, não se apaixona por quem planejei, e tem a insolência de olhar para mim através da página. O leitor, claro, já percebeu que isso é um truque. Mas então — o que não é?" },
-          { type: "analysis", prompt: "Por que a intertextualidade é inevitável em qualquer produção textual?", answer: "Segundo Bakhtin, todo enunciado é uma resposta a enunciados anteriores e uma antecipação de respostas futuras — é o princípio do dialogismo. Nenhum texto nasce do vácuo: mesmo sem citar explicitamente, um escritor carrega as leituras que fez, os gêneros que internalizou, as convenções que absorveu. A intertextualidade é, portanto, não uma escolha estilística opcional, mas uma condição constitutiva de todo discurso. Reconhecê-la é parte essencial da competência leitora avançada." },
-          { type: "production", prompt: "Crie uma alusão literária ou cultural numa frase sobre a vida moderna.", answer: "Como Sísifo diante da caixa de entrada, empurramos os emails morro acima — e eles sempre voltam." }
-        ]
-      },
-      {
-        id: "C1-U1-L5",
-        title: "Revisão e produção integrada C1-U1",
-        objectives: ["Integrar figuras, registros, sintaxe e intertextualidade", "Produzir texto literário-crítico em nível C1"],
-        shadowingDialogue: {
-          title: "Crítica literária avançada",
-          lines: [
-            { speaker: "Crítico", text: "A grandeza de Guimarães Rosa está na invenção: ele cria palavras, subverte a sintaxe, usa figuras incomuns." },
-            { speaker: "Pesquisadora", text: "E a intertextualidade com a tradição oral do sertão é fundamental para entender a obra." },
-            { speaker: "Crítico", text: "Exatamente. O estilo rosiano é uma síntese: erudição europeia filtrada pela voz sertaneja." },
-            { speaker: "Pesquisadora", text: "Uma antropofagia estilística, por assim dizer." },
-            { speaker: "Crítico", text: "Magnífica síntese! É exatamente isso — devorar o culto e o popular e criar algo inédito." }
+        {
+          id: "ES-C1-U1-L5",
+          title: "Elipse e Economia Linguística",
+          shadowing: "— ¿Vas a venir mañana?\n— Depende. ¿Tú?\n— Yo sí. Aunque si no hay nadie...\n— Habrá gente. Siempre la hay.\n— Ojalá. El año pasado éramos poquísimos.\n— Este año, más. Ya verás.\n— ¿Seguro?\n— Segurísimo. Te lo digo yo.",
+          memoryPhrases: [
+            "yo sí / yo no = eu sim / eu não (resposta elíptica)",
+            "¿tú? = e você? (elipse total)",
+            "ya verás = já vai ver",
+            "te lo digo yo = pode ter certeza / eu te digo",
+            "siempre la hay = sempre tem (elipse do substantivo)",
+            "segurísimo = absolutamente certo (superlativo)"
+          ],
+          oralProduction: "Pratique diálogos ultra-compactos em espanhol usando elipse de forma natural.",
+          exercises: [
+            { id: "ES-C1-U1-L5-E1", type: "multiple_choice", skill: "grammar", question: "No diálogo '¿Vienes? — Depende', o que está omitido na resposta?", options: ["O sujeito", "O verbo e o complemento ('de muchas cosas' ou similar)", "O objeto", "Nada está omitido"], answer: 1, explanation: "'Depende' é uma elipse de 'Depende de muchas cosas' ou 'Depende de si habrá transporte' etc. Em espanhol coloquial, a elipse é muito frequente." },
+            { id: "ES-C1-U1-L5-E2", type: "multiple_choice", skill: "grammar", question: "O que significa 'siempre la hay' no contexto de 'habrá gente, siempre la hay'?", options: ["Sempre tem gente (a = gente, omitida no segundo membro)", "A gente sempre está", "Sempre há alguma", "Sempre vai ter"], answer: 0, explanation: "'Siempre la hay' = sempre tem (gente). 'La' é pronome que retoma 'gente' (feminino singular). Elipse do substantivo substituído por pronome." },
+            { id: "ES-C1-U1-L5-E3", type: "fill_blank", skill: "grammar", question: "Complete de forma elíptica: '¿Vendrás? — _____ .' (Sim, venho.)", answer: ["Sí", "Claro", "Por supuesto"], hint: "resposta mínima afirmativa em espanhol", explanation: "Sí / Claro / Por supuesto — todas são respostas elípticas válidas. Em espanhol não é necessário repetir o verbo como no inglês ('Yes, I will')." },
+            { id: "ES-C1-U1-L5-E4", type: "translation", skill: "writing", question: "Reescreva este diálogo de forma mais natural e elíptica em espanhol: '¿Tú vas a venir? — Yo voy a venir si hay tiempo. ¿Tú vas a venir también?'", answer: ["¿Vienes? — Si tengo tiempo, sí. ¿Y tú?", "¿Vienes? — Depende del tiempo. ¿Tú?"], explanation: "Elipse: suprimir pronomes desnecessários, encurtar perguntas repetidas, usar respostas mínimas. Resultado muito mais natural." },
+            { id: "ES-C1-U1-L5-E5", type: "free_writing", skill: "writing", question: "Escreva um diálogo completamente natural e compacto em espanhol C1, usando elipse, respostas mínimas e expressões idiomáticas. Mínimo 12 falas.", prompt: "Tema: dois amigos se encontram depois de muito tempo e se atualizam sobre as suas vidas", hint: "Usa: sí/no simples, ¿y tú?, depende, ya verás, te lo digo yo, ¡venga!, ¿cómo que...?" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-C1-U2",
+      title: "Registro Culto e Literatura",
+      description: "Domínio do registro culto, literário e especializado em espanhol",
+      lessons: [
+        {
+          id: "ES-C1-U2-L1",
+          title: "O Ensaio Literário em Espanhol — Unamuno e Ortega",
+          shadowing: "— Unamuno decía que el español lleva la tragedia en la sangre.\n— ¿No es eso un tópico?\n— Puede que lo sea, pero Unamuno lo convierte en categoría filosófica.\n— ¿Y Ortega y Gasset?\n— Ortega aborda España desde una perspectiva histórica y europea.\n— ¿Son compatibles sus visiones?\n— En muchos aspectos no, pero ambos plantean la cuestión de la identidad española con una lucidez sin parangón.",
+          memoryPhrases: [
+            "llevar en la sangre = ter no sangue",
+            "convertir en categoría = elevar a categoria",
+            "abordar desde = abordar a partir de",
+            "plantear la cuestión = colocar a questão",
+            "con lucidez sin parangón = com lucidez sem par",
+            "un tópico = um lugar-comum / um clichê"
+          ],
+          oralProduction: "Analise um ensaio ou pensador hispânico que você conhece usando vocabulário crítico em espanhol.",
+          exercises: [
+            { id: "ES-C1-U2-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é 'un tópico' em contexto literário/filosófico?", options: ["Um tópico de conversa", "Um lugar-comum / clichê / ideia recorrente e desgastada", "Um tema filosófico", "Um capítulo de um livro"], answer: 1, explanation: "Un tópico = um lugar-comum / clichê. 'Es un tópico' = é um clichê. Diferente de 'topic' em inglês que seria 'tema'. Falso cognato importante!" },
+            { id: "ES-C1-U2-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'sin parangón'?", options: ["Sem pausa", "Sem comparação / sem igual / incomparável", "Sem parâmetro", "Sem paralelo (arcaico)"], answer: 1, explanation: "Sin parangón = sem igual / incomparável / sem paralelo. 'Una lucidez sin parangón' = uma lucidez incomparável. Expressão culta de alto registro." },
+            { id: "ES-C1-U2-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El autor _____ la cuestión de la identidad desde una perspectiva novedosa.' (O autor coloca a questão da identidade...)", answer: ["plantea"], hint: "verbo plantear (colocar/propor uma questão)", explanation: "Plantea = coloca / propõe. Plantear = colocar uma questão, propor um problema para reflexão. Verbo muito usado em contextos acadêmicos e literários." },
+            { id: "ES-C1-U2-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Unamuno eleva o que poderia ser um lugar-comum a categoria filosófica, com uma lucidez sem igual.'", answer: ["Unamuno convierte lo que podría ser un tópico en categoría filosófica, con una lucidez sin parangón.", "Unamuno eleva lo que podría ser un lugar común a categoría filosófica, con una lucidez sin par."], explanation: "Convierte... en = converte... em / eleva... a. Podría ser = poderia ser. Sin parangón = sem igual." },
+            { id: "ES-C1-U2-L1-E5", type: "free_writing", skill: "writing", question: "Escreva um ensaio literário curto sobre a identidade brasileira, à maneira de Unamuno ou Ortega. Mínimo 12 frases.", prompt: "Inclua: tese central · paradoxos · perspectiva histórica · reflexão filosófica · estilo culto", hint: "Brasil lleva en su sangre..., la cuestión de la identidad brasileña plantea..., lo que podría parecer un tópico es en realidad..." }
           ]
         },
-        keyPhrases: [
-          "Síntese estilística — erudição + popular — invenção linguística",
-          "A obra problematiza / subverte / reinventa / ressignifica",
-          "Do ponto de vista estilístico / estrutural / temático / intertextual",
-          "Como afirma [crítico], / Na perspectiva de / À luz da teoria de"
-        ],
-        guidedProduction: [
-          "Analise um parágrafo de sua leitura favorita identificando figuras e intertextualidade.",
-          "Escreva uma micro-crítica literária de 5 frases com rigor C1.",
-          "Crie um texto com pelo menos 3 figuras e 1 elemento intertextual."
-        ],
-        grammar: {
-          title: "Revisão C1-U1",
-          explanation: "Consolida: figuras de linguagem (semelhança, construção, pensamento, intensidade), registros e alternância de código, sintaxe expressiva (hipérbato, anacoluto, zeugma), intertextualidade e metaficção.",
-          conjugation: "Síntese crítica: A obra X, através de Y (figura/recurso), produz o efeito Z, dialogando com W (intertexto) e revelando a perspectiva V do autor sobre o tema U."
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva uma análise estilística de 5 frases de qualquer obra que você conhece.", answer: "Em 'O Alquimista', Paulo Coelho emprega uma linguagem de aparente simplicidade que mascara uma sofisticada rede de simbolismos. A jornada de Santiago funciona como metáfora da busca humana por sentido — recurso alegórico que remete tanto à tradição bíblica quanto ao conto de aventuras. A anáfora de 'lenda pessoal' ao longo da narrativa cria coesão temática e hipnose rítmica no leitor. Do ponto de vista intertextual, a obra dialoga com o Bildungsroman europeu enquanto o ressignifica numa perspectiva espiritual universalista. Apesar da crítica literária erudita frequentemente subestimá-lo, Coelho domina com maestria a arte de tornar o profundo acessível." },
-          { type: "identify", prompt: "Identifique todas as figuras em: 'A saudade é uma faca de dois gumes que corta quem vai e quem fica.'", answer: "Metáfora (saudade = faca de dois gumes), personificação (a saudade que corta), antítese (quem vai / quem fica), e implicitamente paradoxo (o mesmo sentimento fere os dois lados opostos). A imagem produz efeito de dor compartilhada e universal." },
-          { type: "production", prompt: "Crie um texto de 6 frases usando hipérbato, metáfora, intertextualidade e dois registros distintos.", answer: "Bela e cruel era São Paulo às seis da manhã — cidade que devora seus filhos antes mesmo do café. 'No princípio era o metrô', e o metrô estava apinhado, e o metrô era a vida. Eu, esses sonhos de grandeza, já não me convencem mais. A cidade-monstro respira: inspira trabalhadores ao amanhecer, expira executivos ao entardecer. Mas e daí? A gente segura as pontas, dá um jeito, e no fim da semana ri de tudo isso com uma cerveja. Porque, como diria Drummond, 'no meio do caminho tinha uma pedra' — e essa pedra se chama segunda-feira." },
-          { type: "analysis", prompt: "Explique por que forma e conteúdo são inseparáveis na boa literatura.", answer: "Na grande literatura, a forma não é uma embalagem neutra do conteúdo — ela é parte constitutiva do significado. A escolha de um ritmo fragmentado para narrar uma mente em colapso, o uso de anacoluto para reproduzir o pensamento caótico, a repetição anafórica para expressar obsessão: em todos esses casos, o como dizer é parte do que se diz. É o que os formalistas russos chamavam de 'iconicidade' — a forma imita o conteúdo. Drummond não apenas descreve o obstáculo existencial: ele o reproduz formalmente na repetição obsessiva da pedra." },
-          { type: "production", prompt: "Escreva um parágrafo em dois registros sobre o mesmo tema (noite na cidade).", answer: "Registro culto: 'A noite se abate sobre a metrópole como um manto pesado, atenuando as asperezas do dia e conferindo à cidade um silêncio ilusório, pois sob ele fervilham as inquietações de milhões de almas insones.'\n\nRegistro coloquial: 'À noite a cidade muda tudo. Os prédios ficam mais bonitos com as luzes, o metrô esvazia, e dá pra caminhar sem empurrar ninguém. É a única hora em que São Paulo parece que respira de verdade.'" }
-        ]
-      }
-    ]
-  },
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 2 — Gramática C1: Regência, Crase e Colocação
-  // ══════════════════════════════════════════════════════
-  {
-    id: "C1-U2",
-    title: "Gramática C1: Regência, Crase e Colocação Pronominal",
-    level: "C1",
-    lessons: [
-      {
-        id: "C1-U2-L1",
-        title: "Regência verbal e nominal: casos especiais",
-        objectives: ["Dominar a regência de verbos e nomes de uso culto", "Evitar erros de regência frequentes em C1"],
-        shadowingDialogue: {
-          title: "Correção de texto",
-          lines: [
-            { speaker: "Revisor", text: "Você escreveu 'assisti o filme'. Em norma culta, o correto é 'assisti ao filme'." },
-            { speaker: "Autora", text: "Ah, é verdade! ASSISTIR no sentido de ver exige 'a'." },
-            { speaker: "Revisor", text: "Exato. E aqui: 'prefiro isso do que aquilo'. O correto é 'prefiro isso a aquilo'." },
-            { speaker: "Autora", text: "PREFERIR rege 'a', não 'do que'. E 'aspirar a uma carreira' também, né?" },
-            { speaker: "Revisor", text: "Perfeito! Aspirar, visar, assistir, obedecer — todos exigem complemento com preposição." }
+        {
+          id: "ES-C1-U2-L2",
+          title: "Figuras de Linguagem e Estilística Avanzada",
+          shadowing: "— El texto comienza in medias res, lo que genera una tensión narrativa inmediata.\n— Además, el uso del oxímoron 'silencio estruendoso' condensa la paradoja central.\n— ¿Y la anáfora?\n— Sí, la repetición de 'nunca' al inicio de cada párrafo crea un ritmo hipnótico.\n— ¿Podría considerarse también una aliteración?\n— En algunos pasajes sí. La acumulación de fricativas suaviza el tono.\n— Un texto extraordinariamente trabajado.",
+          memoryPhrases: [
+            "in medias res = in medias res (começo no meio da ação)",
+            "el oxímoron = o oxímoro",
+            "la anáfora = a anáfora (repetição no início)",
+            "la aliteración = a aliteração",
+            "la acumulación = a acumulação",
+            "las fricativas = as fricativas"
+          ],
+          oralProduction: "Identifique e nomeie 5 figuras de linguagem em um texto literário em espanhol.",
+          exercises: [
+            { id: "ES-C1-U2-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é um 'oxímoron'?", options: ["Repetição de palavras", "Combinação de termos contraditórios ('silencio estruendoso')", "Comparação entre dois elementos", "Personificação de objetos"], answer: 1, explanation: "Oxímoron = combinação de termos contraditórios ou paradoxais: 'oscura claridad', 'silencio estruendoso', 'hielo abrasador'. Cria tensão expressiva e paradoxo." },
+            { id: "ES-C1-U2-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la anáfora'?", options: ["Repetição de sons", "Repetição de palavras ou estruturas no início de versos ou frases consecutivas", "Figura de ironia", "Ausência de palavras"], answer: 1, explanation: "Anáfora = repetição de palavras/estruturas no início de versos ou orações consecutivas: 'Nunca te vi partir, nunca te vi llegar, nunca te olvidé'." },
+            { id: "ES-C1-U2-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El relato comienza _____ _____, en el momento más álgido de la acción.' (O relato começa in medias res, no momento mais intenso.)", answer: ["in medias res"], hint: "expressão latina para início no meio da ação", explanation: "In medias res = no meio da ação. Técnica narrativa de começar no ponto mais intenso, sem contextualização prévia." },
+            { id: "ES-C1-U2-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'A repetição anafórica de 'nunca' no início de cada estrofe cria um ritmo hipnótico que condensa o tema da perda.'", answer: ["La repetición anafórica de 'nunca' al inicio de cada estrofa crea un ritmo hipnótico que condensa el tema de la pérdida.", "La anáfora de 'nunca' al principio de cada estrofa genera un ritmo hipnótico que sintetiza el tema de la pérdida."], explanation: "Repetición anafórica = repetição anafórica. Al inicio = no início. Condensa = condensa / sintetiza. Pérdida = perda." },
+            { id: "ES-C1-U2-L2-E5", type: "free_writing", skill: "writing", question: "Escreva uma análise estilística de um poema ou texto literário que você conhece, identificando e comentando pelo menos 5 figuras de linguagem. Mínimo 10 frases.", prompt: "Inclua: tipo de texto · figuras identificadas · efeito de cada figura · relação com o tema · avaliação geral", hint: "El texto utiliza..., la anáfora de... crea un efecto de..., el oxímoron... condensa..., la aliteración en... suaviza/intensifica..." }
           ]
         },
-        keyPhrases: [
-          "Assistir A (ver/presenciar) — assistir (ajudar, transitivo direto)",
-          "Visar A (almejar) — visar (rubricar, transitivo direto)",
-          "Aspirar A (desejar) — aspirar (inalar, transitivo direto)",
-          "Preferir A (nunca 'do que') — obedecer A — simpatizar COM"
-        ],
-        guidedProduction: [
-          "Corrija: 'Ela aspirava uma vida melhor.'",
-          "Use 'preferir' corretamente numa frase comparativa.",
-          "Qual a diferença entre 'assistir o jogo' e 'assistir ao jogo'?"
-        ],
-        grammar: {
-          title: "Regência Verbal C1: Verbos de Dupla Regência",
-          explanation: "Verbos com mudança de sentido conforme a regência: ASSISTIR (a = ver/presenciar; sem preposição = ajudar). VISAR (a = almejar; sem preposição = rubricar). ASPIRAR (a = desejar; sem preposição = inalar). QUERER (a = amar/desejar pessoa; sem preposição = desejar objeto). Verbos que sempre exigem preposição: OBEDECER A, DESOBEDECER A, SIMPATIZAR COM, ANTIPATIZAR COM, IMPLICAR COM (irritar-se), RESIDIR EM, CONSISTIR EM.",
-          conjugation: "Preferir A a B (nunca 'do que'): Prefiro café a chá. / Implicar EM (acarretar): O ato implica consequências. / Implicar COM (irritar-se): Ele implica comigo."
-        },
-        exercises: [
-          { type: "correct", prompt: "Corrija: 'Prefiro cinema do que teatro.'", answer: "Prefiro cinema a teatro. (PREFERIR rege 'a', nunca 'do que')" },
-          { type: "correct", prompt: "Corrija: 'Os funcionários desobedeceram as ordens.'", answer: "Os funcionários desobedeceram às ordens. (DESOBEDECER rege 'a')" },
-          { type: "fill", prompt: "Ela aspira ___ uma posição de liderança desde jovem.", answer: "a" },
-          { type: "correct", prompt: "Corrija: 'Não assisti o documentário ontem.'", answer: "Não assisti ao documentário ontem. (ASSISTIR = ver/presenciar → rege 'a')" },
-          { type: "production", prompt: "Escreva 4 frases usando corretamente: assistir a, aspirar a, preferir a, obedecer a.", answer: "Assisti a todos os filmes do festival com atenção crítica. Aspiro a uma carreira que concilie propósito e remuneração justa. Prefiro a profundidade dos romances à superficialidade das redes sociais. A equipe obedeceu às diretrizes estabelecidas sem questionamento." }
-        ]
-      },
-      {
-        id: "C1-U2-L2",
-        title: "Crase: todos os casos e exceções",
-        objectives: ["Dominar o uso da crase em todos os contextos", "Identificar casos obrigatórios, facultativos e proibidos"],
-        shadowingDialogue: {
-          title: "A crase em detalhes",
-          lines: [
-            { speaker: "Gramático", text: "A crase é simples: ocorre quando há fusão de 'a' preposição com 'a' artigo ou pronome demonstrativo." },
-            { speaker: "Aluna", text: "E como saber se o substantivo feminino aceita artigo? Posso trocar por masculino?" },
-            { speaker: "Gramático", text: "Exato. Se no masculino fica 'ao', no feminino fica 'à'. 'Vou ao mercado' → 'Vou à feira'." },
-            { speaker: "Aluna", text: "E 'Vou a Paris'? Paris é feminino mas não leva crase?" },
-            { speaker: "Gramático", text: "Correto. Nomes próprios de cidades sem artigo habitual não levam crase. Exceção: 'Fui à Roma Antiga.'" }
+        {
+          id: "ES-C1-U2-L3",
+          title: "Espanhol Científico e Técnico Avanzado",
+          shadowing: "— Los resultados apuntan a una correlación significativa entre ambas variables.\n— ¿Cómo se puede interpretar eso?\n— Que existe una relación estadísticamente relevante, aunque no necesariamente causal.\n— ¿Y el margen de error?\n— Es del dos por ciento, lo cual es aceptable para este tipo de estudio.\n— ¿Qué implicaciones tiene para la hipótesis inicial?\n— Que deberemos reformularla parcialmente. Los datos no la refutan, pero sí la matizan.",
+          memoryPhrases: [
+            "apuntan a = apontam para",
+            "la correlación = a correlação",
+            "estadísticamente relevante = estatisticamente relevante",
+            "no necesariamente causal = não necessariamente causal",
+            "el margen de error = a margem de erro",
+            "matizar = matizar / nuançar"
+          ],
+          oralProduction: "Apresente os resultados de um estudo imaginário em espanhol usando linguagem científica precisa.",
+          exercises: [
+            { id: "ES-C1-U2-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'los datos no la refutan, pero sí la matizan'?", options: ["Os dados contradizem a hipótese", "Os dados não contradizem a hipótese, mas a tornam mais nuançada", "Os dados confirmam a hipótese", "Os dados são irrelevantes"], answer: 1, explanation: "Matizar = nuançar, qualificar, tornar mais preciso. 'Los datos matizan la hipótesis' = os dados não a contradizem mas adicionam nuances, qualificações." },
+            { id: "ES-C1-U2-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "Qual é a diferença entre 'correlación' e 'causalidad'?", options: ["São iguais", "Correlação = relação estatística; causalidade = uma causa que gera um efeito", "Correlação é mais forte que causalidade", "Causalidade é mais frequente"], answer: 1, explanation: "Correlación ≠ causalidad. Dois fenômenos podem estar correlacionados sem que um cause o outro. Confundi-los é um dos erros mais comuns em ciência." },
+            { id: "ES-C1-U2-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Los resultados _____ a la necesidad de revisar el modelo teórico.' (Os resultados apontam para a necessidade de revisar o modelo.)", answer: ["apuntan"], hint: "verbo que indica direção ou indicação", explanation: "Apuntan a = apontam para. Apuntar a = apontar para / indicar. Muito usado em contextos científicos para indicar o que os dados sugerem." },
+            { id: "ES-C1-U2-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Os resultados apontam para uma correlação significativa, embora não necessariamente causal, entre as duas variáveis estudadas.'", answer: ["Los resultados apuntan a una correlación significativa, aunque no necesariamente causal, entre las dos variables estudiadas.", "Los datos apuntan a una correlación significativa, si bien no necesariamente causal, entre ambas variables."], explanation: "Apuntan a = apontam para. Aunque no necesariamente = embora não necessariamente. Ambas variables = ambas as variáveis." },
+            { id: "ES-C1-U2-L3-E5", type: "free_writing", skill: "writing", question: "Escreva o resumo (abstract) de um artigo científico imaginário em espanhol. Mínimo 10 frases.", prompt: "Inclua: objetivo do estudo · metodologia · resultados · conclusões · limitações · implicações", hint: "El presente estudio tiene como objetivo..., se utilizó una metodología..., los resultados apuntan a..., estos hallazgos sugieren que..., las limitaciones incluyen..." }
           ]
         },
-        keyPhrases: [
-          "Crase obrigatória: a + a (artigo) feminino — 'Vou à escola'",
-          "Crase facultativa: antes de pronome possessivo feminino — 'Vou à/a sua casa'",
-          "Crase proibida: antes de masculino, verbo, pronome pessoal, 'uma'",
-          "Crase proibida: 'Vou a Paris / a pé / a cavalo / a partir de'"
-        ],
-        guidedProduction: [
-          "Explique a regra do masculino para verificar a crase.",
-          "Corrija: 'Refiro-me à isso que você disse.'",
-          "Quando a crase é facultativa? Dê um exemplo."
-        ],
-        grammar: {
-          title: "Crase C1: Casos Completos",
-          explanation: "OBRIGATÓRIA: antes de substantivo feminino com artigo (à escola, à reunião), locuções prepositivas femininas (à medida que, à luz de, à beira de), locuções adverbiais femininas (às vezes, à tarde, à noite), antes de 'aquela/aquilo/aquelas' (refiro-me àquela decisão). FACULTATIVA: antes de pronomes possessivos femininos (à/a sua proposta), antes de nomes próprios femininos de lugares com artigo (fui à/a Lisboa). PROIBIDA: antes de masculino, verbos, pronomes pessoais (ele, ela, você), palavras no plural sem artigo, 'uma', locuções com palavra masculina.",
-          conjugation: "Teste masculino: 'Fui ao banco' → 'Fui à escola'. / 'Fui a pé' → sem 'ao' → sem crase. / 'Refiro-me a isso' → pronome sem artigo → sem crase."
-        },
-        exercises: [
-          { type: "correct", prompt: "Corrija se necessário: 'Às vezes penso em voltar à Paris onde nasci.'", answer: "'Às vezes' está correto (locução adverbial). 'à Paris' — se Paris não tem artigo habitual, o correto é 'a Paris'. Mas se contextualmente se usa artigo (a Paris que conheci), pode-se usar crase. Forma mais segura: 'a Paris'." },
-          { type: "correct", prompt: "Corrija: 'Isso é referente à ele e à situação toda.'", answer: "'à ele' → ERRADO. Pronome pessoal não leva crase. Correto: 'a ele e à situação toda'." },
-          { type: "fill", prompt: "Fui ___ reunião e depois ___ casa da minha mãe.", answer: "à / à" },
-          { type: "fill", prompt: "___ medida que o tempo passa, ___ luz dos novos dados, a teoria se consolida.", answer: "À / à" },
-          { type: "production", prompt: "Escreva um parágrafo usando crase obrigatória (3x), facultativa (1x) e evitando uma situação proibida.", answer: "À medida que os dados foram analisados à luz das novas teorias, tornou-se evidente a necessidade de revisão. Fui à biblioteca consultar as referências e, às vezes, precisei recorrer à/a sua orientação para esclarecer dúvidas. Note-se que o argumento se refere a ele, não à pesquisadora, como erroneamente se supôs." }
-        ]
-      },
-      {
-        id: "C1-U2-L3",
-        title: "Colocação pronominal: próclise, mesóclise e ênclise",
-        objectives: ["Dominar a colocação pronominal em norma culta C1", "Identificar casos de próclise obrigatória e mesóclise"],
-        shadowingDialogue: {
-          title: "Pronomes em posição",
-          lines: [
-            { speaker: "Professor", text: "No português brasileiro contemporâneo, a próclise domina — mas a norma culta escrita é mais exigente." },
-            { speaker: "Estudante", text: "Então 'me diga' está errado no início de frase?" },
-            { speaker: "Professor", text: "Em norma culta escrita, início absoluto de frase exige ênclise: 'Diga-me'. Mas no PB oral, 'me diga' é universal." },
-            { speaker: "Estudante", text: "E a mesóclise? Parece arcaica." },
-            { speaker: "Professor", text: "É muito formal. 'Dir-lhe-ei' é corretíssimo, mas soaria artificioso numa conversa. Reserva-se para textos muito formais." }
+        {
+          id: "ES-C1-U2-L4",
+          title: "Pragmática — O Não Dito em Espanhol",
+          shadowing: "— ¿Le has dicho algo a Marta sobre lo que pasó?\n— Bueno... le he comentado algo.\n— ¿Y qué te dijo?\n— Pues... que ya lo veremos.\n— O sea, que no está de acuerdo.\n— No he dicho eso.\n— No, pero se sobreentiende.\n— Puede que tengas razón. Hay cosas que no hacen falta decirlas.",
+          memoryPhrases: [
+            "bueno... = bem... (hesitação, evasão)",
+            "ya lo veremos = já veremos (rejeição suave)",
+            "o sea = ou seja / quer dizer",
+            "se sobreentiende = subentende-se",
+            "no hace falta decirlo = não é preciso dizer",
+            "comentar algo = mencionar algo (eufemismo)"
+          ],
+          oralProduction: "Interprete o que realmente está sendo comunicado em 3 diálogos ambíguos em espanhol.",
+          exercises: [
+            { id: "ES-C1-U2-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "Quando alguém diz 'ya lo veremos' em resposta a uma proposta, o que geralmente comunica?", options: ["Entusiasmo", "Rejeição suave ou dúvida / 'não sei / provavelmente não'", "Confirmação", "Necessidade de mais informação"], answer: 1, explanation: "'Ya lo veremos' = já veremos. Em pragmática, geralmente comunica ceticismo, rejeição suave ou procrastinação. Raramente indica entusiasmo genuíno." },
+            { id: "ES-C1-U2-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'se sobreentiende' em espanhol?", options: ["Se entende muito", "Se subentende / está implícito / não precisa ser dito", "Se entende claramente", "Precisa ser explicado"], answer: 1, explanation: "Se sobreentiende = subentende-se / está implícito. 'Lo que no se dice pero se sobreentiende' = o que não é dito mas está implícito. Central na pragmática." },
+            { id: "ES-C1-U2-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'No hace _____ que lo expliques, ya se sobreentiende.' (Não é preciso que você explique, já se subentende.)", answer: ["falta"], hint: "no hace falta = não é preciso", explanation: "No hace falta = não é preciso / não é necessário. 'No hace falta que' + subjuntivo = não é preciso que." },
+            { id: "ES-C1-U2-L4-E4", type: "translation", skill: "writing", question: "Interprete e reescreva de forma explícita: 'Bueno, lo que me comentaste... ya lo veremos. No sé, hay cosas...'", answer: ["Creo que no estoy de acuerdo con lo que me dijiste y probablemente no lo voy a hacer, aunque no quiero decírtelo directamente.", "Lo que me dijiste me genera dudas y quizás no lo acepte, pero no quiero ser directo/a al respecto."], explanation: "A pragmática do discurso evasivo: 'Bueno' = hesitação, 'ya lo veremos' = provavelmente não, 'hay cosas' = elipse intencional que evita explicitar a rejeição." },
+            { id: "ES-C1-U2-L4-E5", type: "free_writing", skill: "writing", question: "Escreva dois versões de um mesmo diálogo: uma versão direta e uma versão pragmaticamente indireta, como se faria em espanhol natural. Mínimo 8 falas cada.", prompt: "Situação: alguém pede emprestado dinheiro e a outra pessoa não quer emprestar, mas não quer ser rude.", hint: "Versão direta: 'No, no puedo.' Versão indireta: 'Bueno... es que ahora mismo..., ya sabes..., lo que pasa es que...'" }
           ]
         },
-        keyPhrases: [
-          "Próclise obrigatória: negação, advérbios, conjunções, pronomes relativos",
-          "Ênclise: início absoluto de frase, imperativo afirmativo, infinitivo",
-          "Mesóclise: futuro do presente e futuro do pretérito (muito formal)",
-          "PB real: próclise domina em quase todos os contextos"
-        ],
-        guidedProduction: [
-          "Corrija para norma culta: 'Me chama quando chegar.'",
-          "Quando se usa mesóclise? Dê um exemplo.",
-          "Por que 'Não me diga!' está certo mas 'Me diga!' é questionado na norma culta?"
-        ],
-        grammar: {
-          title: "Colocação Pronominal C1: Norma Culta vs. PB Real",
-          explanation: "PRÓCLISE (antes do verbo) obrigatória com: negação (não me diga), advérbios (sempre te vi), pronomes relativos (quem me chamou), conjunções subordinativas (quando me viu), pronomes indefinidos (alguém me disse). ÊNCLISE (após o verbo): início absoluto de frase (Diga-me), imperativo afirmativo (Ajude-me), gerúndio (Dizendo-lhe), infinitivo impessoal (para dizer-lhe). MESÓCLISE: futuro do presente e do pretérito (Dir-lhe-ei, Far-me-ia). PB contemporâneo: próclise generalizada — 'me diga' no início é aceito no uso real.",
-          conjugation: "Fui → Foi-me dito (ênclise) | Não me disseram (próclise) | Dir-lhe-ei a verdade (mesóclise) | Para dizer-lhe (ênclise no infinitivo) | Quem me disse? (próclise obrigatória)"
-        },
-        exercises: [
-          { type: "correct", prompt: "Corrija para norma culta: 'Me lembra disso amanhã, por favor.'", answer: "Lembra-me disso amanhã. (Início absoluto → ênclise) OU: Por favor, me lembra... (advérbio antecede → próclise válida)" },
-          { type: "correct", prompt: "Corrija para norma culta: 'Não se preocupe, eu te ligo mais tarde.'", answer: "Correto. 'Não se preocupe' — negação exige próclise (se). 'Eu te ligo' — pronome pessoal 'eu' antes permite próclise (te). Ambas as colocações estão corretas na norma culta." },
-          { type: "transform", prompt: "Passe para mesóclise (formal): 'Eu direi a verdade a ele.'", answer: "Dir-lhe-ei a verdade. (dir = dizer futuro + lhe = pronome + ei = desinência)" },
-          { type: "fill", prompt: "Sempre ___ vi assim. / Ninguém ___ disse nada. / Dê- ___ o documento.", answer: "te / me / me (Dê-me)" },
-          { type: "production", prompt: "Escreva um parágrafo formal usando próclise obrigatória, ênclise e uma mesóclise.", answer: "Nunca me passou pela cabeça que tudo se resolveria tão facilmente. Permita-me, contudo, expor os fatos tal como os compreendo. Dir-lhe-ei a verdade sem rodeios: o que se nos apresenta é um desafio de ordem estrutural, não meramente circunstancial. Quem nos trouxe até aqui foi a determinação coletiva — e será ela que nos conduzirá adiante." }
-        ]
-      },
-      {
-        id: "C1-U2-L4",
-        title: "Pontuação expressiva e parágrafo de alta qualidade",
-        objectives: ["Usar pontuação com precisão e expressividade C1", "Construir parágrafos com coesão e progressão temática sofisticadas"],
-        shadowingDialogue: {
-          title: "Oficina de escrita",
-          lines: [
-            { speaker: "Escritora", text: "A vírgula é o sinal mais abusado. Muita gente a usa onde não pode — entre sujeito e predicado." },
-            { speaker: "Aluno", text: "E o travessão? Parece mais expressivo que os parênteses." },
-            { speaker: "Escritora", text: "É mesmo. O travessão isola com ênfase; os parênteses, com discreção. São escolhas estilísticas." },
-            { speaker: "Aluno", text: "E os dois-pontos? Podem introduzir uma explicação sem verbo?" },
-            { speaker: "Escritora", text: "Podem e devem. São uma das ferramentas mais poderosas de ritmo na prosa: criam expectativa, entregam." }
+        {
+          id: "ES-C1-U2-L5",
+          title: "Expressão Oral Avanzada — Conferências e Discursos",
+          shadowing: "— Señoras y señores, es para mí un honor dirigirme a ustedes en este acto tan significativo.\n— A lo largo de mi intervención, intentaré abordar tres aspectos fundamentales que, en mi opinión, definen el reto que tenemos ante nosotros.\n— Permítanme comenzar con una reflexión que quizás les resulte provocadora.\n— La pregunta no es si podemos hacerlo, sino si estamos dispuestos a pagar el precio.\n— Con esto en mente, paso a desarrollar el primero de mis argumentos.",
+          memoryPhrases: [
+            "es para mí un honor = é para mim uma honra",
+            "a lo largo de mi intervención = ao longo da minha intervenção",
+            "abordar tres aspectos = abordar três aspectos",
+            "el reto que tenemos ante nosotros = o desafio que temos diante de nós",
+            "permítanme comenzar = permita-me começar",
+            "paso a desarrollar = passo a desenvolver"
+          ],
+          oralProduction: "Faça um discurso de abertura de 3 minutos para uma conferência sobre o futuro do Brasil em espanhol.",
+          exercises: [
+            { id: "ES-C1-U2-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se abre um discurso formal de alto nível em espanhol?", options: ["Hola a todos", "Señoras y señores, es para mí un honor...", "Buenas tardes, estoy aquí para...", "Antes de empezar..."], answer: 1, explanation: "'Señoras y señores, es para mí un honor/placer dirigirme a ustedes' é a abertura mais formal e elegante para discursos de alto nível." },
+            { id: "ES-C1-U2-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se anuncia a transição para o próximo ponto num discurso formal?", options: ["Y ahora...", "Paso a desarrollar / A continuación me referiré a / Quisiera ahora abordar", "Ok, el siguiente punto es...", "Voy a hablar de..."], answer: 1, explanation: "'Paso a desarrollar', 'A continuación me referiré a', 'Quisiera ahora abordar' são as transições mais elegantes em discursos formais de nível C1." },
+            { id: "ES-C1-U2-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El _____ que tenemos ante nosotros requiere valentía y determinación.' (O desafio que temos diante de nós requer coragem.)", answer: ["reto"], hint: "desafio em espanhol", explanation: "El reto = o desafio. 'Reto' é mais vigoroso que 'desafío' (sinônimo). Muito usado em discursos motivacionais e políticos." },
+            { id: "ES-C1-U2-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'Ao longo desta intervenção, abordarei três aspectos fundamentais que, na minha opinião, definem o desafio que temos diante de nós.'", answer: ["A lo largo de esta intervención, abordaré tres aspectos fundamentales que, en mi opinión, definen el reto que tenemos ante nosotros.", "A lo largo de mi intervención, voy a abordar tres aspectos fundamentales que, según mi criterio, definen el reto que tenemos por delante."], explanation: "A lo largo de = ao longo de. Abordaré = abordarei. Reto que tenemos ante nosotros = desafio que temos diante de nós." },
+            { id: "ES-C1-U2-L5-E5", type: "free_writing", skill: "writing", question: "Escreva o discurso completo de abertura de uma conferência internacional sobre educação bilíngue. Mínimo 15 frases.", prompt: "Inclua: abertura formal · apresentação dos 3 pontos · reflexão inicial provocadora · transições elegantes · encerramento memorável", hint: "Señoras y señores..., a lo largo de mi intervención..., permítanme comenzar con..., paso a desarrollar..., quisiera concluir con..." }
           ]
-        },
-        keyPhrases: [
-          "Vírgula PROIBIDA entre sujeito e predicado — 'O aluno, estudou.' ❌",
-          "Travessão (ênfase) vs. parênteses (discreção) vs. vírgula (fluxo)",
-          "Dois-pontos: introduzem enumeração, explicação, citação ou consequência",
-          "Ponto e vírgula: separa itens complexos ou orações de mesmo nível"
-        ],
-        guidedProduction: [
-          "Corrija a pontuação: 'O projeto, que desenvolvemos em equipe, foi aprovado, na reunião.'",
-          "Reescreva usando travessão em vez de parênteses para dar ênfase.",
-          "Use dois-pontos para criar suspense numa frase."
-        ],
-        grammar: {
-          title: "Pontuação C1: Usos Expressivos",
-          explanation: "VÍRGULA: isola aposto, vocativo, adjunto adverbial deslocado, oração intercalada. PROIBIDA entre sujeito e verbo, verbo e complemento. TRAVESSÃO: isola com ênfase, introduz fala em narrativa, marca ruptura expressiva. DOIS-PONTOS: antes de enumeração, explicação, citação, consequência. PONTO E VÍRGULA: separa itens de lista complexa, orações independentes relacionadas. RETICÊNCIAS: suspense, hesitação, pensamento incompleto.",
-          conjugation: "Uso expressivo: 'Havia apenas uma certeza — ela não voltaria.' (travessão de ênfase) / 'Trouxe tudo: coragem, determinação e paciência.' (dois-pontos antes de enumeração)"
-        },
-        exercises: [
-          { type: "correct", prompt: "Corrija a pontuação: 'Ela, chegou atrasada, e, disse que, tinha se perdido.'", answer: "Ela chegou atrasada e disse que tinha se perdido. (Vírgulas desnecessárias entre sujeito/predicado e entre verbo/complemento.)" },
-          { type: "rewrite", prompt: "Substitua os parênteses por travessão para dar ênfase: 'O projeto (o mais ambicioso da empresa) foi aprovado.'", answer: "O projeto — o mais ambicioso da empresa — foi aprovado." },
-          { type: "production", prompt: "Escreva um parágrafo usando travessão, dois-pontos, ponto e vírgula e reticências expressivamente.", answer: "Havia três caminhos: desistir, adiar ou enfrentar. Escolhi o terceiro — e juro que não foi por coragem. A reunião foi longa; os argumentos, exaustivos; o silêncio final, ensurdecedor. Quando o diretor enfim falou, eu soube antes mesmo das palavras: era o fim de algo, ou... talvez o começo." },
-          { type: "identify", prompt: "Explique o uso dos dois-pontos: 'Só queria uma coisa: paz.'", answer: "Os dois-pontos introduzem um complemento nominal com ênfase — funcionam como um zoom: criam expectativa na primeira parte e a satisfazem com precisão na segunda. O efeito é de revelação ou conclusão, reforçado pela brevidade do que vem depois." },
-          { type: "production", prompt: "Reescreva este parágrafo melhorando a pontuação e o ritmo: 'Ela estava cansada e foi para casa e dormiu e esqueceu tudo.'", answer: "Estava cansada. Foi para casa, dormiu — e esqueceu tudo." }
-        ]
-      },
-      {
-        id: "C1-U2-L5",
-        title: "Revisão e produção integrada C1-U2",
-        objectives: ["Integrar regência, crase, colocação pronominal e pontuação", "Produzir texto sem erros normativos em nível C1"],
-        shadowingDialogue: {
-          title: "Revisão final",
-          lines: [
-            { speaker: "Revisora", text: "Seu texto está quase perfeito. Três pontos de atenção: regência, crase e colocação pronominal." },
-            { speaker: "Autor", text: "Que tipo de erros encontrou?" },
-            { speaker: "Revisora", text: "'Refiro-me à isso' — pronome não leva crase. 'Me parece' no início — ênclise no absoluto." },
-            { speaker: "Autor", text: "E a regência?" },
-            { speaker: "Revisora", text: "'Prefiro isso do que aquilo' — o correto é 'prefiro isso a aquilo'. São os três pontos clássicos de C1." }
-          ]
-        },
-        keyPhrases: [
-          "Os três clássicos de C1: regência / crase / colocação pronominal",
-          "Vírgula entre sujeito e predicado: erro gravíssimo de pontuação",
-          "Preferir A / Assistir A / Aspirar A / Obedecer A",
-          "Não me diga (próclise) / Diga-me (ênclise) / Dir-lhe-ei (mesóclise)"
-        ],
-        guidedProduction: [
-          "Corrija um parágrafo com 5 erros de norma culta.",
-          "Produza um texto de 200 palavras sem nenhum erro normativo.",
-          "Avalie seu próprio texto: quais pontos ainda são desafio para você?"
-        ],
-        grammar: {
-          title: "Revisão C1-U2",
-          explanation: "Consolida: regência verbal e nominal (verbos de dupla regência), crase (obrigatória, facultativa, proibida), colocação pronominal (próclise, ênclise, mesóclise), pontuação expressiva (vírgula, travessão, dois-pontos, ponto e vírgula).",
-          conjugation: "Checklist C1: ✅ Regência correta dos verbos-armadilha ✅ Crase nos contextos corretos ✅ Pronome na posição normativa ✅ Vírgula nunca entre S e P ✅ Pontuação como ferramenta expressiva"
-        },
-        exercises: [
-          { type: "correct", prompt: "Encontre e corrija todos os erros: 'Me parece que ela aspira uma carreira melhor, e prefere isso do que aquilo que tem.'", answer: "Parece-me que ela aspira a uma carreira melhor e prefere isso a aquilo que tem. (Correções: ênclise no início absoluto, regência de aspirar a, regência de preferir a)" },
-          { type: "correct", prompt: "Corrija: 'Refiro-me à ele e à situação que assistimos ontem.'", answer: "Refiro-me a ele e à situação a que assistimos ontem. (Crase proibida antes de pronome pessoal; assistir = ver → assistir a)" },
-          { type: "production", prompt: "Escreva um parágrafo de 100 palavras sem nenhum erro normativo, usando as estruturas estudadas nesta unidade.", answer: "Nunca me ocorreu que assistir a uma simples conferência mudaria minha perspectiva. O palestrante — à medida que expunha seus argumentos — conduzia-nos com precisão à essência do problema. Permita-me expor o que aprendi: prefiro a clareza à verbosidade; aspiro a uma escrita que respeite o leitor; e obedeço às regras não por submissão, mas porque delas emerge a liberdade expressiva. Dir-lhe-ei sem rodeios: o domínio da norma culta não limita — liberta." },
-          { type: "fill", prompt: "Sempre ___ vi assim. ___ medida que o tempo passa, ___ parece que tudo se resolve.", answer: "te / À / me parece (ou parece-me no início absoluto)" },
-          { type: "production", prompt: "Corrija e reescreva com qualidade C1: 'Eu prefiro ler do que assistir televisão, me parece mais enriquecedor, refiro-me à esse tipo de entretenimento passivo.'", answer: "Prefiro a leitura a assistir televisão — parece-me atividade mais enriquecedora. Refiro-me a esse tipo de entretenimento passivo que, embora acessível, raramente estimula o pensamento crítico." }
-        ]
-      }
-    ]
-  }
-];
+        }
+      ]
+    }
+  ]
+};
