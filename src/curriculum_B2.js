@@ -1,7 +1,11 @@
-import { B2_U1_U2 } from "./curriculum_B2_part1.js";
-import { B2_U3_U4 } from "./curriculum_B2_part2.js";
-import { B2_U5_U8 } from "./curriculum_B2_part3.js";
+import { CURRICULUM_ES_B2_PART1 } from "./curriculum_B2_part1";
+import { CURRICULUM_ES_B2_PART2 } from "./curriculum_B2_part2";
+import { CURRICULUM_ES_B2_PART3 } from "./curriculum_B2_part3";
 
 export const CURRICULUM_B2 = {
-  units: [...B2_U1_U2, ...B2_U3_U4, ...B2_U5_U8]
+  units: [
+    ...CURRICULUM_ES_B2_PART1.units,
+    ...CURRICULUM_ES_B2_PART2.units,
+    ...CURRICULUM_ES_B2_PART3.units,
+  ]
 };
