@@ -1,409 +1,228 @@
-// B2 PART 2 — Unidades 3 y 4
-// 12 lecciones · 60 ejercicios
-
-export const B2_U3_U4 = [
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 3 — Registro Formal e Comunicação Profissional
-  // ══════════════════════════════════════════════════════
-  {
-    id: "B2-U3",
-    title: "Registro Formal e Comunicação Profissional",
-    level: "B2",
-    lessons: [
-
-      {
-        id: "B2-U3-L1",
-        title: "Email formal, ofício e requerimento",
-        objectives: ["Escrever emails formais e documentos oficiais", "Usar vocabulário e estrutura adequados ao registro formal"],
-        shadowingDialogue: {
-          title: "Redigindo um email formal",
-          lines: [
-            { speaker: "Funcionária", text: "Prezado senhor, venho por meio deste solicitar informações sobre o processo seletivo." },
-            { speaker: "RH", text: "Atenciosamente agradecemos seu contato e informamos que as inscrições encerram na próxima sexta-feira." },
-            { speaker: "Funcionária", text: "Desde já agradeço a atenção dispensada e aguardo retorno." },
-            { speaker: "RH", text: "Colocamo-nos à disposição para demais esclarecimentos." }
+export const CURRICULUM_ES_B2_PART2 = {
+  units: [
+    {
+      id: "ES-B2-U3",
+      title: "Pensamento Crítico e Análise",
+      description: "Análise crítica, reflexão e argumentação sofisticada em espanhol",
+      lessons: [
+        {
+          id: "ES-B2-U3-L1",
+          title: "Análise de Textos Literários em Espanhol",
+          shadowing: "— El texto presenta una estructura circular: comienza y termina en el mismo punto.\n— ¿Qué función tiene eso narrativamente?\n— Sugiere que el protagonista no ha evolucionado, o quizás que el tiempo es cíclico.\n— ¿Y el narrador? ¿Es fiable?\n— Es un narrador en primera persona con memoria selectiva, lo que cuestiona su fiabilidad.\n— ¿Qué recursos estilísticos predominan?\n— El uso de la ironía y la elipsis temporal son los más destacados.",
+          memoryPhrases: [
+            "la estructura circular = a estrutura circular",
+            "el narrador (no) fiable = o narrador (não) confiável",
+            "la memoria selectiva = a memória seletiva",
+            "los recursos estilísticos = os recursos estilísticos",
+            "la ironía / la elipsis = a ironia / a elipse",
+            "cuestionar = questionar"
+          ],
+          oralProduction: "Analise um texto literário curto em espanhol identificando estrutura, narrador e recursos estilísticos.",
+          exercises: [
+            { id: "ES-B2-U3-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é um 'narrador no fiable'?", options: ["Um narrador que não narra", "Um narrador cuja versão dos fatos é questionável ou parcial", "Um narrador formal", "Um narrador onisciente"], answer: 1, explanation: "Narrador no fiable = narrador não confiável. Sua perspectiva ou memória é parcial, seletiva ou distorcida, tornando o relato questionável." },
+            { id: "ES-B2-U3-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é a 'elipsis temporal'?", options: ["Uma figura de linguagem que suprime palavras", "Um salto no tempo narrativo (omissão de período)", "Uma repetição temporal", "Uma contradição temporal"], answer: 1, explanation: "Elipsis temporal = elipse temporal. Supressão de um período de tempo na narrativa. O leitor entende que tempo passou sem que seja descrito." },
+            { id: "ES-B2-U3-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El autor usa la ironía para _____ los valores de la sociedad de su época.' (O autor usa a ironia para questionar...)", answer: ["cuestionar", "criticar"], hint: "por en dúvida / questionar em espanhol", explanation: "Cuestionar = questionar. Criticar = criticar. Ambos funcionam no contexto de análise literária." },
+            { id: "ES-B2-U3-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'O texto se estrutura em torno de um narrador em primeira pessoa cuja memória seletiva questiona a fiabilidade do relato.'", answer: ["El texto se estructura en torno a un narrador en primera persona cuya memoria selectiva cuestiona la fiabilidad del relato.", "El texto está estructurado alrededor de un narrador en primera persona cuya memoria selectiva pone en duda la fiabilidad del relato."], explanation: "Se estructura en torno a = se estrutura em torno de. Cuya = cuja (pronome relativo possessivo). Fiabilidad = fiabilidade." },
+            { id: "ES-B2-U3-L1-E5", type: "free_writing", skill: "writing", question: "Escreva uma análise literária de um livro que você leu, identificando estrutura, narrador e 3 recursos estilísticos. Mínimo 10 frases.", prompt: "Inclua: estrutura da obra · tipo de narrador · tempo narrativo · recursos estilísticos · interpretação temática", hint: "La obra se estructura en..., el narrador es..., el autor utiliza recursos como..., el tema central es..." }
           ]
         },
-        keyPhrases: [
-          "Prezado(a) Sr./Sra. / Ilmo. Sr. / À atenção de",
-          "Venho por meio deste / Venho respeitosamente solicitar",
-          "Desde já agradeço / Aguardo retorno / Certo(a) de sua atenção",
-          "Atenciosamente / Cordialmente / Respeitosamente / Subscrevo-me"
-        ],
-        guidedProduction: [
-          "Escreva a abertura de um email formal para um diretor.",
-          "Como se encerra um email formal em português?",
-          "Formalize: 'Oi, quero saber sobre a vaga.'"
-        ],
-        grammar: {
-          title: "Estrutura do Email Formal",
-          explanation: "Abertura: Prezado(a) + cargo/nome. Corpo: Venho por meio deste... / Em referência ao... / Conforme solicitado... Fechamento: Desde já agradeço + finalidade. Encerramento: Atenciosamente / Cordialmente + nome + cargo. Evitar: gírias, abreviações, 'vc', 'pq', exclamações excessivas.",
-          conjugation: "Fórmulas de cortesia: solicitar (não 'pedir'). Venho solicitar / Venho informar / Venho esclarecer / Venho comunicar / Venho agradecer"
-        },
-        exercises: [
-          { type: "rewrite", prompt: "Formalize: 'Oi, preciso de um atestado de matrícula pra ontem.'", answer: "Prezado(a) Secretário(a), venho por meio deste solicitar, com urgência, a emissão de declaração de matrícula. Desde já agradeço a atenção dispensada. Atenciosamente." },
-          { type: "fill", prompt: "___ Sr. Diretor, ___ por meio deste comunicar nossa decisão.", answer: "Prezado / venho" },
-          { type: "choice", prompt: "Qual fechamento é mais adequado para um email formal?", options: ["Beijos!", "Abraços", "Atenciosamente,", "Até mais,"], answer: "Atenciosamente," },
-          { type: "fill", prompt: "___ já agradecemos e aguardamos ___ retorno.", answer: "Desde / vosso/seu" },
-          { type: "production", prompt: "Escreva um email formal solicitando segunda via de documento.", answer: "Prezada Secretaria, venho por meio deste solicitar a emissão de segunda via do meu histórico escolar, referente ao ano letivo de 2025. Informo que o documento original foi extraviado. Desde já agradeço a atenção. Atenciosamente, [Nome]." }
-        ]
-      },
-
-      {
-        id: "B2-U3-L2",
-        title: "Apresentação oral formal: palestra e seminário",
-        objectives: ["Estruturar e apresentar uma palestra formal", "Usar marcadores discursivos orais em nível B2"],
-        shadowingDialogue: {
-          title: "Abertura de palestra",
-          lines: [
-            { speaker: "Palestrante", text: "Bom dia a todos. Primeiramente, agradeço o convite para falar sobre inovação tecnológica." },
-            { speaker: "Palestrante", text: "Ao longo desta apresentação, abordarei três pontos fundamentais." },
-            { speaker: "Palestrante", text: "Em primeiro lugar, contextualizarei o cenário atual. Em seguida, analisarei os desafios..." },
-            { speaker: "Palestrante", text: "Por fim, proporei soluções concretas. Alguma dúvida antes de começar?" }
+        {
+          id: "ES-B2-U3-L2",
+          title: "Filosofia e Pensamento Crítico",
+          shadowing: "— ¿Crees que el libre albedrío existe?\n— Es una pregunta compleja. Si el determinismo es cierto, nuestras decisiones son ilusorias.\n— Pero experimentamos la sensación de elegir.\n— Eso podría ser una construcción mental. Compatibilistas argumentan que libertad y determinismo no son excluyentes.\n— ¿Y tú qué opinas?\n— Creo que la pregunta misma presupone categorías que quizás no son las adecuadas para entender la realidad.",
+          memoryPhrases: [
+            "el libre albedrío = o livre-arbítrio",
+            "el determinismo = o determinismo",
+            "ilusorio = ilusório",
+            "excluyentes = excludentes / mutuamente exclusivos",
+            "presuponer = pressupor",
+            "las categorías = as categorias"
+          ],
+          oralProduction: "Discuta um dilema filosófico de sua escolha em espanhol, apresentando pelo menos dois pontos de vista.",
+          exercises: [
+            { id: "ES-B2-U3-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é o 'libre albedrío'?", options: ["Livre comércio", "Livre-arbítrio / capacidade de escolher livremente", "Livre pensamento", "Liberdade de expressão"], answer: 1, explanation: "Libre albedrío = livre-arbítrio. A capacidade de tomar decisões livremente, sem determinismo. Um dos grandes temas da filosofia ocidental." },
+            { id: "ES-B2-U3-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'no son excluyentes'?", options: ["Não são exclusivos", "Não se excluem / podem coexistir", "Não são excludentes entre si", "B e C corretas"], answer: 3, explanation: "No son excluyentes = não se excluem mutuamente / podem coexistir. Excluyente = excludente. 'No mutuamente excluyentes' significa que duas coisas podem ser verdadeiras ao mesmo tempo." },
+            { id: "ES-B2-U3-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'La pregunta _____ una dualidad que quizás no existe.' (A pergunta pressupõe uma dualidade que talvez não exista.)", answer: ["presupone"], hint: "verbo pressupor no presente", explanation: "Presupone = pressupõe. Presuponer = pressupor. Forma muito usada no pensamento crítico e filosófico." },
+            { id: "ES-B2-U3-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Se o determinismo é verdadeiro, nossas decisões podem ser ilusórias, mas ainda assim as experimentamos como reais.'", answer: ["Si el determinismo es cierto, nuestras decisiones pueden ser ilusorias, pero aun así las experimentamos como reales.", "Si el determinismo es verdadero, nuestras decisiones podrían ser ilusorias, pero las experimentamos como reales."], explanation: "Determinismo = determinismo. Ilusorias = ilusórias. Aun así = ainda assim. Las experimentamos = as experimentamos." },
+            { id: "ES-B2-U3-L2-E5", type: "free_writing", skill: "writing", question: "Escreva um ensaio filosófico sobre um dilema ético contemporâneo em espanhol. Mínimo 10 frases.", prompt: "Sugestões: IA e humanidade, direitos dos animais, ética ambiental, privacidade digital", hint: "El dilema ético de..., por un lado..., por otro..., los argumentos a favor..., sin embargo..., en conclusión..." }
           ]
         },
-        keyPhrases: [
-          "Bom dia/boa tarde a todos. Agradeço o convite para...",
-          "Ao longo desta apresentação / Neste seminário / Nesta palestra",
-          "Em primeiro lugar / Em seguida / Por outro lado / Por fim / Para concluir",
-          "Como mencionei anteriormente / Voltando ao ponto principal / Em síntese"
-        ],
-        guidedProduction: [
-          "Faça a abertura de uma apresentação sobre sua área profissional.",
-          "Use marcadores para transitar entre dois pontos: 'primeiro... em seguida...'",
-          "Feche uma palestra de forma elegante e convide perguntas."
-        ],
-        grammar: {
-          title: "Marcadores Discursivos Orais B2",
-          explanation: "Abertura: primeiramente, antes de mais nada, para começar. Sequência: em primeiro lugar, a seguir, posteriormente, por sua vez. Contraste: no entanto, por outro lado, ao passo que. Exemplificação: a título de exemplo, como ilustração, vale mencionar. Conclusão: em síntese, em suma, para finalizar, sendo assim.",
-          conjugation: "Verbos formais de apresentação: abordar, contextualizar, analisar, discorrer sobre, destacar, ressaltar, enfatizar, concluir"
-        },
-        exercises: [
-          { type: "order", prompt: "Ordene: [Por fim / Em seguida / Em primeiro lugar] para estruturar uma apresentação.", answer: "Em primeiro lugar → Em seguida → Por fim" },
-          { type: "fill", prompt: "___ esta apresentação, abordarei os desafios da educação.", answer: "Ao longo de" },
-          { type: "rewrite", prompt: "Formalize a transição: 'Aí tem outro ponto importante.'", answer: "Por outro lado, convém destacar um aspecto igualmente relevante." },
-          { type: "fill", prompt: "___ mencionei, os dados são alarmantes.", answer: "Como" },
-          { type: "production", prompt: "Escreva a abertura e o encerramento de uma palestra de 3 minutos sobre sustentabilidade.", answer: "Boa tarde a todos. É uma honra estar aqui para discorrer sobre sustentabilidade ambiental. Ao longo desta apresentação, abordarei as principais ameaças ao meio ambiente e as soluções disponíveis. [...] Em síntese, a sustentabilidade não é uma escolha, mas uma necessidade. Agradeço a atenção e fico à disposição para perguntas." }
-        ]
-      },
-
-      {
-        id: "B2-U3-L3",
-        title: "Negociação e persuasão em português",
-        objectives: ["Argumentar e persuadir de forma estratégica", "Fazer concessões e defender posições em negociação"],
-        shadowingDialogue: {
-          title: "Negociação comercial",
-          lines: [
-            { speaker: "Compradora", text: "O preço está acima do nosso orçamento. Podemos chegar a um acordo?" },
-            { speaker: "Vendedor", text: "Entendo sua preocupação. Que tal parcelarmos em 12 vezes sem juros?" },
-            { speaker: "Compradora", text: "Interessante. E se aumentarmos o volume do pedido, há desconto?" },
-            { speaker: "Vendedor", text: "Para pedidos acima de 500 unidades, oferecemos 15% de desconto. Fechamos negócio?" }
+        {
+          id: "ES-B2-U3-L3",
+          title: "Sociolinguística — Língua e Sociedade",
+          shadowing: "— ¿Por qué cambia el español según el contexto social?\n— La lengua es un fenómeno social. Adaptamos nuestro registro al interlocutor y la situación.\n— ¿A qué se llama diglosia?\n— A la coexistencia de dos lenguas con diferente estatus social en una misma comunidad.\n— ¿Como en Cataluña?\n— Exacto. El catalán y el castellano coexisten con distintas funciones sociales.\n— ¿Y en qué afecta eso a los hablantes?\n— Crea identidades lingüísticas complejas y a veces tensiones sociales.",
+          memoryPhrases: [
+            "el registro = o registro (linguístico)",
+            "el interlocutor = o interlocutor",
+            "la diglosia = a diglossia",
+            "la coexistencia = a coexistência",
+            "el estatus social = o status social",
+            "las tensiones sociales = as tensões sociais"
+          ],
+          oralProduction: "Explique o conceito de registro linguístico com exemplos do espanhol e do português.",
+          exercises: [
+            { id: "ES-B2-U3-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é 'el registro lingüístico'?", options: ["O sotaque de uma pessoa", "O nível ou variedade de língua usada segundo o contexto", "O vocabulário técnico", "A gramática de um idioma"], answer: 1, explanation: "Registro lingüístico = registro linguístico. O nível ou variedade da língua adaptado ao contexto: formal, informal, técnico, coloquial, etc." },
+            { id: "ES-B2-U3-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'diglosia'?", options: ["Falar dois idiomas", "Coexistência de dois idiomas com diferente status social numa mesma comunidade", "Mistura de dois idiomas", "Tradução entre idiomas"], answer: 1, explanation: "Diglosia = diglossia. Coexistência de duas línguas ou variedades com status diferentes. Ex: uma língua para contextos formais, outra para informais." },
+            { id: "ES-B2-U3-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Adaptamos nuestro _____ según el contexto y el interlocutor.' (Adaptamos nosso registro...)", answer: ["registro"], hint: "variedade ou nível de língua usado", explanation: "Registro = registro. 'Adaptar el registro' = adaptar o nível da língua ao contexto e ao interlocutor." },
+            { id: "ES-B2-U3-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'A coexistência de duas línguas numa mesma comunidade gera identidades linguísticas complexas.'", answer: ["La coexistencia de dos lenguas en una misma comunidad genera identidades lingüísticas complejas.", "La convivencia de dos lenguas en la misma comunidad genera identidades lingüísticas complejas."], explanation: "Coexistencia = coexistência. Genera = gera. Identidades lingüísticas = identidades linguísticas." },
+            { id: "ES-B2-U3-L3-E5", type: "free_writing", skill: "writing", question: "Escreva sobre a situação sociolinguística do Brasil: a língua portuguesa, as línguas indígenas e a influência de idiomas estrangeiros. Mínimo 10 frases.", prompt: "Inclua: língua oficial · variedades regionais · línguas minorizadas · code-switching · identidade linguística", hint: "En Brasil, el portugués es..., sin embargo, existen..., los hablantes a veces..., la identidad lingüística..." }
           ]
         },
-        keyPhrases: [
-          "Entendo seu ponto de vista, no entanto...",
-          "Podemos chegar a um meio-termo / Que tal uma alternativa?",
-          "Se aumentarmos o volume, poderíamos...",
-          "Isso parece razoável. Vamos fechar? / Temos um acordo!"
-        ],
-        guidedProduction: [
-          "Peça um desconto de forma educada e persuasiva.",
-          "Faça uma contraproposta usando 'e se... / que tal...'",
-          "Como você fecharia uma negociação com elegância?"
-        ],
-        grammar: {
-          title: "Linguagem de Negociação",
-          explanation: "Concordância parcial: entendo, porém... / reconheço, contudo... Proposta alternativa: que tal + infinitivo? / e se + condicional? / o que acha de...? Pressão suave: precisamos resolver isso hoje / temos um prazo a cumprir. Fechamento: parece justo / temos um acordo / vamos formalizar?",
-          conjugation: "Modais de negociação: poderíamos considerar / seria possível / conseguiríamos chegar / estaria disposto a / poderíamos encontrar"
-        },
-        exercises: [
-          { type: "rewrite", prompt: "Seja mais persuasivo: 'Quero desconto.'", answer: "Gostaria de avaliar se há possibilidade de um ajuste no valor, considerando o volume do nosso pedido." },
-          { type: "fill", prompt: "Entendo sua posição, ___ precisamos reconsiderar os prazos.", answer: "no entanto / contudo / porém" },
-          { type: "transform", prompt: "Formule uma contraproposta: 'Não podemos dar 30% de desconto.'", answer: "Não conseguiríamos chegar a 30%, porém poderíamos oferecer 15% com prazo de entrega reduzido. O que acha?" },
-          { type: "fill", prompt: "Se ___ o contrato hoje, garantimos a entrega em 48 horas.", answer: "assinarmos / fecharmos" },
-          { type: "production", prompt: "Escreva um diálogo de negociação de 4 linhas para reduzir um prazo.", answer: "— Precisamos do produto em 10 dias. É possível? — Normalmente trabalhamos em 15, mas se confirmarmos o pedido hoje, podemos priorizar a entrega. — Perfeito. E há algum custo adicional? — Para este volume, sem custo extra. Temos um acordo?" }
-        ]
-      },
-
-      {
-        id: "B2-U3-L4",
-        title: "Reuniões e videoconferências em português",
-        objectives: ["Participar e conduzir reuniões em português formal", "Pedir a palavra, concordar, discordar e resumir"],
-        shadowingDialogue: {
-          title: "Reunião de equipe",
-          lines: [
-            { speaker: "Coordenadora", text: "Antes de começarmos, alguém tem algum ponto a acrescentar à pauta?" },
-            { speaker: "Membro", text: "Com licença, gostaria de fazer uma observação sobre o cronograma." },
-            { speaker: "Coordenadora", text: "Claro, pode falar. Depois passamos para o próximo ponto." },
-            { speaker: "Outro membro", text: "Concordo parcialmente, mas acho importante considerar os riscos também." }
+        {
+          id: "ES-B2-U3-L4",
+          title: "Ensaio Argumentativo Avanzado",
+          shadowing: "— El artículo sostiene que la inteligencia artificial transformará radicalmente el mercado laboral.\n— ¿Coincides con esa tesis?\n— En parte. Si bien reconozco que hay sectores vulnerables, creo que el análisis peca de determinista.\n— ¿En qué sentido?\n— En que ignora la capacidad humana de adaptación histórica. Siempre hemos creado nuevos empleos ante los cambios tecnológicos.\n— Un argumento sólido. ¿Y la contraargumentación?\n— El ritmo del cambio actual es sin precedentes. Eso complica la comparación histórica.",
+          memoryPhrases: [
+            "sostiene que = sustenta que / afirma que",
+            "pecar de = pecar de / ser excessivamente",
+            "sin precedentes = sem precedentes",
+            "la capacidad de adaptación = a capacidade de adaptação",
+            "complica la comparación = complica a comparação",
+            "un argumento sólido = um argumento sólido"
+          ],
+          oralProduction: "Defenda e contra-argumente a seguinte tese: 'A globalização beneficia mais do que prejudica.'",
+          exercises: [
+            { id: "ES-B2-U3-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'el artículo sostiene que'?", options: ["O artigo sugere que", "O artigo sustenta / afirma que (como tese principal)", "O artigo menciona que", "O artigo pergunta que"], answer: 1, explanation: "Sostiene que = sustenta / afirma que (como tese principal). 'Sostener' no sentido intelectual = defender uma posição, argumentar." },
+            { id: "ES-B2-U3-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'sin precedentes'?", options: ["Sem preço", "Sem precedentes / inédito / nunca antes visto", "Sem precedência", "Sem pré-requisitos"], answer: 1, explanation: "Sin precedentes = sem precedentes. 'Un evento sin precedentes' = um evento inédito, que nunca aconteceu antes." },
+            { id: "ES-B2-U3-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El análisis _____ de simplista al ignorar factores contextuales.' (A análise peca de simplista ao ignorar...)", answer: ["peca"], hint: "verbo pecar (pecar / ser excessivamente)", explanation: "Peca de = peca de / é excessivamente. 'Pecar de simplista' = ser simplista demais. Forma muito usada na crítica acadêmica." },
+            { id: "ES-B2-U3-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Embora reconheça que o argumento tem mérito, considero que peca de determinista ao ignorar a capacidade humana de adaptação.'", answer: ["Si bien reconozco que el argumento tiene mérito, considero que peca de determinista al ignorar la capacidad humana de adaptación.", "Aunque reconozco el mérito del argumento, creo que peca de determinista al ignorar la capacidad humana de adaptación."], explanation: "Si bien reconozco = embora reconheça. Peca de determinista = peca de determinista. Capacidad de adaptación = capacidade de adaptação." },
+            { id: "ES-B2-U3-L4-E5", type: "free_writing", skill: "writing", question: "Escreva um ensaio argumentativo completo sobre os impactos da inteligência artificial no mundo do trabalho. Mínimo 15 frases.", prompt: "Inclua: tese clara · 3 argumentos desenvolvidos · contra-argumento · refutação · conclusão com proposta", hint: "La tesis central es..., en primer lugar..., no obstante..., si bien es cierto que..., en conclusión, propongo..." }
           ]
         },
-        keyPhrases: [
-          "Com licença, posso fazer uma observação? / Gostaria de acrescentar que...",
-          "Concordo plenamente / Concordo parcialmente / Discordo respeitosamente",
-          "Se me permitir, gostaria de voltar ao ponto anterior",
-          "Para resumir o que foi discutido / Em síntese, chegamos à conclusão de que"
-        ],
-        guidedProduction: [
-          "Como você pede a palavra de forma educada em uma reunião?",
-          "Discorde de uma ideia sem ser agressivo.",
-          "Resuma os pontos de uma reunião usando marcadores."
-        ],
-        grammar: {
-          title: "Vocabulário de Reuniões",
-          explanation: "Conduzir reunião: abrir a sessão / passar para o próximo ponto / encerrar a reunião / constar em ata. Participar: pedir a palavra / fazer uma observação / retomar o ponto / concluir. Concordar: estou de acordo / corroboro / ratificamos. Discordar: permita-me discordar / vejo de outra forma / há pontos que merecem revisão.",
-          conjugation: "Verbos de reunião: deliberar / votar / aprovar / arquivar / adiar / registrar em ata / encaminhar / dar por encerrado"
-        },
-        exercises: [
-          { type: "fill", prompt: "___ licença, gostaria de acrescentar um ponto.", answer: "Com" },
-          { type: "rewrite", prompt: "Discorde de forma educada: 'Essa ideia não vai funcionar.'", answer: "Permita-me discordar. Acredito que há pontos que merecem reavaliação antes de avançarmos." },
-          { type: "choice", prompt: "Para resumir a reunião, use:", options: ["E aí, o que foi decidido?", "Em síntese, chegamos à conclusão de que...", "Tá bom então.", "Resumindo rapidinho..."], answer: "Em síntese, chegamos à conclusão de que..." },
-          { type: "fill", prompt: "Vamos ___ para o próximo ponto da ___.", answer: "passar / pauta" },
-          { type: "production", prompt: "Escreva a abertura e o encerramento formais de uma reunião.", answer: "Abertura: Bom dia a todos. Declaro aberta a reunião. A pauta de hoje contempla três pontos: revisão do cronograma, alocação de recursos e próximos passos. Encerramento: Em síntese, ficou deliberado que... Agradeço a participação de todos. Dou por encerrada a reunião." }
-        ]
-      },
-
-      {
-        id: "B2-U3-L5",
-        title: "Revisão e produção integrada B2-U3",
-        objectives: ["Integrar email formal, apresentação e negociação", "Produzir comunicação profissional completa em nível B2"],
-        shadowingDialogue: {
-          title: "Proposta comercial",
-          lines: [
-            { speaker: "Diretora", text: "Prezados, venho por meio deste apresentar nossa proposta para o projeto X." },
-            { speaker: "Diretora", text: "Ao longo desta apresentação, abordaremos os benefícios, custos e cronograma." },
-            { speaker: "Cliente", text: "Interessante. Se aumentarmos o escopo, haveria flexibilidade no prazo?" },
-            { speaker: "Diretora", text: "Poderíamos considerar. Contanto que a decisão seja tomada esta semana." }
+        {
+          id: "ES-B2-U3-L5",
+          title: "Intertextualidade e Referências Culturais",
+          shadowing: "— Esta novela dialoga claramente con el Quijote.\n— ¿En qué sentido?\n— El protagonista también confunde la realidad con la ficción, pero en el contexto contemporáneo.\n— Una suerte de quijotismo posmoderno.\n— Exacto. Y las referencias a Borges son evidentes en la estructura laberíntica.\n— ¿Y el lector que no conoce esas referencias?\n— Puede disfrutar la obra igualmente, aunque pierde capas de significado.",
+          memoryPhrases: [
+            "dialoga con = dialoga com",
+            "una suerte de = uma espécie de",
+            "referencias a = referências a",
+            "la estructura laberíntica = a estrutura labiríntica",
+            "capas de significado = camadas de significado",
+            "el quijotismo = o quixotismo"
+          ],
+          oralProduction: "Identifique referências intertextuais em uma obra que você conhece e explique-as em espanhol.",
+          exercises: [
+            { id: "ES-B2-U3-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'una suerte de'?", options: ["Um tipo de sorte", "Uma espécie de / uma forma de", "Um jogo de", "Uma sorte de"], answer: 1, explanation: "Una suerte de = uma espécie de / um tipo de. 'Una suerte de quijotismo posmoderno' = uma espécie de quixotismo pós-moderno." },
+            { id: "ES-B2-U3-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'capas de significado'?", options: ["Capas de roupas simbólicas", "Camadas de significado / múltiplas interpretações", "Capas de proteção", "Cobertura de significado"], answer: 1, explanation: "Capas de significado = camadas de significado. 'Capa' em espanhol pode significar camada (além de capa de roupa). 'Múltiples capas' = múltiplas camadas." },
+            { id: "ES-B2-U3-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'La obra _____ con la tradición literaria hispanoamericana.' (A obra dialoga com a tradição literária hispano-americana.)", answer: ["dialoga"], hint: "verbo dialogar (dialogar)", explanation: "Dialoga = dialoga. En contexto literario, 'dialogar con' = manter um diálogo intertextual com, fazer referência a, responder a." },
+            { id: "ES-B2-U3-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'A estrutura labiríntica da obra dialoga claramente com os contos de Borges, acrescentando camadas de significado para o leitor informado.'", answer: ["La estructura laberíntica de la obra dialoga claramente con los cuentos de Borges, añadiendo capas de significado para el lector informado.", "La estructura laberíntica dialoga claramente con la narrativa borgiana, añadiendo capas de significado para el lector que las conoce."], explanation: "Laberíntica = labiríntica. Añadiendo = acrescentando. Capas de significado = camadas de significado. Lector informado = leitor informado." },
+            { id: "ES-B2-U3-L5-E5", type: "free_writing", skill: "writing", question: "Escreva uma análise intertextual de uma obra que você conhece, identificando diálogos com outras obras ou tradições. Mínimo 10 frases.", prompt: "Inclua: obra analisada · referências identificadas · como dialogam · efeito no leitor · interpretação", hint: "La obra dialoga con..., las referencias a..., esta intertextualidad produce..., el lector que conoce... puede apreciar..." }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-B2-U4",
+      title: "Espanhol para o Mundo Digital e Mídia",
+      description: "Comunicação digital, mídia social e jornalismo em espanhol",
+      lessons: [
+        {
+          id: "ES-B2-U4-L1",
+          title: "Redação para Web e Redes Sociais em Espanhol",
+          shadowing: "— ¿Cómo optimizas el contenido para redes sociales en español?\n— Primero, adapto el tono al público objetivo. Instagram pide más cercanía, LinkedIn más formalidad.\n— ¿Y los hashtags?\n— Son clave para el alcance. Uso entre cinco y diez por publicación.\n— ¿Qué tipo de contenido funciona mejor?\n— El contenido de valor: tutoriales, consejos prácticos y storytelling auténtico.",
+          memoryPhrases: [
+            "el público objetivo = o público-alvo",
+            "la cercanía = a proximidade / o calor",
+            "el alcance = o alcance",
+            "la publicación = a publicação / o post",
+            "el contenido de valor = o conteúdo de valor",
+            "el storytelling = o storytelling"
+          ],
+          oralProduction: "Explique sua estratégia de conteúdo para redes sociais usando vocabulário digital em espanhol.",
+          exercises: [
+            { id: "ES-B2-U4-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'público-alvo' em espanhol?", options: ["público general", "público objetivo", "público meta", "B e C corretas"], answer: 3, explanation: "Tanto 'público objetivo' quanto 'público meta' significam público-alvo em espanhol. 'Meta' vem de 'metáfora'... não. 'Meta' = objetivo/alvo. Ambos são amplamente usados." },
+            { id: "ES-B2-U4-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'el alcance' em marketing digital?", options: ["O alcance / o número de pessoas que viram o conteúdo", "O armazenamento de dados", "O design do conteúdo", "O custo do anúncio"], answer: 0, explanation: "El alcance = o alcance. Em marketing digital, o número de pessoas únicas que visualizaram o conteúdo. 'Aumentar el alcance' = aumentar o alcance." },
+            { id: "ES-B2-U4-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Publicamos tres veces por semana para mantener el _____ de la audiencia.' (Publicamos três vezes por semana para manter o engajamento.)", answer: ["engagement", "compromiso"], hint: "engajamento em espanhol", explanation: "Engagement (anglicismo aceito) ou compromiso/interacción = engajamento. No marketing digital hispanohablante, 'engagement' é amplamente usado." },
+            { id: "ES-B2-U4-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'O conteúdo de valor e o storytelling autêntico são fundamentais para aumentar o alcance orgânico nas redes sociais.'", answer: ["El contenido de valor y el storytelling auténtico son fundamentales para aumentar el alcance orgánico en las redes sociales.", "El contenido valioso y el storytelling auténtico son clave para aumentar el alcance orgánico en redes sociales."], explanation: "Contenido de valor = conteúdo de valor. Alcance orgánico = alcance orgânico. Redes sociales = redes sociais." },
+            { id: "ES-B2-U4-L1-E5", type: "free_writing", skill: "writing", question: "Escreva uma estratégia de conteúdo para uma marca brasileira que quer se expandir para o mercado hispanohablante. Mínimo 10 frases.", prompt: "Inclua: plataformas · tipo de conteúdo · tom · frequência · adaptação cultural · métricas de sucesso", hint: "La estrategia consiste en..., el público objetivo es..., el tono debe ser..., publicaremos..., mediremos el éxito a través de..." }
           ]
         },
-        keyPhrases: [
-          "Venho por meio deste apresentar / solicitar / informar / comunicar",
-          "Ao longo desta apresentação / Neste documento / Conforme acordado",
-          "Poderíamos considerar / Estaria disposto a / Seria possível",
-          "Contanto que / Desde que / A menos que / Por conseguinte"
-        ],
-        guidedProduction: [
-          "Escreva um email formal propondo uma reunião.",
-          "Apresente oralmente uma proposta de projeto (1 minuto).",
-          "Negocie uma condição usando subjuntivo e condicional."
-        ],
-        grammar: {
-          title: "Revisão B2-U3",
-          explanation: "Consolida: email formal (abertura/corpo/fechamento), apresentação oral (marcadores e estrutura), negociação (persuasão e concessão) e reuniões (pedir palavra, concordar, discordar, resumir).",
-          conjugation: "Vocabulário-chave: solicitar / abordar / deliberar / considerar / propor / concordar / discordar / fechar negócio / registrar em ata / encaminhar"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva um email formal convocando uma reunião.", answer: "Prezada equipe, venho por meio deste convocar reunião ordinária para a próxima segunda-feira, às 10h, na sala de reuniões B. A pauta constará: revisão de metas e planejamento para o próximo trimestre. Confirme presença até sexta-feira. Atenciosamente, [Nome]." },
-          { type: "rewrite", prompt: "Formalize uma negociação informal: 'Tá certo, mas quero 20%.'", answer: "Compreendo a proposta. No entanto, para fecharmos o negócio neste momento, precisaríamos de um desconto de 20%. Isso seria viável?" },
-          { type: "fill", prompt: "Em ___, ficou deliberado que o projeto será ___ em março.", answer: "síntese / iniciado/retomado" },
-          { type: "fill", prompt: "___ que aprovem o orçamento, podemos começar imediatamente.", answer: "Contanto / Desde" },
-          { type: "production", prompt: "Escreva a abertura de uma palestra de 2 minutos sobre inovação nos negócios.", answer: "Boa tarde a todos. É uma satisfação compartilhar reflexões sobre inovação nos negócios. Ao longo desta breve apresentação, abordarei três aspectos: o cenário atual, as principais tendências e as oportunidades para nossas empresas. Espero que nossa conversa seja proveitosa." }
-        ]
-      }
-    ]
-  },
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 4 — Brasil Contemporâneo: Sociedade e Cultura
-  // ══════════════════════════════════════════════════════
-  {
-    id: "B2-U4",
-    title: "Brasil Contemporâneo: Sociedade e Cultura",
-    level: "B2",
-    lessons: [
-
-      {
-        id: "B2-U4-L1",
-        title: "Sistema político e direitos constitucionais",
-        objectives: ["Entender e descrever o sistema político brasileiro", "Discutir direitos e deveres do cidadão"],
-        shadowingDialogue: {
-          title: "Educação cívica",
-          lines: [
-            { speaker: "Professor", text: "O Brasil é uma república federativa presidencialista. Sabe o que isso significa?" },
-            { speaker: "Estudante", text: "Que temos um presidente eleito e que os estados têm autonomia?" },
-            { speaker: "Professor", text: "Exatamente. Nosso sistema tem três poderes independentes e harmônicos." },
-            { speaker: "Estudante", text: "Executivo, Legislativo e Judiciário, né? Cada um com suas funções." }
+        {
+          id: "ES-B2-U4-L2",
+          title: "Jornalismo e Desinformação em Espanhol",
+          shadowing: "— ¿Cómo distingues entre información veraz y desinformación?\n— Primero, verifico la fuente. ¿Es un medio con trayectoria?\n— ¿Y si la fuente parece legítima?\n— Contrasto con otras fuentes independientes. Si solo lo publica un medio, sospecho.\n— ¿Qué señales alertan de fake news?\n— Titulares sensacionalistas, ausencia de firma, errores gramaticales y ausencia de fecha.\n— ¿Y el fact-checking?\n— Es fundamental. Hay plataformas especializadas como Newtral o Maldita.",
+          memoryPhrases: [
+            "información veraz = informação verídica",
+            "la desinformación = a desinformação",
+            "verificar la fuente = verificar a fonte",
+            "contrastar = contrastar / comparar",
+            "el titular sensacionalista = a manchete sensacionalista",
+            "el fact-checking = a verificação de fatos"
+          ],
+          oralProduction: "Explique como você verifica se uma notícia é verdadeira ou falsa, em espanhol.",
+          exercises: [
+            { id: "ES-B2-U4-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la desinformación'?", options: ["Falta de informação", "Informação falsa ou enganosa difundida deliberadamente", "Informação desatualizada", "Informação secreta"], answer: 1, explanation: "Desinformación = desinformação. Informação falsa ou enganosa difundida intencionalmente. Diferente de 'misinformation' (errônea mas não intencional)." },
+            { id: "ES-B2-U4-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'un titular sensacionalista'?", options: ["Um título informativo", "Uma manchete que exagera ou distorce para chamar atenção", "Um título curto", "Um título em maiúsculas"], answer: 1, explanation: "Titular sensacionalista = manchete sensacionalista. Exagera ou distorce os fatos para gerar impacto emocional e cliques." },
+            { id: "ES-B2-U4-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Es fundamental _____ la información con fuentes independientes.' (É fundamental contrastar a informação...)", answer: ["contrastar"], hint: "comparar/checar contra outras fontes", explanation: "Contrastar = contrastar / comparar / checar. 'Contrastar la información' = verificar a informação cruzando com outras fontes." },
+            { id: "ES-B2-U4-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Antes de compartilhar uma notícia, é fundamental verificar a fonte e contrastar com meios independentes.'", answer: ["Antes de compartir una noticia, es fundamental verificar la fuente y contrastarla con medios independientes.", "Antes de compartir una noticia, hay que verificar la fuente y contrastarla con otros medios independientes."], explanation: "Compartir = compartilhar. Verificar la fuente = verificar a fonte. Contrastarla = contrastá-la." },
+            { id: "ES-B2-U4-L2-E5", type: "free_writing", skill: "writing", question: "Escreva um guia completo sobre como identificar fake news em espanhol. Mínimo 10 frases.", prompt: "Inclua: critérios de verificação · sinais de alerta · ferramentas de fact-checking · responsabilidade do leitor", hint: "Para identificar fake news, debemos..., las señales de alerta son..., es importante verificar..., existen herramientas como..." }
           ]
         },
-        keyPhrases: [
-          "República Federativa — presidencialismo — três poderes",
-          "Executivo (presidente/governador/prefeito) — Legislativo — Judiciário",
-          "Constituição de 1988 — 'Constituição Cidadã'",
-          "Voto obrigatório — impeachment — plebiscito — referendo"
-        ],
-        guidedProduction: [
-          "Explique a diferença entre os três poderes em suas palavras.",
-          "O que é o voto obrigatório e você concorda com ele?",
-          "Descreva o sistema político do Brasil para um estrangeiro."
-        ],
-        grammar: {
-          title: "Vocabulário Político-Cidadão",
-          explanation: "Poderes: Executivo (governar), Legislativo (legislar/fiscalizar), Judiciário (julgar). Cargos: presidente, governador, prefeito, senador, deputado federal/estadual, vereador. Termos: mandato, eleição, urna eletrônica, TSE, Congresso, Senado, Câmara, STF, STJ.",
-          conjugation: "Verbos políticos: eleger / nomear / aprovar / vetar / julgar / legislar / fiscalizar / impugnar / convocar / deliberar"
-        },
-        exercises: [
-          { type: "match", prompt: "Relacione: STF / Câmara / Presidente / Senado com Judiciário/Legislativo/Executivo", answer: "STF→Judiciário, Câmara→Legislativo, Presidente→Executivo, Senado→Legislativo" },
-          { type: "fill", prompt: "A ___ de 1988 é conhecida como a 'Constituição ___'.", answer: "Constituição / Cidadã" },
-          { type: "production", prompt: "Explique o que é o sistema de três poderes em 3 frases.", answer: "O Poder Executivo governa e implementa políticas públicas. O Legislativo cria leis e fiscaliza o Executivo. O Judiciário interpreta as leis e resolve conflitos, tendo o STF como instância máxima." },
-          { type: "fill", prompt: "No Brasil, o voto é ___ para maiores de 18 e menores de 70 anos.", answer: "obrigatório" },
-          { type: "production", prompt: "Opine: 'O voto obrigatório deve ser mantido no Brasil?' Use argumentos.", answer: "Acredito que o voto obrigatório é fundamental para garantir a representatividade democrática. Embora haja quem defenda o voto facultativo, em um país com altos índices de desinformação, a obrigatoriedade assegura maior participação popular. Por conseguinte, sua manutenção parece essencial." }
-        ]
-      },
-
-      {
-        id: "B2-U4-L2",
-        title: "Desigualdade social e políticas públicas",
-        objectives: ["Discutir desigualdade com vocabulário específico", "Argumentar sobre soluções de políticas públicas"],
-        shadowingDialogue: {
-          title: "Debate sobre desigualdade",
-          lines: [
-            { speaker: "Analista", text: "O Brasil tem um dos índices de Gini mais altos do mundo." },
-            { speaker: "Estudante", text: "O que significa exatamente? Gini mede a distribuição de renda?" },
-            { speaker: "Analista", text: "Sim. Quanto mais próximo de 1, maior a desigualdade. O Brasil está em 0,52." },
-            { speaker: "Estudante", text: "E programas como o Bolsa Família ajudam a reduzir isso?" },
-            { speaker: "Analista", text: "Ajudam, mas a solução estrutural exige reforma tributária e educação de qualidade." }
+        {
+          id: "ES-B2-U4-L3",
+          title: "Espanhol Técnico — Tecnologia e Inovação",
+          shadowing: "— Nuestro sistema utiliza algoritmos de machine learning para personalizar la experiencia.\n— ¿Y cómo gestionan los datos del usuario?\n— Cumplimos con el RGPD. Los datos se anoninizan y no se ceden a terceros.\n— ¿Qué infraestructura usan?\n— Trabajamos en la nube con arquitectura de microservicios.\n— ¿Y la ciberseguridad?\n— Tenemos cifrado de extremo a extremo y auditorías de seguridad trimestrales.",
+          memoryPhrases: [
+            "el machine learning = o aprendizado de máquina",
+            "la nube = a nuvem (computação)",
+            "los microservicios = os microsserviços",
+            "el cifrado = a criptografia",
+            "la ciberseguridad = a cibersegurança",
+            "ceder datos = compartilhar / ceder dados"
+          ],
+          oralProduction: "Explique a arquitetura técnica de um projeto de software em espanhol para um cliente não técnico.",
+          exercises: [
+            { id: "ES-B2-U4-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se diz 'computação em nuvem' em espanhol?", options: ["computación en cielo", "computación en la nube", "informática en nubes", "tecnología de nube"], answer: 1, explanation: "Computación en la nube = computação em nuvem. 'La nube' = a nuvem. 'Almacenamiento en la nube' = armazenamento em nuvem." },
+            { id: "ES-B2-U4-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'el cifrado de extremo a extremo'?", options: ["Tradução entre idiomas", "Criptografia ponta a ponta", "Arquivo digital", "Transmissão de dados"], answer: 1, explanation: "Cifrado de extremo a extremo = criptografia ponta a ponta. Cifrado = criptografado/cifrado. Muy importante em aplicativos de mensagens como WhatsApp." },
+            { id: "ES-B2-U4-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Los datos de los usuarios están _____ y no se comparten con terceros.' (Os dados estão criptografados e não são compartilhados.)", answer: ["cifrados"], hint: "participio de cifrar (criptografar)", explanation: "Cifrados = criptografados. Cifrar = criptografar. 'Datos cifrados' = dados criptografados." },
+            { id: "ES-B2-U4-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Nossa plataforma usa aprendizado de máquina para personalizar a experiência do usuário na nuvem.'", answer: ["Nuestra plataforma usa machine learning para personalizar la experiencia del usuario en la nube.", "Nuestra plataforma utiliza aprendizaje automático para personalizar la experiencia del usuario en la nube."], explanation: "Machine learning / aprendizaje automático = aprendizado de máquina. Personalizar = personalizar. En la nube = na nuvem." },
+            { id: "ES-B2-U4-L3-E5", type: "free_writing", skill: "writing", question: "Escreva um pitch técnico em espanhol para uma startup de tecnologia, explicando o produto, a tecnologia e o mercado. Mínimo 10 frases.", prompt: "Inclua: o que o produto faz · tecnologia utilizada · modelo de negócios · mercado-alvo · diferencial competitivo", hint: "Nuestra plataforma es..., utilizamos tecnologías como..., el modelo de negocio es..., nuestro mercado objetivo es..., nos diferenciamos por..." }
           ]
         },
-        keyPhrases: [
-          "Índice de Gini — distribuição de renda — concentração de riqueza",
-          "Bolsa Família / Auxílio Brasil — transferência de renda — beneficiários",
-          "Cota racial / social — inclusão — acesso à educação e saúde",
-          "Reforma tributária — progressividade — imposto de renda"
-        ],
-        guidedProduction: [
-          "Explique o que é desigualdade social com suas palavras.",
-          "Você é a favor ou contra cotas nas universidades? Por quê?",
-          "Que políticas públicas você proporia para reduzir a desigualdade?"
-        ],
-        grammar: {
-          title: "Vocabulário de Políticas Sociais",
-          explanation: "Principais programas: Bolsa Família (transferência de renda condicional), Minha Casa Minha Vida (habitação), PROUNI (bolsas universitárias), SUS (saúde pública universal), FIES (financiamento estudantil). Termos: vulnerabilidade social, inclusão social, acesso a direitos, dignidade humana, equidade.",
-          conjugation: "Verbos sociais: combater a pobreza / reduzir a desigualdade / garantir acesso / ampliar direitos / implementar políticas / fiscalizar benefícios / incluir digitalmente"
-        },
-        exercises: [
-          { type: "fill", prompt: "O índice de ___ mede a desigualdade de ___ de um país.", answer: "Gini / renda" },
-          { type: "production", prompt: "Argumente a favor das cotas universitárias em 3 frases.", answer: "As cotas universitárias são uma medida de reparação histórica para grupos marginalizados. Embora gerem debate, os dados mostram que estudantes cotistas têm desempenho semelhante aos demais. Por conseguinte, as cotas são um instrumento essencial de inclusão e equidade social." },
-          { type: "fill", prompt: "O SUS garante ___ saúde ___ e ___ a todos os brasileiros.", answer: "acesso à / universal / gratuito" },
-          { type: "production", prompt: "Proponha duas políticas públicas para reduzir a desigualdade.", answer: "Primeiramente, faz-se necessário ampliar o acesso à educação de qualidade, desde a primeira infância até o ensino superior. Além disso, uma reforma tributária progressiva, que onere mais quem ganha mais, contribuiria significativamente para a redistribuição de renda." },
-          { type: "opinion", prompt: "O que você acha do Bolsa Família/Auxílio Brasil? Desenvolva.", answer: "O Bolsa Família é um programa de transferência de renda que, embora seja essencial para reduzir a pobreza extrema, deve ser acompanhado de políticas estruturais. Visto que apenas a transferência de renda não elimina as causas da desigualdade, é necessário combiná-la com acesso à educação, saúde e geração de emprego." }
-        ]
-      },
-
-      {
-        id: "B2-U4-L3",
-        title: "Mídia, fake news e senso crítico",
-        objectives: ["Analisar e discutir informação midiática criticamente", "Identificar e combater desinformação"],
-        shadowingDialogue: {
-          title: "Conversa sobre mídias digitais",
-          lines: [
-            { speaker: "Jornalista", text: "Antes de compartilhar, sempre verifico a fonte. Você tem esse hábito?" },
-            { speaker: "Amigo", text: "Confesso que às vezes compartilho sem checar. Mas como fazer isso?" },
-            { speaker: "Jornalista", text: "Sites como Agência Lupa e Aos Fatos fazem checagem de fatos no Brasil." },
-            { speaker: "Amigo", text: "E se a notícia vier de um veículo desconhecido, desconfio logo, né?" },
-            { speaker: "Jornalista", text: "Exatamente. Verifique a data, o autor e se outros veículos confirmam." }
+        {
+          id: "ES-B2-U4-L4",
+          title: "Expressões Idiomáticas Avançadas e Modismos",
+          shadowing: "— Hay que andarse con pies de plomo en este asunto.\n— ¿Por qué? ¿Está el ambiente cargado?\n— Sí. El director anda con la mosca detrás de la oreja desde que descubrió el error.\n— ¿Y qué pasa si no actuamos?\n— Que nos puede caer el muerto a nosotros.\n— O sea, que tenemos que coger el toro por los cuernos.\n— Exacto. Y sin meter la pata.",
+          memoryPhrases: [
+            "andarse con pies de plomo = agir com cautela / pisar em ovos",
+            "el ambiente está cargado = o ambiente está pesado",
+            "tener la mosca detrás de la oreja = estar desconfiado",
+            "caerle el muerto a alguien = sobrar o pepino para alguém",
+            "coger el toro por los cuernos = pegar o touro pelos chifres",
+            "meter la pata = meter o pé"
+          ],
+          oralProduction: "Use pelo menos 5 expressões idiomáticas avançadas para contar uma situação difícil no trabalho.",
+          exercises: [
+            { id: "ES-B2-U4-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'andarse con pies de plomo'?", options: ["Andar devagar", "Agir com muita cautela / pisar em ovos", "Ter pés pesados", "Andar com chumbo nos pés"], answer: 1, explanation: "Andarse con pies de plomo = agir com muita cautela / pisar em ovos. Literalmente 'andar com pés de chumbo' (devagar e cuidadoso)." },
+            { id: "ES-B2-U4-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'meter la pata'?", options: ["Meter o pé / cometer uma gafe", "Meter algo no lugar", "Entrar em uma situação", "Causar problemas intencionalmente"], answer: 0, explanation: "Meter la pata = meter o pé / cometer uma gafe. 'Metí la pata' = meti o pé / me enganei feio." },
+            { id: "ES-B2-U4-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Ya es hora de _____ el toro _____ los cuernos y resolver este problema.' (Já é hora de pegar o touro pelos chifres.)", answer: ["coger / agarrar, por"], hint: "pegar o touro pelos chifres", explanation: "Coger/agarrar el toro por los cuernos = pegar o touro pelos chifres. Enfrentar o problema diretamente sem fugir." },
+            { id: "ES-B2-U4-L4-E4", type: "translation", skill: "writing", question: "Traduza usando expressões idiomáticas: 'Devemos agir com cautela porque o chefe está desconfiado e qualquer erro pode nos sobrar.'", answer: ["Debemos andarnos con pies de plomo porque el jefe tiene la mosca detrás de la oreja y cualquier error nos puede caer el muerto.", "Hay que andarse con pies de plomo porque el jefe está con la mosca detrás de la oreja y cualquier error nos puede caer."], explanation: "Andarse con pies de plomo = agir com cautela. Mosca detrás de la oreja = desconfiado. Caer el muerto = sobrar o pepino." },
+            { id: "ES-B2-U4-L4-E5", type: "free_writing", skill: "writing", question: "Escreva uma história usando pelo menos 8 expressões idiomáticas avançadas em espanhol. Mínimo 12 frases.", prompt: "Use: andarse con pies de plomo · coger el toro por los cuernos · meter la pata · caerle el muerto · mosca detrás de la oreja · ambiente cargado · más e outras que você conheça", hint: "Era una situación tensa..., teníamos que andarnos con pies de plomo..., al final cogimos el toro por los cuernos..." }
           ]
         },
-        keyPhrases: [
-          "Fake news — desinformação — checagem de fatos (fact-checking)",
-          "Veículo de comunicação — fonte primária — fonte secundária",
-          "Câmara de eco — bolha informacional — algoritmo",
-          "Agência Lupa / Aos Fatos — verificar antes de compartilhar"
-        ],
-        guidedProduction: [
-          "Como você verifica se uma notícia é verdadeira?",
-          "O que é uma câmara de eco e por que é perigosa?",
-          "Argumente sobre a responsabilidade das redes sociais com fake news."
-        ],
-        grammar: {
-          title: "Vocabulário Midiático",
-          explanation: "Mídia: jornal / revista / portal / blog / podcast / newsletter / youtuber / influencer. Termos críticos: clickbait (título sensacionalista), deep fake (vídeo manipulado), desinformação (informação falsa proposital), teoria da conspiração, polarização, radicalização online. Verbos: verificar / checar / desmentir / confirmar / contextualizar / retificar.",
-          conjugation: "Expressões: 'segundo fontes confiáveis' / 'de acordo com especialistas' / 'dados do IBGE indicam' / 'conforme nota oficial' / 'sem confirmação até o momento'"
-        },
-        exercises: [
-          { type: "fill", prompt: "Antes de compartilhar, é fundamental ___ a ___ da notícia.", answer: "verificar / fonte" },
-          { type: "production", prompt: "Explique 'câmara de eco' para alguém que nunca ouviu o termo.", answer: "Uma câmara de eco é um ambiente digital onde você só é exposto a opiniões semelhantes às suas. Os algoritmos das redes sociais mostram conteúdo que reforça suas crenças, impedindo o contato com perspectivas diferentes. Isso pode levar à polarização e à dificuldade de aceitar informações contrárias." },
-          { type: "fill", prompt: "Sites como ___ e ___ fazem checagem de fatos no Brasil.", answer: "Agência Lupa / Aos Fatos" },
-          { type: "opinion", prompt: "As redes sociais deveriam ser responsabilizadas por fake news? Argumente.", answer: "Entendo que as plataformas digitais têm responsabilidade no combate à desinformação, visto que seus algoritmos amplificam conteúdo viral, independentemente de sua veracidade. Embora a liberdade de expressão seja um valor democrático fundamental, ela não deve proteger a difusão de informações sabidamente falsas que causam danos à sociedade." },
-          { type: "production", prompt: "Escreva 3 dicas para combater fake news no dia a dia.", answer: "Primeiramente, verifique sempre a fonte da notícia antes de compartilhar. Em seguida, consulte agências de checagem como Agência Lupa ou Aos Fatos. Por fim, desconfie de títulos sensacionalistas ou de notícias que confirmam apenas o que você já acredita." }
-        ]
-      },
-
-      {
-        id: "B2-U4-L4",
-        title: "Meio ambiente e sustentabilidade no Brasil",
-        objectives: ["Discutir temas ambientais com vocabulário específico", "Argumentar sobre sustentabilidade e políticas ambientais"],
-        shadowingDialogue: {
-          title: "Debates ambientais",
-          lines: [
-            { speaker: "Ambientalista", text: "O desmatamento na Amazônia atingiu níveis críticos na última década." },
-            { speaker: "Pesquisadora", text: "E o Pantanal também tem sofrido com queimadas sem precedente." },
-            { speaker: "Ambientalista", text: "O Brasil tem potencial enorme em energia renovável — solar, eólica, hidrelétrica." },
-            { speaker: "Pesquisadora", text: "O desafio é compatibilizar desenvolvimento econômico com preservação ambiental." }
+        {
+          id: "ES-B2-U4-L5",
+          title: "Revisão B2 e Preparação para C1",
+          shadowing: "— En este nivel ya deberías ser capaz de expresarte con fluidez y precisión en casi cualquier contexto.\n— Sí, aunque aún hay matices que se me escapan.\n— Es normal. El C1 es donde empiezas a sonar realmente nativo.\n— ¿Y el C2?\n— En el C2 ya no hay prácticamente diferencia con un hablante nativo.\n— ¿Cuánto tiempo lleva alcanzar ese nivel?\n— Depende mucho de la exposición. Si te sumerges en la lengua, puede ser cuestión de años.",
+          memoryPhrases: [
+            "expresarte con fluidez y precisión = se expresar com fluência e precisão",
+            "matices que se me escapan = matizes que me escapam",
+            "sonar nativo = soar nativo",
+            "prácticamente = praticamente",
+            "sumergirse en la lengua = se imergir na língua",
+            "puede ser cuestión de = pode ser questão de"
+          ],
+          oralProduction: "Faça uma autoavaliação completa do seu espanhol atual e elabore um plano para alcançar o C1.",
+          exercises: [
+            { id: "ES-B2-U4-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'sumergirse en la lengua'?", options: ["Aprender gramática intensivamente", "Se imergir totalmente na língua (input massivo, vida no idioma)", "Estudar em um livro de língua", "Traduzir textos literários"], answer: 1, explanation: "Sumergirse en la lengua = se imergir na língua. Exposição total ao idioma: filmes, podcasts, conversas, leituras — vivendo o idioma." },
+            { id: "ES-B2-U4-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "O que são 'matices' no aprendizado de línguas?", options: ["Erros gramaticais", "Matizes / nuances sutis de significado e uso", "Palavras novas", "Regras gramaticais"], answer: 1, explanation: "Matices = matizes / nuances. As diferenças sutis de significado, uso e connotação que distinguem um falante avançado de um nativo." },
+            { id: "ES-B2-U4-L5-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Para llegar al C1, es necesario que _____ (exponerse) más al español auténtico.' (Para chegar ao C1, é necessário se expor mais...)", answer: ["te expongas"], hint: "subjuntivo de exponerse para tú", explanation: "Te expongas = você se exponha. 'Es necesario que' + subjuntivo. Exponerse → me exponga, te expongas, se exponga..." },
+            { id: "ES-B2-U4-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'No B2, você consegue se expressar com fluência e precisão em quase qualquer contexto, embora ainda existam matizes que escapam.'", answer: ["En el B2, puedes expresarte con fluidez y precisión en casi cualquier contexto, aunque aún hay matices que se te escapan.", "En el B2, eres capaz de expresarte con fluidez y precisión en casi cualquier situación, aunque todavía hay matices que escapan."], explanation: "Puedes expresarte = você consegue se expressar. Se te escapan = que te escapam. Casi cualquier contexto = quase qualquer contexto." },
+            { id: "ES-B2-U4-L5-E5", type: "free_writing", skill: "writing", question: "Escreva um plano de estudo detalhado para alcançar o nível C1 em espanhol nos próximos 6 meses. Mínimo 12 frases.", prompt: "Inclua: horas semanais de estudo · recursos a usar · habilidades a desenvolver · metas mensais · como medir o progresso", hint: "Para alcanzar el C1 en 6 meses, necesito..., dedicaré... horas semanales a..., usaré recursos como..., mis objetivos mensuales son..." }
           ]
-        },
-        keyPhrases: [
-          "Desmatamento — queimadas — biodiversidade — bioma",
-          "Amazônia — Cerrado — Mata Atlântica — Pantanal — Caatinga",
-          "Energia renovável: solar / eólica / hidrelétrica / biomassa",
-          "Pegada de carbono — neutralidade climática — economia circular"
-        ],
-        guidedProduction: [
-          "Quais são os principais biomas do Brasil? Descreva um.",
-          "O que o Brasil pode fazer para reduzir o desmatamento?",
-          "Como compatibilizar desenvolvimento e preservação ambiental?"
-        ],
-        grammar: {
-          title: "Vocabulário Ambiental",
-          explanation: "Biomas: Amazônia (maior floresta tropical), Cerrado (savana mais biodiversa do mundo), Mata Atlântica (95% desmatada), Pantanal (maior área úmida), Caatinga (semiárido único no mundo). Ameaças: desmatamento, queimadas, garimpo ilegal, agrotóxicos, poluição hídrica. Soluções: reflorestamento, unidades de conservação, energia limpa, agricultura sustentável.",
-          conjugation: "Verbos ambientais: preservar / conservar / reflorestar / fiscalizar / desmatar (errado) / queimar (errado) / proteger / demarcar (terras indígenas) / mitigar (efeitos)"
-        },
-        exercises: [
-          { type: "match", prompt: "Relacione: Amazônia / Pantanal / Caatinga com: maior área úmida / semiárido / maior floresta tropical", answer: "Amazônia→maior floresta tropical, Pantanal→maior área úmida, Caatinga→semiárido" },
-          { type: "fill", prompt: "O ___ ilegal é uma das principais causas de degradação da Amazônia.", answer: "desmatamento / garimpo" },
-          { type: "production", prompt: "Argumente sobre a importância da Amazônia para o planeta.", answer: "A Amazônia é fundamental para o equilíbrio climático global, pois abriga mais de 10% da biodiversidade do planeta e é responsável por regular o ciclo das chuvas em toda a América do Sul. Embora seja território brasileiro, seu papel ecológico é universal, o que justifica a pressão internacional por sua preservação." },
-          { type: "fill", prompt: "O Brasil tem grande potencial em ___ solar e ___, fontes de energia ___.", answer: "energia / eólica / renovável" },
-          { type: "production", prompt: "Proponha duas medidas concretas para combater o desmatamento.", answer: "É fundamental que o governo brasileiro aumente a fiscalização nas áreas de risco por meio do IBAMA e das forças armadas. Além disso, deve-se investir em alternativas econômicas para comunidades locais que dependem do desmatamento, promovendo o ecoturismo e a agricultura sustentável." }
-        ]
-      },
-
-      {
-        id: "B2-U4-L5",
-        title: "Revisão e produção integrada B2-U4",
-        objectives: ["Integrar temas de sociedade, política, mídia e meio ambiente", "Produzir texto argumentativo completo em nível B2"],
-        shadowingDialogue: {
-          title: "Mesa-redonda: Brasil em debate",
-          lines: [
-            { speaker: "Moderadora", text: "Hoje debatemos os desafios do Brasil contemporâneo. Começamos pela questão ambiental." },
-            { speaker: "Especialista 1", text: "Embora tenhamos avanços, o desmatamento ainda é um problema estrutural." },
-            { speaker: "Especialista 2", text: "E a desigualdade social agrava os impactos das mudanças climáticas nas populações vulneráveis." },
-            { speaker: "Moderadora", text: "Por conseguinte, as políticas públicas precisam ser integradas e não isoladas." }
-          ]
-        },
-        keyPhrases: [
-          "Embora tenhamos avançado / Apesar dos progressos / Visto que há desafios",
-          "As populações mais vulneráveis são as mais afetadas por...",
-          "Faz-se necessário / Incumbe ao Estado / Cabe à sociedade civil",
-          "Por conseguinte / Sendo assim / Em síntese / Conclui-se que"
-        ],
-        guidedProduction: [
-          "Escreva um texto sobre um desafio do Brasil contemporâneo.",
-          "Argumente sobre a relação entre desigualdade e meio ambiente.",
-          "Redija uma proposta de intervenção para um problema social brasileiro."
-        ],
-        grammar: {
-          title: "Revisão B2-U4",
-          explanation: "Consolida: vocabulário político, social, midiático e ambiental. Estrutura argumentativa completa com conectivos avançados. Produção oral e escrita em registro formal B2.",
-          conjugation: "Expressões formais de argumentação: conforme dados / segundo especialistas / à luz dos fatos / à medida que / na medida em que / tanto... quanto / não apenas... mas também"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva um parágrafo sobre desigualdade social no Brasil usando dados.", answer: "Segundo o IBGE, o Brasil figura entre os países com maior concentração de renda do mundo, com índice de Gini de 0,52. Visto que 10% da população mais rica detém mais de 40% da renda nacional, torna-se urgente a implementação de políticas tributárias progressivas e de expansão do acesso à educação e saúde públicas de qualidade." },
-          { type: "fill", prompt: "Tanto o desmatamento ___ a poluição ___ os recursos hídricos do Brasil.", answer: "quanto / ameaçam" },
-          { type: "production", prompt: "Argumente sobre a relação entre fake news e democracia.", answer: "A desinformação representa uma ameaça concreta à democracia, na medida em que compromete a capacidade dos cidadãos de tomarem decisões políticas informadas. Embora a liberdade de expressão seja um pilar democrático, não pode ser invocada para proteger a difusão deliberada de mentiras. Por conseguinte, é fundamental investir em educação midiática e em regulação responsável das plataformas digitais." },
-          { type: "rewrite", prompt: "Formalize: 'O governo precisa fazer mais pelo meio ambiente.'", answer: "Incumbe ao poder público implementar políticas ambientais mais rigorosas, sob pena de comprometer o equilíbrio ecológico das gerações futuras." },
-          { type: "production", prompt: "Escreva a conclusão de um texto sobre desafios do Brasil com proposta de intervenção.", answer: "Em síntese, os desafios do Brasil contemporâneo — desigualdade social, desinformação e degradação ambiental — estão interligados e exigem respostas integradas. Cabe ao Estado, em parceria com a sociedade civil e o setor privado, implementar políticas públicas que promovam equidade, educação crítica e sustentabilidade, com vistas à construção de um país mais justo e democrático para as gerações futuras." }
-        ]
-      }
-    ]
-  }
-];
+        }
+      ]
+    }
+  ]
+};
