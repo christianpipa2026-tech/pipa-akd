@@ -2,6 +2,7 @@ import { CURRICULUM_ES_A1 } from "./curriculum_A1";
 import { CURRICULUM_A2 as CURRICULUM_ES_A2 } from "./curriculum_A2";
 import { CURRICULUM_B1 as CURRICULUM_ES_B1 } from "./curriculum_B1";
 import { CURRICULUM_B2 as CURRICULUM_ES_B2 } from "./curriculum_B2";
+import { CURRICULUM_C1 as CURRICULUM_ES_C1 } from "./curriculum_C1";
 
 
 export const REFERENCE = {
@@ -409,7 +410,6 @@ export const REFERENCE = {
 const emptyLevel = { units: [] };
 
 
-const CURRICULUM_ES_C1 = emptyLevel;
 const CURRICULUM_ES_C2 = emptyLevel;
 const CURRICULUM_ES_MASTER = emptyLevel;
 
