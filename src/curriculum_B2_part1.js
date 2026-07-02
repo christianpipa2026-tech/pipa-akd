@@ -1,409 +1,228 @@
-// B2 PART 1 — Unidades 1 y 2
-// 12 lecciones · 60 ejercicios
-
-export const B2_U1_U2 = [
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 1 — Subjuntivo Imperfeito e Futuro do Subjuntivo
-  // ══════════════════════════════════════════════════════
-  {
-    id: "B2-U1",
-    title: "Subjuntivo Imperfeito e Futuro do Subjuntivo",
-    level: "B2",
-    lessons: [
-
-      {
-        id: "B2-U1-L1",
-        title: "Subjuntivo Imperfeito: formação e uso",
-        objectives: ["Formar o subjuntivo imperfeito corretamente", "Usar em condicionais e hipóteses"],
-        shadowingDialogue: {
-          title: "E se você pudesse mudar algo?",
-          lines: [
-            { speaker: "Mariana", text: "Se eu pudesse voltar no tempo, estudaria medicina." },
-            { speaker: "Rafael", text: "Eu queria que você fosse minha vizinha quando éramos crianças." },
-            { speaker: "Mariana", text: "Imagina se a gente se conhecesse antes. Seria incrível!" },
-            { speaker: "Rafael", text: "Tomara que as coisas fossem diferentes, mas a vida é assim." }
+export const CURRICULUM_ES_B2_PART1 = {
+  units: [
+    {
+      id: "ES-B2-U1",
+      title: "Gramática Avanzada — Matices y Precisión",
+      description: "Domínio de estruturas gramaticais complexas e matizes do espanhol",
+      lessons: [
+        {
+          id: "ES-B2-U1-L1",
+          title: "Subjuntivo vs Indicativo — Matices Sutis",
+          shadowing: "— Busco un apartamento que tenga terraza.\n— ¿Y si no encuentras uno que la tenga?\n— Pues buscaré hasta que encuentre uno que me convenza.\n— Conozco un agente que tiene muchos pisos con terraza.\n— ¿Conoces alguno que esté cerca del metro también?\n— Hay uno que está perfecto. Creo que te va a gustar.",
+          memoryPhrases: [
+            "busco algo que + subj. = procuro algo que (indefinido, hipotético)",
+            "busco algo que + indic. = procuro algo que (definido, existe)",
+            "el que quiera = quem quiser",
+            "sea como sea = seja como for",
+            "haga lo que haga = faça o que fizer",
+            "donde quiera que = onde quer que"
+          ],
+          oralProduction: "Explique a diferença entre 'busco un piso que tiene terraza' e 'busco un piso que tenga terraza' com exemplos.",
+          exercises: [
+            { id: "ES-B2-U1-L1-E1", type: "multiple_choice", skill: "grammar", question: "Qual é a diferença de significado? A) 'Busco un médico que habla ruso' B) 'Busco un médico que hable ruso'", options: ["São iguais", "A: existe um médico específico que fala russo. B: procuro qualquer médico que fale russo (hipotético)", "A é mais formal", "B é mais educado"], answer: 1, explanation: "A (indicativo 'habla') = existe um médico específico em mente. B (subjuntivo 'hable') = qualquer médico que possua essa característica (hipotético, não específico). Diferença crucial no B2!" },
+            { id: "ES-B2-U1-L1-E2", type: "multiple_choice", skill: "grammar", question: "Complete: 'Haga lo que _____ (hacer), siempre se equivoca.'", options: ["hace", "haga", "hará", "haría"], answer: 1, explanation: "Haga = faça (subj.). 'Haga lo que haga' = faça o que fizer. Estruturas com subjuntivo duplicado: sea como sea, diga lo que diga, pase lo que pase." },
+            { id: "ES-B2-U1-L1-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'El que _____ (querer) venir, que venga.' (Quem quiser vir, que venha.)", answer: ["quiera"], hint: "subjuntivo de QUERER para el que (=quem)", explanation: "El que quiera = quem quiser. 'El que' + subjuntivo = quem + subjuntivo futuro português." },
+            { id: "ES-B2-U1-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Faça o que fizer, não vou mudar de opinião. Seja como for, já decidi.'", answer: ["Haga lo que haga, no voy a cambiar de opinión. Sea como sea, ya he decidido.", "Haga lo que haga, no cambiaré de opinión. Sea como sea, ya decidí."], explanation: "Haga lo que haga = faça o que fizer. Sea como sea = seja como for. Estruturas de subjuntivo duplicado muito comuns no B2." },
+            { id: "ES-B2-U1-L1-E5", type: "free_writing", skill: "writing", question: "Escreva 5 pares de frases mostrando a diferença entre subjuntivo (hipotético) e indicativo (definido) na mesma estrutura.", prompt: "Exemplo: 'Quiero un jefe que me respete' vs 'Tengo un jefe que me respeta'", hint: "Busco, quiero, necesito, prefiero + que + subj./indic." }
           ]
         },
-        keyPhrases: [
-          "Se eu pudesse — Se você fosse — Se nós tivéssemos",
-          "Queria que você fizesse — Esperava que ele viesse",
-          "Tomara que tudo fosse mais fácil",
-          "Mesmo que ele soubesse, não diria nada"
-        ],
-        guidedProduction: [
-          "Diga uma coisa que você faria se tivesse mais dinheiro.",
-          "O que você queria que seu chefe fizesse diferente?",
-          "Complete: 'Se eu soubesse a verdade, eu...'"
-        ],
-        grammar: {
-          title: "Subjuntivo Imperfeito",
-          explanation: "Formado a partir do pretérito perfeito: eles falaram → eu falasse. Usa-se em condicionais (se + imperfeito), expressando hipóteses no passado ou situações irreais no presente.",
-          conjugation: "falar: falasse/falasses/falasse/falássemos/falassem | ser: fosse | ter: tivesse | poder: pudesse | querer: quisesse | fazer: fizesse | saber: soubesse | vir: viesse"
-        },
-        exercises: [
-          { type: "fill", prompt: "Se eu ___ (ter) mais tempo, aprenderia japonês.", answer: "tivesse" },
-          { type: "fill", prompt: "Ela queria que nós ___ (vir) à festa.", answer: "viéssemos" },
-          { type: "transform", prompt: "Transforma para hipótese: 'Eu sei a resposta.'", answer: "Se eu soubesse a resposta..." },
-          { type: "fill", prompt: "Tomara que ele ___ (ser) mais pontual.", answer: "fosse" },
-          { type: "production", prompt: "Escreva uma frase com 'mesmo que + subjuntivo imperfeito'.", answer: "Mesmo que ele viesse, eu não abriria a porta." }
-        ]
-      },
-
-      {
-        id: "B2-U1-L2",
-        title: "Futuro do Subjuntivo em contexto real",
-        objectives: ["Distinguir futuro do subjuntivo de outras formas", "Usá-lo em condições reais futuras"],
-        shadowingDialogue: {
-          title: "Planos com condições",
-          lines: [
-            { speaker: "Thiago", text: "Quando você terminar o curso, o que vai fazer?" },
-            { speaker: "Paula", text: "Se eu conseguir uma vaga em São Paulo, me mudo imediatamente." },
-            { speaker: "Thiago", text: "Assim que você tiver notícias, me avisa, tá?" },
-            { speaker: "Paula", text: "Claro! Se tudo correr bem, a gente comemora junto." }
+        {
+          id: "ES-B2-U1-L2",
+          title: "Orações Relativas Reduzidas e Construcciones con Infinitivo",
+          shadowing: "— El proyecto a desarrollar es muy ambicioso.\n— ¿Quién se encargará de coordinarlo?\n— La persona a cargo será Ana. Es la indicada para liderarlo.\n— ¿Y los recursos a utilizar?\n— Están por definir todavía. Hay que esperar.\n— Parece complicado de gestionar.\n— Al ser tan grande, sí. Pero estamos para eso.",
+          memoryPhrases: [
+            "a + infinitivo = para + infinitivo / a ser + participado",
+            "el proyecto a desarrollar = o projeto a desenvolver",
+            "pendiente de hacer = pendente de fazer",
+            "difícil de entender = difícil de entender",
+            "fácil de manejar = fácil de manusear",
+            "imposible de ignorar = impossível de ignorar"
+          ],
+          oralProduction: "Descreva um projeto usando orações relativas reduzidas: 'los objetivos a alcanzar', 'los problemas a resolver'...",
+          exercises: [
+            { id: "ES-B2-U1-L2-E1", type: "multiple_choice", skill: "grammar", question: "O que significa 'el informe a entregar mañana'?", options: ["O relatório que entrego amanhã", "O relatório que deve ser entregue amanhã", "O relatório entregado amanhã", "O relatório depois de entregar"], answer: 1, explanation: "'A + infinitivo' em espanhol formal = que deve ser / que há de ser. 'El informe a entregar' = o relatório que deve ser entregue / o relatório a ser entregue." },
+            { id: "ES-B2-U1-L2-E2", type: "multiple_choice", skill: "grammar", question: "Complete: 'Es un tema difícil _____ explicar.'", options: ["de", "para", "a", "por"], answer: 0, explanation: "Difícil de explicar = difícil de explicar. A estrutura é: adjetivo + DE + infinitivo para indicar dificuldade/facilidade." },
+            { id: "ES-B2-U1-L2-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Quedan muchos asuntos _____ resolver antes de la reunión.' (Restam muitos assuntos a resolver...)", answer: ["por"], hint: "indica o que ainda falta fazer", explanation: "Pendientes por resolver = que ainda faltam resolver. POR + infinitivo indica algo pendente, que ainda falta ser feito." },
+            { id: "ES-B2-U1-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Os problemas a resolver são muitos, mas os recursos disponíveis são escassos.'", answer: ["Los problemas a resolver son muchos, pero los recursos disponibles son escasos.", "Los problemas por resolver son muchos, pero los recursos disponibles son escasos."], explanation: "A resolver / por resolver = a resolver. Escasos = escassos. Disponibles = disponíveis." },
+            { id: "ES-B2-U1-L2-E5", type: "free_writing", skill: "writing", question: "Escreva um memorando profissional usando construções com infinitivo reduzido. Mínimo 8 frases.", prompt: "Inclua: tarefas a realizar · objetivos a alcançar · problemas por resolver · pontos a considerar", hint: "Los objetivos a alcanzar son..., los temas a tratar..., los problemas por resolver..., las tareas pendientes..." }
           ]
         },
-        keyPhrases: [
-          "Quando você terminar — Assim que ele chegar",
-          "Se conseguir — Se puder — Se quiser",
-          "Enquanto eu estiver aqui — Onde quer que você for",
-          "A menos que ele mude de ideia"
-        ],
-        guidedProduction: [
-          "O que você vai fazer quando terminar seus estudos?",
-          "Fale sobre um plano usando 'se + futuro do subjuntivo'.",
-          "Use 'assim que' para descrever o que fará ao chegar em casa."
-        ],
-        grammar: {
-          title: "Futuro do Subjuntivo",
-          explanation: "Formado igual ao infinitivo pessoal na maioria dos verbos. Verbos irregulares seguem a raiz do pretérito: ser/ir → for, ter → tiver, fazer → fizer, poder → puder, querer → quiser. Usado com quando, se, assim que, enquanto, onde, caso.",
-          conjugation: "falar: falar/falares/falar/falarmos/falarem | ser/ir: for/fores | ter: tiver | fazer: fizer | poder: puder | querer: quiser"
-        },
-        exercises: [
-          { type: "fill", prompt: "Quando você ___ (chegar), me liga.", answer: "chegar" },
-          { type: "fill", prompt: "Se ele ___ (querer) ajuda, é só pedir.", answer: "quiser" },
-          { type: "fill", prompt: "Assim que nós ___ (ter) os resultados, avisamos.", answer: "tivermos" },
-          { type: "choice", prompt: "A menos que ela ___ de ideia, o projeto será cancelado.", options: ["muda", "mudasse", "mude", "mudar"], answer: "mude" },
-          { type: "production", prompt: "Escreva um plano futuro com 'quando + futuro do subjuntivo'.", answer: "Quando eu terminar o curso, vou viajar pelo Brasil." }
-        ]
-      },
-
-      {
-        id: "B2-U1-L3",
-        title: "Período Hipotético: tipos e estruturas",
-        objectives: ["Identificar e produzir os três tipos de período hipotético", "Usar corretamente futuro/imperfeito/mais-que-perfeito do subjuntivo"],
-        shadowingDialogue: {
-          title: "Situações reais, possíveis e impossíveis",
-          lines: [
-            { speaker: "Camila", text: "Se você estudar todos os dias, vai passar no concurso." },
-            { speaker: "Diego", text: "Se eu estudasse mais quando jovem, seria médico hoje." },
-            { speaker: "Camila", text: "Se tivéssemos saído mais cedo, não teríamos perdido o avião." },
-            { speaker: "Diego", text: "Pois é. Hipóteses não mudam a realidade, né?" }
+        {
+          id: "ES-B2-U1-L3",
+          title: "El Estilo Indirecto Avanzado — Todos os Tempos",
+          shadowing: "— ¿Qué te dijo exactamente?\n— Me dijo que había tenido problemas y que no podría venir.\n— ¿Y qué había dicho antes?\n— Antes había dicho que vendría seguro. No entiendo el cambio.\n— ¿Te prometió algo?\n— Me prometió que, si todo salía bien, me lo explicaría.\n— ¿Y qué te pidió que hicieras?\n— Me pidió que esperara y que no contara nada a nadie.",
+          memoryPhrases: [
+            "dijo que vendría = disse que viria (fut.→condicional)",
+            "dijo que había tenido = disse que tinha tido (perf.→plusc.)",
+            "pidió que esperara = pediu que eu esperasse (subj.→subj. imperf.)",
+            "prometió que explicaría = prometeu que explicaria",
+            "dijo que no podría = disse que não poderia",
+            "preguntó si sabía = perguntou se eu sabia"
+          ],
+          oralProduction: "Relate em estilo indireto uma conversa completa que você teve com alguém recentemente.",
+          exercises: [
+            { id: "ES-B2-U1-L3-E1", type: "multiple_choice", skill: "grammar", question: "Transforme em estilo indireto: 'Vendré mañana' → Dijo que..."", options: ["Dijo que viene mañana", "Dijo que vendría mañana", "Dijo que vendrá mañana", "Dijo que vino mañana"], answer: 1, explanation: "Dijo que vendría mañana. No estilo indireto passado: futuro → condicional. 'Vendré' → 'vendría'." },
+            { id: "ES-B2-U1-L3-E2", type: "multiple_choice", skill: "grammar", question: "Transforme: 'He terminado el trabajo' → Me dijo que...", options: ["Me dijo que ha terminado", "Me dijo que había terminado", "Me dijo que terminó", "Me dijo que terminaría"], answer: 1, explanation: "Me dijo que había terminado. Pretérito perfecto → pluscuamperfecto no estilo indireto." },
+            { id: "ES-B2-U1-L3-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'Me pidió que _____ (hablar) con el director.' (Me pediu que eu falasse com o diretor.)", answer: ["hablara", "hablase"], hint: "subjuntivo imperfeito de HABLAR para yo", explanation: "Hablara/hablase = falasse. Pedido no passado (pidió) + subjuntivo → subjuntivo imperfeito." },
+            { id: "ES-B2-U1-L3-E4", type: "translation", skill: "writing", question: "Transforme em estilo indireto: O jefe disse: 'Chegue mais cedo e já terminei o relatório.'", answer: ["El jefe dijo que llegara más temprano y que ya había terminado el informe.", "El jefe dijo que llegase más temprano y que ya había terminado el informe."], explanation: "Llegue → llegara (pedido em subj. imperf.). He terminado → había terminado (plusc.)." },
+            { id: "ES-B2-U1-L3-E5", type: "free_writing", skill: "writing", question: "Escreva o relato de uma reunião de trabalho usando estilo indireto completo. Mínimo 10 frases.", prompt: "Inclua: o que cada pessoa disse · promessas feitas · pedidos · dúvidas expressas · decisões tomadas", hint: "El director dijo que..., nos prometió que..., nos pidió que..., alguien preguntó si..., acordaron que..." }
           ]
         },
-        keyPhrases: [
-          "Tipo 1 (real): Se + presente → futuro",
-          "Tipo 2 (irreal presente): Se + imperfeito → condicional",
-          "Tipo 3 (irreal passado): Se + mais-que-perfeito → condicional composto",
-          "Deveria ter feito — Poderia ter sido — Teria acontecido"
-        ],
-        guidedProduction: [
-          "Crie uma hipótese real sobre o futuro com 'se'.",
-          "Diga algo que você faria diferente no passado.",
-          "Use o tipo 3: 'Se eu tivesse... teria...'"
-        ],
-        grammar: {
-          title: "Os 3 Tipos de Hipótese",
-          explanation: "Tipo 1: condição real/provável (Se você vier, vamos sair). Tipo 2: condição irreal no presente (Se eu fosse rico, viajaria o mundo). Tipo 3: condição irreal no passado — impossível de mudar (Se eu tivesse estudado, teria passado).",
-          conjugation: "Tipo 3: tivesse falado / tivesse sido / tivesse feito / tivesse vindo — condicional composto: teria falado / teria sido"
-        },
-        exercises: [
-          { type: "classify", prompt: "Classifique: 'Se ela tivesse ligado, eu teria ido.' Tipo 1, 2 ou 3?", answer: "Tipo 3 — irreal passado" },
-          { type: "fill", prompt: "Se eu ___ (ser) mais jovem, ___ (aprender) a tocar guitarra.", answer: "fosse / aprenderia" },
-          { type: "fill", prompt: "Se você ___ (chegar) a tempo, não ___ (perder) a reunião.", answer: "tivesse chegado / teria perdido" },
-          { type: "transform", prompt: "Transforma para tipo 2: 'Não tenho carro, não vou ao aeroporto.'", answer: "Se eu tivesse carro, iria ao aeroporto." },
-          { type: "production", prompt: "Escreva uma frase usando o período hipotético tipo 3.", answer: "Se eu tivesse estudado mais, teria passado no vestibular." }
-        ]
-      },
-
-      {
-        id: "B2-U1-L4",
-        title: "Concordância nominal e verbal avançada",
-        objectives: ["Aplicar concordância nominal com palavras compostas e invariáveis", "Dominar casos especiais de concordância verbal"],
-        shadowingDialogue: {
-          title: "Revisão de texto",
-          lines: [
-            { speaker: "Editora", text: "Olha, você escreveu 'a gente foram'. Está errado." },
-            { speaker: "Autor", text: "Sério? Achei que 'a gente' fosse plural." },
-            { speaker: "Editora", text: "'A gente' concorda com o singular: 'a gente foi'." },
-            { speaker: "Autor", text: "E 'mais de um aluno chegaram tarde' também está errado?" },
-            { speaker: "Editora", text: "Pode usar o singular: 'mais de um aluno chegou tarde'." }
+        {
+          id: "ES-B2-U1-L4",
+          title: "Usos Avançados do Ser e Estar",
+          shadowing: "— Está visto que no va a funcionar.\n— ¿Por qué eres tan pesimista?\n— No soy pesimista, soy realista. Está claro que hay problemas.\n— Pero es que siempre es lo mismo contigo.\n— Mira, es que la situación es lo que es.\n— Bueno, sea como sea, hay que intentarlo.\n— De acuerdo, pero siendo así, no esperes milagros.",
+          memoryPhrases: [
+            "está visto que = é evidente que / está claro que",
+            "es que = é que (conector explicativo)",
+            "es lo que es = é o que é",
+            "siendo así = sendo assim",
+            "estar + gerundio = estar + gerúndio",
+            "ser + adjetivo vs estar + adjetivo (matizes)"
+          ],
+          oralProduction: "Explique a diferença de significado entre: 'es aburrido' vs 'está aburrido', 'es listo' vs 'está listo'.",
+          exercises: [
+            { id: "ES-B2-U1-L4-E1", type: "multiple_choice", skill: "grammar", question: "Qual é a diferença? A) 'Juan es aburrido' B) 'Juan está aburrido'", options: ["São iguais", "A: Juan é uma pessoa chata (característica). B: Juan está entediado agora (estado)", "A é formal, B informal", "A é passado, B é presente"], answer: 1, explanation: "SER + adjetivo = característica permanente. ESTAR + adjetivo = estado temporário. Es aburrido = é chato (sempre). Está aburrido = está entediado (agora)." },
+            { id: "ES-B2-U1-L4-E2", type: "multiple_choice", skill: "grammar", question: "O que significa 'La comida está rica'?", options: ["A comida é rica (cara)", "A comida está gostosa (estado)", "A comida estava boa", "A comida vai estar boa"], answer: 1, explanation: "Está rica = está gostosa (percepção no momento). 'Es rica' seria uma característica permanente. Com comida, ESTAR é mais natural para experiência sensorial." },
+            { id: "ES-B2-U1-L4-E3", type: "fill_blank", skill: "grammar", question: "Complete com SER ou ESTAR: 'El jefe _____ muy nervioso hoy. Normalmente _____ muy tranquilo.'", answer: ["está, es"], hint: "estado temporário vs característica permanente", explanation: "Está muy nervioso hoy (estado temporário, hoy). Es muy tranquilo (característica permanente, normalmente)." },
+            { id: "ES-B2-U1-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'Ele é muito sério como pessoa, mas hoje está muito animado por causa da boa notícia.'", answer: ["Es muy serio como persona, pero hoy está muy animado por la buena noticia.", "Él es muy serio, pero hoy está muy animado debido a la buena noticia."], explanation: "Es serio = é sério (característica). Está animado = está animado (estado temporário, hoje)." },
+            { id: "ES-B2-U1-L4-E5", type: "free_writing", skill: "writing", question: "Escreva um perfil completo de uma pessoa real ou fictícia, distinguindo características permanentes (SER) e estados temporários (ESTAR). Mínimo 10 frases.", prompt: "Inclua: aparência física · personalidade · estado atual · localização · profissão · situação de vida", hint: "Es alto, moreno y simpático. Normalmente es tranquilo pero hoy está estresado. Está en Madrid..." }
           ]
         },
-        keyPhrases: [
-          "A gente foi (não 'foram') — A gente está (não 'estão')",
-          "Mais de um candidato chegou — Menos de dois alunos faltou",
-          "Guarda-chuva é masculino — guarda-chuvas (pl.)",
-          "Olhos azuis-claros — camisas verde-escuras"
-        ],
-        guidedProduction: [
-          "Corrija: 'A gente foram ao cinema ontem.'",
-          "Use 'mais de um' em uma frase correta.",
-          "Forme o plural de 'couve-flor' e 'bem-estar'."
-        ],
-        grammar: {
-          title: "Concordância: Casos Especiais",
-          explanation: "A gente + singular. Mais de um + singular. Verbos impessoais (haver, fazer, ser) ficam no singular: 'Há muitos problemas'. Palavras compostas: guarda-chuva → guarda-chuvas; bem-estar → bens-estar. Cores compostas são invariáveis: verde-oliva, azul-marinho.",
-          conjugation: "Impessoais: faz dois anos / há muitos anos / fazia tempo / houve problemas"
-        },
-        exercises: [
-          { type: "correct", prompt: "Corrija: 'Haviam muitas pessoas na fila.'", answer: "Havia muitas pessoas na fila." },
-          { type: "fill", prompt: "A gente não ___ (saber) o que fazer.", answer: "sabia" },
-          { type: "fill", prompt: "Mais de um professor ___ (faltar) à reunião.", answer: "faltou" },
-          { type: "plural", prompt: "Dê o plural de: guarda-chuva, bem-estar, couve-flor", answer: "guarda-chuvas, bens-estar, couves-flores" },
-          { type: "production", prompt: "Escreva duas frases com casos especiais de concordância.", answer: "Há muitos problemas para resolver. A gente chegou atrasado." }
-        ]
-      },
-
-      {
-        id: "B2-U1-L5",
-        title: "Revisão e produção integrada B2-U1",
-        objectives: ["Integrar subjuntivo imperfeito, futuro do subjuntivo e hipóteses", "Produzir texto coeso com estruturas B2"],
-        shadowingDialogue: {
-          title: "Entrevista: vida e escolhas",
-          lines: [
-            { speaker: "Entrevistador", text: "Se você pudesse recomeçar, o que faria diferente?" },
-            { speaker: "Entrevistada", text: "Se eu soubesse o que sei hoje, teria investido em tecnologia muito antes." },
-            { speaker: "Entrevistador", text: "E quando se aposentar, quais são os seus planos?" },
-            { speaker: "Entrevistada", text: "Assim que eu puder, vou viajar pelo Nordeste inteiro." }
+        {
+          id: "ES-B2-U1-L5",
+          title: "Nominalização e Registro Formal",
+          shadowing: "— La implementación del proyecto fue un éxito.\n— El desarrollo de las fases iniciales resultó más complejo de lo esperado.\n— ¿Y la resolución de los conflictos internos?\n— La gestión de los recursos humanos fue clave en la superación de obstáculos.\n— ¿Qué hay de la evaluación final?\n— La entrega de los resultados está prevista para el viernes.",
+          memoryPhrases: [
+            "la implementación = a implementação",
+            "el desarrollo = o desenvolvimento",
+            "la resolución = a resolução",
+            "la gestión = a gestão",
+            "la superación = a superação",
+            "la entrega = a entrega"
+          ],
+          oralProduction: "Reescreva 5 frases verbais no estilo nominal formal: 'resolver problemas' → 'la resolución de problemas'.",
+          exercises: [
+            { id: "ES-B2-U1-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "Qual é a nominalização de 'desarrollar'?", options: ["el desarrollador", "el desarrollo", "la desarrollación", "lo desarrollado"], answer: 1, explanation: "El desarrollo = o desenvolvimento. Nominalização de verbos em espanhol: desarrollar → el desarrollo, implementar → la implementación, resolver → la resolución." },
+            { id: "ES-B2-U1-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "Como nominalizar 'gestionar los recursos'?", options: ["el gestionado de recursos", "la gestión de los recursos", "el gestión de recursos", "la gestionación de recursos"], answer: 1, explanation: "La gestión de los recursos = a gestão dos recursos. Gestionar → la gestión. O artigo feminino e o sufixo -ión são muito comuns nas nominalizações formais." },
+            { id: "ES-B2-U1-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Nominalize: 'Entregaron los resultados' → 'La _____ de los resultados se realizó en plazo.'", answer: ["entrega"], hint: "substantivo de 'entregar'", explanation: "La entrega = a entrega. Entregar → la entrega. Frase nominal mais formal e concisa." },
+            { id: "ES-B2-U1-L5-E4", type: "translation", skill: "writing", question: "Transforme em registro formal: 'Resolvemos os problemas e implementamos novas soluções.'", answer: ["La resolución de los problemas y la implementación de nuevas soluciones fueron los logros principales.", "La resolución de los problemas e implementación de nuevas soluciones se llevaron a cabo con éxito."], explanation: "Resolución (resolver) + implementación (implementar). O estilo nominal é característico do espanhol escrito formal." },
+            { id: "ES-B2-U1-L5-E5", type: "free_writing", skill: "writing", question: "Escreva um relatório executivo formal em espanhol usando nominalizações. Mínimo 10 frases.", prompt: "Inclua: desenvolvimento do projeto · implementação de soluções · gestão da equipe · resolução de problemas · entrega de resultados", hint: "El desarrollo del proyecto..., la implementación de..., la gestión del equipo..., la resolución de..., la entrega de..." }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-B2-U2",
+      title: "Comunicação Profissional Avançada",
+      description: "Espanhol de alto nível para contextos profissionais exigentes",
+      lessons: [
+        {
+          id: "ES-B2-U2-L1",
+          title: "Correspondência Formal Avanzada",
+          shadowing: "— Estimada doctora Martínez:\n— Me dirijo a usted para solicitar formalmente su colaboración en el proyecto...\n— En respuesta a su amable carta del pasado quince de marzo...\n— Adjunto encontrará los documentos solicitados en su momento.\n— Quedo a su entera disposición para cualquier consulta que pueda surgir.\n— En espera de su respuesta, le saluda atentamente.",
+          memoryPhrases: [
+            "me dirijo a usted para = dirijo-me a você para",
+            "en respuesta a su carta = em resposta à sua carta",
+            "adjunto encontrará = em anexo encontrará",
+            "quedo a su disposición = fico à sua disposição",
+            "en espera de su respuesta = aguardando sua resposta",
+            "le saluda atentamente = atenciosamente"
+          ],
+          oralProduction: "Dite uma carta formal completa em espanhol para um cliente ou parceiro de negócios.",
+          exercises: [
+            { id: "ES-B2-U2-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se abre formalmente uma carta em espanhol?", options: ["Querido señor:", "Hola, señor García:", "Estimado señor García:", "Buenos días señor:"], answer: 2, explanation: "Estimado señor García: = Caro Senhor García / Prezado Senhor García. 'Estimado/a' é o padrão formal. 'Querido/a' é mais afetivo (para conhecidos próximos)." },
+            { id: "ES-B2-U2-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se fecha uma carta formal?", options: ["Hasta pronto,", "Le saluda atentamente,", "Besos,", "Nos vemos,"], answer: 1, explanation: "Le saluda atentamente = atenciosamente. Outras opções formais: 'Atentamente,' 'Cordialmente,' 'En espera de su respuesta, le saluda atentamente,'." },
+            { id: "ES-B2-U2-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Me _____ a usted para solicitar información.' (Dirijo-me a você para solicitar informações.)", answer: ["dirijo"], hint: "verbo dirigirse (dirigir-se)", explanation: "Me dirijo a usted = dirijo-me a você. 'Dirigirse a alguien' = se dirigir a alguém. Fórmula de abertura muito formal." },
+            { id: "ES-B2-U2-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Em anexo encontrará os documentos solicitados. Fico à sua disposição para qualquer esclarecimento.'", answer: ["Adjunto encontrará los documentos solicitados. Quedo a su disposición para cualquier aclaración.", "En el adjunto encontrará los documentos solicitados. Estoy a su disposición para cualquier consulta."], explanation: "Adjunto = em anexo. Quedo a su disposición = fico à sua disposição. Aclaración = esclarecimento." },
+            { id: "ES-B2-U2-L1-E5", type: "free_writing", skill: "writing", question: "Escreva uma carta formal completa em espanhol para um parceiro de negócios propondo uma colaboração. Mínimo 12 frases.", prompt: "Inclua: abertura formal · apresentação · proposta de colaboração · benefícios · próximos passos · encerramento formal", hint: "Estimado/a..., me dirijo a usted para..., le propongo..., los beneficios serían..., le saluda atentamente..." }
           ]
         },
-        keyPhrases: [
-          "Se eu pudesse — Se eu soubesse — Se eu tivesse sabido",
-          "Quando puder — Assim que terminar — A menos que mude",
-          "Teria feito — Poderia ter sido — Deveria ter tentado",
-          "A gente deveria — Há muitas opções — Mais de uma pessoa"
-        ],
-        guidedProduction: [
-          "Fale sobre uma decisão passada usando hipótese tipo 3.",
-          "Descreva um plano futuro com condições reais.",
-          "Escreva um parágrafo sobre o que faria se fosse presidente do Brasil."
-        ],
-        grammar: {
-          title: "Revisão B2-U1",
-          explanation: "Consolida: subjuntivo imperfeito (fosse, tivesse, pudesse), futuro do subjuntivo (for, tiver, fizer), os 3 tipos de período hipotético, e concordância nominal/verbal avançada.",
-          conjugation: "Quadro resumo: Tipo 1: se + presente/futuro | Tipo 2: se + imperfeito + condicional | Tipo 3: se + mais-que-perfeito + condicional composto"
-        },
-        exercises: [
-          { type: "fill", prompt: "Se eu ___ (ter) estudado, ___ (passar) na prova.", answer: "tivesse / teria passado" },
-          { type: "fill", prompt: "Quando você ___ (poder), me manda o arquivo.", answer: "puder" },
-          { type: "correct", prompt: "Corrija: 'A gente foram ao mercado e haviam filas.'", answer: "A gente foi ao mercado e havia filas." },
-          { type: "classify", prompt: "Classifique: 'Se você vier amanhã, vamos resolver isso.' Tipo?", answer: "Tipo 1 — condição real" },
-          { type: "production", prompt: "Escreva um parágrafo com pelo menos 3 estruturas do subjuntivo.", answer: "Se eu pudesse voltar no tempo, teria estudado mais. Assim que eu terminar este curso, vou trabalhar com tradução. Se soubesse falar inglês melhor, teria mais oportunidades." }
-        ]
-      }
-    ]
-  },
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 2 — Voz Passiva Avançada e Discurso Indireto
-  // ══════════════════════════════════════════════════════
-  {
-    id: "B2-U2",
-    title: "Voz Passiva Avançada e Discurso Indireto",
-    level: "B2",
-    lessons: [
-
-      {
-        id: "B2-U2-L1",
-        title: "Voz passiva: analítica, sintética e de estado",
-        objectives: ["Distinguir os três tipos de voz passiva", "Usar a passiva sintética (se) corretamente"],
-        shadowingDialogue: {
-          title: "Notícias da semana",
-          lines: [
-            { speaker: "Âncora", text: "A nova lei foi aprovada pelo Congresso Nacional ontem." },
-            { speaker: "Repórter", text: "Vendem-se casas na região central com desconto especial." },
-            { speaker: "Âncora", text: "O sistema ficou sobrecarregado após o anúncio." },
-            { speaker: "Repórter", text: "Diz-se que o preço do petróleo vai subir nos próximos meses." }
+        {
+          id: "ES-B2-U2-L2",
+          title: "Apresentações e Conferências em Espanhol",
+          shadowing: "— Buenos días a todos. Es un placer estar aquí con ustedes.\n— Voy a comenzar con una pregunta: ¿qué tienen en común estas tres empresas?\n— Como pueden observar en el gráfico, los resultados hablan por sí solos.\n— Quisiera destacar especialmente este punto, que considero fundamental.\n— Antes de concluir, permítanme resumir los puntos clave.\n— Estaré encantado de responder sus preguntas. Muchas gracias por su atención.",
+          memoryPhrases: [
+            "es un placer estar aquí = é um prazer estar aqui",
+            "voy a comenzar con = vou começar com",
+            "como pueden observar = como podem observar",
+            "quisiera destacar = gostaria de destacar",
+            "permítanme resumir = permita-me resumir",
+            "estaré encantado de = ficarei feliz em"
+          ],
+          oralProduction: "Faça uma apresentação de 3 minutos sobre um tema de sua área profissional em espanhol.",
+          exercises: [
+            { id: "ES-B2-U2-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se chama a atenção do público para um dado importante?", options: ["Miren aquí", "Quisiera destacar / Cabe subrayar / Es importante señalar", "Esto es importante", "Escuchen esto"], answer: 1, explanation: "'Quisiera destacar', 'Cabe subrayar', 'Es importante señalar' são as formas mais elegantes e profissionais de chamar atenção para um ponto em apresentações formais." },
+            { id: "ES-B2-U2-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se abre para perguntas ao final de uma apresentação?", options: ["¿Alguna pregunta?", "Estaré encantado de responder sus preguntas / Abro el turno de preguntas", "Pregunten lo que quieran", "¿Qué quieren saber?"], answer: 1, explanation: "Estaré encantado de responder sus preguntas ou Abro el turno de preguntas são as formas mais profissionais. 'Encantado de' = com prazer em." },
+            { id: "ES-B2-U2-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Antes de concluir, _____ resumir los puntos principales.' (Antes de concluir, permita-me resumir...)", answer: ["permítanme", "déjenme"], hint: "forma de pedir permissão ao público de forma elegante", explanation: "Permítanme / Déjenme + infinitivo = permita-me / deixem-me. Forma elegante de pedir atenção do público antes da conclusão." },
+            { id: "ES-B2-U2-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Como podem observar no gráfico, as vendas aumentaram 30% no último trimestre.'", answer: ["Como pueden observar en el gráfico, las ventas aumentaron un 30% en el último trimestre.", "Como pueden ver en el gráfico, las ventas crecieron un 30% en el último trimestre."], explanation: "Como pueden observar = como podem observar. Aumentaron un 30% = aumentaram 30%. Último trimestre = último trimestre." },
+            { id: "ES-B2-U2-L2-E5", type: "free_writing", skill: "writing", question: "Escreva o roteiro completo de uma apresentação de 5 minutos para uma conferência sobre inovação no Brasil. Mínimo 15 frases.", prompt: "Inclua: abertura com gancho · contexto · 3 pontos principais · dados · conclusão · abertura para perguntas", hint: "Buenos días, es un honor..., voy a comenzar con..., el primer punto..., como pueden observar..., en conclusión..., estaré encantado..." }
           ]
         },
-        keyPhrases: [
-          "Passiva analítica: ser + particípio (A carta foi escrita por ela)",
-          "Passiva sintética: se + verbo (Vende-se apartamento / Vendem-se apartamentos)",
-          "Passiva de estado: estar/ficar + particípio (A porta está fechada)",
-          "Diz-se que / Sabe-se que / Considera-se que"
-        ],
-        guidedProduction: [
-          "Transforme para passiva: 'O governo aprovou a lei.'",
-          "Crie um anúncio usando passiva sintética.",
-          "Use 'estar + particípio' para descrever um estado."
-        ],
-        grammar: {
-          title: "Os 3 Tipos de Voz Passiva",
-          explanation: "Analítica: sujeito + ser/estar + particípio + por + agente. Sintética: verbo + se (apassivador) — 'Alugam-se quartos'. Passiva de estado: estar/ficar + particípio (estado resultante) — 'A janela está quebrada' (resultado de uma ação). Atenção: vende-se (sing.) vs. vendem-se (pl.).",
-          conjugation: "ser aprovado/aprovada/aprovados/aprovadas | estar fechado/fechada | vende-se / vendem-se | aluga-se / alugam-se"
-        },
-        exercises: [
-          { type: "transform", prompt: "Transforme: 'Os alunos resolveram os problemas.'", answer: "Os problemas foram resolvidos pelos alunos." },
-          { type: "fill", prompt: "___ (vender-se) ingressos na bilheteria.", answer: "Vendem-se" },
-          { type: "choice", prompt: "A janela ___ quebrada depois da tempestade.", options: ["foi", "ficou", "foi ficada", "ser"], answer: "ficou" },
-          { type: "fill", prompt: "___ (dizer-se) que o ator vai se aposentar.", answer: "Diz-se" },
-          { type: "production", prompt: "Escreva um anúncio de aluguel usando passiva sintética.", answer: "Aluga-se apartamento de 2 quartos no centro. Aceitam-se animais. Vende-se também garagem separada." }
-        ]
-      },
-
-      {
-        id: "B2-U2-L2",
-        title: "Discurso indireto: mudanças verbais e de tempo",
-        objectives: ["Reproduzir falas no discurso indireto com todas as mudanças", "Identificar quando o tempo verbal muda ou permanece"],
-        shadowingDialogue: {
-          title: "Fofoca no escritório",
-          lines: [
-            { speaker: "Carla", text: "A Maria disse que estava com dor de cabeça e não poderia vir." },
-            { speaker: "Fábio", text: "O diretor anunciou que a reunião seria transferida para sexta." },
-            { speaker: "Carla", text: "E o Pedro perguntou se alguém havia terminado o relatório." },
-            { speaker: "Fábio", text: "A secretária respondeu que ninguém tinha enviado ainda." }
+        {
+          id: "ES-B2-U2-L3",
+          title: "Debate e Argumentação Avanzada",
+          shadowing: "— Permítame discrepar respetuosamente.\n— Por supuesto, le escucho.\n— Bien. Si bien es cierto que los datos que ha presentado son relevantes, considero que la interpretación que hace de ellos es cuestionable.\n— ¿En qué basa esa afirmación?\n— Me baso en estudios más recientes que contradicen esa hipótesis.\n— Interesante. ¿Podría citar esos estudios?\n— Con mucho gusto. Encontrará las referencias en el dosier que les hemos entregado.",
+          memoryPhrases: [
+            "permítame discrepar = permita-me discordar",
+            "si bien es cierto que = embora seja verdade que",
+            "cuestionable = questionável",
+            "me baso en = baseio-me em",
+            "contradicen = contradizem",
+            "con mucho gusto = com muito prazer"
+          ],
+          oralProduction: "Discorde respeitosamente de uma afirmação usando as estruturas formais aprendidas.",
+          exercises: [
+            { id: "ES-B2-U2-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "Como se discorda formalmente em espanhol?", options: ["No, eso no es verdad", "Permítame discrepar / Me temo que no comparto esa opinión", "Está equivocado", "Eso es mentira"], answer: 1, explanation: "'Permítame discrepar' e 'Me temo que no comparto esa opinión' são as formas mais elegantes e profissionais de discordar num debate formal." },
+            { id: "ES-B2-U2-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "Como se introduz uma concessão seguida de refutação?", options: ["Pero...", "Sin embargo, creo que...", "Si bien es cierto que... sin embargo...", "Aunque..."], answer: 2, explanation: "'Si bien es cierto que X, sin embargo Y' = embora seja verdade que X, no entanto Y. É a estrutura mais elegante para conceder e refutar ao mesmo tempo." },
+            { id: "ES-B2-U2-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Me _____ en los datos del informe de la OMS.' (Baseio-me nos dados do relatório da OMS.)", answer: ["baso"], hint: "verbo basarse (se basear)", explanation: "Me baso en = baseio-me em. Basarse en = se basear em. Forma muito usada para citar fontes num debate formal." },
+            { id: "ES-B2-U2-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'Embora seja verdade que a economia cresceu, considero que essa interpretação é questionável.'", answer: ["Si bien es cierto que la economía ha crecido, considero que esa interpretación es cuestionable.", "Aunque es cierto que la economía creció, creo que esa interpretación es cuestionable."], explanation: "Si bien es cierto que = embora seja verdade que. Cuestionable = questionável. Considero que = considero que." },
+            { id: "ES-B2-U2-L5-E5", type: "free_writing", skill: "writing", question: "Escreva um debate formal sobre se a inteligência artificial vai substituir os empregos humanos. Dois lados opostos. Mínimo 12 frases.", prompt: "Inclua: argumento a favor · concessão · refutação · dados · conclusão de cada lado", hint: "Permítame señalar que..., si bien es cierto que..., sin embargo..., me baso en..., por lo tanto..." }
           ]
         },
-        keyPhrases: [
-          "Ele disse que estava / seria / havia feito",
-          "Ela perguntou se eu podia / queria / tinha terminado",
-          "O chefe ordenou que todos chegassem cedo",
-          "Eles anunciaram que o projeto fora aprovado"
-        ],
-        guidedProduction: [
-          "Reporte: 'Eu não vou ao evento.' → Ela disse que...",
-          "Reporte uma pergunta: 'Você já comeu?' → Ele perguntou se...",
-          "Reporte uma ordem: 'Faça o relatório!' → A chefe ordenou que..."
-        ],
-        grammar: {
-          title: "Discurso Indireto: Tabela de Mudanças",
-          explanation: "Presente → imperfeito (disse que estava). Pretérito perfeito → mais-que-perfeito (disse que havia feito). Futuro → condicional (disse que viria). Imperativo → subjuntivo imperfeito (ordenou que fizesse). Pronomes: eu→ele/ela, você→ele/ela, aqui→ali/lá, hoje→naquele dia, amanhã→no dia seguinte.",
-          conjugation: "Verbos de reporte: dizer / falar / afirmar / declarar / perguntar / responder / ordenar / pedir / sugerir / avisar"
-        },
-        exercises: [
-          { type: "transform", prompt: "Reporte: 'Eu estou cansado.' → Ele disse que...", answer: "Ele disse que estava cansado." },
-          { type: "transform", prompt: "Reporte: 'Você pode me ajudar?' → Ela perguntou se...", answer: "Ela perguntou se eu podia ajudá-la." },
-          { type: "transform", prompt: "Reporte: 'Venha amanhã!' → O chefe ordenou que...", answer: "O chefe ordenou que eu fosse no dia seguinte." },
-          { type: "fill", prompt: "Ela anunciou que a empresa ___ (abrir) uma nova filial.", answer: "abriria" },
-          { type: "production", prompt: "Reporte um diálogo curto de 3 linhas no discurso indireto.", answer: "Ele disse que estava atrasado. Ela perguntou se ele tinha esquecido da reunião. Ele respondeu que havia esquecido o horário." }
-        ]
-      },
-
-      {
-        id: "B2-U2-L3",
-        title: "Coesão textual: conectivos avançados",
-        objectives: ["Usar conectivos de causa, concessão, condição e conclusão em nível B2", "Produzir textos coesos e sofisticados"],
-        shadowingDialogue: {
-          title: "Debate acadêmico",
-          lines: [
-            { speaker: "Beatriz", text: "Embora os dados sejam promissores, ainda há muito a ser investigado." },
-            { speaker: "Leandro", text: "Visto que o orçamento foi cortado, precisamos priorizar." },
-            { speaker: "Beatriz", text: "Contanto que mantenhamos o rigor científico, podemos avançar." },
-            { speaker: "Leandro", text: "Por conseguinte, proponho que revisemos a metodologia." }
+        {
+          id: "ES-B2-U2-L4",
+          title: "Vocabulário de Economia e Finanças",
+          shadowing: "— ¿Cómo ves la coyuntura económica actual?\n— Hay señales mixtas. Por un lado, el PIB creció un 2,3%, pero la inflación sigue siendo elevada.\n— ¿Y el mercado laboral?\n— La tasa de desempleo bajó, pero la precariedad laboral aumentó.\n— ¿Qué perspectivas hay para el próximo semestre?\n— Las previsiones apuntan a una moderación del crecimiento.\n— ¿Y la inversión extranjera?\n— Sigue siendo atractiva, aunque la incertidumbre regulatoria genera dudas.",
+          memoryPhrases: [
+            "la coyuntura económica = a conjuntura econômica",
+            "el PIB = o PIB (Produto Interno Bruto)",
+            "la inflación = a inflação",
+            "la tasa de desempleo = a taxa de desemprego",
+            "la inversión extranjera = o investimento estrangeiro",
+            "las previsiones apuntan a = as previsões apontam para"
+          ],
+          oralProduction: "Comente a situação econômica atual do Brasil em espanhol usando vocabulário técnico.",
+          exercises: [
+            { id: "ES-B2-U2-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é 'el PIB' em espanhol?", options: ["O Produto Industrial Bruto", "O Produto Interno Bruto", "O Plano de Investimento Básico", "O Produto Internacional Bruto"], answer: 1, explanation: "PIB = Producto Interior Bruto (España) ou Producto Interno Bruto (América Latina). Equivale ao PIB em português." },
+            { id: "ES-B2-U2-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'precariedad laboral'?", options: ["Trabalho perigoso", "Precariedade no trabalho / empregos instáveis", "Trabalho precioso", "Precisão no trabalho"], answer: 1, explanation: "Precariedad laboral = precariedade no trabalho. Laboral = relacionado ao trabalho/emprego. Mercado laboral = mercado de trabalho." },
+            { id: "ES-B2-U2-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'La _____ sigue siendo el principal desafío de la economía brasileña.' (A inflação segue sendo o principal desafio.)", answer: ["inflación"], hint: "fenômeno econômico de aumento de preços", explanation: "Inflación = inflação. 'Inflación alta' = inflação alta. 'Control de la inflación' = controle da inflação." },
+            { id: "ES-B2-U2-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'O investimento estrangeiro cresceu 15% graças à estabilidade econômica e às reformas regulatórias.'", answer: ["La inversión extranjera creció un 15% gracias a la estabilidad económica y las reformas regulatorias.", "La inversión extranjera aumentó un 15% debido a la estabilidad económica y las reformas regulatorias."], explanation: "Inversión extranjera = investimento estrangeiro. Estabilidad = estabilidade. Reformas regulatorias = reformas regulatórias." },
+            { id: "ES-B2-U2-L4-E5", type: "free_writing", skill: "writing", question: "Escreva uma análise econômica do Brasil em espanhol para um investidor hispanohablante. Mínimo 10 frases.", prompt: "Inclua: PIB · inflação · desemprego · investimento estrangeiro · perspectivas · riscos", hint: "El PIB de Brasil..., la inflación se sitúa en..., la tasa de desempleo..., la inversión extranjera..., las perspectivas..." }
           ]
         },
-        keyPhrases: [
-          "Concessão: embora, ainda que, apesar de (que), mesmo que",
-          "Causa/explicação: visto que, dado que, tendo em vista que, porquanto",
-          "Condição: contanto que, desde que, a menos que, caso",
-          "Conclusão: portanto, logo, por conseguinte, assim sendo, destarte"
-        ],
-        guidedProduction: [
-          "Use 'embora' para expressar uma concessão.",
-          "Conecte duas ideias com 'visto que' ou 'dado que'.",
-          "Escreva uma conclusão usando 'por conseguinte' ou 'portanto'."
-        ],
-        grammar: {
-          title: "Conectivos B2: Uso e Nuances",
-          explanation: "Concessão + subjuntivo: embora venha, ainda que precise, mesmo que queira. Causa formal: visto que está (indicativo), dado que há. Condição + subjuntivo: contanto que venha, desde que faça, caso precise. Conclusão: portanto/logo (mais formais); por conseguinte (muito formal). Atenção: 'apesar de' + infinitivo, 'apesar de que' + subjuntivo.",
-          conjugation: "embora + subjuntivo | visto que + indicativo | contanto que + subjuntivo | a menos que + subjuntivo | porquanto + indicativo"
-        },
-        exercises: [
-          { type: "fill", prompt: "___ o projeto seja difícil, vamos tentar.", answer: "Embora" },
-          { type: "fill", prompt: "___ que os recursos são limitados, devemos ser criativos.", answer: "Visto" },
-          { type: "fill", prompt: "Pode participar, ___ que respeite as regras.", answer: "contanto" },
-          { type: "rewrite", prompt: "Reescreva de forma mais formal: 'Apesar de ter estudado, não passei.'", answer: "Embora tivesse estudado, não passei." },
-          { type: "production", prompt: "Escreva um parágrafo argumentativo usando ao menos 3 conectivos avançados.", answer: "Embora os resultados sejam positivos, ainda há desafios. Visto que o orçamento é limitado, precisamos priorizar ações. Contanto que mantenhamos o foco, alcançaremos os objetivos. Por conseguinte, é fundamental revisar o planejamento." }
-        ]
-      },
-
-      {
-        id: "B2-U2-L4",
-        title: "Texto dissertativo-argumentativo nível B2",
-        objectives: ["Estruturar um texto argumentativo completo", "Usar evidências, exemplos e conclusões sofisticadas"],
-        shadowingDialogue: {
-          title: "Modelo de redação",
-          lines: [
-            { speaker: "Professora", text: "Um bom texto tem tese clara, argumentos desenvolvidos e conclusão propositiva." },
-            { speaker: "Aluno", text: "Então devo começar apresentando minha posição?" },
-            { speaker: "Professora", text: "Exatamente. Em seguida, desenvolva com dados, exemplos e citações." },
-            { speaker: "Aluno", text: "E a conclusão deve retomar a tese e propor algo?" },
-            { speaker: "Professora", text: "Perfeito. No ENEM, também inclua uma proposta de intervenção." }
+        {
+          id: "ES-B2-U2-L5",
+          title: "Espanhol Jurídico e Administrativo Básico",
+          shadowing: "— ¿Ha leído usted las cláusulas del contrato?\n— Sí, aunque hay algunos términos que no comprendo del todo.\n— ¿A qué cláusulas se refiere concretamente?\n— A la cláusula tercera, sobre la rescisión del contrato.\n— Significa que cualquiera de las partes puede rescindirlo con treinta días de preaviso.\n— ¿Y si incumplimos el contrato?\n— En ese caso, la parte incumplidora deberá indemnizar a la otra parte.",
+          memoryPhrases: [
+            "la cláusula = a cláusula",
+            "la rescisión = a rescisão",
+            "el preaviso = o aviso prévio",
+            "incumplir el contrato = descumprir o contrato",
+            "la parte incumplidora = a parte inadimplente",
+            "indemnizar = indenizar"
+          ],
+          oralProduction: "Explique os termos básicos de um contrato em espanhol para alguém que não entende o vocabulário jurídico.",
+          exercises: [
+            { id: "ES-B2-U2-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la rescisión del contrato'?", options: ["A renovação do contrato", "A assinatura do contrato", "A rescisão / cancelamento do contrato", "O resumo do contrato"], answer: 2, explanation: "La rescisión = a rescisão. Rescindir el contrato = rescindir o contrato. Renovar = renovar. Firmar = assinar." },
+            { id: "ES-B2-U2-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'preaviso'?", options: ["Pré-aviso / aviso antecipado", "Aviso posterior", "Aviso urgente", "Aviso formal"], answer: 0, explanation: "Preaviso = pré-aviso / aviso prévio. 'Treinta días de preaviso' = trinta dias de aviso prévio." },
+            { id: "ES-B2-U2-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'La empresa deberá _____ al trabajador por el despido improcedente.' (A empresa deverá indenizar o trabalhador.)", answer: ["indemnizar"], hint: "indenizar em espanhol", explanation: "Indemnizar = indenizar. Indemnización = indenização. Despido improcedente = demissão sem justa causa." },
+            { id: "ES-B2-U2-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'Qualquer das partes pode rescindir o contrato com 30 dias de aviso prévio.'", answer: ["Cualquiera de las partes puede rescindir el contrato con 30 días de preaviso.", "Cualquier parte podrá rescindir el contrato previo aviso de 30 días."], explanation: "Cualquiera de las partes = qualquer das partes. Puede rescindir = pode rescindir. Con 30 días de preaviso = com 30 dias de aviso prévio." },
+            { id: "ES-B2-U2-L5-E5", type: "free_writing", skill: "writing", question: "Escreva as cláusulas principais de um contrato de prestação de serviços em espanhol. Mínimo 8 cláusulas.", prompt: "Inclua: partes do contrato · objeto · prazo · valor · forma de pagamento · rescisão · resolução de conflitos", hint: "CLÁUSULA PRIMERA: Las partes son..., CLÁUSULA SEGUNDA: El objeto es..., CLÁUSULA TERCERA: El plazo..." }
           ]
-        },
-        keyPhrases: [
-          "Introdução: contextualização + tese",
-          "Desenvolvimento: argumento + evidência + exemplo",
-          "Conclusão: retomada + proposta de intervenção",
-          "Sabe-se que / É notório que / Conforme dados do IBGE / Segundo estudiosos"
-        ],
-        guidedProduction: [
-          "Escreva uma tese sobre o impacto das redes sociais na saúde mental.",
-          "Desenvolva um argumento com dados e exemplo.",
-          "Crie uma conclusão com proposta de intervenção."
-        ],
-        grammar: {
-          title: "Estrutura do Texto Dissertativo",
-          explanation: "Introdução (3-5 linhas): apresentar tema + tese. Desenvolvimento (2 parágrafos): cada um com 1 argumento + 1 evidência + 1 exemplo. Conclusão: retomar tese + proposta concreta (quem faz, como faz, com que fim). Evitar: linguagem coloquial, primeira pessoa do singular, frases nominais soltas.",
-          conjugation: "Verbos impessoais formais: é preciso que / faz-se necessário que / torna-se imprescindível / cabe ao governo / incumbe à sociedade"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva a introdução sobre 'O impacto da tecnologia na educação'.", answer: "Na era digital, a tecnologia transformou profundamente os métodos educacionais. Embora ofereça inúmeras possibilidades, seu uso indiscriminado pode comprometer o processo de aprendizagem, tornando urgente uma reflexão sobre como integrá-la de forma eficaz." },
-          { type: "production", prompt: "Escreva um parágrafo de desenvolvimento com argumento e evidência.", answer: "Um dos principais impactos é o acesso à informação. Conforme dados da UNESCO, 63% dos estudantes em países em desenvolvimento têm mais acesso a conteúdos educativos por meio de dispositivos móveis. Isso demonstra que a tecnologia pode democratizar o ensino quando bem utilizada." },
-          { type: "identify", prompt: "Identifique o conectivo de conclusão: 'Logo, é fundamental que o governo invista...'", answer: "'Logo' — conectivo de conclusão/consequência" },
-          { type: "rewrite", prompt: "Formalize: 'A gente precisa fazer algo sobre o problema.'", answer: "Faz-se necessário que a sociedade adote medidas concretas para enfrentar tal problemática." },
-          { type: "production", prompt: "Escreva uma proposta de intervenção para o tema tecnologia e educação.", answer: "Cabe ao Ministério da Educação, em parceria com municípios, implementar políticas de inclusão digital que capacitem professores e forneçam infraestrutura tecnológica às escolas públicas, com o intuito de garantir um ensino de qualidade para todos." }
-        ]
-      },
-
-      {
-        id: "B2-U2-L5",
-        title: "Revisão e produção integrada B2-U2",
-        objectives: ["Integrar voz passiva, discurso indireto e conectivos", "Produzir texto jornalístico ou acadêmico em nível B2"],
-        shadowingDialogue: {
-          title: "Noticiário formal",
-          lines: [
-            { speaker: "Apresentador", text: "Foi anunciado pelo governo que novas medidas econômicas serão implementadas." },
-            { speaker: "Repórter", text: "O ministro declarou que os impostos seriam revistos ainda este semestre." },
-            { speaker: "Apresentador", text: "Embora a inflação tenha recuado, ainda há preocupação com o desemprego." },
-            { speaker: "Repórter", text: "Por conseguinte, espera-se que o Banco Central mantenha os juros estáveis." }
-          ]
-        },
-        keyPhrases: [
-          "Foi anunciado / Foram aprovadas / Diz-se que / Sabe-se que",
-          "Declarou que seria / Afirmou que estava / Perguntou se havia",
-          "Embora / Visto que / Contanto que / Por conseguinte",
-          "Faz-se necessário / Incumbe ao governo / Cabe à sociedade"
-        ],
-        guidedProduction: [
-          "Reporte uma notícia usando voz passiva e discurso indireto.",
-          "Escreva um parágrafo jornalístico com conectivos formais.",
-          "Produza um texto curto (150 palavras) sobre um tema social."
-        ],
-        grammar: {
-          title: "Revisão B2-U2",
-          explanation: "Consolida: voz passiva (analítica, sintética, de estado), discurso indireto com todas as mudanças de tempo, conectivos avançados e estrutura do texto dissertativo.",
-          conjugation: "Quadro: passiva analítica (ser + part.) | passiva sintética (se + verbo) | passiva de estado (estar/ficar + part.) | discurso indireto: presente→imperf., perf.→mais-q-perf., fut.→cond."
-        },
-        exercises: [
-          { type: "transform", prompt: "Transforme para voz passiva analítica: 'O presidente assinou o decreto.'", answer: "O decreto foi assinado pelo presidente." },
-          { type: "transform", prompt: "Reporte: 'Vou aumentar os salários.' → O diretor prometeu que...", answer: "O diretor prometeu que aumentaria os salários." },
-          { type: "fill", prompt: "___ (alugar-se) salas comerciais no edifício central.", answer: "Alugam-se" },
-          { type: "rewrite", prompt: "Formalize com conectivo de concessão: 'Tem problemas mas vai bem.'", answer: "Embora enfrente desafios, o projeto apresenta resultados positivos." },
-          { type: "production", prompt: "Escreva um parágrafo de notícia com passiva, discurso indireto e conectivos.", answer: "Foi confirmado pela assessoria que o evento será realizado em julho. O organizador declarou que os ingressos seriam disponibilizados ainda esta semana. Embora haja poucos patrocinadores, afirmou que o espetáculo não seria cancelado. Por conseguinte, espera-se grande público." }
-        ]
-      }
-    ]
-  }
-];
+        }
+      ]
+    }
+  ]
+};
