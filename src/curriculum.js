@@ -5,6 +5,7 @@ import { CURRICULUM_B2 as CURRICULUM_ES_B2 } from "./curriculum_B2";
 import { CURRICULUM_C1 as CURRICULUM_ES_C1 } from "./curriculum_C1";
 import { CURRICULUM_C2 as CURRICULUM_ES_C2 } from "./curriculum_C2";
 import { CURRICULUM_MASTER as CURRICULUM_ES_MASTER } from "./curriculum_Master";
+import { CURRICULUM_ES_EXTRA } from "./curriculum_ES_extra";
 
 
 export const REFERENCE = {
@@ -659,6 +660,7 @@ export const FULL_CURRICULUM = {
   C1:     { units: CURRICULUM_ES_C1.units },
   C2:     { units: CURRICULUM_ES_C2.units },
   Master: { units: CURRICULUM_ES_MASTER.units },
+  Extra: { units: CURRICULUM_ES_EXTRA.units },
 };
 
 export const DIALOGUES = {
