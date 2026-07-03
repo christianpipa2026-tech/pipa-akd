@@ -58,7 +58,7 @@ const LEVELS = [
   { id:"Master", label:"Master", desc:"Nativo/Experto",color:"#F1EFE8", text:"#2C2C2A", detail:"Sociolingüística, investigación, crítica literaria" },,
   { id:"Extra",  label:"Extra",  desc:"Extra", color:"#F0FFF4", text:"#166534", detail:"Signos de puntuación, Tipos de texto, Tilde diacrítica" }
 ];
-const LEVEL_ORDER = ["A1","A2","B1","B2","C1","C2","Master"];
+const LEVEL_ORDER = ["A1","A2","B1","B2","C1","C2","Master","Extra"];
 const _SKILL_ICONS = { reading:"📖", listening:"🎧", writing:"✍️", speaking:"🗣️", grammar:"📐", vocabulary:"🔤", culture:"🇧🇷", pronunciation:"🔊" };
 
 const EVAL_QUESTIONS = {
@@ -1571,7 +1571,7 @@ if (showAula && aulaUnit) {
                 value={assignedLevel}
                 onChange={e => { setAssignedLevel(e.target.value); setProgress({}); setSessionMode("curriculum"); }}
                 style={{fontSize:12, fontWeight:600, padding:"6px 10px", borderRadius:8, border:"none", background:"rgba(255,255,255,0.18)", color:"#fff", cursor:"pointer", fontFamily:"var(--font-sans)"}}>
-                {["A1","A2","B1","B2","C1","C2","Master"].map(lv => (
+                {["A1","A2","B1","B2","C1","C2","Master","Extra"].map(lv => (
                   <option key={lv} value={lv} style={{background:"#1A1A18", color:"#fff"}}>{lv}</option>
                 ))}
               </select>
