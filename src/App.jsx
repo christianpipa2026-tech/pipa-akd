@@ -1542,7 +1542,7 @@ REGLAS ABSOLUTAS:
         {/* Reference materials */}
         <div style={{display:"flex", gap:6, marginBottom:"1rem", flexWrap:"wrap"}}>
           <p style={{fontSize:12, color:"var(--color-text-secondary)", margin:"auto 4px auto 0"}}>Referência:</p>
-          {[["pronouns","Pronomes"],["contractions","Contrações"],["verbConjugations","Conjugações"],["top100Verbs","100 Verbos"]].map(([k,l]) => (
+          {[["pronouns","Pronombres"],["contractions","Contracciones"],["verbConjugations","Conjugaciones"],["top100Verbs","100 Verbos"],["adjectives","Adjetivos"],["nouns","Sustantivos"],["spelling","Ortografía"],["falseAmigos","Falsos Amigos"]].map(([k,l]) => (
             <button key={k} onClick={() => setRefSection(k)} style={btn({fontSize:12, padding:"4px 10px"})}>{l}</button>
           ))}
         </div>
