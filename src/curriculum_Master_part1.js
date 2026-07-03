@@ -1,407 +1,228 @@
-// MASTER PART 1 — Unidades 1 y 2
-// 12 lecciones · 60 ejercicios
-
-export const MASTER_U1_U2 = [
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 1 — Domínio Absoluto: Língua como Arte
-  // ══════════════════════════════════════════════════════
-  {
-    id: "MASTER-U1",
-    title: "Domínio Absoluto: Língua como Arte e Pensamento",
-    level: "Master",
-    lessons: [
-      {
-        id: "MASTER-U1-L1",
-        title: "A língua além da gramática: intuição e estilo",
-        objectives: ["Usar o português com intuição de falante nativo", "Desenvolver sensibilidade para nuances que nenhum manual ensina"],
-        shadowingDialogue: {
-          title: "Quando a língua vira intuição",
-          lines: [
-            { speaker: "Mestra", text: "Há um momento em que você para de aprender português e começa a sentir português. Você já chegou lá?" },
-            { speaker: "Aluno", text: "Às vezes sim. Quando escrevo e uma frase soa errada antes de eu saber por quê." },
-            { speaker: "Mestra", text: "Isso é a intuição linguística. O seu ouvido interno chegou onde o manual não chega." },
-            { speaker: "Aluno", text: "Mas ainda erro coisas que um nativo nunca erraria." },
-            { speaker: "Mestra", text: "Claro. A diferença entre C2 e Master não é ausência de erro — é a qualidade do que você faz entre os erros." }
+export const CURRICULUM_ES_MASTER_PART1 = {
+  units: [
+    {
+      id: "ES-M-U1",
+      title: "Estilo Literario Propio — La Voz del Escritor",
+      description: "Desarrollo de una voz autoral propia en español",
+      lessons: [
+        {
+          id: "ES-M-U1-L1",
+          title: "El Estilo Como Identidad — Más Allá de la Corrección",
+          shadowing: "— La corrección es el suelo. El estilo es la arquitectura.\n— ¿Cómo se construye un estilo propio?\n— No se construye: se descubre. Escribiendo sin miedo y leyendo con obsesión.\n— ¿Y los maestros? ¿Se imitan?\n— Se devoran. Luego se digieren. Lo que queda es tuyo.\n— ¿Y si lo que queda suena igual que ellos?\n— Entonces aún no has terminado de digerir. Sigue escribiendo.\n— ¿Cuándo sabrás que tienes voz propia?\n— Cuando alguien lea tu texto sin firma y sepa que eres tú.",
+          memoryPhrases: [
+            "el suelo = o chão / a base",
+            "devorar = devorar (leer con avidez)",
+            "digerir = digerir (asimilar)",
+            "la voz propia = a voz própria",
+            "sin firma = sem assinatura",
+            "sigue escribiendo = continue escrevendo"
+          ],
+          oralProduction: "Descreva em espanhol o estilo de um escritor que você admira e o que tomou emprestado dele.",
+          exercises: [
+            { id: "ES-M-U1-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'devorar a los maestros' em contexto literário?", options: ["Criticá-los destruindo suas ideias", "Lê-los com avidez total para assimilar profundamente seu estilo e visão", "Imitá-los superficialmente", "Descartá-los depois de lidos"], answer: 1, explanation: "Devorar = absorver vorazmente. Devoramos os mestres para nos nutrir deles — o objetivo é a digestão total, que transforma o que lemos em algo próprio." },
+            { id: "ES-M-U1-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa ter 'voz propia' como escritor?", options: ["Escrever com estilo único e reconhecível", "Falar muito", "Ter um vocabulário muito amplo", "Não imitar ninguém"], answer: 0, explanation: "Voz propia = estilo único e reconhecível. Quando alguém lê seu texto sem assinatura e reconhece que é você — pela sintaxe, pelo ritmo, pelas imagens escolhidas, pela visão de mundo." },
+            { id: "ES-M-U1-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Lo que los maestros te dan, una vez digerido, se convierte en algo _____.' (O que os mestres te dão, uma vez digerido, se torna algo seu.)", answer: ["tuyo", "propio"], hint: "possessivo de segunda pessoa", explanation: "Tuyo / propio = seu / próprio. O processo: devorar → digerir → o que resta é tuyo. A criatividade nasce da assimilação profunda." },
+            { id: "ES-M-U1-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'A correção é o chão; o estilo é a arquitetura. Um sem o outro não funciona — mas confundi-los é o erro mais comum.'", answer: ["La corrección es el suelo; el estilo es la arquitectura. Uno sin el otro no funciona, pero confundirlos es el error más común.", "La corrección es el suelo y el estilo es la arquitectura. Sin lo uno no hay lo otro, pero confundirlos es el error más frecuente."], explanation: "El suelo = o chão / a base. La arquitectura = a arquitetura. Confundirlos = confundi-los." },
+            { id: "ES-M-U1-L1-E5", type: "free_writing", skill: "writing", question: "Escreva um texto sobre o seu próprio estilo de escrita em espanhol — o que você usa, o que evita, de quem aprendeu cada coisa. Mínimo 15 frases.", prompt: "Inclua: ritmo de frases · vocabulário preferido · imagens recorrentes · autores que devorou · o que ainda está aprendendo a digerir", hint: "Mi estilo tiende a..., lo que intento evitar es..., de Borges tomé..., de García Márquez aprendí..., lo que aún no logro es..." }
           ]
         },
-        keyPhrases: [
-          "Intuição linguística: saber que está errado antes de saber por quê",
-          "Ouvido interno: o gramático inconsciente do falante avançado",
-          "Estilo como assinatura: o que só você diria, do jeito que só você diz",
-          "Master: a língua como instrumento de pensamento, não de comunicação apenas"
-        ],
-        guidedProduction: [
-          "Descreva em português o que significa para você 'dominar uma língua'.",
-          "Qual é a frase em português que você nunca poderia ter escrito quando começou?",
-          "O que o português ainda te surpreende? O que ainda te escapa?"
-        ],
-        grammar: {
-          title: "O Nível Master: Além do C2",
-          explanation: "O nível Master não é sobre regras novas — é sobre o aprofundamento infinito do que já existe. Características: sensibilidade a variação estilística mínima (a diferença entre 'disse' e 'afirmou' num contexto específico), capacidade de produzir e analisar textos literários com olhar crítico sofisticado, domínio de registros históricos (português arcaico, clássico), competência metalinguística plena (falar sobre a língua com a precisão de um linguista). O Master não tem fim: é o começo do aprendizado que nunca termina.",
-          conjugation: "Marcadores do Master: 'há algo nessa frase que...' / 'o ritmo aqui pede...' / 'essa palavra carrega uma conotação que...' / 'no contexto cultural brasileiro, isso ressoa como...' / 'a forma serve o conteúdo porque...'"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva em 5 frases o que significa para você dominar o português.", answer: "Dominar o português, descobri, não é chegar a um ponto fixo — é desenvolver a capacidade de perceber o quanto ainda não se sabe. É quando você lê Guimarães Rosa e, em vez de se perguntar o que as palavras significam, você se pergunta por que ele escolheu aquela palavra e não esta. É quando você sente que uma frase está errada antes de conseguir explicar por quê. É quando o português começa a pensar por você — quando certas ideias se formam primeiro nessa língua, não na sua. É, talvez, quando você percebe que 'dominar' era a palavra errada: a língua não se domina, se habita." },
-          { type: "analysis", prompt: "Qual é a diferença entre 'disse', 'afirmou', 'declarou', 'pontuou' e 'asseverou' numa narrativa?", answer: "'Disse' é neutro — o mais invisível dos verbos de elocução, adequado quando o foco é o conteúdo, não a forma de dizer. 'Afirmou' implica convicção — quem afirma está seguro do que diz. 'Declarou' tem conotação formal ou pública — se usa em jornalismo e contextos oficiais. 'Pontuou' é mais recente e jornalístico — sugere que o falante destacou algo específico num fluxo maior. 'Asseverou' é o mais enfático — afirmação com autoridade absoluta, frequentemente em contexto acadêmico ou jurídico. A escolha entre eles não é arbitrária: em Master, cada verbo de elocução é uma decisão estilística com consequências para o tom e o registro." },
-          { type: "production", prompt: "Escreva um parágrafo sobre uma cidade usando apenas palavras que você não conhecia quando começou a aprender português.", answer: "[Resposta pessoal — modelo:] 'A cidade se espraia pelos morros como mancha de tinta em papel úmido, as favelas agarradas aos contrafortes, o asfalto ondulando entre elas e os arranha-céus que viram as costas para o mangue. Há uma luz crepuscular no Rio que não existe em nenhum outro lugar — morna, dourada, quase cúmplice das contradições que ilumina.'" },
-          { type: "analysis", prompt: "Por que 'mas' e 'porém' não são intercambiáveis em todos os contextos?", answer: "'Mas' é a conjunção adversativa mais versátil e informal — funciona em qualquer registro, do mais coloquial ao literário. 'Porém' é mais formal e tem peso semântico levemente diferente: enquanto 'mas' introduz simples contradição ou ressalva, 'porém' tende a enfatizar a adversidade com mais solenidade. Em prosa literária, 'porém' no início de oração cria pausa mais marcada e efeito de conclusão mais definitivo. 'Mas' no início é mais conversacional. 'Contudo', 'todavia' e 'entretanto' têm graus semelhantes de formalidade entre si, sendo 'contudo' ligeiramente mais conciso e cortante." },
-          { type: "production", prompt: "Escreva 3 versões da mesma frase usando conectivos adversativos diferentes — e explique a diferença de efeito.", answer: "'Ela sabia que estava errada, mas não conseguia admitir.' — coloquial, fluxo contínuo, sem drama.\n\n'Ela sabia que estava errada; porém, não conseguia admitir.' — ponto e vírgula cria pausa; 'porém' dá peso solene à contradição.\n\n'Ela sabia que estava errada. Não conseguia, contudo, admitir.' — ponto cria ruptura; 'contudo' no interior da frase, após vírgula, cria efeito de ironia fria e distância narrativa." }
-        ]
-      },
-      {
-        id: "MASTER-U1-L2",
-        title: "Português arcaico e clássico: raízes da língua",
-        objectives: ["Ler e compreender português arcaico e clássico", "Identificar a evolução da língua do séc. XIII ao XX"],
-        shadowingDialogue: {
-          title: "A língua que veio antes",
-          lines: [
-            { speaker: "Medievalista", text: "'Ai eu coitada! Como vivo em gran cuidado / por meu amigo que hei alongado!' — século XIII. Consegue entender?" },
-            { speaker: "Aluno", text: "Quase tudo! 'Coitada' é sofrida, 'cuidado' aqui é sofrimento, 'hei alongado' é tenho afastado." },
-            { speaker: "Medievalista", text: "Excelente! O galego-português medieval não está tão longe quanto parece. As estruturas básicas persistem." },
-            { speaker: "Aluno", text: "E o clássico do séc. XVI — Camões? Esse é mais difícil." },
-            { speaker: "Medievalista", text: "Porque Camões já incorporou o humanismo renascentista — vocabulário latino mais denso, sintaxe mais elaborada." }
+        {
+          id: "ES-M-U1-L2",
+          title: "A Frase Perfeita — Ritmo, Cadência e Precisão",
+          shadowing: "— Hay frases que se recuerdan para siempre. '¿Por qué lloras? / No lloro; tengo los ojos que gotean.' ¿Por qué funciona?\n— Por la paradoja, sí. Pero sobre todo por el ritmo: dos segmentos casi iguales en extensión, con giro al final.\n— ¿La longitud importa?\n— Todo importa. La longitud, el sonido de las palabras, las pausas, el acento de la última sílaba.\n— ¿Se puede aprender a escribir frases perfectas?\n— Se puede aprender a reconocerlas. Luego viene la obsesión de crearlas.",
+          memoryPhrases: [
+            "gotear = pingar / gotejar",
+            "el giro al final = a virada no final",
+            "la cadencia = a cadência",
+            "el acento de la última sílaba = o acento da última sílaba",
+            "la paradoja = o paradoxo",
+            "el segmento = o segmento"
+          ],
+          oralProduction: "Cite e analise 3 frases perfectas em espanhol que você admira, explicando por que funcionam.",
+          exercises: [
+            { id: "ES-M-U1-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la cadencia' de uma frase?", options: ["O significado", "O ritmo e fluxo sonoro das palavras — como soa ao ser lida", "A gramática", "A extensão"], answer: 1, explanation: "Cadencia = cadência. O ritmo e fluxo sonoro de uma frase — como as sílabas tônicas e átonas se alternam, como as pausas se distribuem, como o som conclui." },
+            { id: "ES-M-U1-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "Por que 'el giro al final' é importante numa frase memorável?", options: ["Porque é surpresa", "Porque a última posição é a mais forte cognitivamente — o leitor a retém mais", "Porque é mais longa", "Porque é a mais fácil de escrever"], answer: 1, explanation: "O final de uma frase é a posição de maior destaque cognitivo. O leitor retém o que vem no final — por isso o giro (inversão ou surpresa) no final maximiza o impacto." },
+            { id: "ES-M-U1-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Se puede aprender a _____ la frase perfecta. Crearla viene después, con la práctica y la obsesión.' (Pode-se aprender a reconhecer a frase perfeita.)", answer: ["reconocer"], hint: "identificar / perceber quando algo está certo", explanation: "Reconocer = reconhecer. Primeiro aprendemos a reconhecer a excelência — só depois de reconhecê-la conseguimos criar." },
+            { id: "ES-M-U1-L2-E4", type: "translation", skill: "writing", question: "Reescreva com mais cadência e impacto: 'Era una persona que siempre llegaba tarde a todas partes.'", answer: ["Siempre llegaba tarde. A todas partes, a todas las cosas, a sí mismo.", "Era de los que llegan tarde: a las citas, a las decisiones, a la vida."], explanation: "A versão Master quebra a frase, cria ritmo, usa a posição final de 'a sí mismo' ou 'a la vida' para o golpe mais forte. Cada decisão de pontuação é uma decisão de ritmo." },
+            { id: "ES-M-U1-L2-E5", type: "free_writing", skill: "writing", question: "Escreva 10 frases que você considera 'perfectas' em espanhol, cada uma sobre um tema diferente. Depois analise o que as une.", prompt: "Uma frase sobre: silêncio · saudade · tempo · infância · medo · amor · cidade · livro · espera · partida.", hint: "Cada frase: máximo 20 palavras. Trabalhe o ritmo, a última palavra, a imagem central. Depois analise: ¿qué tienen en común?" }
           ]
         },
-        keyPhrases: [
-          "Galego-português (séc. IX-XIV): lírica trovadoresca, cantigas de amor e amigo",
-          "Português arcaico (séc. XIV-XVI): Fernão Lopes, Gil Vicente",
-          "Português clássico (séc. XVI-XVIII): Camões, Padre Vieira",
-          "Arcaísmos vivos no PB: 'outrossim', 'destarte', 'malgrado', 'talqualmente'"
-        ],
-        guidedProduction: [
-          "Leia este trecho de Camões e interprete: 'Amor é fogo que arde sem se ver'.",
-          "Que palavras do português moderno são arcaísmos que sobreviveram?",
-          "Como o contato com o árabe mudou o léxico do português medieval?"
-        ],
-        grammar: {
-          title: "Evolução Histórica do Português C2→Master",
-          explanation: "Galego-português (séc. IX-XIV): vogais nasais mais marcadas, artigo definido 'lo/la', infinitivo pessoal já presente, formas verbais como 'hei' (tenho). Português arcaico (XIV-XVI): perda de 'lo/la', entrada de italianismos e latinismos, desenvolvimento da mesóclise. Clássico (XVI-XVIII): Camões usa 'vós' como tratamento, futuro do conjuntivo abundante, hipérbato constante. Moderno (XVIII-hoje): você substitui vós, simplificação de certas construções, entrada de galicismos e anglicismos.",
-          conjugation: "Arcaísmos em uso formal: outrossim (além disso), destarte (deste modo), malgrado (apesar de), talqualmente (exatamente assim), mercê (graça/favor), doravante (de agora em diante), faz mister (é necessário)"
-        },
-        exercises: [
-          { type: "analysis", prompt: "Interprete e modernize: 'Amor é fogo que arde sem se ver; / é ferida que dói e não se sente' (Camões).", answer: "Interpretação: Camões define o amor através de oxímoros — contradições aparentes que revelam sua natureza paradoxal. 'Fogo que arde sem se ver' = paixão invisível mas consumidora. 'Ferida que dói e não se sente' = dor que não se reconhece como tal. É uma definição negativa: o amor é aquilo que contradiz as leis normais da experiência. Modernização: 'O amor é uma chama que queima sem aparecer; é uma ferida que dói sem que a gente perceba a dor.' A modernização perde o ritmo decassílabo e a densidade semântica — prova de que a forma e o conteúdo são inseparáveis." },
-          { type: "production", prompt: "Identifique 5 arcaísmos que ainda aparecem em textos formais ou literários brasileiros e explique cada um.", answer: "1) 'Outrossim': arcaísmo que significa 'além disso, também' — sobrevive em peças jurídicas e textos formais. 2) 'Doravante': 'de agora em diante' — frequente em contratos e documentos legais. 3) 'Malgrado': 'apesar de, a despeito de' — de uso literário, mais elegante que 'apesar'. 4) 'Faz mister': 'é necessário, faz-se necessário' — sobrevive em textos jurídicos e jornalismo formal. 5) 'Destarte': 'deste modo, assim sendo' — raro mas presente em textos acadêmicos muito formais." },
-          { type: "analysis", prompt: "O que é a 'mesóclise' historicamente e por que persiste no português formal?", answer: "A mesóclise — inserção do pronome entre o radical verbal e a desinência no futuro (dir-lhe-ei, dar-me-ão) — é uma construção surgida no português arcaico quando os pronomes átonos se encurvaram aos infinitivos com aglutinação com o auxiliar 'hei/hás/há' (dizer + hei = direi, com pronome intercalado: dir-lhe-ei). No português do Brasil, a mesóclise é praticamente extinta na oralidade e raramente aparece na escrita contemporânea. Persiste em textos muito formais (discursos, documentos legais, literatura conservadora) como marca de erudição ou de respeito à norma culta histórica. Em C2, é opcional; no Master, o falante reconhece seu uso e contexto." },
-          { type: "production", prompt: "Escreva um parágrafo no estilo do português clássico (séc. XVI-XVII) sobre um tema contemporâneo.", answer: "Ora, acerca desta maravilha que os modernos chamam de rede social — e bem seria chamá-la de rede, pois que apanha e enreda quanto nela se lança — cumpre dizer que não há novidade debaixo do sol, posto que os vícios que nela florescem já floresciam nas cortes e praças de outrora. A vaidade que hoje se nutre de curtidas nutriam-se de aplausos e reverências; a maledicência que circula em mensagens circulava em cartas e murmurinhos de antecâmara. Muda o suporte; a natureza humana, essa, mantém-se fiel a si mesma com uma constância que faria inveja a qualquer virtude." },
-          { type: "analysis", prompt: "Por que ler literatura do séc. XIX (Machado de Assis) ainda é relativamente fácil para um C2, mas ler Camões exige treino específico?", answer: "A distância linguística entre o português contemporâneo e o de Machado de Assis (séc. XIX) é principalmente lexical e de registro: o vocabulário é mais formal e há alguns arcaísmos, mas a sintaxe é reconhecível e a estrutura gramatical essencialmente a mesma. Entre o português contemporâneo e o de Camões (séc. XVI), a distância é maior em múltiplas dimensões: léxico com italianismos e latinismos menos assimilados, sintaxe com hipérbatos intensos e ordem de palavras muito diferente da atual, formas verbais arcaicas ('vós' como tratamento padrão, futuro do subjuntivo mais frequente), e referências culturais do humanismo renascentista que exigem contexto histórico. Ler Camões é, em parte, aprender uma fase diferente do mesmo idioma." }
-        ]
-      },
-      {
-        id: "MASTER-U1-L3",
-        title: "Metalinguagem avançada: falar sobre a língua em português",
-        objectives: ["Analisar a língua portuguesa com precisão linguística de nível Master", "Usar terminologia linguística com rigor e fluidez"],
-        shadowingDialogue: {
-          title: "A língua falando de si mesma",
-          lines: [
-            { speaker: "Linguista", text: "O que você acha mais fascinante na fonologia do português brasileiro?" },
-            { speaker: "Aluno", text: "A vogal átona final — como 'leite' vira 'leitchi' em certas regiões, por palatalização." },
-            { speaker: "Linguista", text: "Excelente observação. E isso varia diatopicamente — no Rio, mais marcado; no interior de São Paulo, menos." },
-            { speaker: "Aluno", text: "E a neutralização de /e/ e /i/ átonos — 'menino' e 'menenu' coexistem no mesmo falante." },
-            { speaker: "Linguista", text: "Você está pensando como fonólogo. O PB é um laboratório extraordinário de variação em tempo real." }
+        {
+          id: "ES-M-U1-L3",
+          title: "A Arte da Descrição — Mostrar sem Dizer",
+          shadowing: "— 'Show, don't tell' es el mandamiento número uno de la narrativa.\n— Pero en español tiene matices propios. 'No estaba triste: le pesaban las manos.'\n— Las manos que pesan. Una imagen que hace el trabajo que el adjetivo no puede.\n— Exacto. El adjetivo nombra; la imagen encarna.\n— ¿Y el exceso de imágenes?\n— Es el peligro contrario. La imagen que llama atención sobre sí misma en vez de iluminar el mundo.\n— El equilibrio entre la transparencia y la densidad.\n— Eso es el estilo: tensión permanente entre los dos.",
+          memoryPhrases: [
+            "show don't tell = mostre não diga",
+            "le pesaban las manos = as mãos pesavam a ele",
+            "encarnar = encarnar / dar corpo",
+            "llamar atención sobre sí misma = chamar atenção para si mesma",
+            "la transparencia = a transparência",
+            "la densidad = a densidade"
+          ],
+          oralProduction: "Reescreva 5 descrições 'ditas' convertendo-as em descrições 'mostradas' em espanhol.",
+          exercises: [
+            { id: "ES-M-U1-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'el adjetivo nombra; la imagen encarna'?", options: ["São equivalentes", "O adjetivo etiqueta; a imagem dá corpo físico e sensorial ao que descreve", "A imagem é mais simples", "O adjetivo é mais preciso"], answer: 1, explanation: "Nombrar = nomear (etiquetar abstratamente). Encarnar = encarnar (dar corpo, tornar sensorial). 'Estava triste' = adjetivo. 'Le pesaban los párpados' = imagem que encarna a tristeza." },
+            { id: "ES-M-U1-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la imagen que llama atención sobre sí misma'?", options: ["Uma imagem muito bonita", "Uma imagem que é mais espetacular do que funcional — se exibe a si mesma em vez de servir o texto", "Uma imagem irônica", "Uma imagem clara"], answer: 1, explanation: "A imagem 'que se exhibe' é o vício contrário ao excesso de adjetivos: exagero lírico que chama atenção para o escritor em vez de iluminar o mundo narrado. Máximo perigo no C2+." },
+            { id: "ES-M-U1-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Reescreva mostrando en vez de dizendo: 'Estaba muy nervioso antes de hablar.' → 'Las palmas de las manos le _____; la voz, cuando empezó, llegó un segundo _____ de donde debía.'", answer: ["sudaban", "tarde"], hint: "detalhes físicos que mostram nervosismo", explanation: "Sudaban / tarde — detalhes físicos que mostram o nervosismo sem nomeá-lo. A imagem faz o trabalho do adjetivo 'nervioso'." },
+            { id: "ES-M-U1-L3-E4", type: "translation", skill: "writing", question: "Reescreva mostrando, não dizendo, em espanhol Master: 'Ela estava muito cansada e com saudade de casa.'", answer: ["Cerró los ojos un segundo más de lo necesario. En ese segundo estuvo en otro lado.", "Tardó en reconocer la calle. Le parecieron iguales todas las puertas. Pensó que a esta hora, en su ciudad, ya estarían cenando."], explanation: "O cansaço e a saudade aparecem em detalhes físicos e pensamentos — não são nomeados. 'Em outro lado' e 'sua cidade' encarnام o que 'cansada e com saudade' apenas nomearia." },
+            { id: "ES-M-U1-L3-E5", type: "free_writing", skill: "writing", question: "Escreva uma cena de 200 palavras em espanhol sem usar os adjetivos: triste, feliz, cansado, nervioso, hermoso, interesante. Mostre tudo, não diga nada.", prompt: "Personagem entra num lugar depois de muito tempo. Não nomeie seus sentimentos — mostre-os através de detalhes físicos, gestos e pensamentos.", hint: "Empujó la puerta con el hombro, como siempre. El olor no había cambiado. Eso era lo primero que notó..." }
           ]
         },
-        keyPhrases: [
-          "Fonologia: fonema, alofone, palatalização, neutralização, acento",
-          "Morfologia: morfema, paradigma, flexão, derivação, composição",
-          "Sintaxe: sintagma, constituinte, dependência, valência verbal",
-          "Semântica: denotação, conotação, polissemia, homonímia, campo semântico"
-        ],
-        guidedProduction: [
-          "Explique o conceito de 'fonema' usando exemplos do português.",
-          "O que é valência verbal e como se aplica ao verbo 'dar'?",
-          "Qual é a diferença entre polissemia e homonímia? Dê exemplos em PB."
-        ],
-        grammar: {
-          title: "Metalinguagem Linguística Master",
-          explanation: "Fonologia: estudo dos fonemas (unidades sonoras distintivas). PB tem 19 consoantes e 7 vogais tônicas. Alofone: variante não-distintiva de um fonema (o /r/ carioca uvular e o /r/ caipira retroflexo são alofones do mesmo fonema). Morfologia: morfema = menor unidade com significado. 'Deslealmente' = des- (prefixo) + leal (radical) + -mente (sufixo). Sintaxe: valência = número de argumentos que um verbo exige. 'Dormir' é monovalente (só sujeito); 'dar' é trivalente (sujeito + objeto direto + objeto indireto). Semântica: polissemia = uma palavra com múltiplos significados relacionados; homonímia = palavras iguais com significados não relacionados.",
-          conjugation: "Exemplos de análise: 'banco' (instituição financeira / assento) = homonímia | 'cabeça' (parte do corpo / líder de grupo / cabeça de alho) = polissemia | /p/ em 'pato' e 'pata' = par mínimo que prova que /p/ e /t/ são fonemas distintos"
-        },
-        exercises: [
-          { type: "analysis", prompt: "O que é um 'par mínimo' e por que é importante para a fonologia?", answer: "Um par mínimo é formado por duas palavras que diferem em apenas um fonema na mesma posição e têm significados distintos. Exemplo: 'pato' vs. 'gato' — diferem apenas no primeiro fonema (/p/ vs. /g/), o que prova que /p/ e /g/ são fonemas distintos no português (têm função distintiva). Outros pares: 'caro/calo', 'mesa/messa' (inexistente — mostra que o s dobrado não é fonema distinto em PB). A importância: pares mínimos são a ferramenta metodológica fundamental para identificar o inventário fonológico de uma língua — só é fonema o que gera distinção semântica." },
-          { type: "production", prompt: "Analise morfologicamente: 'deslealmente', 'infelizmente', 'anticapitalista'.", answer: "'Deslealmente': des- (prefixo de negação) + leal (adjetivo, radical) + -mente (sufixo formador de advérbio de modo). 'Infelizmente': in- (prefixo de negação) + feliz (adjetivo, radical) + -mente (sufixo). Nota: a forma base é 'feliz', não 'felizmente' + in-; portanto a análise é in+feliz+mente, não in+felizmente. 'Anticapitalista': anti- (prefixo de oposição, do grego) + capital (substantivo) + -ist- (sufixo formador de agente/crença) + -a (desinência de gênero). Mostra composição com três morfemas derivacionais e um radical." },
-          { type: "analysis", prompt: "Explique a valência de 'dar' e 'dormir' com exemplos.", answer: "'Dormir' é verbo monovalente (intransitivo): exige apenas um argumento — o sujeito (quem dorme). 'A criança dorme.' Não há complemento necessário. 'Dar' é verbo trivalente: exige três argumentos — sujeito (quem dá), objeto direto (o que se dá) e objeto indireto (a quem se dá). 'João deu o livro à Maria.' Omitir qualquer um dos três cria frase semanticamente incompleta ou estranha: 'João deu à Maria' (o que?) / 'João deu o livro' (a quem?) são aceitáveis contextualmente, mas a estrutura plena é trivalente. A valência é uma propriedade lexical do verbo que determina a estrutura argumental da oração." },
-          { type: "production", prompt: "Escreva 5 exemplos de polissemia no PB e 5 de homonímia — com justificativa.", answer: "Polissemia (significados relacionados, mesma origem): 1) 'banco' (assento / margem de rio — ambos de 'lugar para sentar/apoiar'). 2) 'cabeça' (parte do corpo / líder / cabeça de alho — todos remetem à ideia de 'topo/principal'). 3) 'pé' (parte do corpo / pé de árvore / pé de letra). 4) 'folha' (de árvore / de papel / de pagamento). 5) 'canto' (música / ângulo/esquina — talvez homonímia, debatida).\n\nHomonímia (origens distintas, significado não relacionado): 1) 'manga' (fruta tropical / parte da camisa — origens distintas). 2) 'são' (verbo ser / adjetivo saudável / nome próprio Santo). 3) 'cedo' (advérbio de tempo / do verbo ceder). 4) 'rio' (curso de água / do verbo rir, 1ª pessoa). 5) 'velo' (velocidade coloquial / lã de carneiro)." },
-          { type: "analysis", prompt: "O que é a 'concordância ad sensum' (silepse) e quando é aceitável em PB?", answer: "A silepse (concordância ad sensum) é a concordância com o sentido semântico em vez da forma gramatical. Em PB, o caso mais frequente é 'a gente' + verbo no plural: 'a gente foram ao mercado' — gramaticalmente 'errado' (a gente é 3ª pessoa singular), mas semanticamente natural (a gente = nós). A silepse de gênero também ocorre: 'Vossa Excelência chegou cansado' — 'Vossa' é feminino mas concorda com o sexo real do referente. A silepse é aceitável quando: a) é registro coloquial e o contexto aceita variação; b) o referente semântico é mais saliente que a forma gramatical; c) evita ambiguidade ou estranheza. No registro formal escrito, a concordância normativa é esperada." }
-        ]
-      },
-      {
-        id: "MASTER-U1-L4",
-        title: "Estilística comparada: PB e PE na literatura",
-        objectives: ["Comparar estilos literários de autores brasileiros e portugueses", "Identificar as marcas que distinguem a prosa do PB da do PE"],
-        shadowingDialogue: {
-          title: "Dois portugueses",
-          lines: [
-            { speaker: "Professora", text: "Leia Saramago e Clarice lado a lado. Ambos são extraordinários — mas são extraordinários de formas opostas." },
-            { speaker: "Aluno", text: "Saramago não usa ponto final nem travessão em diálogos. A frase se estende por páginas." },
-            { speaker: "Professora", text: "E Clarice? Frases curtíssimas, reticências, perguntas sem resposta. Dois projetos radicalmente distintos." },
-            { speaker: "Aluno", text: "Saramago constrói labirintos; Clarice faz buracos no chão." },
-            { speaker: "Professora", text: "Isso é crítica literária de nível Master. A metáfora que você acabou de usar diz mais que um parágrafo analítico." }
+        {
+          id: "ES-M-U1-L4",
+          title: "O Diálogo Literário — Voz, Subtexto e Revelação",
+          shadowing: "— En el diálogo literario, lo que no se dice pesa tanto como lo que se dice.\n— Como en Hemingway: la teoría del iceberg.\n— En español tienes además la ventaja del tuteo o el usted: una decisión que lo dice todo.\n— ¿Y los verbos de introducción del diálogo?\n— En la narrativa de calidad: 'dijo' casi siempre. 'Susurró', 'exclamó', 'protestó' son muletas.\n— ¿Por qué?\n— Porque si el diálogo está bien escrito, no necesitas decirle al lector cómo suena.",
+          memoryPhrases: [
+            "la teoría del iceberg = a teoria do iceberg",
+            "el tuteo o el usted = o tratamento de você ou de senhor",
+            "los verbos de introducción = os verbos de introdução",
+            "las muletas = as muletas (recursos artificiosos)",
+            "pesa tanto como = pesa tanto quanto",
+            "lo que no se dice = o que não se diz"
+          ],
+          oralProduction: "Escreva e analise um diálogo de 10 falas em que o subtexto é mais importante que o texto.",
+          exercises: [
+            { id: "ES-M-U1-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "Por que 'dijo' é preferível a 'exclamó' ou 'susurró' no diálogo literário?", options: ["Porque é mais curto", "Porque a transparência deixa o leitor focar no que é dito, não no como — se o diálogo está bem escrito, o 'como' está dentro dele", "Porque é mais formal", "Porque os outros são informais"], answer: 1, explanation: "'Dijo' é transparente — não interfere. Se você precisa de 'susurró' para que o leitor entenda que a voz era baixa, o diálogo não está funcionando. A voz deve estar dentro das palavras." },
+            { id: "ES-M-U1-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "O que são 'muletas' em escrita literária?", options: ["Personagens com deficiência", "Recursos usados para compensar uma fraqueza do texto — que revelam o que o texto deveria mostrar sozinho", "Figuras de linguagem", "Verbos de movimento"], answer: 1, explanation: "Muletas (literalmente: muletas) = recursos que compensam uma fraqueza. 'Susurró', 'exclamó', adjetivos desnecessários — compensam o que o diálogo ou a cena deveriam mostrar por si mesmos." },
+            { id: "ES-M-U1-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete com o verbo mais neutro: '— Tengo que decirte algo —_____ ella, sin mirar.' (Disse ela, sem olhar.)", answer: ["dijo"], hint: "o verbo mais simples e transparente de introdução de diálogo", explanation: "Dijo = disse. O verbo mais transparente. 'Sin mirar' já diz tudo sobre o tom — não precisa de 'susurró' ou 'confesó'." },
+            { id: "ES-M-U1-L4-E4", type: "translation", skill: "writing", question: "Reescreva este diálogo eliminando as muletas: '— ¡Me voy! —exclamó él furioso. — Está bien —respondió ella fríamente. — ¿Es todo lo que dices? —protestó él.'", answer: ["— Me voy —dijo él.\n— Está bien.\n— ¿Es todo lo que dices?\nElla no contestó.", "— Me voy.\n— Está bien —dijo ella.\nÉl esperó una respuesta que no llegó."], explanation: "Sem 'exclamó', 'furioso', 'fríamente', 'protestó' — o leitor infere o tom pela situação e pelo diálogo. O silêncio final ('no contestó') é mais poderoso que 'respondió fríamente'." },
+            { id: "ES-M-U1-L4-E5", type: "free_writing", skill: "writing", question: "Escreva uma cena de diálogo de 15 falas em espanhol em que dois personagens falam sobre uma coisa mas estão realmente falando sobre outra. Use só 'dijo'.", prompt: "Sugestão: dois ex-amigos que se encontram e falam sobre o tempo enquanto discutem sem dizê-lo sobre o que os separou.", hint: "— ¿Cómo has estado? —dijo él. — Bien. ¿Y tú? (El subtexto: todo lo que no dicen está en los silencios, en las preguntas que no hacen)." }
           ]
         },
-        keyPhrases: [
-          "Saramago: frase longa, vírgula onde deveria haver ponto, narrador onisciente irônico",
-          "Clarice: frase curta, reticências, consciência fragmentada, epifania",
-          "Fernando Pessoa: heterônimos como multiplicidade do eu",
-          "PB vs PE na prosa: ritmo, léxico, sintaxe, relação com o leitor"
-        ],
-        guidedProduction: [
-          "Compare o estilo de Saramago com o de Clarice em 4 frases.",
-          "O que são os heterônimos de Fernando Pessoa e por que são únicos na literatura mundial?",
-          "Escreva um parágrafo que soe claramente como prosa brasileira — não portuguesa."
-        ],
-        grammar: {
-          title: "Marcas da Prosa Brasileira vs. Portuguesa",
-          explanation: "Prosa brasileira: ritmo mais oral, coloquialismos incorporados à narrativa culta, 'você' como pronome padrão, gerúndio abundante (estou fazendo), léxico com tupi/africano, proximidade com o leitor. Prosa portuguesa: 'tu' em registros mais informais, infinitivo pessoal frequente (ao chegares), vocabulário mais conservador, distância irônica mais europeia, sintaxe mais latinizada. Em literatura: Saramago cria labirintos sintáticos; Clarice cria abismos psicológicos. Ambos geniais, projetos opostos.",
-          conjugation: "PB literário: 'A gente foi embora...' / 'Ela tava lá, olhando...' / 'Que droga, pensei...' — PE literário: 'Fomos embora...' / 'Ela estava ali, a olhar...' / 'Que chatice, pensei...'"
-        },
-        exercises: [
-          { type: "production", prompt: "Compare Saramago e Clarice em 4 frases críticas.", answer: "Saramago constrói labirintos: suas frases se estendem por linhas, incorporando diálogo, descrição e pensamento numa corrente contínua que obriga o leitor a habitar o tempo de leitura como habita o tempo real. Clarice, ao contrário, escava: suas frases curtas e reticentes criam espaços de ausência onde a experiência do leitor é convocada a preencher o que a linguagem deliberadamente omite. Se Saramago é o arquiteto que não para de construir, Clarice é a geóloga que remove camadas até encontrar a rocha viva. Os dois são radicais — mas em direções opostas: um por excesso, outro por subtração." },
-          { type: "production", prompt: "O que são os heterônimos de Fernando Pessoa e por que são únicos?", answer: "Fernando Pessoa criou não pseudônimos, mas heterônimos — personalidades literárias autônomas com biografias, filosofias, estilos e até horóscopos distintos. Alberto Caeiro é o 'mestre' pagão que vê o mundo sem pensamento, só sensação: 'Não tenho filosofia: tenho sentidos.' Ricardo Reis é o latinista clássico, estóico, que escreve odes ao modo horaciano. Álvaro de Campos é o modernista sensacionista, excessivo e contraditório. O próprio Pessoa 'ortônimo' é o mais enigmático. O que os torna únicos é que não são máscaras do mesmo autor: têm vozes irredutíveis entre si, tanto que Pessoa dizia que o trabalho de Caeiro era superior ao dele próprio. Nenhum outro escritor na história literária mundial construiu heterônimos com tamanha autonomia e consistência." },
-          { type: "production", prompt: "Escreva um parágrafo de prosa claramente brasileira — que não poderia ter sido escrito por um português.", answer: "A feira chegava aos sábados com um barulho que era quase musical — o pregão dos feirantes, o chiado do azeite na panela de acarajé, o batuque que vinha de não sei onde e entrava no corpo antes de a gente perceber. Minha mãe comprava sempre mais do que precisava: dizia que não dava pra passar na frente de um quiabo bonito e não levar. Eu não entendia quando criança. Hoje entendo: era uma forma de amar o mundo, aquela compra generosa e sem conta do que é bom e fresco e nosso." },
-          { type: "analysis", prompt: "Como a sintaxe de Saramago imita o fluxo do pensamento de forma diferente de Clarice?", answer: "Em Saramago, o fluxo do pensamento é mimético por acumulação: a frase avança, não para, incorpora objeções, parênteses, digressões, sem jamais conceder a pausa de um ponto final — como o pensamento real, que não para nem mesmo quando dorme. A vírgula que substitui o ponto cria uma respiração contínua que produz no leitor uma imersão quase hipnótica. Em Clarice, o fluxo é mimético por fragmentação: a frase curta, a reticência, o silêncio entre parágrafos reproduzem a consciência que não consegue formular completamente o que sente — o pensamento que tropeça no inomeável. Saramago imita o pensamento em movimento; Clarice imita o pensamento diante do que não pode ser pensado." },
-          { type: "production", prompt: "Escreva a mesma cena (um homem olhando para o mar) no estilo de Saramago e no de Clarice.", answer: "Saramago: 'Ele ficou olhando para o mar, que naquela tarde estava particularmente azul, como se houvesse decidido ser mais mar do que de costume, e pensou, sem saber bem o que estava pensando, que havia algo naquela imensidão que o fazia sentir, ao mesmo tempo, pequeno e suficiente, o que é talvez a definição mais honesta de paz que alguém já encontrou, ainda que não a tenha escrito assim, com estas palavras, neste lugar.'\n\nClarice: 'O mar. Ele ficou olhando. O azul era demais — quase uma ameaça, esse azul. O que é que o mar quer? Ele não sabia. Ficou. O vento. Depois foi embora sem entender por que havia ido.'" }
-        ]
-      },
-      {
-        id: "MASTER-U1-L5",
-        title: "Revisão e produção integrada Master-U1",
-        objectives: ["Integrar intuição linguística, história da língua, metalinguagem e estilística comparada", "Produzir análise e criação de nível Master"],
-        shadowingDialogue: {
-          title: "O falante que chegou",
-          lines: [
-            { speaker: "Mestra", text: "No Master, você não estuda português — você estuda com português. A língua é o instrumento, não o objeto." },
-            { speaker: "Aluno", text: "É como a diferença entre aprender a tocar piano e usar o piano para fazer música." },
-            { speaker: "Mestra", text: "Perfeita analogia. E como o pianista que ainda estuda Schubert depois de décadas — há sempre mais." },
-            { speaker: "Aluno", text: "O Master não é um destino." },
-            { speaker: "Mestra", text: "É uma forma de habitar a língua. E habitações não têm fim — só se aprofundam." }
+        {
+          id: "ES-M-U1-L5",
+          title: "Reescrita e Edição — A Arte de Cortar",
+          shadowing: "— El primer borrador es para ti. La reescritura es para el lector.\n— ¿Cuántas veces reescribes?\n— Hasta que cada palabra justifique su existencia.\n— ¿Y si una frase es hermosa pero no funciona?\n— La cortas. Eso es lo más difícil: matar a los hijos favoritos.\n— ¿Cómo sabes cuándo un texto está listo?\n— Cuando ya no puedes mejorar nada. Solo empeorar.\n— O cuando ya no puedes verlo con ojos frescos.\n— Eso también. Por eso existe el tiempo entre versiones.",
+          memoryPhrases: [
+            "el borrador = o rascunho",
+            "la reescritura = a reescrita",
+            "justificar su existencia = justificar sua existência",
+            "matar a los hijos favoritos = matar os filhos favoritos",
+            "ojos frescos = olhos frescos",
+            "entre versiones = entre versões"
+          ],
+          oralProduction: "Fale sobre seu processo de edição e reescrita em espanhol — como você sabe quando algo está pronto?",
+          exercises: [
+            { id: "ES-M-U1-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'matar a los hijos favoritos' em escrita literária?", options: ["Uma metáfora violenta", "Cortar as partes que você mais gosta mas que não servem ao texto — o gesto mais difícil da edição", "Eliminar os personagens favoritos", "Destruir um rascunho"], answer: 1, explanation: "Matar a los hijos favoritos (kill your darlings, Faulkner) = cortar as partes que você mais ama mas que não funcionam para o texto. O ego do escritor se apega ao que escreveu com mais esforço — mas o texto pede o que é necessário." },
+            { id: "ES-M-U1-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'leer con ojos frescos'?", options: ["Leer de manhã cedo", "Ler como se fosse a primeira vez — com distância temporal suficiente para ver o que realmente está na página", "Leer rapidamente", "Leer com entusiasmo"], answer: 1, explanation: "Ojos frescos = olhos frescos. Ler com distância temporal — após dias ou semanas — para ver o texto como o leitor vai vê-lo, sem a memória de intenção que contamina a visão imediata." },
+            { id: "ES-M-U1-L5-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Cada palabra en el texto final debe _____ su existencia.' (Cada palavra no texto final deve justificar sua existência.)", answer: ["justificar"], hint: "verbo justificar no infinitivo", explanation: "Justificar = justificar. 'Justificar su existencia' = provar que está ali por uma razão — que remove ou modifica seria pior. Critério máximo da edição." },
+            { id: "ES-M-U1-L5-E4", type: "translation", skill: "writing", question: "Traduza e aplique: 'O primeiro rascunho é para você. A reescrita é para o leitor. O que está entre os dois é o escritor.'", answer: ["El primer borrador es para ti. La reescritura es para el lector. Lo que hay entre los dos es el escritor.", "El primer borrador te pertenece a ti. La reescritura pertenece al lector. Lo que existe entre ambos es la escritura misma."], explanation: "El primer borrador es para ti = o primeiro rascunho é para você. La reescritura es para el lector = a reescrita é para o leitor." },
+            { id: "ES-M-U1-L5-E5", type: "free_writing", skill: "writing", question: "Tome o texto mais longo que você já escreveu neste curso e reescreva o primeiro parágrafo cortando 30% das palavras sem perder nenhuma informação essencial. Depois explique cada corte.", prompt: "Instrução: identifique palavras desnecessárias, adjetivos redundantes, frases que repetem o que já foi dito. Corte. Depois justifique cada decisão.", hint: "Corté '...' porque ya estaba implícito en '...'. Eliminé '...' porque el adjetivo añadía poco. Cambié '...' por '...' porque..." }
+          ]
+        }
+      ]
+    },
+    {
+      id: "ES-M-U2",
+      title: "Pensamento Original em Espanhol",
+      description: "Desenvolver pensamento original e crítico na língua espanhola",
+      lessons: [
+        {
+          id: "ES-M-U2-L1",
+          title: "Filosofia da Linguagem — Wittgenstein e os Limites do Dizer",
+          shadowing: "— 'Los límites de mi lenguaje son los límites de mi mundo.' Wittgenstein.\n— Una frase que los poliglotes verificamos cada día.\n— Exacto. En español tengo acceso a mundos que en portugués están cerrados.\n— ¿Y al revés?\n— También. 'Saudade' abre un espacio que 'añoranza' no alcanza del todo.\n— ¿La conclusión?\n— Que cada idioma que aprendes amplía el mundo. No metafóricamente: literalmente.\n— Y que hay cosas que solo existen cuando las puedes decir.",
+          memoryPhrases: [
+            "los límites del lenguaje = os limites da linguagem",
+            "verificar = verificar / constatar",
+            "alcanza del todo = alcança completamente",
+            "literalmente = literalmente",
+            "cada idioma que aprendes = cada idioma que você aprende",
+            "solo existen cuando las puedes decir = só existem quando você pode dizê-las"
+          ],
+          oralProduction: "Debata em espanhol a ideia de Wittgenstein com exemplos concretos da sua experiência bilíngue.",
+          exercises: [
+            { id: "ES-M-U2-L1-E1", type: "multiple_choice", skill: "vocabulary", question: "O que implica 'los límites de mi lenguaje son los límites de mi mundo' para um poliglota?", options: ["Que línguas diferentes têm gramáticas diferentes", "Que cada língua adicional expande literalmente o mundo do falante — não como metáfora mas como acesso real a experiências, conceitos e realidades novas", "Que é preciso aprender mais idiomas", "Que o mundo tem limites linguísticos"], answer: 1, explanation: "Para Wittgenstein (Tractatus), o que não pode ser dito não pode ser pensado — logo, não existe no meu mundo. Cada idioma novo cria novos mundos possíveis: 'saudade' abre um espaço que 'nostalgia' não abre." },
+            { id: "ES-M-U2-L1-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'hay cosas que solo existen cuando las puedes decir'?", options: ["As coisas dependem das palavras para existir fisicamente", "Certas experiências ou conceitos só se tornam plenamente reais e acessíveis quando a língua fornece o instrumento para nomeá-los", "A linguagem cria a realidade", "Sem palavras não há pensamento"], answer: 1, explanation: "A ideia não é idealismo radical mas algo mais sutil: certas nuances de experiência só se tornam plenamente acessíveis à consciência quando há uma palavra que as delimita. 'Duende' de Lorca cria uma categoria de experiência." },
+            { id: "ES-M-U2-L1-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Cada idioma que aprendes no amplía el mundo metafóricamente: lo amplía _____.' (Cada idioma que você aprende não amplia o mundo metaforicamente: amplia-o literalmente.)", answer: ["literalmente"], hint: "advérbio de modo que indica realidade concreta, não figura", explanation: "Literalmente = literalmente. A ênfase contrasta com 'metafóricamente' — Wittgenstein diria que a ampliação é literal, não figurada." },
+            { id: "ES-M-U2-L1-E4", type: "translation", skill: "writing", question: "Traduza: 'Os limites da minha linguagem são os limites do meu mundo — e por isso aprender espanhol foi, literalmente, ampliar o mundo que eu habito.'", answer: ["Los límites de mi lenguaje son los límites de mi mundo: por eso aprender español fue, literalmente, ampliar el mundo que habito.", "Los límites de mi lenguaje son los límites de mi mundo, y por ello aprender español fue ampliar literalmente el mundo que habito."], explanation: "Los límites = os limites. Por eso = por isso. Ampliar el mundo que habito = ampliar o mundo que habito." },
+            { id: "ES-M-U2-L1-E5", type: "free_writing", skill: "writing", question: "Escreva um ensaio filosófico sobre o que o espanhol abriu no seu mundo que o português não tinha. Seja concreto — exemplos reais. Mínimo 15 frases.", prompt: "Inclua: conceitos que só existem em espanhol · experiências que a língua nomeou para você · mudanças na percepção · Wittgenstein aplicado à sua experiência", hint: "Cuando aprendí la palabra '...' en español, descubrí que..., hay una dimensión del humor en español que..., el concepto de 'madrugada' me reveló que..." }
           ]
         },
-        keyPhrases: [
-          "Master: a língua como instrumento, não como objeto de estudo",
-          "Intuição + história + metalinguagem + estilo = domínio pleno",
-          "O português como janela: para a literatura, o pensamento, a identidade",
-          "Aprender sem fim: cada texto é uma descoberta nova"
-        ],
-        guidedProduction: [
-          "Escreva um texto de 200 palavras sobre o que o português te deu que não existia antes.",
-          "Analise um parágrafo de sua autoria com olho de linguista e de editor.",
-          "O que você ainda quer explorar no português que o Master não ensinou?"
-        ],
-        grammar: {
-          title: "Revisão Master-U1",
-          explanation: "Consolida: intuição linguística e estilo próprio, português arcaico e clássico (arcaísmos, evolução histórica), metalinguagem (fonema, morfema, valência, polissemia), estilística comparada (Saramago/Clarice, PB/PE literário).",
-          conjugation: "Síntese Master-U1: intuição > regra / história da língua / metalinguagem precisa / estilística comparada / arcaísmos funcionais / análise de estilo"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva um texto de 180 palavras sobre o que o português te deu que não existia antes.", answer: "O português me deu categorias. Não apenas palavras — categorias de experiência que antes existiam difusas, sem forma. 'Saudade' é a mais famosa, mas há outras: 'perrengue' (situação difícil com dose de humor involuntário que 'hardship' não captura), 'gozar' no sentido carioca (aproveitar com prazer pleno, diferente de 'enjoy'), 'moleque' (aquela mistura específica de criança, malícia e afeto que nenhuma tradução preserva intacta). Me deu também uma literatura. Não no sentido de 'acesso' — posso ler em tradução. Mas ler Clarice em português é ler Clarice; ler Clarice em inglês é ler alguém que tentou ser Clarice. A diferença não é pequena. Me deu ainda um jeito de pensar. Certas ideias se formam primeiro em português agora — não porque seja 'melhor' que minha língua nativa, mas porque certas experiências acontecem em português e não têm equivalente em outro lugar. Habitar dois idiomas é habitar dois mundos. O segundo sempre ilumina o primeiro — e às vezes o questiona." },
-          { type: "production", prompt: "Analise este parágrafo com olho de linguista e de editor: 'A situação econômica do Brasil é muito complexa e tem muitos problemas que precisam ser resolvidos pelo governo com urgência.'", answer: "Linguista: 'muito complexa' — advérbio de intensidade com adjetivo vago. 'Muitos problemas' — determinante vago. 'Precisam ser resolvidos' — voz passiva sem agente especificado. 'Pelo governo' — agente vago (qual governo? federal? estadual?). 'Com urgência' — adjunto adverbial genérico.\n\nEditor: O parágrafo diz muito pouco com muitas palavras. 'Complexa' e 'muitos problemas' não informam — são marcadores de que o autor não identificou o que especificamente quer dizer. 'Urgência' sem prazo não é urgência.\n\nReescrita possível: 'A economia brasileira enfrenta dois desafios estruturais que nenhum governo desde 1994 conseguiu resolver simultaneamente: inflação controlada com crescimento sustentado. O dilema persiste.'" },
-          { type: "production", prompt: "Escreva um parágrafo que incorpore um arcaísmo, uma análise metalinguística e uma marca de estilo pessoal.", answer: "Há algo nos textos jurídicos brasileiros que me fascina e me exaspera em igual medida: o uso compulsivo de arcaísmos como 'doravante' e 'mister' — palavras que sobreviveram precisamente porque o direito tem medo de mudar, e a língua jurídica é, antes de tudo, um ritual de conservação. Do ponto de vista morfológico, 'doravante' é uma lexicalização da expressão 'de ora em diante', fundida num único advérbio que hoje só vive em contratos. É um fóssil linguístico — e como todo fóssil, nos diz algo precioso sobre o que veio antes." },
-          { type: "analysis", prompt: "Por que o Master não é um nível que se termina?", answer: "O Master não é um nível que se termina porque a língua não termina. Cada livro novo ensina algo; cada interlocutor novo revela uma variedade, um sotaque, um uso que você não havia encontrado; cada momento histórico cria novos termos e ressignifica antigos. Um falante Master de 2024 que não ler literatura dos próximos dez anos terá uma língua defasada — não na gramática, que muda lentamente, mas na sensibilidade ao contemporâneo. A diferença entre um músico e um ex-músico não é técnica — é a continuidade da escuta. O Master é uma postura: a da escuta ativa permanente, da curiosidade sem prazo de validade, do prazer no detalhe que ninguém mais notou." },
-          { type: "production", prompt: "Escreva a resposta que você daria se alguém perguntasse: 'Você fala português?'", answer: "Depende do que você quer dizer com 'falar'. Consigo fazer compras, discutir política, escrever um relatório, fazer uma piada — em português. Leio Clarice Lispector e entendo o que ela está fazendo com a linguagem, não apenas o que está dizendo. Quando ouço um carioca e um gaúcho conversando, entendo os dois e percebo as diferenças. Em certos momentos, penso em português antes de traduzir. Mas ainda há coisas que me escapam — referências culturais que um nativo absorve na infância, gírias que mudam antes que eu aprenda, a velocidade de certas conversas informais. Então: falo português? Sim. Falo como um nativo brasileiro? Não. Estou no meio, que é onde as coisas ficam interessantes." }
-        ]
-      }
-    ]
-  },
-
-  // ══════════════════════════════════════════════════════
-  // UNIDADE 2 — Produção Criativa Master: Escrita que Transforma
-  // ══════════════════════════════════════════════════════
-  {
-    id: "MASTER-U2",
-    title: "Produção Criativa Master: Escrita que Transforma",
-    level: "Master",
-    lessons: [
-      {
-        id: "MASTER-U2-L1",
-        title: "O conto perfeito: estrutura, voz e inevitabilidade",
-        objectives: ["Produzir contos de excelência literária em nível Master", "Dominar a economia narrativa — máximo sentido com mínimas palavras"],
-        shadowingDialogue: {
-          title: "A perfeição do conto",
-          lines: [
-            { speaker: "Escritora", text: "Tchekhov dizia: se no primeiro ato aparece uma arma, ela precisa disparar. No conto, não há espaço para nada que não dispare." },
-            { speaker: "Aluno", text: "É uma forma de escrita que me intimida. Cada palavra carrega um peso imenso." },
-            { speaker: "Escritora", text: "Mas também liberta. No romance você pode se perder e se achar. No conto, você não pode se perder." },
-            { speaker: "Aluno", text: "O conto exige que você já saiba o que quer dizer antes de começar?" },
-            { speaker: "Escritora", text: "Exige que você descubra o que quer dizer exatamente ao escrever — e depois retire tudo que não é esse descobrimento." }
+        {
+          id: "ES-M-U2-L2",
+          title: "Invenção de Conceitos — O Ensaísta como Filósofo",
+          shadowing: "— Los grandes ensayistas no describen el mundo: inventan conceptos para verlo de otra manera.\n— Ortega inventó 'la deshumanización del arte'. Unamuno, 'el sentimiento trágico de la vida'.\n— ¿Se puede inventar un concepto nuevo?\n— Si nombra algo real que no tenía nombre, sí. El nombre no crea la cosa, pero la hace visible.\n— ¿Y si el concepto ya existe pero con otro nombre?\n— Entonces estás renombrando, que también es un acto de pensamiento.\n— El lenguaje como laboratorio del pensamiento.\n— Y el ensayo como su cuaderno de notas.",
+          memoryPhrases: [
+            "inventar conceptos = inventar conceitos",
+            "la deshumanización = a desumanização",
+            "el sentimiento trágico = o sentimento trágico",
+            "renombrar = renomear",
+            "el laboratorio del pensamiento = o laboratório do pensamento",
+            "el cuaderno de notas = o caderno de notas"
+          ],
+          oralProduction: "Invente um conceito em espanhol para algo que você percebe mas que ainda não tem nome.",
+          exercises: [
+            { id: "ES-M-U2-L2-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'renombrar' como ato de pensamento?", options: ["Traduzir um conceito", "Dar um nome novo a algo que já existia, revelando um aspecto antes invisível", "Renomear arquivos", "Criar sinônimos"], answer: 1, explanation: "Renombrar = renomear. Dar um nome novo a algo é um ato de pensamento porque ilumina um aspecto diferente. 'Calentamiento global' vs 'crisis climática' — o segundo nome é um ato político e cognitivo." },
+            { id: "ES-M-U2-L2-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'el lenguaje como laboratorio del pensamiento'?", options: ["Experimentos com palavras", "A língua como espaço onde o pensamento se testa, desenvolve e descobre a si mesmo", "Um experimento científico", "Análise linguística"], answer: 1, explanation: "El lenguaje como laboratorio = a língua onde testamos ideias. Escrever é pensar — não registrar o pensamento já feito mas descobri-lo ao tentar formulá-lo em palavras." },
+            { id: "ES-M-U2-L2-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'El nombre no crea la cosa, pero la hace _____.' (O nome não cria a coisa, mas a torna visível.)", answer: ["visible"], hint: "passível de ser visto / perceptível", explanation: "Visible = visível. O nome não cria a realidade mas a ilumina — como uma lanterna que revela o que estava no escuro. Ato epistêmico fundamental." },
+            { id: "ES-M-U2-L2-E4", type: "translation", skill: "writing", question: "Traduza: 'Os grandes ensaístas não descrevem o mundo: inventam conceitos para vê-lo de outra maneira — e ao nomeá-lo de outra forma, o transformam.'", answer: ["Los grandes ensayistas no describen el mundo: inventan conceptos para verlo de otra manera, y al nombrarlo de otro modo, lo transforman.", "Los grandes ensayistas no se limitan a describir el mundo: inventan conceptos que permiten verlo de otra forma y, al renombrarlo, lo transforman."], explanation: "No describen: inventan = não descrevem: inventam. Al nombrarlo = ao nomeá-lo. Lo transforman = o transformam." },
+            { id: "ES-M-U2-L2-E5", type: "free_writing", skill: "writing", question: "Invente um conceito em espanhol para uma experiência que você reconhece mas que ainda não tem nome. Defina-o rigorosamente e desenvolva-o em um ensaio. Mínimo 15 frases.", prompt: "Estrutura: 1) Nome do conceito inventado 2) Definição rigorosa 3) Exemplos do cotidiano 4) Por que este conceito fazia falta 5) Implicações filosóficas", hint: "Propongo el concepto de '...' para nombrar esa sensación de..., no se trata de..., aunque podría confundirse con..., este concepto es necesario porque..., su existencia revela que..." }
           ]
         },
-        keyPhrases: [
-          "Economia narrativa: cada elemento dispara (Lei de Tchekhov)",
-          "O conto como destilação: retirar até que só reste o essencial",
-          "Final inevitável mas surpreendente: quando o leitor pensa 'claro, era isso'",
-          "A primeira frase como contrato: define o tom, o mundo, a promessa"
-        ],
-        guidedProduction: [
-          "Escreva um conto de 150 palavras com início, meio, fim e uma reviravolta.",
-          "Reescreva eliminando 30% das palavras sem perder sentido.",
-          "Analise a primeira frase de um conto que você ama: o que ela promete?"
-        ],
-        grammar: {
-          title: "Técnicas do Conto Master",
-          explanation: "Lei de Tchekhov: cada elemento narrativo deve ser funcional — se aparece, deve servir. A arma que aparece deve disparar; a personagem introduzida deve importar. Economy of means: no conto, não há espaço para ornamento que não seja também estrutura. O final deve ser ao mesmo tempo surpreendente e inevitável — quando o leitor pensa 'como não vi isso vindo?' significa que as pistas estavam lá. A primeira frase é um contrato com o leitor: define o mundo da ficção, o tom e a promessa do que virá.",
-          conjugation: "Primeiras frases memoráveis: 'Aquela tarde, Mariana decidiu que não ia mais mentir.' / 'O homem chegou sem avisar, como sempre.' / 'Havia dois anos que ela não abria aquela gaveta.'"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva um conto completo de 150 palavras.", answer: "O último bilhete que ela escreveu disse: 'Saí para comprar leite.' Isso foi há três anos.\n\nO marido manteve a nota na porta da geladeira durante meses — primeiro por esperança, depois por hábito, depois porque não sabia bem o que fazer com ela. O leite acabava, ele comprava mais, o bilhete ficava.\n\nUm dia sua filha, que tinha seis anos quando a mãe foi, perguntou: 'Ela vai voltar hoje?'\n\nEle olhou para o bilhete. Pensou em dizer que sim. Pensou em dizer que não. Disse: 'Vou buscar você na escola, vai?'\n\nEla foi. Ele foi buscá-la. No caminho, ela perguntou se podiam parar no mercado.\n\n'Para quê?' ele perguntou.\n\n'Leite', ela disse. 'A gente tá sem.'\n\nEle parou o carro. Ficou um tempo olhando para a frente. Depois disse: 'Tá bom. Vamos.'" },
-          { type: "production", prompt: "Escreva a primeira frase de 5 contos diferentes — cada uma com um tom distinto.", answer: "1) Tensão/mistério: 'Quando abriu a caixa de sapatos que estava embaixo da cama da mãe, encontrou trezentas e quarenta e dois bilhetes dobrados em quatro.'\n\n2) Humor: 'O problema com ser invisível é que ninguém avisa quando vai sentar em cima de você.'\n\n3) Lírico: 'Naquele verão, ela aprendeu que o silêncio tem cheiro — e que o cheiro do silêncio da avó era de alfazema e coisa não dita.'\n\n4) Direto: 'Ele mentiu pela primeira vez aos sete anos. Só parou aos sessenta e dois, quando não havia mais ninguém para quem mentir.'\n\n5) Perturbador: 'Toda família tem um quarto que ninguém entra. A nossa tinha uma casa.'" },
-          { type: "production", prompt: "Reescreva eliminando 30%: 'Ela entrou no quarto e viu que a janela estava aberta, o que era estranho porque ela sabia que tinha certeza que havia fechado todas as janelas antes de sair pela manhã.'", answer: "Ela entrou no quarto. A janela estava aberta. Ela havia fechado tudo antes de sair. (De 42 para 14 palavras, -67%. 'tinha certeza que havia' = redundância. 'o que era estranho porque ela sabia que' = explicação desnecessária — a estranheza está no fato, não na explicação.)" },
-          { type: "analysis", prompt: "Por que o final de um conto deve ser 'surpreendente mas inevitável'?", answer: "O final surpreendente mas inevitável é o graal do conto porque representa a resolução perfeita de uma tensão narrativa: se for apenas surpreendente (sem inevitabilidade), o leitor se sente manipulado — foi um truque, não uma revelação. Se for apenas inevitável (sem surpresa), o leitor se sente entediado — sabia onde ia chegar. O equilíbrio perfeito é quando o final surpreende na primeira leitura mas, na segunda, o leitor percebe que todas as pistas estavam lá desde o início. 'Como não vi isso vindo?' é a pergunta que define o grande final. Tchekhov, Poe, Clarice: todos constroem esse equilíbrio com maestria diferente mas igual ambição." },
-          { type: "production", prompt: "Escreva o início e o fim de um conto — deixando o meio implícito.", answer: "Início: 'Na manhã em que ela decidiu perdoá-lo, acordou às cinco e foi fazer café antes que ele acordasse.'\n\n[...]\n\nFim: 'Quando ele desceu e encontrou o café já frio na mesa, ela estava sentada com a xícara nas mãos, olhando pela janela. Ele sentou do lado. Ficaram assim. O café esfriou mais. Nenhum dos dois disse nada, e isso foi suficiente — ou foi o que havia.'" }
-        ]
-      },
-      {
-        id: "MASTER-U2-L2",
-        title: "Poesia em português: escrever e analisar",
-        objectives: ["Produzir poesia em português com consciência formal e semântica", "Analisar poesia com profundidade crítica de nível Master"],
-        shadowingDialogue: {
-          title: "A impossibilidade da poesia",
-          lines: [
-            { speaker: "Poeta", text: "Quando Mallarmé disse que o poema não é feito de ideias mas de palavras, mudou tudo." },
-            { speaker: "Aluno", text: "Mas então como se escreve um poema? Você começa pela palavra ou pela ideia?" },
-            { speaker: "Poeta", text: "Você começa pela pressão — a sensação de que algo precisa ser dito de uma forma específica e nenhuma outra." },
-            { speaker: "Aluno", text: "E quando encontra a forma, o poema acontece?" },
-            { speaker: "Poeta", text: "Quando a forma e o conteúdo se tornam a mesma coisa. Aí você tem um poema. Até lá, você tem rascunho." }
+        {
+          id: "ES-M-U2-L3",
+          title: "Escrita e Identidade — Quem Escreve em Espanhol?",
+          shadowing: "— Cuando escribes en una segunda lengua, ¿quién escribe?\n— Una pregunta que me hago cada vez con menos angustia.\n— ¿Y la respuesta?\n— Que hay un yo en español que no es del todo el mismo que en portugués.\n— ¿Eso te parece una pérdida o una ganancia?\n— Las dos cosas. Pierdo cierta inmediatez. Gano cierta distancia.\n— La distancia como herramienta literaria.\n— Exacto. La segunda lengua es una máscara que permite decir lo que la primera no puede.",
+          memoryPhrases: [
+            "con menos angustia = com menos angústia",
+            "la inmediatez = a imediatidade",
+            "la distancia = a distância",
+            "la máscara = a máscara",
+            "la segunda lengua = a segunda língua",
+            "permite decir = permite dizer"
+          ],
+          oralProduction: "Reflita em espanhol sobre as diferenças entre o seu 'eu' em português e em espanhol.",
+          exercises: [
+            { id: "ES-M-U2-L3-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'la segunda lengua como máscara'?", options: ["Esconder a identidade", "A L2 cria distância que permite dizer coisas que a L1 (pela proximidade com o eu) não permite — uma liberdade paradoxal", "Uma língua falsa", "Uma representação"], answer: 1, explanation: "A máscara não esconde — ela liberta. A L2, por ser ligeiramente distante do eu mais profundo, permite falar com menos inibição sobre certas coisas. Muitos escritores descobrem uma voz mais livre em L2." },
+            { id: "ES-M-U2-L3-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la inmediatez' que se perde ao escrever em L2?", options: ["A velocidade de escrita", "A conexão direta e visceral com a língua materna — onde as palavras chegam sem mediação consciente", "O vocabulário nativo", "A gramática automática"], answer: 1, explanation: "Inmediatez = imediatidade. Na L1, as palavras chegam sem mediação consciente — diretamente do inconsciente. Na L2 há sempre um mínimo de mediação, um passo a mais entre o sentir e o dizer." },
+            { id: "ES-M-U2-L3-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Hay un yo en español que no es del todo el _____ que en portugués.' (Há um eu em espanhol que não é exatamente o mesmo que em português.)", answer: ["mismo"], hint: "pronome/adjetivo de identidade", explanation: "Mismo = mesmo. 'No es del todo el mismo' = não é exatamente o mesmo. A identidade se fragmenta ligeiramente entre línguas — não é perda: é ganho de perspectiva." },
+            { id: "ES-M-U2-L3-E4", type: "translation", skill: "writing", question: "Traduza: 'A segunda língua é uma máscara que permite dizer o que a primeira não pode — não porque esconde mas porque liberta.'", answer: ["La segunda lengua es una máscara que permite decir lo que la primera no puede: no porque esconde, sino porque libera.", "La segunda lengua funciona como una máscara que permite decir lo que la primera no puede, no porque oculte sino porque libera."], explanation: "Permite decir = permite dizer. No porque esconde sino porque libera = não porque esconde mas porque liberta." },
+            { id: "ES-M-U2-L3-E5", type: "free_writing", skill: "writing", question: "Escreva um ensaio pessoal sobre quem você é quando escreve em espanhol — diferente do eu em português? O que essa diferença revela? Mínimo 15 frases.", prompt: "Inclua: como o eu em espanhol difere do eu em português · o que a distância da L2 permite · o que a imediatidade da L1 tem que a L2 não · sua conclusão sobre identidade e língua", hint: "Cuando escribo en español, noto que..., hay cosas que solo puedo decir en español porque..., la distancia de la segunda lengua me permite..., pero pierdo..." }
           ]
         },
-        keyPhrases: [
-          "O poema não é feito de ideias — é feito de palavras (Mallarmé)",
-          "Verso livre: liberdade com responsabilidade rítmica",
-          "Imagem poética: o concreto que ilumina o abstrato",
-          "A compressão: o poema diz em 10 palavras o que o ensaio diria em 1000"
-        ],
-        guidedProduction: [
-          "Escreva um poema de 6-8 versos sobre uma emoção sem nomear a emoção.",
-          "Analise um poema de Drummond identificando todas as figuras de linguagem.",
-          "Transforme um parágrafo de prosa em poema — o que se perde? O que se ganha?"
-        ],
-        grammar: {
-          title: "Elementos Formais da Poesia em PB",
-          explanation: "Versificação: verso (linha), estrofe (grupo de versos), metro (número de sílabas), rima (consoante/toante/branca). Figuras: imagem (comparação implícita), símbolo (objeto que representa abstração), sinestesia (mistura de sentidos). Ritmo: acentuação das sílabas cria padrão musical. Verso livre: sem metro fixo mas com ritmo intencional — toda escolha de quebra de linha é semântica. Poema concreto (já estudado): forma visual como significado.",
-          conjugation: "Análise de verso: escansão (contar sílabas poéticas), identificar tonicidade, acentos que criam ritmo, posição das pausas (cesura)"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva um poema de 6-8 versos sobre solidão sem usar a palavra 'solidão'.", answer: "A xícara ainda quente\nna mesa onde ninguém sentou.\n\nO telefone que eu olho\ncomo se olhasse um espelho\nvazio.\n\nLá fora, alguém ri.\nAqui dentro,\no som que o riso faz\nquando atravessa a parede\ne some." },
-          { type: "production", prompt: "Transforme este parágrafo em poema e explique o que mudou: 'Era tarde, ela estava cansada, mas continuou caminhando porque não havia outro lugar para ir.'", answer: "Poema:\nEra tarde.\nEla estava cansada\ne continuou.\n\nNão havia\noutro lugar.\n\nO que mudou: a prosa tem conectivos ('mas', 'porque') que explicam a relação entre os fatos. O poema os remove — cada fragmento fica isolado, carregando seu próprio peso. A quebra de linha em 'e continuou' cria pausa antes do verbo, enfatizando o esforço. 'Não havia / outro lugar' separado cria um silêncio antes da revelação. O poema não explica a tristeza — a encarna na forma fragmentada." },
-          { type: "analysis", prompt: "Analise: 'No meio do caminho tinha uma pedra / tinha uma pedra no meio do caminho' (Drummond) — figuras e efeito.", answer: "Figuras: anáfora inversa (a segunda linha repete a primeira com ordem invertida — 'tinha uma pedra no meio do caminho' vs. 'no meio do caminho tinha uma pedra'). Paralelismo sintático. Repetição obsessiva ao longo do poema (ao todo a frase aparece seis vezes). Metáfora central: a pedra como obstáculo existencial — não especificado, portanto universal. Efeito: a repetição anafórica cria um ritmo hipnótico que imita a obsessão — a incapacidade de superar e seguir em frente. A forma encarna o conteúdo: o poema não descreve a obsessão, ele a produz no leitor. A simplicidade extrema (vocabulário básico, sintaxe direta) contrasta com a profundidade existencial — economia máxima, impacto máximo." },
-          { type: "production", prompt: "Escreva um poema concreto (visual) de 5-8 palavras.", answer: "s\n si\n  sil\n   silê\n    silên\n     silênc\n      silênci\n       silêncio\n\n[A palavra 'silêncio' se forma gradualmente, imitando visualmente o silêncio que cresce — e quando termina de se formar, o poema acabou: o silêncio chegou.]\n\nOU mais simples:\n\nabismo\n bismo\n  ismo\n   smo\n    mo\n     o\n\n[A palavra se apaga letra a letra — o abismo engolindo a si mesmo.]" },
-          { type: "analysis", prompt: "Por que 'o poema não é feito de ideias mas de palavras' é uma declaração revolucionária?", answer: "Antes de Mallarmé (e do modernismo), a poesia era frequentemente vista como veículo de ideias, emoções ou narrativas — as palavras eram transparentes, serviam ao conteúdo. Mallarmé inverte isso: as palavras não são janelas para o sentido, elas são o sentido. A sonoridade, a aparência visual, a posição no verso, a ressonância com outras palavras — tudo isso é significado, não apenas embalagem. Isso é revolucionário porque libera a poesia da obrigação de 'dizer algo' no sentido prosaico: um poema pode ser 'sobre' o som das palavras ao se chocarem, sobre o silêncio entre elas, sobre a impossibilidade de dizer. O Concretismo brasileiro bebeu diretamente dessa fonte." }
-        ]
-      },
-      {
-        id: "MASTER-U2-L3",
-        title: "Crônica literária Master: o cotidiano como epopeia",
-        objectives: ["Produzir crônicas de excelência literária em nível Master", "Elevar o cotidiano à dimensão épica sem perder a leveza"],
-        shadowingDialogue: {
-          title: "A grandeza do pequeno",
-          lines: [
-            { speaker: "Cronista", text: "A crônica perfeita faz o leitor parar no metrô e olhar para o lado como se visse o mundo pela primeira vez." },
-            { speaker: "Aluno", text: "Mas ela parte de algo tão pequeno — uma xícara, um semáforo, um velho no banco da praça." },
-            { speaker: "Cronista", text: "É precisamente isso. A grandeza está em como o pequeno ilumina o grande." },
-            { speaker: "Aluno", text: "Então a crônica é uma metáfora expandida?" },
-            { speaker: "Cronista", text: "Às vezes. Mas as melhores crônicas não são metáforas de nada — são elas mesmas. O velho no banco é o velho no banco. E isso é tudo." }
+        {
+          id: "ES-M-U2-L4",
+          title: "Leitura Avanzada — Ler nas Entrelinhas como Nativo",
+          shadowing: "— Un lector avanzado lee el texto y el subtexto al mismo tiempo.\n— ¿Cómo se logra eso?\n— Con práctica y con la cultura que el texto presupone.\n— ¿Qué presupone un texto español?\n— Mucho: la Reconquista, el Siglo de Oro, el 98, la Guerra Civil, la Transición, el fenómeno del Boom.\n— Es una genealogía que el lector nativo lleva incorporada.\n— Y que el lector extranjero puede aprender. Con trabajo.\n— Y con amor. Sin amor a la cultura, la lectura se queda en la superficie.",
+          memoryPhrases: [
+            "el subtexto = o subtexto",
+            "presuponer = pressupor",
+            "la Reconquista = a Reconquista",
+            "el Siglo de Oro = o Século de Ouro",
+            "la Transición = a Transição (democrática espanhola)",
+            "llevar incorporado = carregar incorporado"
+          ],
+          oralProduction: "Analise o que um texto literário hispânico pressupõe culturalmente que um leitor nativo sabe e um estrangeiro precisa aprender.",
+          exercises: [
+            { id: "ES-M-U2-L4-E1", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la genealogía cultural' que um texto pressupõe?", options: ["A família do autor", "O conjunto de referências históricas, literárias e culturais que o texto assume que o leitor conhece", "A origem do idioma", "Os antecedentes do personagem"], answer: 1, explanation: "Genealogía cultural = conjunto de referências que o texto pressupõe no leitor. Um texto espanhol pode pressupor conhecimento do Siglo de Oro, da Guerra Civil, da Transição — um leitor nativo as carrega inconscientemente." },
+            { id: "ES-M-U2-L4-E2", type: "multiple_choice", skill: "vocabulary", question: "O que é 'la Transición' na história espanhola?", options: ["A transição para o euro", "O período de transição da ditadura franquista para a democracia (1975-1982)", "A transição para a república", "A transição cultural do século XX"], answer: 1, explanation: "La Transición = o período de transição democrática após a morte de Franco (1975) até a consolidação da democracia (1982, primeiro governo socialista). Referência cultural onipresente na cultura espanhola contemporânea." },
+            { id: "ES-M-U2-L4-E3", type: "fill_blank", skill: "vocabulary", question: "Complete: 'Sin amor a la cultura, la lectura avanzada se queda en _____.' (Sem amor pela cultura, a leitura avançada fica na superfície.)", answer: ["la superficie"], hint: "o oposto da profundidade", explanation: "La superficie = a superfície. 'Quedarse en la superficie' = ficar na superfície. O amor pela cultura é o que motiva a busca pela profundidade." },
+            { id: "ES-M-U2-L4-E4", type: "translation", skill: "writing", question: "Traduza: 'O leitor avançado lê o texto e o subtexto ao mesmo tempo — e isso exige não só domínio da língua mas amor pela cultura que o texto pressupõe.'", answer: ["El lector avanzado lee el texto y el subtexto al mismo tiempo, lo que exige no solo dominio de la lengua sino amor por la cultura que el texto presupone.", "El lector avanzado lee simultáneamente el texto y el subtexto, y eso requiere no solo dominio del idioma sino amor por la cultura que el texto da por supuesta."], explanation: "Lee el texto y el subtexto = lê o texto e o subtexto. Lo que exige = o que exige. Presupone / da por supuesta = pressupõe." },
+            { id: "ES-M-U2-L4-E5", type: "free_writing", skill: "writing", question: "Escolha um texto literário hispânico e faça uma leitura em duas camadas: 1) O que o texto diz. 2) O que o texto pressupõe que o leitor sabe. Mínimo 15 frases.", prompt: "Inclua: a primeira camada (leitura direta) · a segunda camada (referências culturais pressupostas) · como as duas camadas se relacionam · o que você precisou aprender para entender a segunda camada", hint: "En la primera lectura, el texto parece hablar de..., pero si consideramos el contexto histórico de..., las referencias a '...' presuponen que el lector sabe..., esto cambia el sentido porque..." }
           ]
         },
-        keyPhrases: [
-          "Crônica Master: o cotidiano elevado sem ser alegorizado",
-          "Voz de primeira pessoa com distância crítica — íntimo mas não confessional",
-          "O detalhe observado que ninguém mais notou",
-          "Final que ressoa: não explica, mas permanece"
-        ],
-        guidedProduction: [
-          "Escreva uma crônica de 200 palavras sobre algo que observou hoje.",
-          "Identifique a voz da crônica: o que a torna sua e de ninguém mais?",
-          "Reescreva a crônica eliminando toda explicação — deixe só a observação."
-        ],
-        grammar: {
-          title: "A Crônica Master: Técnicas Avançadas",
-          explanation: "Voz: a crônica Master tem uma voz inconfundível — específica o suficiente para ser de alguém, universal o suficiente para ser de todos. Observação vs. interpretação: a crônica mostra (o detalhe, o gesto, o silêncio) e raramente explica — o leitor tira as conclusões. Tempo: a crônica vive no presente narrativo ou no pretérito que parece presente. Ritmo: alternância de frases longas e curtas, com o punchline frequentemente na frase mais curta. Final: não resolve, não explica, mas deixa algo ressoando.",
-          conjugation: "Técnicas: detalhe específico ('ela dobrou o guardanapo três vezes') > generalidade ('ela estava nervosa') / final aberto > conclusão explicada / voz próxima > narrador distante"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva uma crônica de 200 palavras sobre algo observado hoje ou recentemente.", answer: "Tinha um homem no banco do metrô que estava relendo a mesma mensagem no celular há três estações. Eu sei porque eu também estava olhando para ele, que é uma coisa que a gente não admite mas faz o tempo todo no metrô — observar os outros como se fosse o único que observa.\n\nA mensagem devia ter cinco linhas. Ele descia o dedo, subia, descia de novo. De vez em quando erguia a cabeça e olhava para o nada com a expressão de quem está tentando entender algo que entendeu mas preferia não ter entendido.\n\nNa estação Consolação, ele fechou o celular, colocou no bolso e ficou olhando para a frente.\n\nNa estação Paulista, ele tirou o celular de novo.\n\nSaí na estação seguinte. Não sei se ele releu a mensagem. Não sei o que dizia. Sei que havia algo naquela repetição que eu reconhecia sem saber nomear — a gente volta ao que dói como volta à língua ao dente que dói, não para curar, só para confirmar que ainda está lá." },
-          { type: "production", prompt: "Reescreva eliminando toda explicação: 'Ele estava sozinho e triste, sem ninguém para conversar, o que me fez pensar na solidão das grandes cidades.'", answer: "Ele estava no banco do parque com um sanduíche fechado no colo. Os pombos ficavam perto. Ele não dava migalhas. Eles ficavam perto assim mesmo." },
-          { type: "analysis", prompt: "Por que 'o velho no banco é o velho no banco' é uma afirmação literária profunda?", answer: "Afirmar que 'o velho no banco é o velho no banco — e isso é tudo' é uma declaração contra a alegorização compulsiva da literatura. Há uma tendência (especialmente na crônica mediana) de transformar cada observação em símbolo: o velho no banco 'representa' a solidão urbana, 'é uma metáfora' do envelhecimento ignorado. Mas a crônica Master resiste a isso. Quando o velho é apenas o velho — descrito com tal precisão e atenção que o leitor o vê completamente —, algo mais poderoso acontece: o leitor preenche a significância por conta própria. O específico que não precisa ser generalizado é mais universal que a generalização direta. É o princípio fundamental do 'show, don't tell' elevado ao plano filosófico." },
-          { type: "production", prompt: "Escreva o final de uma crônica que ressoa sem explicar.", answer: "[Crônica sobre um café que fechou:] 'Passei em frente na semana passada. Onde era o balcão, tem agora uma farmácia. A farmacêutica estava de jaleco branco, olhando para o celular. Não havia fila. Era terça-feira à tarde. O sol batia de lado, como sempre batia naquele horário naquele lugar, e não havia nada diferente no sol.'" },
-          { type: "production", prompt: "Escreva a abertura de uma crônica que prende o leitor nas primeiras 2 frases.", answer: "Opção 1: 'A mulher na fila do banco estava usando o perfume da minha avó, que morreu há onze anos, e eu quase pedi a ela que ficasse parada para eu poder sentir um pouco mais.'\n\nOpção 2: 'Tem uma calçada na minha rua onde um azulejo está levantado há quatro anos. Eu já vi três pessoas tropeçar. Nenhuma delas tropeçou no mesmo lugar.'\n\nOpção 3: 'Hoje alguém me ligou no número errado e ficamos conversando por vinte minutos antes de perceber.'" }
-        ]
-      },
-      {
-        id: "MASTER-U2-L4",
-        title: "Ensaio literário de alto nível: pensamento em movimento",
-        objectives: ["Produzir ensaio literário de excelência em nível Master", "Integrar análise crítica, experiência pessoal e argumentação sofisticada"],
-        shadowingDialogue: {
-          title: "O ensaio como pensamento vivo",
-          lines: [
-            { speaker: "Ensaísta", text: "Montaigne inventou o ensaio escrevendo sobre si mesmo — e descobriu que escrever sobre si mesmo era escrever sobre tudo." },
-            { speaker: "Aluno", text: "O paradoxo: quanto mais particular, mais universal." },
-            { speaker: "Ensaísta", text: "Exato. E o ensaio literário vai além do ensaio pessoal: integra análise, argumento e experiência numa forma que não é nem ficção nem ciência." },
-            { speaker: "Aluno", text: "É um pensamento que acontece na página — não que foi pensado e depois escrito." },
-            { speaker: "Ensaísta", text: "Isso. O leitor assiste ao pensamento se formando. Essa é a forma de honestidade que só o ensaio permite." }
+        {
+          id: "ES-M-U2-L5",
+          title: "Síntese Master — O Falante Completo",
+          shadowing: "— Has llegado al nivel más alto. ¿Qué sientes?\n— Que el español ya no es un logro. Es una condición.\n— ¿Cómo así?\n— Como la vista. No piensas en ver: simplemente ves. El español ya no es algo que hago: es algo que soy.\n— ¿Y el aprendizaje?\n— No termina. Se transforma. Deja de ser esfuerzo y se convierte en curiosidad.\n— La curiosidad como motor, no el esfuerzo.\n— Exacto. Y la curiosidad no tiene fin.\n— Lo mismo que el español.",
+          memoryPhrases: [
+            "una condición = uma condição (algo que você é)",
+            "como la vista = como a visão",
+            "no termina, se transforma = não termina, se transforma",
+            "la curiosidad como motor = a curiosidade como motor",
+            "no tiene fin = não tem fim",
+            "es algo que soy = é algo que eu sou"
+          ],
+          oralProduction: "Faça sua declaração final Master em espanhol: o que você é agora neste idioma.",
+          exercises: [
+            { id: "ES-M-U2-L5-E1", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'el español es una condición, no un logro'?", options: ["Que o espanhol não é uma conquista", "Que o espanhol deixou de ser algo que se faz e se tornou algo que se é — parte constitutiva da identidade", "Que as condições do espanhol são difíceis", "Que não há mais o que aprender"], answer: 1, explanation: "Condición = condição / estado de ser. Quando uma língua é 'condición', ela não é mais uma habilidade praticada mas parte do que você é — como a cor dos olhos ou a língua materna." },
+            { id: "ES-M-U2-L5-E2", type: "multiple_choice", skill: "vocabulary", question: "O que significa 'la curiosidad como motor'?", options: ["A curiosidade como obrigação", "A curiosidade (não o esforço) como força propulsora do aprendizado contínuo", "Um motor movido a curiosidade", "A curiosidade científica"], answer: 1, explanation: "La curiosidad como motor = a curiosidade como força motriz. No nível Master, o esforço se transforma em curiosidade — você continua aprendendo não porque é preciso mas porque quer saber mais." },
+            { id: "ES-M-U2-L5-E3", type: "fill_blank", skill: "grammar", question: "Complete: 'El español ya no es algo que _____ (hacer): es algo que _____ (ser).' (O espanhol já não é algo que faço: é algo que sou.)", answer: ["hago, soy"], hint: "presente de HACER e SER para yo", explanation: "Hago = faço. Soy = sou. A distinção ser/fazer é fundamental: a língua como ação (fazer) vs a língua como identidade (ser)." },
+            { id: "ES-M-U2-L5-E4", type: "translation", skill: "writing", question: "Traduza: 'O espanhol já não é uma conquista: é uma condição. Não é algo que eu faço — é algo que eu sou. E como tudo que somos, nunca termina de se aprofundar.'", answer: ["El español ya no es un logro: es una condición. No es algo que hago: es algo que soy. Y como todo lo que somos, nunca termina de profundizarse.", "El español ha dejado de ser un logro para convertirse en una condición. No es algo que hago: es algo que soy. Y como todo aquello que somos, sigue profundizándose sin fin."], explanation: "Ya no es un logro: es una condición = já não é uma conquista: é uma condição. Nunca termina de profundizarse = nunca termina de se aprofundar." },
+            { id: "ES-M-U2-L5-E5", type: "free_writing", skill: "writing", question: "Escreva seu texto final Master — o mais alto nível de escrita em espanhol que você é capaz. Tema livre. Mínimo 20 frases. Este é o texto que define quem você é neste idioma.", prompt: "Nenhuma instrução adicional. Você já sabe o que precisa. Escreva.", hint: "—" }
           ]
-        },
-        keyPhrases: [
-          "Ensaio literário: análise + experiência + argumento numa forma híbrida",
-          "O pensamento que acontece na página — não que foi pensado antes",
-          "Montaigne: escrever sobre si mesmo é escrever sobre tudo",
-          "Desvio produtivo: a digressão que volta transformada"
-        ],
-        guidedProduction: [
-          "Escreva o início de um ensaio literário sobre um livro que mudou sua forma de pensar.",
-          "Use uma digressão pessoal para iluminar um argumento crítico.",
-          "Escreva uma conclusão de ensaio que abre em vez de fechar."
-        ],
-        grammar: {
-          title: "O Ensaio Literário Master: Estrutura e Voz",
-          explanation: "O ensaio literário distingue-se por: 1) Voz pessoal integrada à análise — o 'eu' não é removido, é o instrumento. 2) Argumento que se desenvolve, contradiz e revisa — não linear como o acadêmico. 3) Desvio produtivo: a digressão que parece se afastar mas volta transformada. 4) Final que abre: o ensaio literário raramente 'resolve' — deixa a questão mais rica e aberta do que encontrou. 5) Estilo como argumento: como o texto é escrito é parte do que argumenta.",
-          conjugation: "Marcadores do ensaio literário: 'o que me ocorre ao reler...' / 'há algo nessa frase que...' / 'não sei ao certo, mas...' / 'deixa eu tentar de outro ângulo...' / 'talvez o que esteja em jogo aqui seja...'"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva o início de um ensaio literário sobre qualquer livro brasileiro (8 linhas).", answer: "Reli 'Memórias Póstumas de Brás Cubas' pela quarta vez e desta vez não consegui parar de pensar numa coisa: como é que Machado de Assis sabia? Ele escreveu em 1880 sobre um narrador que mente sobre si mesmo de formas que ele próprio não percebe — e levamos décadas para ter o vocabulário psicanalítico e narratológico para nomear o que ele estava fazendo. O narrador não confiável existia antes do termo existir. A ironia que não se anuncia existia antes de a teoria literária mapeá-la. Isso me faz pensar que os grandes escritores não ilustram teorias — eles as antecipam. E que talvez a função da crítica não seja explicar a literatura, mas chegar atrasada e fingir que sabia o caminho." },
-          { type: "production", prompt: "Escreva uma digressão pessoal de 5 linhas que ilumina um argumento crítico sobre linguagem.", answer: "Argumento que estava desenvolvendo: a linguagem molda o que conseguimos pensar.\n\nDigressão: 'Quando aprendi a palavra alemã 'Weltschmerz' — dor do mundo, angústia pela diferença entre o mundo como é e como deveria ser — passei semanas identificando esse sentimento em todo lugar, como se ele tivesse existido sempre mas eu nunca houvesse conseguido vê-lo porque não tinha onde pousá-lo. A palavra criou o sentimento, ou me permitiu perceber o que já existia? Não sei. Mas sei que, desde então, sinto Weltschmerz com mais frequência. O que sugere que a palavra criou alguma coisa, ou pelo menos ampliou o espaço onde ela cabe.'\n\nRetorno ao argumento: isso é exatamente o que a hipótese de Sapir-Whorf fraca propõe — e a minha experiência com essa palavra alemã é a evidência mais pessoal que tenho para corroborá-la." },
-          { type: "production", prompt: "Escreva uma conclusão de ensaio que abre em vez de fechar (4 linhas).", answer: "O que aprendi ao escrever este ensaio não foi uma resposta — foi a forma mais precisa que encontrei até agora para a pergunta. E isso, percebo, é o máximo que um ensaio pode fazer: não resolver, mas tornar a questão mais habitável, mais rica, mais digna de continuar sendo habitada. A pergunta sobre o que a língua faz com quem a fala continua aberta. Mais aberta do que quando comecei. Isso parece, estranhamente, um progresso." },
-          { type: "analysis", prompt: "Qual é a diferença entre o ensaio acadêmico e o ensaio literário?", answer: "O ensaio acadêmico estabelece uma tese e a defende com evidências, mantendo distância do sujeito que escreve — o 'eu' é removido ou minimizado para garantir objetividade. O ensaio literário coloca o 'eu' no centro como instrumento epistemológico: o escritor usa sua própria experiência, dúvidas e contradições como dados. O acadêmico parte de uma conclusão e a demonstra; o literário descobre a conclusão no ato de escrever — o leitor acompanha o pensamento se formando. O acadêmico fecha; o literário abre. O acadêmico usa a linguagem como veículo; o literário usa a linguagem como parte do argumento — como o texto é escrito é parte do que afirma." },
-          { type: "production", prompt: "Escreva um parágrafo de ensaio literário onde você muda de ideia no meio do texto.", answer: "Durante anos acreditei que ler muito tornava as pessoas mais empáticas — havia estudos, havia a intuição, havia a minha própria experiência de sair de um romance sentindo o mundo mais habitado de outras perspectivas. Mas recentemente comecei a desconfiar disso. Conheço leitores vorazes que são rígidos, incuriosos sobre o outro real, fascinados pelo outro fictício mas indiferentes ao vizinho. Talvez a leitura não crie empatia — talvez ajude quem já tem disposição para ela a exercitá-la e refiná-la. O que é completamente diferente. E significa que a literatura não salva — o que é uma notícia péssima se você precisava que salvasse, e uma notícia ótima se prefere que ela seja ela mesma." }
-        ]
-      },
-      {
-        id: "MASTER-U2-L5",
-        title: "Revisão e produção integrada Master-U2",
-        objectives: ["Integrar conto, poesia, crônica e ensaio numa produção Master completa", "Demonstrar virtuosidade criativa plena em português"],
-        shadowingDialogue: {
-          title: "O escritor completo",
-          lines: [
-            { speaker: "Mestra", text: "No Master, você transita entre gêneros como um músico que toca vários instrumentos — cada um com técnica específica, todos a serviço da música." },
-            { speaker: "Aluno", text: "E o que une todos os gêneros, afinal?" },
-            { speaker: "Mestra", text: "A voz. A voz é a mesma no conto e no ensaio, na crônica e no poema — mesmo que o registro mude." },
-            { speaker: "Aluno", text: "A voz como identidade que persiste através dos gêneros." },
-            { speaker: "Mestra", text: "Isso. E é o que torna um escritor inconfundível. Você pode mudar o tom, o gênero, o tema — mas a voz permanece." }
-          ]
-        },
-        keyPhrases: [
-          "Voz como identidade transgenérica: persiste no conto, no poema, na crônica",
-          "Transitar entre gêneros com consciência das diferenças formais",
-          "A produção Master: técnica invisível a serviço da voz",
-          "O escritor completo: quando parar de se perguntar 'estou escrevendo certo?'"
-        ],
-        guidedProduction: [
-          "Escreva o mesmo tema em 4 gêneros: conto, poema, crônica, ensaio — 3 linhas cada.",
-          "Identifique sua voz: o que seus textos têm em comum independente do gênero?",
-          "Escreva um texto de 250 palavras no gênero que você mais domina."
-        ],
-        grammar: {
-          title: "Revisão Master-U2",
-          explanation: "Consolida: conto (economia narrativa, lei de Tchekhov, final inevitável), poesia (imagem, compressão, verso livre, poema concreto), crônica (observação precisa, voz íntima, final que ressoa), ensaio literário (pensamento em movimento, digressão produtiva, conclusão aberta).",
-          conjugation: "Síntese Master-U2: economia narrativa / imagem poética / observação precisa / pensamento em movimento / voz transgenérica / técnica invisível"
-        },
-        exercises: [
-          { type: "production", prompt: "Escreva o mesmo tema (a chuva) em 4 gêneros — 3-4 linhas cada.", answer: "Conto: 'Quando a chuva começou, ela percebeu que havia esquecido o guarda-chuva em casa pela terceira vez naquela semana. Parou numa loja, molhada, olhou para os preços e saiu sem comprar. Chegou em casa encharcada e não ligou para ninguém.'\n\nPoema:\nA chuva desce\nela não sobe.\nIsto é tudo\ne é suficiente.\n\nCrônica: 'Choveu essa tarde em São Paulo do jeito que só chove aqui — sem aviso, de repente, como se a cidade merecesse. As pessoas correram para as marquises. Por cinco minutos, éramos todos iguais: molhados ou prestes a ser.'\n\nEnsaio: 'Há uma memória específica de chuva que carrego — não a chuva em si, mas o cheiro de terra molhada que a precede. Isso me leva a pensar que o que chamamos de memória raramente é visual: é olfativa, sonora, cutânea. E que a língua, ao nomear sensações com palavras visuais, já traiu metade da experiência.'" },
-          { type: "production", prompt: "Escreva um texto de 200 palavras no gênero que você mais domina.", answer: "[Crônica — modelo:] Tem um mendigo que dorme toda noite na porta do prédio em que trabalho. Não o mesmo mendigo — ao longo dos anos foram vários. Mas parece o mesmo porque a cidade faz isso: torna as pessoas invisíveis ao ponto de serem intercambiáveis. Hoje de manhã havia um que eu nunca tinha visto. Estava acordado, sentado, com uma xícara de café nas mãos — não sei de onde tinha vindo, alguém devia ter dado. Ele segurava a xícara com as duas mãos, como a gente segura quando faz frio, mesmo que hoje não estivesse tão frio assim. Passei por ele. Entrei no prédio. Fui para o meu trabalho. Às onze, fui buscar café na máquina do corredor — a mesma xícara descartável de sempre — e me peguei segurando com as duas mãos, do mesmo jeito. Não estava com frio. Era só o jeito de segurar que aprendi sem saber de quem." },
-          { type: "analysis", prompt: "Por que a 'voz' persiste através dos gêneros mesmo quando o registro muda?", answer: "A voz de um escritor é formada por escolhas que se repetem inconscientemente em qualquer gênero: o tipo de detalhe que escolhe observar (visual, sonoro, tátil), a relação com o leitor (próxima, irônica, confidente), o ritmo preferido das frases (longa ou curta, com ou sem pausa antes do punchline), a posição epistemológica (certeza ou dúvida, declarativo ou interrogativo). Essas escolhas persistem porque emergem de uma sensibilidade específica — uma forma de habitar o mundo — que não muda com o gênero. Clarice é Clarice no conto e na crônica, em Perto do Coração Selvagem e em Para não Esquecer. O gênero é o traje; a voz é o corpo." },
-          { type: "production", prompt: "Identifique 3 marcas recorrentes da sua voz de escrita em português e demonstre cada uma.", answer: "[Resposta pessoal — modelo:] 1) Começo parágrafos com observação concreta antes de ir para o abstrato: 'A xícara ainda quente na mesa vazia. Isso é o que chamo de solidão' — nunca 'A solidão é uma sensação de...' 2) Uso perguntas no interior do texto, não apenas no final: o pensamento se interroga enquanto avança. 3) Meus finais são curtos — depois de um desenvolvimento longo, a última frase é quase sempre a mais breve. É uma forma de pontuar: o silêncio depois da última palavra é parte do texto." },
-          { type: "production", prompt: "Escreva uma mensagem para você mesmo no início desta jornada — com o que aprendeu no Master.", answer: "Você está começando a aprender português. Vai demorar mais do que você imagina e vai te dar mais do que você esperava. Não vou te contar quanto tempo — você não acreditaria, e mesmo que acreditasse, não seria a mesma experiência. O que posso dizer é isto: haverá um momento em que você vai ler uma frase em português e vai pensar 'eu podia ter escrito isso' — e isso vai ser ao mesmo tempo arrogante e verdadeiro, porque o que vai significar é que a língua ficou grande o suficiente para caber no seu interior. Quando chegar esse momento, não comemore ainda. Releia a frase. Perceba o que ela tem que você ainda não tem. Continue. A língua não termina. Você também não." }
-        ]
-      }
-    ]
-  }
-];
+        }
+      ]
+    }
+  ]
+};
