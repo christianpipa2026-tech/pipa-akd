@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { CURRICULUM, REFERENCE } from "./curriculum.js";
+import { AULAS_TEORICAS } from "./aulas_teoricas.js";
 import { CURRICULUM_ES_A1 as CURRICULUM_A1 } from "./curriculum_A1.js";
 import { CURRICULUM_A2 } from "./curriculum_A2.js";
 import { CURRICULUM_B1 } from "./curriculum_B1.js";
@@ -907,6 +908,8 @@ export default function App() {
   const [evalSelected, setEvalSelected]   = useState(null);
   const [currentUnit, setCurrentUnit]     = useState(null);
   const [currentLesson, setCurrentLesson] = useState(null);
+  const [showAula, setShowAula]     = useState(false);
+  const [aulaUnit, setAulaUnit]     = useState(null);
   const [exerciseIdx, setExerciseIdx]     = useState(0);
   const [currentExercise, setCurrentExercise] = useState(null);
   const [lessonExercises, setLessonExercises] = useState([]);
@@ -1064,6 +1067,12 @@ export default function App() {
   const openLesson = (lesson, unit) => {
     setCurrentLesson(lesson);
     setCurrentUnit(unit);
+    const isFirstLesson = unit.lessons[0]?.id === lesson.id;
+    if (isFirstLesson && AULAS_TEORICAS[unit.id]) {
+      setAulaUnit({ unit, lesson, aula: AULAS_TEORICAS[unit.id] });
+      setShowAula(true);
+      return;
+    }
     setScreen("lesson");
   };
 
@@ -1264,6 +1273,9 @@ REGLAS ABSOLUTAS:
     return (
       <div style={S}>
         <button onClick={() => setRefSection(null)} style={{cursor:"pointer", border:"none", background:"transparent", color:"var(--color-text-tertiary)", fontFamily:"var(--font-sans)", fontSize:13, padding:0, marginBottom:16, display:"flex", alignItems:"center", gap:4}}>← Volver</button>
+        {currentUnit && AULAS_TEORICAS[currentUnit.id] && (
+          <button onClick={() => { setAulaUnit({ unit: currentUnit, lesson: currentLesson, aula: AULAS_TEORICAS[currentUnit.id] }); setShowAula(true); }} style={{cursor:"pointer", border:"none", background:"var(--color-background-secondary)", color:"var(--color-text-secondary)", fontFamily:"var(--font-sans)", fontSize:12, padding:"6px 12px", borderRadius:8, display:"flex", alignItems:"center", gap:4}}>📖 Aula Teórica</button>
+        )}
 
         <div style={{background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", borderRadius:16, padding:"16px 18px", marginBottom:16}}>
           <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", textTransform:"uppercase", letterSpacing:"0.06em", margin:"0 0 4px"}}>{icons[refSection]} Referência</p>
@@ -1822,6 +1834,48 @@ REGLAS ABSOLUTAS:
 
     return (
       <div style={{fontFamily:"var(--font-sans)"}}>
+            {/* ── Aula Teórica Overlay ────────────────────────────────────── */}
+        {showAula && aulaUnit && (
+          <div style={{position:"fixed", top:0, left:0, right:0, bottom:0, background:"var(--color-background-primary)", zIndex:9999, overflowY:"auto"}}>
+            <div style={{maxWidth:480, margin:"0 auto", padding:16}}>
+              <div style={{display:"flex", alignItems:"center", gap:8, marginBottom:16}}>
+                <button onClick={() => { setShowAula(false); setAulaUnit(null); }} style={{cursor:"pointer", border:"none", background:"transparent", color:"var(--color-text-tertiary)", fontFamily:"var(--font-sans)", fontSize:13, padding:0, display:"flex", alignItems:"center", gap:4}}>← Volver</button>
+              </div>
+              <div style={{background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", borderRadius:16, padding:"16px 18px", marginBottom:16}}>
+                <p style={{fontSize:11, fontWeight:700, color:"rgba(255,255,255,0.75)", textTransform:"uppercase", letterSpacing:"0.06em", margin:"0 0 4px"}}>📖 Aula Teórica · {aulaUnit.unit.title}</p>
+                <h1 style={{fontSize:18, fontWeight:800, color:"#fff", margin:0, letterSpacing:"-0.02em"}}>{aulaUnit.aula.title}</h1>
+              </div>
+              {aulaUnit.aula.sections && aulaUnit.aula.sections.map((sec, si) => (
+                <div key={si} style={{marginBottom:16}}>
+                  <div style={{background:"var(--bg-accent)", borderRadius:12, padding:"10px 14px", marginBottom:10}}>
+                    <h2 style={{fontSize:14, fontWeight:700, color:"var(--text-accent)", margin:0}}>{sec.title}</h2>
+                  </div>
+                  {sec.tip && (
+                    <div style={{display:"flex", gap:10, background:"var(--bg-success)", borderRadius:12, padding:"10px 14px", marginBottom:10}}>
+                      <span style={{fontSize:16, flexShrink:0}}>💡</span>
+                      <p style={{fontSize:13, color:"var(--text-success)", margin:0, lineHeight:1.6, fontWeight:500}}>{sec.tip}</p>
+                    </div>
+                  )}
+                  {sec.headers && sec.rows && (
+                    <div style={{background:"var(--color-background-secondary)", borderRadius:12, overflow:"hidden"}}>
+                      <div style={{display:"grid", gridTemplateColumns:`repeat(${sec.headers.length}, 1fr)`, background:"var(--bg-accent)", padding:"8px 12px", gap:8}}>
+                        {sec.headers.map((h,hi) => <span key={hi} style={{fontSize:11, fontWeight:700, color:"var(--text-accent)", textTransform:"uppercase", letterSpacing:"0.04em"}}>{h}</span>)}
+                      </div>
+                      {sec.rows.map((row,ri) => (
+                        <div key={ri} style={{display:"grid", gridTemplateColumns:`repeat(${sec.headers.length}, 1fr)`, padding:"8px 12px", gap:8, borderTop:"1px solid var(--color-border-primary)", background:ri%2===0?"var(--color-background-secondary)":"var(--color-background-primary)"}}>
+                          {row.map((cell,ci) => <span key={ci} style={{fontSize:12, color:"var(--color-text-primary)", lineHeight:1.5}}>{cell}</span>)}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+              <button onClick={() => { setShowAula(false); setAulaUnit(null); setScreen("lesson"); }} style={{width:"100%", padding:"14px", background:"var(--color-accent)", color:"#fff", border:"none", borderRadius:14, fontSize:15, fontWeight:700, cursor:"pointer", fontFamily:"var(--font-sans)", marginTop:8}}>
+                ▶ Empezar lección
+              </button>
+            </div>
+          </div>
+        )}
         {/* Header con gradiente */}
         <div style={{background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", borderRadius:20, padding:"20px 20px 26px", marginBottom:14}}>
           <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:16}}>
