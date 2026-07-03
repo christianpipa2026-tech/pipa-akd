@@ -1,7 +1,11 @@
-import { MASTER_U1_U2 } from "./curriculum_Master_part1.js";
-import { MASTER_U3_U4 } from "./curriculum_Master_part2.js";
-import { MASTER_U5_U8 } from "./curriculum_Master_part3.js";
+import { CURRICULUM_ES_MASTER_PART1 } from "./curriculum_Master_part1";
+import { CURRICULUM_ES_MASTER_PART2 } from "./curriculum_Master_part2";
+import { CURRICULUM_ES_MASTER_PART3 } from "./curriculum_Master_part3";
 
 export const CURRICULUM_MASTER = {
-  units: [...MASTER_U1_U2, ...MASTER_U3_U4, ...MASTER_U5_U8]
+  units: [
+    ...CURRICULUM_ES_MASTER_PART1.units,
+    ...CURRICULUM_ES_MASTER_PART2.units,
+    ...CURRICULUM_ES_MASTER_PART3.units,
+  ]
 };
