@@ -55,7 +55,8 @@ const LEVELS = [
   { id:"B2", label:"B2", desc:"Intermedio alto",       color:"#FAEEDA", text:"#633806", detail:"Registro formal, argumentación, voz pasiva" },
   { id:"C1", label:"C1", desc:"Avanzado",              color:"#FAECE7", text:"#712B13", detail:"Figuras de lenguaje, análisis crítico, debate" },
   { id:"C2", label:"C2", desc:"Dominio",               color:"#FCEBEB", text:"#A32D2D", detail:"Ensayo académico, estilística, literatura" },
-  { id:"Master", label:"Master", desc:"Nativo/Experto",color:"#F1EFE8", text:"#2C2C2A", detail:"Sociolingüística, investigación, crítica literaria" },
+  { id:"Master", label:"Master", desc:"Nativo/Experto",color:"#F1EFE8", text:"#2C2C2A", detail:"Sociolingüística, investigación, crítica literaria" },,
+  { id:"Extra",  label:"Extra",  desc:"Extra", color:"#F0FFF4", text:"#166534", detail:"Signos de puntuación, Tipos de texto, Tilde diacrítica" }
 ];
 const LEVEL_ORDER = ["A1","A2","B1","B2","C1","C2","Master"];
 const _SKILL_ICONS = { reading:"📖", listening:"🎧", writing:"✍️", speaking:"🗣️", grammar:"📐", vocabulary:"🔤", culture:"🇧🇷", pronunciation:"🔊" };
