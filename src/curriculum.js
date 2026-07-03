@@ -403,8 +403,7 @@ export const REFERENCE = {
         ]
       },
     ]
-  },,
-
+  },
   adjectives: {
     sections: [
       {
