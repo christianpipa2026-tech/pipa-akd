@@ -403,64 +403,7 @@ export const REFERENCE = {
         ]
       },
     ]
-  },
-};
-
-// Importações dos outros níveis (placeholder — serão criados)
-const emptyLevel = { units: [] };
-
-
-const CURRICULUM_ES_C2 = emptyLevel;
-const CURRICULUM_ES_MASTER = emptyLevel;
-
-export const FULL_CURRICULUM = {
-  A1:     { units: CURRICULUM_ES_A1.units },
-  A2:     { units: CURRICULUM_ES_A2.units },
-  B1:     { units: CURRICULUM_ES_B1.units },
-  B2:     { units: CURRICULUM_ES_B2.units },
-  C1:     { units: CURRICULUM_ES_C1.units },
-  C2:     { units: CURRICULUM_ES_C2.units },
-  Master: { units: CURRICULUM_ES_MASTER.units },
-};
-
-export const DIALOGUES = {
-  A1: [
-    { emoji: "☕", title: "En el café", lines: [
-      { speaker: "Cliente", role: "user", text: "Hola, buenas tardes. ¿Tiene café con leche?" },
-      { speaker: "Camarero", role: "assistant", text: "Sí, claro. ¿Lo quiere grande o pequeño?" },
-      { speaker: "Cliente", role: "user", text: "Grande, por favor. ¿Y tiene algo para comer?" },
-      { speaker: "Camarero", role: "assistant", text: "Tenemos tostadas, croissants y bocadillos." },
-      { speaker: "Cliente", role: "user", text: "Una tostada con mantequilla, por favor." },
-      { speaker: "Camarero", role: "assistant", text: "Perfecto. ¿Algo más?" },
-      { speaker: "Cliente", role: "user", text: "No, gracias. ¿Cuánto es?" },
-      { speaker: "Camarero", role: "assistant", text: "Son cuatro euros con cincuenta." },
-    ]},
-    { emoji: "🏨", title: "En el hotel", lines: [
-      { speaker: "Recepcionista", role: "assistant", text: "Buenas noches. ¿Tiene reserva?" },
-      { speaker: "Cliente", role: "user", text: "Sí, a nombre de Silva. Una habitación doble." },
-      { speaker: "Recepcionista", role: "assistant", text: "Perfecto. Su habitación es la 305, en el tercer piso." },
-      { speaker: "Cliente", role: "user", text: "¿El desayuno está incluido?" },
-      { speaker: "Recepcionista", role: "assistant", text: "Sí, el desayuno es de 7 a 10 de la mañana." },
-      { speaker: "Cliente", role: "user", text: "¿Hay WiFi en las habitaciones?" },
-      { speaker: "Recepcionista", role: "assistant", text: "Sí, la contraseña es hotel2024. Buenas noches." },
-    ]},
-    { emoji: "🛒", title: "En el supermercado", lines: [
-      { speaker: "Cliente", role: "user", text: "Perdona, ¿dónde están las frutas?" },
-      { speaker: "Empleado", role: "assistant", text: "En el pasillo tres, al fondo a la derecha." },
-      { speaker: "Cliente", role: "user", text: "Gracias. ¿Y los productos de limpieza?" },
-      { speaker: "Empleado", role: "assistant", text: "En el pasillo cinco, a la izquierda." },
-      { speaker: "Cliente", role: "user", text: "¿Tienen oferta en yogures hoy?" },
-      { speaker: "Empleado", role: "assistant", text: "Sí, los yogures griegos están al dos por uno." },
-    ]},
-  ],
-  A2: [], B1: [], B2: [], C1: [], C2: [], Master: []
-};
-
-export const CONVERSATIONS = {
-  A1: ["Presentaciones y saludos", "En el restaurante", "En la tienda"],
-  A2: [], B1: [], B2: [], C1: [], C2: [], Master: []
-};
-
+  },,
 
   adjectives: {
     sections: [
@@ -700,4 +643,60 @@ export const CONVERSATIONS = {
   },
 
 // Alias para compatibilidade com App.jsx
+};
+
+// Importações dos outros níveis (placeholder — serão criados)
+const emptyLevel = { units: [] };
+
+
+const CURRICULUM_ES_C2 = emptyLevel;
+const CURRICULUM_ES_MASTER = emptyLevel;
+
+export const FULL_CURRICULUM = {
+  A1:     { units: CURRICULUM_ES_A1.units },
+  A2:     { units: CURRICULUM_ES_A2.units },
+  B1:     { units: CURRICULUM_ES_B1.units },
+  B2:     { units: CURRICULUM_ES_B2.units },
+  C1:     { units: CURRICULUM_ES_C1.units },
+  C2:     { units: CURRICULUM_ES_C2.units },
+  Master: { units: CURRICULUM_ES_MASTER.units },
+};
+
+export const DIALOGUES = {
+  A1: [
+    { emoji: "☕", title: "En el café", lines: [
+      { speaker: "Cliente", role: "user", text: "Hola, buenas tardes. ¿Tiene café con leche?" },
+      { speaker: "Camarero", role: "assistant", text: "Sí, claro. ¿Lo quiere grande o pequeño?" },
+      { speaker: "Cliente", role: "user", text: "Grande, por favor. ¿Y tiene algo para comer?" },
+      { speaker: "Camarero", role: "assistant", text: "Tenemos tostadas, croissants y bocadillos." },
+      { speaker: "Cliente", role: "user", text: "Una tostada con mantequilla, por favor." },
+      { speaker: "Camarero", role: "assistant", text: "Perfecto. ¿Algo más?" },
+      { speaker: "Cliente", role: "user", text: "No, gracias. ¿Cuánto es?" },
+      { speaker: "Camarero", role: "assistant", text: "Son cuatro euros con cincuenta." },
+    ]},
+    { emoji: "🏨", title: "En el hotel", lines: [
+      { speaker: "Recepcionista", role: "assistant", text: "Buenas noches. ¿Tiene reserva?" },
+      { speaker: "Cliente", role: "user", text: "Sí, a nombre de Silva. Una habitación doble." },
+      { speaker: "Recepcionista", role: "assistant", text: "Perfecto. Su habitación es la 305, en el tercer piso." },
+      { speaker: "Cliente", role: "user", text: "¿El desayuno está incluido?" },
+      { speaker: "Recepcionista", role: "assistant", text: "Sí, el desayuno es de 7 a 10 de la mañana." },
+      { speaker: "Cliente", role: "user", text: "¿Hay WiFi en las habitaciones?" },
+      { speaker: "Recepcionista", role: "assistant", text: "Sí, la contraseña es hotel2024. Buenas noches." },
+    ]},
+    { emoji: "🛒", title: "En el supermercado", lines: [
+      { speaker: "Cliente", role: "user", text: "Perdona, ¿dónde están las frutas?" },
+      { speaker: "Empleado", role: "assistant", text: "En el pasillo tres, al fondo a la derecha." },
+      { speaker: "Cliente", role: "user", text: "Gracias. ¿Y los productos de limpieza?" },
+      { speaker: "Empleado", role: "assistant", text: "En el pasillo cinco, a la izquierda." },
+      { speaker: "Cliente", role: "user", text: "¿Tienen oferta en yogures hoy?" },
+      { speaker: "Empleado", role: "assistant", text: "Sí, los yogures griegos están al dos por uno." },
+    ]},
+  ],
+  A2: [], B1: [], B2: [], C1: [], C2: [], Master: []
+};
+
+export const CONVERSATIONS = {
+  A1: ["Presentaciones y saludos", "En el restaurante", "En la tienda"],
+  A2: [], B1: [], B2: [], C1: [], C2: [], Master: []
+};
 export { FULL_CURRICULUM as CURRICULUM };
