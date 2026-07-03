@@ -461,5 +461,243 @@ export const CONVERSATIONS = {
   A2: [], B1: [], B2: [], C1: [], C2: [], Master: []
 };
 
+
+  adjectives: {
+    sections: [
+      {
+        title: "Adjetivos Mais Usados em Espanhol",
+        tip: "Em espanhol os adjetivos concordam em gênero e número com o substantivo. Geralmente vão DEPOIS do substantivo: 'una casa grande'.",
+        headers: ["Adjetivo (masc.)", "Adjetivo (fem.)", "Portugués", "Exemplo"],
+        rows: [
+          ["bueno", "buena", "bom/boa", "Un buen amigo. Una buena idea."],
+          ["malo", "mala", "mau/má", "Un mal día. Una mala decisión."],
+          ["grande", "grande", "grande", "Una ciudad grande."],
+          ["pequeño", "pequeña", "pequeno/a", "Una casa pequeña."],
+          ["bonito", "bonita", "bonito/a", "Un lugar bonito."],
+          ["feo", "fea", "feio/feia", "Un zapato feo."],
+          ["nuevo", "nueva", "novo/nova", "Un libro nuevo."],
+          ["viejo", "vieja", "velho/velha", "Un amigo viejo."],
+          ["joven", "joven", "jovem", "Una mujer joven."],
+          ["alto", "alta", "alto/a", "Un hombre alto."],
+          ["bajo", "baja", "baixo/a", "Una mesa baja."],
+          ["rápido", "rápida", "rápido/a", "Un coche rápido."],
+          ["lento", "lenta", "lento/a", "Una respuesta lenta."],
+          ["fácil", "fácil", "fácil", "Una tarea fácil."],
+          ["difícil", "difícil", "difícil", "Un problema difícil."],
+          ["caro", "cara", "caro/a", "Un restaurante caro."],
+          ["barato", "barata", "barato/a", "Una ropa barata."],
+          ["feliz", "feliz", "feliz", "Una persona feliz."],
+          ["triste", "triste", "triste", "Un rostro triste."],
+          ["cansado", "cansada", "cansado/a", "Estoy cansado."],
+          ["animado", "animada", "animado/a", "Una fiesta animada."],
+          ["interesante", "interesante", "interessante", "Un libro interesante."],
+          ["inteligente", "inteligente", "inteligente", "Un alumno inteligente."],
+          ["simpático", "simpática", "simpático/a", "Una profesora simpática."],
+          ["fuerte", "fuerte", "forte", "Un atleta fuerte."],
+          ["débil", "débil", "fraco/a", "Una conexión débil."],
+          ["blanco", "blanca", "branco/a", "Una camisa blanca."],
+          ["negro", "negra", "preto/a", "Un coche negro."],
+          ["rojo", "roja", "vermelho/a", "Una rosa roja."],
+          ["azul", "azul", "azul", "Un cielo azul."],
+        ]
+      },
+      {
+        title: "Adjetivos — Posição Especial (ANTES do substantivo)",
+        tip: "Alguns adjetivos mudam de significado dependendo de onde estão. Outros têm formas reduzidas antes de substantivos masculinos singulares.",
+        headers: ["Antes", "Depois", "Diferença de sentido", "Exemplo"],
+        rows: [
+          ["buen hombre", "hombre bueno", "buen = bom em geral / bueno = moralmente bom", "Es un buen médico (competente)"],
+          ["gran hombre", "hombre grande", "gran = notável / grande = de estatura", "Es un gran escritor (notável)"],
+          ["pobre hombre", "hombre pobre", "pobre antes = coitado / depois = sem dinheiro", "¡Pobre hombre! (coitado)"],
+          ["nuevo trabajo", "trabajo nuevo", "nuevo antes = outro / depois = recém-criado", "Necesito un nuevo trabajo (outro)"],
+          ["mi viejo amigo", "mi amigo viejo", "viejo antes = de longa data / depois = de idade", "Mi viejo amigo Carlos"],
+          ["mismo día", "—", "mismo antes do artigo = o mesmo", "El mismo día"],
+        ]
+      },
+    ]
+  },
+  nouns: {
+    sections: [
+      {
+        title: "Substantivos Mais Usados em Espanhol",
+        tip: "Em espanhol, todo substantivo tem gênero. Regra geral: -o = masculino, -a = feminino. Mas há exceções importantes!",
+        headers: ["Substantivo", "Artigo", "Plural", "Portugués"],
+        rows: [
+          ["casa", "la", "las casas", "casa"],
+          ["apartamento", "el", "los apartamentos", "apartamento"],
+          ["coche / carro", "el", "los coches", "carro"],
+          ["trabajo", "el", "los trabajos", "trabalho"],
+          ["escuela", "la", "las escuelas", "escola"],
+          ["ciudad", "la", "las ciudades", "cidade"],
+          ["calle", "la", "las calles", "rua"],
+          ["persona", "la", "las personas", "pessoa"],
+          ["hombre", "el", "los hombres", "homem"],
+          ["mujer", "la", "las mujeres", "mulher"],
+          ["familia", "la", "las familias", "família"],
+          ["amigo", "el", "los amigos", "amigo"],
+          ["dinero", "el", "—", "dinheiro"],
+          ["tiempo", "el", "los tiempos", "tempo"],
+          ["vida", "la", "las vidas", "vida"],
+          ["día", "el", "los días", "dia"],
+          ["año", "el", "los años", "ano"],
+          ["vez", "la", "las veces", "vez"],
+          ["cosa", "la", "las cosas", "coisa"],
+          ["lugar", "el", "los lugares", "lugar"],
+          ["mundo", "el", "los mundos", "mundo"],
+          ["país", "el", "los países", "país"],
+          ["nombre", "el", "los nombres", "nome"],
+          ["mano", "la", "las manos", "mão"],
+          ["ojo", "el", "los ojos", "olho"],
+          ["problema", "el", "los problemas", "problema"],
+          ["tema", "el", "los temas", "tema"],
+          ["foto", "la", "las fotos", "foto"],
+          ["autobús", "el", "los autobuses", "ônibus"],
+          ["árbol", "el", "los árboles", "árvore"],
+        ]
+      },
+      {
+        title: "Substantivos com Gênero Especial",
+        tip: "Estes substantivos têm gênero inesperado ou comportamento especial em espanhol.",
+        headers: ["Substantivo", "Gênero", "Observação", "Armadilha para brasileiros"],
+        rows: [
+          ["el día", "masculino", "Termina em -a mas é masculino", "PT: o dia ✅ ES: el día ✅"],
+          ["el problema", "masculino", "Terminação -ma = masculino (grego)", "PT: o problema ✅ ES: el problema ✅"],
+          ["el agua", "feminino (com el!)", "'el' antes de -a tônica singular", "el agua fría (fem.) → las aguas"],
+          ["el alma", "feminino (com el!)", "Mesmo caso que agua", "el alma bella → las almas"],
+          ["la mano", "feminino", "Termina em -o mas é feminino", "PT: a mão ✅ ES: la mano ✅"],
+          ["la foto", "feminino", "Abreviação de fotografía", "PT: a foto ✅ ES: la foto ✅"],
+          ["el/la estudiante", "ambos", "Gênero pelo artigo", "el estudiante / la estudiante"],
+          ["el/la artista", "ambos", "Gênero pelo artigo", "el artista / la artista"],
+        ]
+      },
+    ]
+  },
+  spelling: {
+    sections: [
+      {
+        title: "Regras de Acentuação em Espanhol",
+        tip: "As regras de acento em espanhol são mais simples que em português. Aprenda as 3 regras básicas.",
+        headers: ["Tipo de palavra", "Terminação", "Acento?", "Exemplos"],
+        rows: [
+          ["Llana (penúltima tônica)", "-a, -e, -o, -s, -n", "NÃO", "casa, examen, comen, libros"],
+          ["Llana (penúltima tônica)", "outras terminações", "SIM", "fácil, álbum, azúcar, lápiz"],
+          ["Aguda (última tônica)", "-a, -e, -o, -s, -n", "SIM", "café, mamá, también, japonés"],
+          ["Aguda (última tônica)", "outras terminações", "NÃO", "reloj, papel, verdad, capaz"],
+          ["Esdrújula (antepenúltima)", "TODAS", "SEMPRE", "médico, música, rápido, fábrica"],
+          ["Hiato", "i ou u tônicos", "SIM", "baúl, país, oír, reír"],
+        ]
+      },
+      {
+        title: "Acento Diacrítico — Palavras que Mudam de Significado",
+        tip: "Em espanhol, algumas palavras idênticas têm acento para se diferenciarem. São pares fundamentais para dominar!",
+        headers: ["Com acento", "Significado", "Sem acento", "Significado"],
+        rows: [
+          ["tú", "você (pronome)", "tu", "seu/tua (possessivo)"],
+          ["él", "ele (pronome)", "el", "o (artigo)"],
+          ["sí", "sim / si mesmo", "si", "se (condicional)"],
+          ["mí", "mim (pronome)", "mi", "meu/minha"],
+          ["más", "mais", "mas", "mas (conjunção)"],
+          ["té", "chá (bebida)", "te", "te (pronome)"],
+          ["sé", "sei / sê", "se", "se (pronome/conjunção)"],
+          ["dé", "dê (imperativo)", "de", "de (preposição)"],
+          ["aún", "ainda (= todavía)", "aun", "até mesmo / incluso"],
+          ["qué", "que (interrogativo)", "que", "que (relativo/conjunção)"],
+        ]
+      },
+      {
+        title: "B e V — Mesma Pronúncia, Escrita Diferente",
+        tip: "Em espanhol, B e V têm o MESMO som /b/. A distinção é apenas ortográfica. Aqui estão as principais regras.",
+        headers: ["Regra", "Use B", "Use V", "Exemplos"],
+        rows: [
+          ["Após M", "sempre B", "—", "también, hombre, cambio"],
+          ["Imperfecto -aba", "sempre B", "—", "hablaba, trabajaba, amaba"],
+          ["Prefixos bi-, bis-", "sempre B", "—", "bicicleta, bisabuelo, bilateral"],
+          ["Prefixos sub-, ob-", "sempre B", "—", "subir, obtener, objetivo"],
+          ["Verbos ir, ver, vivir", "—", "sempre V", "voy, veo, vivir, volver"],
+          ["Sufixo -ivo/-iva", "—", "sempre V", "activo, pasivo, motivo"],
+          ["Prefixo vice-", "—", "sempre V", "vicepresidente, vicedirector"],
+        ]
+      },
+      {
+        title: "H Muda, G/J, LL/Y",
+        tip: "O H em espanhol é sempre MUDO. G e J têm sons diferentes conforme a vogal seguinte. LL e Y soam igual na América Latina (yeísmo).",
+        headers: ["Letra(s)", "Som", "Regra", "Exemplos"],
+        rows: [
+          ["H", "mudo (sempre)", "Nunca se pronuncia", "hablar /ablar/, hora /ora/, hotel /otel/"],
+          ["G + e/i", "/x/ (gutural)", "Som gutural como J", "gente /xente/, gitano /xitano/"],
+          ["G + a/o/u", "/g/", "Som normal como em PT", "gato, gordo, gustar"],
+          ["GU + e/i", "/g/", "U não se pronuncia", "guerra /gera/, guitarra /gitara/"],
+          ["GÜ + e/i", "/gu/", "U se pronuncia (trema)", "pingüino, lingüística"],
+          ["J", "/x/ (gutural)", "Sempre gutural", "joven, jugar, trabajo, Juan"],
+          ["LL", "/y/ (Am. Latina)", "Igual ao Y (yeísmo)", "llamar = yamar, lluvia = yuvia"],
+          ["Y", "/y/ ou /i/", "Como 'i' em iogurte", "yo, ya, hoy, hay"],
+        ]
+      },
+      {
+        title: "Diferenças Ortográficas PT → ES",
+        tip: "Muitas palavras são quase iguais mas com diferenças ortográficas específicas.",
+        headers: ["Portugués", "Español", "Padrão da mudança", "Mais exemplos"],
+        rows: [
+          ["filho", "hijo", "LH → J", "trabalho → trabajo, mulher → mujer"],
+          ["chuva", "lluvia", "CH → LL em alguns casos", "chave → llave, cheio → lleno"],
+          ["noite", "noche", "IT → CH", "leite → leche, oito → ocho"],
+          ["amarelo", "amarillo", "L → LL", "cavalo → caballo, belo → bello"],
+          ["muito", "mucho", "IT → CH", "feito → hecho, dito → dicho"],
+          ["facto", "hecho", "H muda + mudança", "—"],
+          ["cão", "perro", "palavras completamente diferentes", "gato → gato (igual)"],
+          ["ão final", "-ón/-ión/-ión", "vogal nasal → ditongo", "coração → corazón, estação → estación"],
+        ]
+      },
+    ]
+  },
+  falseAmigos: {
+    sections: [
+      {
+        title: "Falsos Amigos — PERIGO 🚨 (Mais Embaraçosos)",
+        tip: "Estes falsos amigos causam situações constrangedoras. Memorize com prioridade máxima!",
+        headers: ["Palavra em ES", "Parece em PT", "Significa em ES", "Como dizer em ES"],
+        rows: [
+          ["embarazada", "envergonhada", "grávida", "avergonzada (envergonhada)"],
+          ["borracha", "borracha (material)", "bêbada", "goma de borrar (borracha)"],
+          ["exquisito", "esquisito (estranho)", "delicioso/refinado", "raro / extraño (esquisito PT)"],
+          ["polvo", "polvo (animal marinho)", "pó/poeira", "pulpo (polvo animal)"],
+          ["propina", "propina (suborno)", "gorjeta", "soborno (suborno PT)"],
+          ["largo", "largo (extenso)", "comprido/longo", "ancho (largo PT) / largo (longo PT)"],
+          ["poltrona", "poltrona (cadeira)", "covarde/preguiçoso", "sillón (poltrona PT)"],
+          ["estafa", "estafa (cansaço PT)", "fraude/golpe", "cansancio (cansaço)"],
+        ]
+      },
+      {
+        title: "Falsos Amigos — CUIDADO ⚠️ (Diferenças Sutis)",
+        tip: "Palavras parecidas com diferenças importantes de uso cotidiano.",
+        headers: ["ES", "Parece PT", "Diferença real", "Correto"],
+        rows: [
+          ["asistir", "assistir (TV)", "asistir = comparecer. TV = ver la tele", "Veo la televisión"],
+          ["contestar", "contestar (discutir)", "ES = responder", "Contestar el teléfono (atender)"],
+          ["realizar", "realizar", "ES também = se dar conta", "Me realicé = me dei conta"],
+          ["parada", "parada (desfile)", "ES = ponto de ônibus", "parada de autobús"],
+          ["carpeta", "carpete (tapete)", "ES = pasta de documentos", "alfombra (tapete) / carpeta (pasta)"],
+          ["taza", "taça (troféu)", "ES = xícara/caneca", "copa/trofeo (taça) / taza (xícara)"],
+          ["bordar", "bordar (costura)", "ES também = ir muito bem", "Bordó el examen (foi muito bem)"],
+          ["extrañar", "estranhar", "ES = sentir falta DE ALGUÉM", "Te extraño (sinto sua falta)"],
+        ]
+      },
+      {
+        title: "Falsos Amigos — ESTRUTURAS GRAMATICAIS",
+        tip: "Estruturas que parecem iguais ao português mas funcionam diferente em espanhol.",
+        headers: ["Estrutura PT", "Parece ES", "Correto em ES", "Explicação"],
+        rows: [
+          ["Gosto de música", "Me gusta de música", "Me gusta la música", "gustar não usa 'de'"],
+          ["Estou com fome", "Estoy con hambre", "Tengo hambre", "ES usa TENER"],
+          ["Estou com frio", "Estoy con frío", "Tengo frío", "ES usa TENER"],
+          ["Que horas são?", "¿Qué horas son?", "¿Qué hora es?", "hora no singular"],
+          ["Moro no Brasil", "Vivo en el Brasil", "Vivo en Brasil", "sem artigo com países"],
+          ["A gente vai", "La gente va", "Nosotros vamos", "la gente = as pessoas (3ª sg.)"],
+          ["Tudo bem?", "¿Todo bien?", "¿Cómo estás? / ¿Qué tal?", "mais natural em ES"],
+        ]
+      },
+    ]
+  },
+
 // Alias para compatibilidade com App.jsx
 export { FULL_CURRICULUM as CURRICULUM };
