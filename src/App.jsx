@@ -1470,7 +1470,7 @@ REGLAS ABSOLUTAS:
               : `🌟 ¡Resultado impresionante! Empezarás en ${assignedLevel} para consolidar antes de avanzar.`}
         </div>
         <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:10}}>
-          <button onClick={() => { setScreen("session"); setSessionMode("curriculum"); }} style={btnP()}>🚀 Comenzar programa</button>
+          <button onClick={() => { if (!assignedLevel && selectedLevel) setAssignedLevel(selectedLevel); setScreen("session"); setSessionMode("curriculum"); }} style={btnP()}>🚀 Comenzar programa</button>
           <button onClick={() => { setScreen("welcome"); setSelectedLevel(null); setAssignedLevel(null); }} style={btn()}>← Otro nivel</button>
         </div>
       </div>
@@ -1502,7 +1502,7 @@ REGLAS ABSOLUTAS:
 
   // ── Session ───────────────────────────────────────────────────────────────
   if (screen === "session") {
-    const units  = FULL_CURRICULUM[assignedLevel]?.units || [];
+    const activeLevel = assignedLevel || selectedLevel; const units  = FULL_CURRICULUM[activeLevel]?.units || [];
     const allEx  = units.flatMap(u => u.lessons.flatMap(l => l.exercises));
     const done   = allEx.filter(e => progress[e.id]).length;
     const pct    = allEx.length > 0 ? Math.round((done/allEx.length)*100) : 0;
