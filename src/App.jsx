@@ -1258,8 +1258,8 @@ REGLAS ABSOLUTAS:
   // ── Reference panel ───────────────────────────────────────────────────────
   if (refSection) {
     const data = REFERENCE[refSection];
-    const titles = { pronouns:"Pronomes", contractions:"Contrações", verbConjugations:"Conjugações Verbais", top100Verbs:"100 Verbos Essenciais" };
-    const icons  = { pronouns:"👤", contractions:"🔗", verbConjugations:"⚡", top100Verbs:"📋" };
+    const titles = { pronouns:"Pronombres", contractions:"Contracciones", verbConjugations:"Conjugaciones Verbales", top100Verbs:"100 Verbos Esenciales", adjectives:"Adjetivos", nouns:"Sustantivos", spelling:"Ortografía", falseAmigos:"Falsos Amigos" };
+    const icons  = { pronouns:"👤", contractions:"🔗", verbConjugations:"⚡", top100Verbs:"📋", adjectives:"📝", nouns:"📦", spelling:"✍️", falseAmigos:"⚠️" };
 
     return (
       <div style={S}>
