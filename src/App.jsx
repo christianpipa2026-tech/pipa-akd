@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { supabase } from "./supabase_client.js";
 import { CURRICULUM, REFERENCE } from "./curriculum.js";
 import { AULAS_TEORICAS } from "./aulas_teoricas.js";
 import { CURRICULUM_ES_A1 as CURRICULUM_A1 } from "./curriculum_A1.js";
@@ -888,7 +889,92 @@ const LISTENING_RECS = {
 
 
 export default function App() {
+  const [authUser, setAuthUser]             = useState(null);
+  const [authLoading, setAuthLoading]       = useState(true);
+  const [authScreen, setAuthScreen]         = useState("login"); // "login" | "register"
+  const [authEmail, setAuthEmail]           = useState("");
+  const [authPassword, setAuthPassword]     = useState("");
+  const [authError, setAuthError]           = useState("");
+  const [authWorking, setAuthWorking]       = useState(false);
   const [screen, setScreen]               = useState(() => load("pb_level",null) ? "session" : "welcome");
+  useEffect(() => {
+    // Escuchar cambios de sesión
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setAuthUser(session?.user ?? null);
+      setAuthLoading(false);
+    });
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setAuthUser(session?.user ?? null);
+      if (session?.user) syncProgressToCloud(session.user.id);
+    });
+    return () => subscription.unsubscribe();
+  }, []);
+
+  // Sincronizar progreso con Supabase
+  const syncProgressToCloud = async (userId) => {
+    try {
+      const { data } = await supabase
+        .from("progress")
+        .select("*")
+        .eq("user_id", userId)
+        .eq("app", "pipa-akd")
+        .single();
+      if (data) {
+        // Cargar progreso de la nube
+        if (data.progress_data && Object.keys(data.progress_data).length > 0) {
+          setProgress(data.progress_data);
+          save("pb_progress", data.progress_data);
+        }
+        if (data.streak_count) {
+          const s = { count: data.streak_count, lastDate: data.streak_last_date };
+          setStreak(s);
+          save("streak", s);
+        }
+      }
+    } catch {}
+  };
+
+  // Guardar progreso en Supabase
+  const saveProgressToCloud = async (newProgress, newStreak) => {
+    if (!authUser) return;
+    try {
+      await supabase.from("progress").upsert({
+        user_id: authUser.id,
+        app: "pipa-akd",
+        progress_data: newProgress,
+        streak_count: newStreak?.count || 0,
+        streak_last_date: newStreak?.lastDate || null,
+        updated_at: new Date().toISOString()
+      }, { onConflict: "user_id,app" });
+    } catch {}
+  };
+
+  // Auth handlers
+  const handleRegister = async () => {
+    setAuthError(""); setAuthWorking(true);
+    if (!authEmail || !authPassword) { setAuthError("Completá todos los campos."); setAuthWorking(false); return; }
+    if (authPassword.length < 6) { setAuthError("La contraseña debe tener al menos 6 caracteres."); setAuthWorking(false); return; }
+    const { data, error } = await supabase.auth.signUp({ email: authEmail, password: authPassword });
+    if (error) { setAuthError(error.message); setAuthWorking(false); return; }
+    if (data.user) {
+      await supabase.from("profiles").upsert({ id: data.user.id, email: authEmail, app: "pipa-akd" });
+    }
+    setAuthWorking(false);
+  };
+
+  const handleLogin = async () => {
+    setAuthError(""); setAuthWorking(true);
+    if (!authEmail || !authPassword) { setAuthError("Completá todos los campos."); setAuthWorking(false); return; }
+    const { error } = await supabase.auth.signInWithPassword({ email: authEmail, password: authPassword });
+    if (error) { setAuthError("Email o contraseña incorrectos."); setAuthWorking(false); return; }
+    setAuthWorking(false);
+  };
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    setAuthUser(null);
+  };
+
   const [onboardStep, setOnboardStep]     = useState(0);
   const [streak, setStreak]               = useState(() => {
     const s = load("streak", { count: 0, lastDate: null });
@@ -1319,7 +1405,74 @@ REGLAS ABSOLUTAS:
   }
 
   // ── Welcome ───────────────────────────────────────────────────────────────
-if (showAula && aulaUnit) {
+// ── Auth Screen ─────────────────────────────────────────────────────────
+  if (authLoading) return (
+    <div style={{display:"flex", alignItems:"center", justifyContent:"center", minHeight:"100vh", background:"var(--color-background-primary)"}}>
+      <div style={{textAlign:"center"}}>
+        <div style={{width:48, height:48, borderRadius:14, background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 16px"}}>
+          <span style={{fontSize:24}}>🇧🇷</span>
+        </div>
+        <p style={{color:"var(--color-text-tertiary)", fontSize:14, fontFamily:"var(--font-sans)"}}>Cargando...</p>
+      </div>
+    </div>
+  );
+
+  if (!authUser) {
+    const isLogin = authScreen === "login";
+    return (
+      <div style={{fontFamily:"var(--font-sans)", minHeight:"100vh", background:"var(--color-background-primary)", display:"flex", flexDirection:"column", justifyContent:"center", padding:"2rem 1.5rem"}}>
+        <div style={{maxWidth:400, margin:"0 auto", width:"100%"}}>
+          {/* Logo */}
+          <div style={{textAlign:"center", marginBottom:32}}>
+            <div style={{width:64, height:64, borderRadius:18, background:"linear-gradient(135deg, var(--color-accent), var(--color-accent-dark))", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 14px", boxShadow:"0 4px 16px rgba(14,165,233,0.3)"}}>
+              <span style={{fontSize:30}}>🇧🇷</span>
+            </div>
+            <h1 style={{fontSize:22, fontWeight:800, color:"var(--color-text-primary)", margin:"0 0 4px", letterSpacing:"-0.02em"}}>Pipa Akd</h1>
+            <p style={{fontSize:13, color:"var(--color-text-secondary)", margin:0}}>Aprenda Español · De A1 a Master</p>
+          </div>
+
+          {/* Tabs */}
+          <div style={{display:"flex", background:"var(--color-background-secondary)", borderRadius:12, padding:4, marginBottom:24}}>
+            {["login","register"].map(tab => (
+              <button key={tab} onClick={() => { setAuthScreen(tab); setAuthError(""); }} style={{flex:1, padding:"8px 0", border:"none", borderRadius:9, cursor:"pointer", fontSize:13, fontWeight:600, fontFamily:"var(--font-sans)", background: authScreen===tab ? "var(--color-background-primary)" : "transparent", color: authScreen===tab ? "var(--color-text-primary)" : "var(--color-text-tertiary)", boxShadow: authScreen===tab ? "0 1px 3px rgba(0,0,0,0.1)" : "none", transition:"all 0.15s"}}>
+                {tab === "login" ? "Entrar" : "Registrarme"}
+              </button>
+            ))}
+          </div>
+
+          {/* Form */}
+          <div style={{display:"flex", flexDirection:"column", gap:12}}>
+            <div>
+              <label style={{display:"block", fontSize:12, fontWeight:600, color:"var(--color-text-secondary)", marginBottom:6}}>Email</label>
+              <input type="email" value={authEmail} onChange={e => setAuthEmail(e.target.value)} placeholder="tu@email.com" onKeyDown={e => e.key==="Enter" && (isLogin ? handleLogin() : handleRegister())} style={{width:"100%", padding:"11px 14px", borderRadius:10, border:"1.5px solid var(--color-border-secondary)", fontSize:14, fontFamily:"var(--font-sans)", background:"var(--color-background-primary)", color:"var(--color-text-primary)", outline:"none", boxSizing:"border-box"}} />
+            </div>
+            <div>
+              <label style={{display:"block", fontSize:12, fontWeight:600, color:"var(--color-text-secondary)", marginBottom:6}}>Contraseña {!isLogin && <span style={{fontWeight:400, color:"var(--color-text-tertiary)"}}>(mínimo 6 caracteres)</span>}</label>
+              <input type="password" value={authPassword} onChange={e => setAuthPassword(e.target.value)} placeholder="••••••••" onKeyDown={e => e.key==="Enter" && (isLogin ? handleLogin() : handleRegister())} style={{width:"100%", padding:"11px 14px", borderRadius:10, border:"1.5px solid var(--color-border-secondary)", fontSize:14, fontFamily:"var(--font-sans)", background:"var(--color-background-primary)", color:"var(--color-text-primary)", outline:"none", boxSizing:"border-box"}} />
+            </div>
+
+            {authError && (
+              <div style={{background:"var(--bg-danger)", borderRadius:8, padding:"10px 14px"}}>
+                <p style={{fontSize:13, color:"var(--text-danger)", margin:0}}>⚠️ {authError}</p>
+              </div>
+            )}
+
+            <button onClick={isLogin ? handleLogin : handleRegister} disabled={authWorking} style={{marginTop:4, padding:"13px", background:authWorking?"var(--color-border-secondary)":"var(--color-accent)", color:"#fff", border:"none", borderRadius:12, fontSize:15, fontWeight:700, cursor:authWorking?"not-allowed":"pointer", fontFamily:"var(--font-sans)", transition:"background 0.15s"}}>
+              {authWorking ? "..." : isLogin ? "Entrar" : "Crear cuenta"}
+            </button>
+
+            {!isLogin && (
+              <p style={{fontSize:11.5, color:"var(--color-text-tertiary)", textAlign:"center", margin:0, lineHeight:1.5}}>
+                Al registrarte aceptás que guardemos tu progreso de aprendizaje.
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (showAula && aulaUnit) {
     return (
       <div style={{position:"fixed", top:0, left:0, right:0, bottom:0, background:"var(--color-background-primary)", zIndex:9999, overflowY:"auto"}}>
         <div style={{maxWidth:480, margin:"0 auto", padding:16}}>
