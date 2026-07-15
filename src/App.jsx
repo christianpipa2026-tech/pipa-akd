@@ -905,7 +905,16 @@ export default function App() {
     });
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setAuthUser(session?.user ?? null);
-      if (session?.user) syncProgressToCloud(session.user.id);
+      if (session?.user) {
+        syncProgressToCloud(session.user.id);
+        // Actualizar last_active
+        supabase.from("profiles").upsert({
+          id: session.user.id,
+          email: session.user.email,
+          app: "pipa-akd",
+          last_active: new Date().toISOString()
+        }, { onConflict: "id" }).catch(() => {});
+      }
     });
     return () => subscription.unsubscribe();
   }, []);
@@ -935,6 +944,19 @@ export default function App() {
   };
 
   // Guardar progreso en Supabase
+  const saveLevelToCloud = async (level) => {
+    if (!authUser || !level) return;
+    try {
+      await supabase.from("profiles").upsert({
+        id: authUser.id,
+        email: authUser.email,
+        app: "pipa-akd",
+        level: level,
+        last_active: new Date().toISOString()
+      }, { onConflict: "id" });
+    } catch {}
+  };
+
   const saveProgressToCloud = async (newProgress, newStreak) => {
     if (!authUser) return;
     try {
@@ -1092,7 +1114,7 @@ export default function App() {
                      : newScore === 3 ? (idx>0 ? LEVEL_ORDER[idx-1] : "A1")
                      : (idx>1 ? LEVEL_ORDER[idx-2] : "A1");
       saveLevel(assigned);
-      setAssignedLevel(assigned); setScreen("result");
+      setAssignedLevel(assigned); saveLevelToCloud(assigned); setScreen("result");
     } else {
       setEvalIdx(i => i+1); setEvalAnswered(false); setEvalSelected(null);
     }
@@ -1279,7 +1301,7 @@ export default function App() {
     const next = nextLevel;
     saveLevel(next);
     save("pb_progress", {});
-    setAssignedLevel(next); setSelectedLevel(next);
+    setAssignedLevel(next); setSelectedLevel(next); saveLevelToCloud(next);
     setProgress({}); setShowLevelUp(false); setNextLevel(null);
     setScreen("session"); setSessionMode("curriculum");
   };
@@ -1668,7 +1690,7 @@ REGLAS ABSOLUTAS:
               : `🌟 ¡Resultado impresionante! Empezarás en ${assignedLevel} para consolidar antes de avanzar.`}
         </div>
         <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:10}}>
-          <button onClick={() => { if (!assignedLevel && selectedLevel) setAssignedLevel(selectedLevel); setScreen("session"); setSessionMode("curriculum"); }} style={btnP()}>🚀 Comenzar programa</button>
+          <button onClick={() => { if (!assignedLevel && selectedLevel) { setAssignedLevel(selectedLevel); saveLevelToCloud(selectedLevel); } setScreen("session"); setSessionMode("curriculum"); }} style={btnP()}>🚀 Comenzar programa</button>
           <button onClick={() => { setScreen("welcome"); setSelectedLevel(null); setAssignedLevel(null); }} style={btn()}>← Otro nivel</button>
         </div>
       </div>
