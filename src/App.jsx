@@ -980,6 +980,12 @@ export default function App() {
     if (error) { setAuthError(error.message); setAuthWorking(false); return; }
     if (data.user) {
       await supabase.from("profiles").upsert({ id: data.user.id, email: authEmail, app: "pipa-akd" });
+      // Enviar email de bienvenida
+      fetch("/api/send-welcome", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: authEmail, app: "pipa-akd" })
+      }).catch(() => {});
     }
     setAuthWorking(false);
   };
