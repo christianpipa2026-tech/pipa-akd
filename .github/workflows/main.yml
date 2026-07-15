@@ -1,0 +1,17 @@
+name: Daily Email Reminders
+
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+jobs:
+  send-reminders:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send reminders
+        run: |
+          curl -X POST https://pipa-akd.vercel.app/api/cron-reminders \
+            -H "Authorization: Bearer pipakd-cron-2024" \
+            -H "Content-Type: application/json" \
+            --silent --show-error
