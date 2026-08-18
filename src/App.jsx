@@ -1179,6 +1179,20 @@ export default function App() {
     setTimeout(() => setShowCelebration(false), 3000);
   };
 
+  const renderMarkdown = (text) => {
+    if (!text) return null;
+    return text.split("\n").map((line, i) => {
+      if (line.startsWith("### ")) return <h3 key={i} style={{fontSize:13, fontWeight:700, color:"var(--color-text-primary)", margin:"12px 0 4px"}}>{line.slice(4)}</h3>;
+      if (line.startsWith("## ")) return <h2 key={i} style={{fontSize:14, fontWeight:700, color:"var(--color-text-primary)", margin:"14px 0 6px", borderBottom:"0.5px solid var(--color-border-primary)", paddingBottom:4}}>{line.slice(3)}</h2>;
+      if (line.startsWith("# ")) return <h1 key={i} style={{fontSize:15, fontWeight:700, color:"var(--color-text-primary)", margin:"0 0 10px"}}>{line.slice(2)}</h1>;
+      if (line.startsWith("- ") || line.startsWith("* ")) return <div key={i} style={{display:"flex", gap:8, margin:"3px 0"}}><span style={{color:"var(--color-accent)", flexShrink:0}}>•</span><span style={{fontSize:13, color:"var(--color-text-secondary)", lineHeight:1.6}}>{line.slice(2)}</span></div>;
+      if (line.trim() === "") return <div key={i} style={{height:8}} />;
+      // Bold: **text**
+      const parts = line.split(/(\*\*[^*]+\*\*)/g);
+      return <p key={i} style={{fontSize:13, color:"var(--color-text-secondary)", lineHeight:1.7, margin:"2px 0"}}>{parts.map((p,j) => p.startsWith("**") && p.endsWith("**") ? <strong key={j} style={{color:"var(--color-text-primary)", fontWeight:600}}>{p.slice(2,-2)}</strong> : p)}</p>;
+    });
+  };
+
   const openLesson = (lesson, unit) => {
     setCurrentLesson(lesson);
     setCurrentUnit(unit);
@@ -2211,7 +2225,7 @@ REGLAS ABSOLUTAS:
         {/* CONTENT — formato antiguo */}
         {hasContent && (
           <Block bgIcon="var(--color-background-secondary)" colorIcon="var(--color-text-tertiary)" icon="📖" title="Conteúdo">
-            <p style={{fontSize:13, color:"var(--color-text-secondary)", lineHeight:1.7, margin:0}}>{lesson.content}</p>
+            <div>{renderMarkdown(lesson.content)}</div>
           </Block>
         )}
 
