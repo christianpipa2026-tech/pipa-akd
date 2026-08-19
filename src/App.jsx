@@ -922,17 +922,29 @@ export default function App() {
   // Sincronizar progreso con Supabase
   useEffect(() => {
     if (!authUser) return;
-    const updateActive = async () => {
-      const { error } = await supabase.from("profiles").upsert({
+    const syncAll = async () => {
+      // Actualizar last_active
+      await supabase.from("profiles").upsert({
         id: authUser.id,
         email: authUser.email,
         app: "pipa-akd",
         last_active: new Date().toISOString()
       }, { onConflict: "id" });
-      if (error) console.error("last_active error:", error.message, error.code);
-      else console.log("last_active actualizado OK");
+      // Sincronizar progreso y racha desde localStorage a Supabase
+      const localProgress = load("pb_progress", {});
+      const localStreak = load("streak", { count: 0, lastDate: null });
+      if (Object.keys(localProgress).length > 0 || localStreak.count > 0) {
+        await supabase.from("progress").upsert({
+          user_id: authUser.id,
+          app: "pipa-akd",
+          progress_data: localProgress,
+          streak_count: localStreak.count || 0,
+          streak_last_date: localStreak.lastDate || null,
+          updated_at: new Date().toISOString()
+        }, { onConflict: "user_id,app" });
+      }
     };
-    updateActive();
+    syncAll().catch(() => {});
   }, [authUser]);
 
   const syncProgressToCloud = async (userId) => {
