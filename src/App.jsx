@@ -908,12 +908,12 @@ export default function App() {
       if (session?.user) {
         syncProgressToCloud(session.user.id);
         // Actualizar last_active
-        supabase.from("profiles").upsert({
+        try { await supabase.from("profiles").upsert({
           id: session.user.id,
           email: session.user.email,
           app: "pipa-akd",
           last_active: new Date().toISOString()
-        }, { onConflict: "id" }).catch(() => {});
+        }, { onConflict: "id" }); } catch(e) {}
       }
     });
     return () => subscription.unsubscribe();
@@ -1000,8 +1000,7 @@ export default function App() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: authEmail, app: "pipa-akd" })
-      }).catch(() => {});
-    }
+      }); } catch(e) {}  }
     setAuthWorking(false);
   };
 
