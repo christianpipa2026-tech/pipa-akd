@@ -1107,7 +1107,9 @@ export default function App() {
       const newCount = prev.lastDate === today ? prev.count
                      : prev.lastDate === yesterday ? prev.count + 1 : 1;
       const ns = { count: newCount, lastDate: today };
-      save("streak", ns); return ns;
+      save("streak", ns);
+      saveProgressToCloud(newProg, ns);
+      return ns;
     });
   };
   const saveLevel    = (lvl)    => { save("pb_level", lvl); };
