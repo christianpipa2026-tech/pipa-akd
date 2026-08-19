@@ -987,15 +987,32 @@ export default function App() {
   const saveProgressToCloud = async (newProgress, newStreak) => {
     if (!authUser) return;
     try {
-      await supabase.from("progress").upsert({
-        user_id: authUser.id,
-        app: "pipa-akd",
-        progress_data: newProgress,
-        streak_count: newStreak?.count || 0,
-        streak_last_date: newStreak?.lastDate || null,
-        updated_at: new Date().toISOString()
-      }, { onConflict: "user_id,app" });
-    } catch {}
+      // Intentar update primero
+      const { data: existing } = await supabase
+        .from("progress")
+        .select("id")
+        .eq("user_id", authUser.id)
+        .eq("app", "pipa-akd")
+        .single();
+      
+      if (existing) {
+        await supabase.from("progress").update({
+          progress_data: newProgress,
+          streak_count: newStreak?.count || 0,
+          streak_last_date: newStreak?.lastDate || null,
+          updated_at: new Date().toISOString()
+        }).eq("user_id", authUser.id).eq("app", "pipa-akd");
+      } else {
+        await supabase.from("progress").insert({
+          user_id: authUser.id,
+          app: "pipa-akd",
+          progress_data: newProgress,
+          streak_count: newStreak?.count || 0,
+          streak_last_date: newStreak?.lastDate || null,
+          updated_at: new Date().toISOString()
+        });
+      }
+    } catch(e) { console.error("saveProgress error:", e.message); }
   };
 
   // Auth handlers
