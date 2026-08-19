@@ -1102,12 +1102,13 @@ export default function App() {
     save("pb_progress", newProg); setProgress(newProg);
     // Actualizar racha
     const today = new Date().toDateString();
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
     setStreak(prev => {
-      const yesterday = new Date(Date.now() - 86400000).toDateString();
       const newCount = prev.lastDate === today ? prev.count
                      : prev.lastDate === yesterday ? prev.count + 1 : 1;
       const ns = { count: newCount, lastDate: today };
       save("streak", ns);
+      // Guardar en Supabase con el valor calculado
       saveProgressToCloud(newProg, ns);
       return ns;
     });
