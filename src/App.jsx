@@ -920,6 +920,17 @@ export default function App() {
   }, []);
 
   // Sincronizar progreso con Supabase
+  useEffect(() => {
+    if (!authUser) return;
+    // Actualizar last_active cada vez que el usuario está activo
+    supabase.from("profiles").upsert({
+      id: authUser.id,
+      email: authUser.email,
+      app: "pipa-akd",
+      last_active: new Date().toISOString()
+    }, { onConflict: "id" }).catch(() => {});
+  }, [authUser]);
+
   const syncProgressToCloud = async (userId) => {
     try {
       const { data } = await supabase
